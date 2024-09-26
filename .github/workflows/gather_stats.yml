@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: '*/10 * * * *' # Runs every 10 minutes
 
+permissions:
+  contents: write
+
 jobs:
   gather-stats:
     runs-on: ubuntu-latest
