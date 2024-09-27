@@ -19,7 +19,7 @@ jobs:
 
     - name: Run gather_stats.sh
       run: |
-        ./gather_stats.sh
+        ./gather_stats.sh 12   # Gather stats for PRs that were changed in the last 12 minutes
 
     - name: Commit changes
       run: |
