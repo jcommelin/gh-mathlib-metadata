@@ -28,6 +28,8 @@ prs=$(echo "$response" | jq -r --arg PAST_TIME "$PAST_TIME" --arg CURRENT_TIME "
   .number
 ')
 
+echo $prs
+
 # Iterate over each PR number
 for pr in $prs; do
   # Create the directory for the PR

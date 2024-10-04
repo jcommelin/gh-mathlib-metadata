@@ -21,7 +21,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
       run: |
-        ./gather_stats.sh 12   # Gather stats for PRs that were changed in the last 12 minutes
+        ./gather_stats.sh 60   # Gather stats for PRs that were changed in the last 12 minutes
 
     - name: Commit changes
       run: |
