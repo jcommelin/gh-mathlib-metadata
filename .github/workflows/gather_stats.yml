@@ -18,6 +18,8 @@ jobs:
         ref: master
 
     - name: Run gather_stats.sh
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         ./gather_stats.sh 12   # Gather stats for PRs that were changed in the last 12 minutes
 
