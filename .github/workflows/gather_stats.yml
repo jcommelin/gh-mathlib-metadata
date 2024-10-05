@@ -3,6 +3,7 @@ name: Gather Stats
 on:
   schedule:
     - cron: '*/10 * * * *' # Runs every 10 minutes
+  workflow_dispatch:       # Allows manual execution
 
 permissions:
   contents: write
