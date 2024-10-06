@@ -48,6 +48,14 @@
               "author": {
                 "login": "eric-wieser"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6Ox-Xo",
+              "body": "For me, the main case is the instance `[Field K] [CharZero K] : IsUnit (2 : K)` (available via `NeZero`).",
+              "createdAt": "2024-10-06T14:42:52Z",
+              "author": {
+                "login": "urkud"
+              }
             }
           ]
         },
@@ -1048,7 +1056,7 @@
         "milestone": null,
         "number": 17458,
         "potentialMergeCommit": {
-          "oid": "69a52929e0450cd7e45222db550cd202435ffaaf"
+          "oid": "98925332fbe3fe53442fb0c1b08e7039273171a1"
         },
         "projectCards": {
           "nodes": []
@@ -1277,7 +1285,7 @@
           }
         },
         "title": "refactor(Algebra/Group): make `IsUnit` a typeclass",
-        "updatedAt": "2024-10-06T06:42:38Z",
+        "updatedAt": "2024-10-06T14:42:53Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17458",
         "timelineItems": {
           "nodes": [
@@ -1363,6 +1371,15 @@
               "body": "What's the situation where having this as a typeclass is useful? I agree that there are a handful of `Invertible`s in mathlib that might be better spelt `IsUnit`, but I don't see why we can't use `(h : IsUnit x)` in those places. What makes `IsUnit` typeclass-worthy when `Prime` is not?",
               "author": {
                 "login": "eric-wieser"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6Ox-Xo",
+              "createdAt": "2024-10-06T14:42:52Z",
+              "body": "For me, the main case is the instance `[Field K] [CharZero K] : IsUnit (2 : K)` (available via `NeZero`).",
+              "author": {
+                "login": "urkud"
               }
             }
           ]
