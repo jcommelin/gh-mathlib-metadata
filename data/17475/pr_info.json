@@ -180,11 +180,11 @@
                       },
                       {
                         "__typename": "StatusContext",
-                        "id": "SC_kwDOFcwZ1c8AAAAHZ7QA0A",
+                        "id": "SC_kwDOFcwZ1c8AAAAHZ7VbLA",
                         "context": "bors",
                         "state": "PENDING",
                         "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6252",
-                        "description": "Waiting in queue"
+                        "description": "Running"
                       },
                       {
                         "__typename": "CheckRun",
@@ -265,13 +265,15 @@
         },
         "maintainerCanModify": false,
         "mergeCommit": null,
-        "mergeStateStatus": "UNKNOWN",
-        "mergeable": "UNKNOWN",
+        "mergeStateStatus": "BLOCKED",
+        "mergeable": "MERGEABLE",
         "mergedAt": null,
         "mergedBy": null,
         "milestone": null,
         "number": 17475,
-        "potentialMergeCommit": null,
+        "potentialMergeCommit": {
+          "oid": "f6b618c62de54740df3651ce8b10bea0881265b2"
+        },
         "projectCards": {
           "nodes": []
         },
@@ -506,11 +508,11 @@
               },
               {
                 "__typename": "StatusContext",
-                "id": "SC_kwDOFcwZ1c8AAAAHZ7QA0A",
+                "id": "SC_kwDOFcwZ1c8AAAAHZ7VbLA",
                 "context": "bors",
                 "state": "PENDING",
                 "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6252",
-                "description": "Waiting in queue"
+                "description": "Running"
               },
               {
                 "__typename": "CheckRun",
@@ -583,6 +585,9 @@
                 "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
                 "name": "ready-to-merge"
               }
+            },
+            {
+              "__typename": "ReferencedEvent"
             }
           ]
         }
