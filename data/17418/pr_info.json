@@ -13,8 +13,8 @@
         "baseRefName": "master",
         "body": "In the doc of  `IsBasis` the old convention `is_basis` was still used, and this PR fixes this.\n\n---\n\n",
         "changedFiles": 1,
-        "closed": false,
-        "closedAt": null,
+        "closed": true,
+        "closedAt": "2024-10-06T14:52:35Z",
         "comments": {
           "nodes": [
             {
@@ -39,6 +39,14 @@
               "createdAt": "2024-10-06T13:00:08Z",
               "author": {
                 "login": "bryangingechen"
+              }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6Ox_Eh",
+              "body": "Pull request successfully merged into master.\n\nBuild succeeded:\n  * [Build](https://github.com/leanprover-community/mathlib4/actions/runs/11202398436/job/31138460429)\n  * [Lint style](https://github.com/leanprover-community/mathlib4/actions/runs/11202398436/job/31138460249)",
+              "createdAt": "2024-10-06T14:52:34Z",
+              "author": {
+                "login": "mathlib-bors"
               }
             }
           ]
@@ -81,6 +89,14 @@
                         "conclusion": "SUCCESS",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11182224413/job/31088028268"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQA1LQA",
+                        "name": "build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11202831215/job/31139384128"
                       },
                       {
                         "__typename": "CheckRun",
@@ -195,14 +211,6 @@
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11182196383/job/31093237577"
                       },
                       {
-                        "__typename": "StatusContext",
-                        "id": "SC_kwDOFcwZ1c8AAAAHZ6JmlQ",
-                        "context": "bors",
-                        "state": "PENDING",
-                        "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6249",
-                        "description": "Running"
-                      },
-                      {
                         "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHPP3HHw",
                         "name": "New Contributor Check",
@@ -217,6 +225,14 @@
                         "conclusion": "SUCCESS",
                         "status": "COMPLETED",
                         "detailsUrl": "https://dashboard.mergify.com/event-logs?pullRequestNumber=17418&login=leanprover-community&repository=mathlib4"
+                      },
+                      {
+                        "__typename": "StatusContext",
+                        "id": "SC_kwDOFcwZ1c8AAAAHZ6Xq5Q",
+                        "context": "bors",
+                        "state": "SUCCESS",
+                        "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6249",
+                        "description": "Build succeeded"
                       }
                     ]
                   }
@@ -296,7 +312,7 @@
         "milestone": null,
         "number": 17418,
         "potentialMergeCommit": {
-          "oid": "7cc59e1c3c974abecc780699f5f9066cd7a0cffb"
+          "oid": "9e04d19f530035cb2e4be632adf16902f8c6ca52"
         },
         "projectCards": {
           "nodes": []
@@ -390,7 +406,7 @@
             }
           ]
         },
-        "state": "OPEN",
+        "state": "CLOSED",
         "statusCheckRollup": {
           "contexts": {
             "nodes": [
@@ -417,6 +433,14 @@
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11182224413/job/31088028268"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQA1LQA",
+                "name": "build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11202831215/job/31139384128"
               },
               {
                 "__typename": "CheckRun",
@@ -531,14 +555,6 @@
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11182196383/job/31093237577"
               },
               {
-                "__typename": "StatusContext",
-                "id": "SC_kwDOFcwZ1c8AAAAHZ6JmlQ",
-                "context": "bors",
-                "state": "PENDING",
-                "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6249",
-                "description": "Running"
-              },
-              {
                 "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHPP3HHw",
                 "name": "New Contributor Check",
@@ -553,12 +569,20 @@
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
                 "detailsUrl": "https://dashboard.mergify.com/event-logs?pullRequestNumber=17418&login=leanprover-community&repository=mathlib4"
+              },
+              {
+                "__typename": "StatusContext",
+                "id": "SC_kwDOFcwZ1c8AAAAHZ6Xq5Q",
+                "context": "bors",
+                "state": "SUCCESS",
+                "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6249",
+                "description": "Build succeeded"
               }
             ]
           }
         },
-        "title": "docs(Order/Filter/Bases): adapt Mathlib3 doc to Mathlib4",
-        "updatedAt": "2024-10-06T13:00:18Z",
+        "title": "[Merged by Bors] - docs(Order/Filter/Bases): adapt Mathlib3 doc to Mathlib4",
+        "updatedAt": "2024-10-06T14:52:39Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17418",
         "timelineItems": {
           "nodes": [
@@ -648,6 +672,28 @@
             },
             {
               "__typename": "ReferencedEvent"
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6Ox_Eh",
+              "createdAt": "2024-10-06T14:52:34Z",
+              "body": "Pull request successfully merged into master.\n\nBuild succeeded:\n  * [Build](https://github.com/leanprover-community/mathlib4/actions/runs/11202398436/job/31138460429)\n  * [Lint style](https://github.com/leanprover-community/mathlib4/actions/runs/11202398436/job/31138460249)",
+              "author": {
+                "login": "mathlib-bors"
+              }
+            },
+            {
+              "__typename": "RenamedTitleEvent"
+            },
+            {
+              "__typename": "ClosedEvent",
+              "id": "CE_lADOFcwZ1c6Y-v3ZzwAAAANiGi38",
+              "createdAt": "2024-10-06T14:52:35Z"
+            },
+            {
+              "__typename": "HeadRefDeletedEvent",
+              "id": "HRDE_lADOFcwZ1c6Y-v3ZzwAAAANiGi6c",
+              "createdAt": "2024-10-06T14:52:39Z"
             }
           ]
         }
