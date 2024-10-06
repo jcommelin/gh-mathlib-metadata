@@ -22,7 +22,7 @@ response=$(curl -s "$API_URL?state=all&per_page=100")
 
 # Check if the response is not empty
 if [ -z "$response" ]; then
-  echo "Failed to fetch PR data : $CURRENT_TIME" >> stats.log
+  echo "Failed to fetch PR data: $CURRENT_TIME"
   exit 1
 fi
 
