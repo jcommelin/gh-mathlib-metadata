@@ -32,6 +32,14 @@
               "author": {
                 "login": "FR-vdash-bot"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6Oxx49",
+              "body": "Here are the [benchmark results](http://speed.lean-fro.org/mathlib4/run-detail/1e67bea3-ad8f-4646-ae85-72670d9e050f) for commit 633ee0211370a1015a23479622ea107da3365cf6.\nThere were [significant changes](http://speed.lean-fro.org/mathlib4/compare/63b87a1d-6eb1-42b3-b585-be4883870b3f/to/1e67bea3-ad8f-4646-ae85-72670d9e050f) against commit 875821f5410375dc0b8f4cec7856473062927dfb:\n```diff\n  Benchmark                                                              Metric         Change\n  ============================================================================================\n- lint                                                                   wall-clock       5.2%\n- ~Mathlib.AlgebraicGeometry.EllipticCurve.Affine                        instructions    14.2%\n+ ~Mathlib.Analysis.Calculus.FDeriv.Mul                                  instructions    -3.7%\n- ~Mathlib.Analysis.Distribution.SchwartzSpace                           instructions     5.0%\n- ~Mathlib.Analysis.InnerProductSpace.Basic                              instructions     3.3%\n- ~Mathlib.Analysis.NormedSpace.Multilinear.Basic                        instructions     3.6%\n- ~Mathlib.Analysis.SpecialFunctions.ContinuousFunctionalCalculus.Rpow   instructions     7.2%\n- ~Mathlib.Analysis.SpecialFunctions.Gaussian.FourierTransform           instructions    13.0%\n- ~Mathlib.Computability.AkraBazzi.AkraBazzi                             instructions    16.4%\n- ~Mathlib.Computability.AkraBazzi.GrowsPolynomially                     instructions    21.3%\n- ~Mathlib.GroupTheory.Coxeter.Matrix                                    instructions    12.4%\n- ~Mathlib.NumberTheory.Cyclotomic.Rat                                   instructions    11.8%\n- ~Mathlib.NumberTheory.FLT.Three                                        instructions    23.9%\n- ~Mathlib.NumberTheory.Padics.Hensel                                    instructions    10.5%\n- ~Mathlib.RingTheory.ClassGroup                                         instructions    13.5%\n- ~Mathlib.RingTheory.DedekindDomain.Factorization                       instructions    30.5%\n- ~Mathlib.RingTheory.DedekindDomain.Ideal                               instructions     5.6%\n- ~Mathlib.RingTheory.DedekindDomain.PID                                 instructions    65.5%\n```",
+              "createdAt": "2024-10-06T12:05:16Z",
+              "author": {
+                "login": "leanprover-bot"
+              }
             }
           ]
         },
@@ -3347,6 +3355,10 @@
             {
               "id": "MDQ6VXNlcjE5NjM0Nzc4",
               "login": "FR-vdash-bot"
+            },
+            {
+              "id": "MDQ6VXNlcjg1NjY4Mzk0",
+              "login": "leanprover-bot"
             }
           ]
         },
@@ -3462,7 +3474,7 @@
           }
         },
         "title": "refactor: make `CanonicallyOrdered...` mixin",
-        "updatedAt": "2024-10-06T11:38:46Z",
+        "updatedAt": "2024-10-06T12:05:17Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17444",
         "timelineItems": {
           "nodes": [
@@ -3620,6 +3632,15 @@
               "body": "!bench",
               "author": {
                 "login": "FR-vdash-bot"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6Oxx49",
+              "createdAt": "2024-10-06T12:05:16Z",
+              "body": "Here are the [benchmark results](http://speed.lean-fro.org/mathlib4/run-detail/1e67bea3-ad8f-4646-ae85-72670d9e050f) for commit 633ee0211370a1015a23479622ea107da3365cf6.\nThere were [significant changes](http://speed.lean-fro.org/mathlib4/compare/63b87a1d-6eb1-42b3-b585-be4883870b3f/to/1e67bea3-ad8f-4646-ae85-72670d9e050f) against commit 875821f5410375dc0b8f4cec7856473062927dfb:\n```diff\n  Benchmark                                                              Metric         Change\n  ============================================================================================\n- lint                                                                   wall-clock       5.2%\n- ~Mathlib.AlgebraicGeometry.EllipticCurve.Affine                        instructions    14.2%\n+ ~Mathlib.Analysis.Calculus.FDeriv.Mul                                  instructions    -3.7%\n- ~Mathlib.Analysis.Distribution.SchwartzSpace                           instructions     5.0%\n- ~Mathlib.Analysis.InnerProductSpace.Basic                              instructions     3.3%\n- ~Mathlib.Analysis.NormedSpace.Multilinear.Basic                        instructions     3.6%\n- ~Mathlib.Analysis.SpecialFunctions.ContinuousFunctionalCalculus.Rpow   instructions     7.2%\n- ~Mathlib.Analysis.SpecialFunctions.Gaussian.FourierTransform           instructions    13.0%\n- ~Mathlib.Computability.AkraBazzi.AkraBazzi                             instructions    16.4%\n- ~Mathlib.Computability.AkraBazzi.GrowsPolynomially                     instructions    21.3%\n- ~Mathlib.GroupTheory.Coxeter.Matrix                                    instructions    12.4%\n- ~Mathlib.NumberTheory.Cyclotomic.Rat                                   instructions    11.8%\n- ~Mathlib.NumberTheory.FLT.Three                                        instructions    23.9%\n- ~Mathlib.NumberTheory.Padics.Hensel                                    instructions    10.5%\n- ~Mathlib.RingTheory.ClassGroup                                         instructions    13.5%\n- ~Mathlib.RingTheory.DedekindDomain.Factorization                       instructions    30.5%\n- ~Mathlib.RingTheory.DedekindDomain.Ideal                               instructions     5.6%\n- ~Mathlib.RingTheory.DedekindDomain.PID                                 instructions    65.5%\n```",
+              "author": {
+                "login": "leanprover-bot"
               }
             }
           ]
