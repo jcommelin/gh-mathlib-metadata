@@ -72,6 +72,14 @@
               "author": {
                 "login": "YaelDillies"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6OyFon",
+              "body": "Can you open an issue against doc-gen about how `export` is not handled, and reference it in the PR description?\r\n\r\nI think there are quite a few of these; it might make more sense to sweep over all `export`s in `Algebra/`.",
+              "createdAt": "2024-10-06T16:17:38Z",
+              "author": {
+                "login": "eric-wieser"
+              }
             }
           ]
         },
@@ -245,12 +253,12 @@
         "labels": {
           "nodes": [
             {
-              "id": "LA_kwDOFcwZ1c8AAAABViJjTQ",
-              "name": "t-algebra"
+              "id": "LA_kwDOFcwZ1c7P265b",
+              "name": "awaiting-author"
             },
             {
-              "id": "LA_kwDOFcwZ1c8AAAABh1mAHA",
-              "name": "maintainer-merge"
+              "id": "LA_kwDOFcwZ1c8AAAABViJjTQ",
+              "name": "t-algebra"
             }
           ]
         },
@@ -266,7 +274,7 @@
         "milestone": null,
         "number": 17465,
         "potentialMergeCommit": {
-          "oid": "d2fbac9be95af06b1ba73effc8e6a233dfed39e4"
+          "oid": "30d35c71f9a9eb940cbb7396f3c4bb14f25f5464"
         },
         "projectCards": {
           "nodes": []
@@ -343,6 +351,10 @@
             {
               "id": "MDQ6VXNlcjY1MDgwMTQ0",
               "login": "faenuccio"
+            },
+            {
+              "id": "MDQ6VXNlcjQyNTI2MA==",
+              "login": "eric-wieser"
             }
           ]
         },
@@ -474,7 +486,7 @@
           }
         },
         "title": "chore: don't export `GroupWithZero.inv_zero`",
-        "updatedAt": "2024-10-06T14:02:31Z",
+        "updatedAt": "2024-10-06T16:17:51Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17465",
         "timelineItems": {
           "nodes": [
@@ -566,6 +578,33 @@
               "body": "I've clarified the PR description",
               "author": {
                 "login": "YaelDillies"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6OyFon",
+              "createdAt": "2024-10-06T16:17:38Z",
+              "body": "Can you open an issue against doc-gen about how `export` is not handled, and reference it in the PR description?\r\n\r\nI think there are quite a few of these; it might make more sense to sweep over all `export`s in `Algebra/`.",
+              "author": {
+                "login": "eric-wieser"
+              }
+            },
+            {
+              "__typename": "UnlabeledEvent",
+              "id": "UNLE_lADOFcwZ1c6ZGMGDzwAAAANiHOQJ",
+              "createdAt": "2024-10-06T16:17:51Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABh1mAHA",
+                "name": "maintainer-merge"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6ZGMGDzwAAAANiHOQN",
+              "createdAt": "2024-10-06T16:17:51Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c7P265b",
+                "name": "awaiting-author"
               }
             }
           ]

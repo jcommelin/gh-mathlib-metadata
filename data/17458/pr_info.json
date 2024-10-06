@@ -56,6 +56,14 @@
               "author": {
                 "login": "urkud"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6OyFUF",
+              "body": "I don't understand what you mean; if you're writing theorems that take `[IsUnit 2]`, can't you just write them to take `(h : IsUnit 2)`?",
+              "createdAt": "2024-10-06T16:13:13Z",
+              "author": {
+                "login": "eric-wieser"
+              }
             }
           ]
         },
@@ -1056,7 +1064,7 @@
         "milestone": null,
         "number": 17458,
         "potentialMergeCommit": {
-          "oid": "de85d96e27f1f596c5e42fa1a885cf6d8a25a4bc"
+          "oid": "130d84b0ecd4f5c275e9079fca7fdbc781a5cd97"
         },
         "projectCards": {
           "nodes": []
@@ -1285,7 +1293,7 @@
           }
         },
         "title": "refactor(Algebra/Group): make `IsUnit` a typeclass",
-        "updatedAt": "2024-10-06T14:42:53Z",
+        "updatedAt": "2024-10-06T16:13:14Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17458",
         "timelineItems": {
           "nodes": [
@@ -1380,6 +1388,15 @@
               "body": "For me, the main case is the instance `[Field K] [CharZero K] : IsUnit (2 : K)` (available via `NeZero`).",
               "author": {
                 "login": "urkud"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6OyFUF",
+              "createdAt": "2024-10-06T16:13:13Z",
+              "body": "I don't understand what you mean; if you're writing theorems that take `[IsUnit 2]`, can't you just write them to take `(h : IsUnit 2)`?",
+              "author": {
+                "login": "eric-wieser"
               }
             }
           ]
