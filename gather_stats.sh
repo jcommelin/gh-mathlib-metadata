@@ -4,6 +4,11 @@
 # See e.g. http://redsymbol.net/articles/unofficial-bash-strict-mode/ for explanation.
 set -e -u -o pipefail
 
+# This script returns the exit code
+# - 0 if no errors occurred, and data for at least one PR was downloaded,
+# - 37 if no errors occurred, but the list of PRs was empty,
+# - 1 if the was an error fetching data.
+
 TIMEDELTA=$1
 
 # Change to the directory where the script is located
@@ -31,6 +36,11 @@ prs=$(echo "$response" | jq -r --arg PAST_TIME "$PAST_TIME" --arg CURRENT_TIME "
   .[] | select(.updated_at >= $PAST_TIME and .updated_at <= $CURRENT_TIME) |
   .number
 ')
+
+if [ -z $prs ]; then
+  echo "No PRs were updated in the last $TIMEDELTA minutes"
+  exit 37
+fi
 
 echo $prs
 
