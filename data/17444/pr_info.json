@@ -3259,14 +3259,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHQAtm4w",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11202774032/job/31139260131"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHQAtnog",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -3275,11 +3267,27 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQAtm4w",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11202774032/job/31139260131"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHQAtn6A",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11202774035/job/31139260392"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQBee2Q",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11202774032/job/31140060889"
                       },
                       {
                         "__typename": "CheckRun",
@@ -3831,10 +3839,6 @@
               "name": "WIP"
             },
             {
-              "id": "LA_kwDOFcwZ1c8AAAABKteTVQ",
-              "name": "awaiting-CI"
-            },
-            {
               "id": "LA_kwDOFcwZ1c8AAAABViJjTQ",
               "name": "t-algebra"
             },
@@ -4010,14 +4014,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHQAtm4w",
-                "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11202774032/job/31139260131"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHQAtnog",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -4026,11 +4022,27 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQAtm4w",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11202774032/job/31139260131"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHQAtn6A",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11202774035/job/31139260392"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQBee2Q",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11202774032/job/31140060889"
               },
               {
                 "__typename": "CheckRun",
@@ -4052,7 +4064,7 @@
           }
         },
         "title": "refactor: make `CanonicallyOrdered...` mixin",
-        "updatedAt": "2024-10-06T15:18:11Z",
+        "updatedAt": "2024-10-06T15:39:57Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17444",
         "timelineItems": {
           "nodes": [
@@ -4273,6 +4285,15 @@
               "body": "Here are the [benchmark results](http://speed.lean-fro.org/mathlib4/run-detail/7e46d5ac-c09e-495e-b91f-e290537d972f) for commit 9e59424ada45a0e484de22ab066bc4ec39e6a5d8.\nThere were [significant changes](http://speed.lean-fro.org/mathlib4/compare/63b87a1d-6eb1-42b3-b585-be4883870b3f/to/7e46d5ac-c09e-495e-b91f-e290537d972f) against commit 875821f5410375dc0b8f4cec7856473062927dfb:\n```diff\n  Benchmark                                                              Metric         Change\n  ============================================================================================\n- lint                                                                   wall-clock       5.1%\n- ~Mathlib.AlgebraicGeometry.EllipticCurve.Affine                        instructions    14.1%\n+ ~Mathlib.Analysis.Calculus.FDeriv.Mul                                  instructions    -4.6%\n- ~Mathlib.Analysis.InnerProductSpace.Basic                              instructions     4.1%\n- ~Mathlib.Analysis.SpecialFunctions.ContinuousFunctionalCalculus.Rpow   instructions     7.2%\n- ~Mathlib.Analysis.SpecialFunctions.Gaussian.FourierTransform           instructions    12.4%\n- ~Mathlib.Computability.AkraBazzi.AkraBazzi                             instructions    12.9%\n- ~Mathlib.GroupTheory.Coxeter.Matrix                                    instructions    12.4%\n- ~Mathlib.NumberTheory.FLT.Three                                        instructions    17.1%\n```",
               "author": {
                 "login": "leanprover-bot"
+              }
+            },
+            {
+              "__typename": "UnlabeledEvent",
+              "id": "UNLE_lADOFcwZ1c6ZEvfNzwAAAANiG6tp",
+              "createdAt": "2024-10-06T15:39:57Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABKteTVQ",
+                "name": "awaiting-CI"
               }
             }
           ]
