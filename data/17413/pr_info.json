@@ -32,6 +32,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6OySgg",
+              "body": "bors merge\r\n\r\nThanks! We can clean up the swap / comm confusion later.",
+              "createdAt": "2024-10-06T19:07:44Z",
+              "author": {
+                "login": "eric-wieser"
+              }
             }
           ]
         },
@@ -1588,6 +1596,14 @@
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11202589826/job/31139741526"
                       },
                       {
+                        "__typename": "StatusContext",
+                        "id": "SC_kwDOFcwZ1c8AAAAHZ7Jr0g",
+                        "context": "bors",
+                        "state": "PENDING",
+                        "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6251",
+                        "description": "Running"
+                      },
+                      {
                         "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHQAW3hw",
                         "name": "New Contributor Check",
@@ -1637,6 +1653,10 @@
         "isDraft": false,
         "labels": {
           "nodes": [
+            {
+              "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
+              "name": "ready-to-merge"
+            },
             {
               "id": "LA_kwDOFcwZ1c8AAAABh1mAHA",
               "name": "maintainer-merge"
@@ -2304,6 +2324,14 @@
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11202589826/job/31139741526"
               },
               {
+                "__typename": "StatusContext",
+                "id": "SC_kwDOFcwZ1c8AAAAHZ7Jr0g",
+                "context": "bors",
+                "state": "PENDING",
+                "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6251",
+                "description": "Running"
+              },
+              {
                 "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHQAW3hw",
                 "name": "New Contributor Check",
@@ -2323,7 +2351,7 @@
           }
         },
         "title": "feat: add `Finset.cons_swap`",
-        "updatedAt": "2024-10-06T16:01:53Z",
+        "updatedAt": "2024-10-06T19:07:55Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17413",
         "timelineItems": {
           "nodes": [
@@ -2461,6 +2489,27 @@
             },
             {
               "__typename": "PullRequestCommit"
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6OySgg",
+              "createdAt": "2024-10-06T19:07:44Z",
+              "body": "bors merge\r\n\r\nThanks! We can clean up the swap / comm confusion later.",
+              "author": {
+                "login": "eric-wieser"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6Y-AlQzwAAAANiIjOs",
+              "createdAt": "2024-10-06T19:07:55Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
+                "name": "ready-to-merge"
+              }
+            },
+            {
+              "__typename": "ReferencedEvent"
             }
           ]
         }
