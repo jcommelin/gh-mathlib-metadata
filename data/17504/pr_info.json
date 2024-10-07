@@ -13,8 +13,8 @@
         "baseRefName": "master",
         "body": "Found by the linter in #10235.\r\n\r\n---\r\n<!-- The text above the `---` will become the commit message when your\r\nPR is merged. Please leave a blank newline before the `---`, otherwise\r\nGitHub will format the text above it as a title.\r\n\r\nFor details on the \"pull request lifecycle\" in mathlib, please see:\r\nhttps://leanprover-community.github.io/contribute/index.html\r\n\r\nIn particular, note that most reviewers will only notice your PR\r\nif it passes the continuous integration checks.\r\nPlease ask for help on https://leanprover.zulipchat.com if needed.\r\n\r\nTo indicate co-authors, include lines at the bottom of the commit message\r\n(that is, before the `---`) using the following format:\r\n\r\nCo-authored-by: Author Name <author@email.com>\r\n\r\nIf you are moving or deleting declarations, please include these lines at the bottom of the commit message\r\n(that is, before the `---`) using the following format:\r\n\r\nMoves:\r\n- Vector.* -> Mathlib.Vector.*\r\n- ...\r\n\r\nDeletions:\r\n- Nat.bit1_add_bit1\r\n- ...\r\n\r\nAny other comments you want to keep out of the PR commit should go\r\nbelow the `---`, and placed outside this HTML comment, or else they\r\nwill be invisible to reviewers.\r\n\r\nIf this PR depends on other PRs, please list them below this comment,\r\nusing the following format:\r\n- [ ] depends on: #abc [optional extra text]\r\n- [ ] depends on: #xyz [optional extra text]\r\n\r\n-->\r\n\r\n[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)\r\n",
         "changedFiles": 1,
-        "closed": false,
-        "closedAt": null,
+        "closed": true,
+        "closedAt": "2024-10-07T20:43:30Z",
         "comments": {
           "nodes": [
             {
@@ -53,6 +53,14 @@
               "id": "IC_kwDOFcwZ1c6O5EX2",
               "body": "Sorry, I realised I meant to include one more tiny change (one line, analogous to the approved one). Do you mind re-approving?",
               "createdAt": "2024-10-07T16:01:08Z",
+              "author": {
+                "login": "grunweg"
+              }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6O7Ga4",
+              "body": "Superseeded by #17396.",
+              "createdAt": "2024-10-07T20:43:30Z",
               "author": {
                 "login": "grunweg"
               }
@@ -318,14 +326,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHQsoDFw",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "QUEUED",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11219408116/job/31185306391"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHQsoD0g",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -334,11 +334,27 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQsoDFw",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11219408116/job/31185306391"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHQsoNQQ",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11219408130/job/31185308993"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQvRrrA",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11219408116/job/31188085676"
                       },
                       {
                         "__typename": "StatusContext",
@@ -431,15 +447,13 @@
         },
         "maintainerCanModify": false,
         "mergeCommit": null,
-        "mergeStateStatus": "BLOCKED",
-        "mergeable": "MERGEABLE",
+        "mergeStateStatus": "DIRTY",
+        "mergeable": "CONFLICTING",
         "mergedAt": null,
         "mergedBy": null,
         "milestone": null,
         "number": 17504,
-        "potentialMergeCommit": {
-          "oid": "4e66fc686ac8a5dbc74c1bdb05e342634a34ec7c"
-        },
+        "potentialMergeCommit": null,
         "projectCards": {
           "nodes": []
         },
@@ -536,7 +550,7 @@
             }
           ]
         },
-        "state": "OPEN",
+        "state": "CLOSED",
         "statusCheckRollup": {
           "contexts": {
             "nodes": [
@@ -606,14 +620,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHQsoDFw",
-                "name": "Build",
-                "conclusion": null,
-                "status": "QUEUED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11219408116/job/31185306391"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHQsoD0g",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -622,11 +628,27 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQsoDFw",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11219408116/job/31185306391"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHQsoNQQ",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11219408130/job/31185308993"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQvRrrA",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11219408116/job/31188085676"
               },
               {
                 "__typename": "StatusContext",
@@ -656,7 +678,7 @@
           }
         },
         "title": "chore(MvPolynomial/PDeriv): remove superfluous use of DecidableEq",
-        "updatedAt": "2024-10-07T16:01:19Z",
+        "updatedAt": "2024-10-07T20:43:33Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17504",
         "timelineItems": {
           "nodes": [
@@ -776,6 +798,25 @@
                 "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
                 "name": "ready-to-merge"
               }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6O7Ga4",
+              "createdAt": "2024-10-07T20:43:30Z",
+              "body": "Superseeded by #17396.",
+              "author": {
+                "login": "grunweg"
+              }
+            },
+            {
+              "__typename": "ClosedEvent",
+              "id": "CE_lADOFcwZ1c6ZOUrCzwAAAANjC7bX",
+              "createdAt": "2024-10-07T20:43:30Z"
+            },
+            {
+              "__typename": "HeadRefDeletedEvent",
+              "id": "HRDE_lADOFcwZ1c6ZOUrCzwAAAANjC7h0",
+              "createdAt": "2024-10-07T20:43:33Z"
             }
           ]
         }
