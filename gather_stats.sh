@@ -43,8 +43,6 @@ if [ -z $prs ]; then
   exit 37
 fi
 
-echo $prs
-
 # Iterate over each PR number
 for pr in $prs; do
   # Create the directory for the PR
