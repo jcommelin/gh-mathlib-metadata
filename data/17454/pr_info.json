@@ -48,6 +48,14 @@
               "author": {
                 "login": "kbuzzard"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6O13kV",
+              "body": "I think that would be rather confusing, because [`LinearMap.BilinForm.compRight`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/BilinearForm/Hom.html#LinearMap.BilinForm.compRight) sounds like it ought to be analogous, but is about the (right) domain rather than the codomain.",
+              "createdAt": "2024-10-07T10:06:50Z",
+              "author": {
+                "login": "eric-wieser"
+              }
             }
           ]
         },
@@ -1582,7 +1590,7 @@
           }
         },
         "title": "feat: `LinearEquiv.congrQuadraticMap` and `LinearMap.BilinMap.congr₂`",
-        "updatedAt": "2024-10-07T09:20:59Z",
+        "updatedAt": "2024-10-07T10:06:52Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17454",
         "timelineItems": {
           "nodes": [
@@ -1696,6 +1704,15 @@
               "body": "If we're going to bikeshed over names then another possibility for `LinearMap.BilinForm.congr₂` would I guess be `LinearMap.BilinForm.congrRight`. But I'd be happy to merge either choice.",
               "author": {
                 "login": "kbuzzard"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6O13kV",
+              "createdAt": "2024-10-07T10:06:50Z",
+              "body": "I think that would be rather confusing, because [`LinearMap.BilinForm.compRight`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/BilinearForm/Hom.html#LinearMap.BilinForm.compRight) sounds like it ought to be analogous, but is about the (right) domain rather than the codomain.",
+              "author": {
+                "login": "eric-wieser"
               }
             }
           ]
