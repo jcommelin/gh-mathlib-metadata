@@ -19,7 +19,7 @@
           "nodes": [
             {
               "id": "IC_kwDOFcwZ1c6Ow4fE",
-              "body": "### PR summary [a788736b4c](https://github.com/leanprover-community/mathlib4/pull/17455/commits/a788736b4c9544f7a6f9153da7bdc44639edd436)\n\n<details><summary>\n\n#### Import changes for modified files\n\n</summary>\n\nDependency changes\n\n| File | Base Count | Head Count | Change |\n| --- | --- | --- | --- |\n| Mathlib.RingTheory.Polynomial.Pochhammer | 946 | 951 | +5 (+0.53%) |\n\n\n<details><summary>Import changes for all files</summary>\n\n|Files|Import difference|\n|-|-|\n|<details><summary>7 files</summary> `Mathlib.Data.Nat.Choose.Cast` `Mathlib.RingTheory.Polynomial.Pochhammer` `Mathlib.Algebra.Polynomial.HasseDeriv` `Mathlib.Algebra.Polynomial.Taylor` `Mathlib.RingTheory.Polynomial.Bernstein` `Mathlib.RingTheory.Binomial` `Mathlib.Data.Nat.Factorial.Cast`</details>|5|\n| `Mathlib.Analysis.SpecialFunctions.OrdinaryHypergeometric`|1386|\n\n</details>\n\n</details>\n\n---\n\n<details><summary>\n\n#### Declarations diff\n\n</summary>\n\n`+ ascPochhammer_eq_zero_iff`\n`+ ascPochhammer_eq_zero_of_nonpos_int`\n`+ ordinaryHypergeometric`\n`+ ordinaryHypergeometricSeries`\n`+ ordinaryHypergeometricSeries_apply_eq`\n`+ ordinaryHypergeometricSeries_apply_eq'`\n`+ ordinaryHypergeometricSeries_apply_zero`\n`+ ordinaryHypergeometricSeries_eq_zero_iff`\n`+ ordinaryHypergeometricSeries_eq_zero_of_nonpos_int`\n`+ ordinaryHypergeometricSeries_radius_eq_one`\n`+ ordinaryHypergeometricSeries_ratio_tendsto_one_atTop`\n`+ ordinaryHypergeometricSeries_succ_norm_div_norm`\n`+ ordinaryHypergeometricSeries_symm`\n`+ ordinaryHypergeometric_eq_tsum`\n`+ ordinaryHypergeometric_op`\n`+ ordinaryHypergeometric_radius_top_of_nonpos_int₁`\n`+ ordinaryHypergeometric_radius_top_of_nonpos_int₂`\n`+ ordinaryHypergeometric_radius_top_of_nonpos_int₃`\n`+ ordinaryHypergeometric_ratio_tendsto_nhds_atTop`\n`+ ordinaryHypergeometric_sum_eq`\n`+ ordinaryHypergeometric_unop`\n`+ ordinaryHypergeometric_zero`\n<details>\n  <summary>You can run this locally as follows</summary>\n\n\n```bash\n## summary with just the declaration names:\n./scripts/declarations_diff.sh <optional_commit>\n\n## more verbose report:\n./scripts/declarations_diff.sh long <optional_commit>\n```\n</details>\n\nThe doc-module for `script/declarations_diff.sh` contains some details about this script.\n\n</details>",
+              "body": "### PR summary [f38dec8be6](https://github.com/leanprover-community/mathlib4/pull/17455/commits/f38dec8be6266f0186c94c0cb141c488eb9b41e1)\n\n<details><summary>\n\n#### Import changes for modified files\n\n</summary>\n\nDependency changes\n\n| File | Base Count | Head Count | Change |\n| --- | --- | --- | --- |\n| Mathlib.RingTheory.Polynomial.Pochhammer | 946 | 951 | +5 (+0.53%) |\n\n\n<details><summary>Import changes for all files</summary>\n\n|Files|Import difference|\n|-|-|\n|<details><summary>7 files</summary> `Mathlib.Data.Nat.Choose.Cast` `Mathlib.RingTheory.Polynomial.Pochhammer` `Mathlib.Algebra.Polynomial.HasseDeriv` `Mathlib.Algebra.Polynomial.Taylor` `Mathlib.RingTheory.Polynomial.Bernstein` `Mathlib.RingTheory.Binomial` `Mathlib.Data.Nat.Factorial.Cast`</details>|5|\n| `Mathlib.Analysis.SpecialFunctions.OrdinaryHypergeometric`|1386|\n\n</details>\n\n</details>\n\n---\n\n<details><summary>\n\n#### Declarations diff\n\n</summary>\n\n`+ ascPochhammer_eq_zero_iff`\n`+ ascPochhammer_eq_zero_of_nonpos_int`\n`+ ordinaryHypergeometric`\n`+ ordinaryHypergeometricSeries`\n`+ ordinaryHypergeometricSeries_apply_eq`\n`+ ordinaryHypergeometricSeries_apply_eq'`\n`+ ordinaryHypergeometricSeries_apply_zero`\n`+ ordinaryHypergeometricSeries_eq_zero_iff`\n`+ ordinaryHypergeometricSeries_eq_zero_of_nonpos_int`\n`+ ordinaryHypergeometricSeries_radius_eq_one`\n`+ ordinaryHypergeometricSeries_ratio_tendsto_one_atTop`\n`+ ordinaryHypergeometricSeries_succ_norm_div_norm`\n`+ ordinaryHypergeometricSeries_symm`\n`+ ordinaryHypergeometric_eq_tsum`\n`+ ordinaryHypergeometric_op`\n`+ ordinaryHypergeometric_radius_top_of_nonpos_int₁`\n`+ ordinaryHypergeometric_radius_top_of_nonpos_int₂`\n`+ ordinaryHypergeometric_radius_top_of_nonpos_int₃`\n`+ ordinaryHypergeometric_ratio_tendsto_nhds_atTop`\n`+ ordinaryHypergeometric_sum_eq`\n`+ ordinaryHypergeometric_unop`\n`+ ordinaryHypergeometric_zero`\n<details>\n  <summary>You can run this locally as follows</summary>\n\n\n```bash\n## summary with just the declaration names:\n./scripts/declarations_diff.sh <optional_commit>\n\n## more verbose report:\n./scripts/declarations_diff.sh long <optional_commit>\n```\n</details>\n\nThe doc-module for `script/declarations_diff.sh` contains some details about this script.\n\n</details>",
               "createdAt": "2024-10-05T20:19:56Z",
               "author": {
                 "login": "github-actions"
@@ -1512,6 +1512,128 @@
                   }
                 }
               }
+            },
+            {
+              "commit": {
+                "oid": "f38dec8be6266f0186c94c0cb141c488eb9b41e1",
+                "additions": 3,
+                "deletions": 3,
+                "committedDate": "2024-10-07T11:51:24Z",
+                "author": {
+                  "name": "Edward Watine",
+                  "email": "02ewatine@gmail.com"
+                },
+                "statusCheckRollup": {
+                  "contexts": {
+                    "nodes": [
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQe51aA",
+                        "name": "label-and-report-new-contributor",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11214891619/job/31170917736"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQe514A",
+                        "name": "build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11214891622/job/31170917856"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQe5zxQ",
+                        "name": "Cancel Previous Runs (CI)",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11214891367/job/31170917317"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQe5zLg",
+                        "name": "Cancel Previous Runs (CI)",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11214891361/job/31170917166"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQe51lA",
+                        "name": "Lint style",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11214891624/job/31170917780"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQe5yXA",
+                        "name": "Lint style (fork)",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11214891367/job/31170916956"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQe50UA",
+                        "name": "Lint style",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11214891361/job/31170917456"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQe520w",
+                        "name": "Check all files imported",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11214891624/job/31170918099"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQe5yOA",
+                        "name": "Build",
+                        "conclusion": null,
+                        "status": "IN_PROGRESS",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11214891361/job/31170916920"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQe505w",
+                        "name": "Build (fork)",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11214891367/job/31170917607"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQe52tA",
+                        "name": "Post-CI job (fork)",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11214891367/job/31170918068"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQe6Ltw",
+                        "name": "New Contributor Check",
+                        "conclusion": "NEUTRAL",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/runs/31170923447"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQe7MpA",
+                        "name": "Summary",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://dashboard.mergify.com/event-logs?pullRequestNumber=17455&login=leanprover-community&repository=mathlib4"
+                      }
+                    ]
+                  }
+                }
+              }
             }
           ]
         },
@@ -1537,7 +1659,7 @@
           ]
         },
         "headRefName": "edwatine/hypergeometric-function",
-        "headRefOid": "a788736b4c9544f7a6f9153da7bdc44639edd436",
+        "headRefOid": "f38dec8be6266f0186c94c0cb141c488eb9b41e1",
         "headRepository": {
           "name": "mathlib4",
           "owner": {
@@ -1574,7 +1696,7 @@
         "milestone": null,
         "number": 17455,
         "potentialMergeCommit": {
-          "oid": "5d49d2973a294767de08a6e41f849ad89737d195"
+          "oid": "29cd82135d298d4d3b76a19fda292eca33d4fb09"
         },
         "projectCards": {
           "nodes": []
@@ -1667,119 +1789,103 @@
             "nodes": [
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHPyk8jw",
-                "name": "Add topic label",
-                "conclusion": "SUCCESS",
-                "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11196044438/job/31124438159"
-              },
-              {
-                "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHPyk8iQ",
+                "id": "CR_kwDOFcwZ1c8AAAAHQe51aA",
                 "name": "label-and-report-new-contributor",
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11196044433/job/31124438153"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11214891619/job/31170917736"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHPyk8sg",
+                "id": "CR_kwDOFcwZ1c8AAAAHQe514A",
                 "name": "build",
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11196044435/job/31124438194"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11214891622/job/31170917856"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHPykCeQ",
+                "id": "CR_kwDOFcwZ1c8AAAAHQe5zxQ",
                 "name": "Cancel Previous Runs (CI)",
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11196037093/job/31124423289"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11214891367/job/31170917317"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHPykCiA",
+                "id": "CR_kwDOFcwZ1c8AAAAHQe5zLg",
                 "name": "Cancel Previous Runs (CI)",
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11196037090/job/31124423304"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11214891361/job/31170917166"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHPyk82A",
+                "id": "CR_kwDOFcwZ1c8AAAAHQe51lA",
                 "name": "Lint style",
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11196044434/job/31124438232"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11214891624/job/31170917780"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHPykDKQ",
+                "id": "CR_kwDOFcwZ1c8AAAAHQe5yXA",
                 "name": "Lint style (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11196037093/job/31124423465"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11214891367/job/31170916956"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHPykDOg",
+                "id": "CR_kwDOFcwZ1c8AAAAHQe50UA",
                 "name": "Lint style",
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11196037090/job/31124423482"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11214891361/job/31170917456"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHPyk8lg",
+                "id": "CR_kwDOFcwZ1c8AAAAHQe520w",
                 "name": "Check all files imported",
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11196044434/job/31124438166"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11214891624/job/31170918099"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHPykCwg",
+                "id": "CR_kwDOFcwZ1c8AAAAHQe5yOA",
+                "name": "Build",
+                "conclusion": null,
+                "status": "IN_PROGRESS",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11214891361/job/31170916920"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQe505w",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11196037093/job/31124423362"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11214891367/job/31170917607"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHPykC3A",
-                "name": "Build",
-                "conclusion": "SUCCESS",
-                "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11196037090/job/31124423388"
-              },
-              {
-                "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHPykDeA",
+                "id": "CR_kwDOFcwZ1c8AAAAHQe52tA",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11196037093/job/31124423544"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11214891367/job/31170918068"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHPzWV1A",
-                "name": "Post-CI job",
-                "conclusion": "SUCCESS",
-                "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11196037090/job/31125247444"
-              },
-              {
-                "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHPylAaw",
+                "id": "CR_kwDOFcwZ1c8AAAAHQe6Ltw",
                 "name": "New Contributor Check",
                 "conclusion": "NEUTRAL",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/runs/31124439147"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/runs/31170923447"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHPylUeQ",
+                "id": "CR_kwDOFcwZ1c8AAAAHQe7MpA",
                 "name": "Summary",
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
@@ -1789,7 +1895,7 @@
           }
         },
         "title": "feat(Analysis\\SpecialFunctions\\OrdinaryHypergeometric) and (RingTheory\\Polynomial\\Pochhammer): add the ordinaryHyperGeometricSeries and related theorems",
-        "updatedAt": "2024-10-06T15:10:36Z",
+        "updatedAt": "2024-10-07T11:52:14Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17455",
         "timelineItems": {
           "nodes": [
@@ -1854,7 +1960,7 @@
               "__typename": "IssueComment",
               "id": "IC_kwDOFcwZ1c6Ow4fE",
               "createdAt": "2024-10-05T20:19:56Z",
-              "body": "### PR summary [a788736b4c](https://github.com/leanprover-community/mathlib4/pull/17455/commits/a788736b4c9544f7a6f9153da7bdc44639edd436)\n\n<details><summary>\n\n#### Import changes for modified files\n\n</summary>\n\nDependency changes\n\n| File | Base Count | Head Count | Change |\n| --- | --- | --- | --- |\n| Mathlib.RingTheory.Polynomial.Pochhammer | 946 | 951 | +5 (+0.53%) |\n\n\n<details><summary>Import changes for all files</summary>\n\n|Files|Import difference|\n|-|-|\n|<details><summary>7 files</summary> `Mathlib.Data.Nat.Choose.Cast` `Mathlib.RingTheory.Polynomial.Pochhammer` `Mathlib.Algebra.Polynomial.HasseDeriv` `Mathlib.Algebra.Polynomial.Taylor` `Mathlib.RingTheory.Polynomial.Bernstein` `Mathlib.RingTheory.Binomial` `Mathlib.Data.Nat.Factorial.Cast`</details>|5|\n| `Mathlib.Analysis.SpecialFunctions.OrdinaryHypergeometric`|1386|\n\n</details>\n\n</details>\n\n---\n\n<details><summary>\n\n#### Declarations diff\n\n</summary>\n\n`+ ascPochhammer_eq_zero_iff`\n`+ ascPochhammer_eq_zero_of_nonpos_int`\n`+ ordinaryHypergeometric`\n`+ ordinaryHypergeometricSeries`\n`+ ordinaryHypergeometricSeries_apply_eq`\n`+ ordinaryHypergeometricSeries_apply_eq'`\n`+ ordinaryHypergeometricSeries_apply_zero`\n`+ ordinaryHypergeometricSeries_eq_zero_iff`\n`+ ordinaryHypergeometricSeries_eq_zero_of_nonpos_int`\n`+ ordinaryHypergeometricSeries_radius_eq_one`\n`+ ordinaryHypergeometricSeries_ratio_tendsto_one_atTop`\n`+ ordinaryHypergeometricSeries_succ_norm_div_norm`\n`+ ordinaryHypergeometricSeries_symm`\n`+ ordinaryHypergeometric_eq_tsum`\n`+ ordinaryHypergeometric_op`\n`+ ordinaryHypergeometric_radius_top_of_nonpos_int₁`\n`+ ordinaryHypergeometric_radius_top_of_nonpos_int₂`\n`+ ordinaryHypergeometric_radius_top_of_nonpos_int₃`\n`+ ordinaryHypergeometric_ratio_tendsto_nhds_atTop`\n`+ ordinaryHypergeometric_sum_eq`\n`+ ordinaryHypergeometric_unop`\n`+ ordinaryHypergeometric_zero`\n<details>\n  <summary>You can run this locally as follows</summary>\n\n\n```bash\n## summary with just the declaration names:\n./scripts/declarations_diff.sh <optional_commit>\n\n## more verbose report:\n./scripts/declarations_diff.sh long <optional_commit>\n```\n</details>\n\nThe doc-module for `script/declarations_diff.sh` contains some details about this script.\n\n</details>",
+              "body": "### PR summary [f38dec8be6](https://github.com/leanprover-community/mathlib4/pull/17455/commits/f38dec8be6266f0186c94c0cb141c488eb9b41e1)\n\n<details><summary>\n\n#### Import changes for modified files\n\n</summary>\n\nDependency changes\n\n| File | Base Count | Head Count | Change |\n| --- | --- | --- | --- |\n| Mathlib.RingTheory.Polynomial.Pochhammer | 946 | 951 | +5 (+0.53%) |\n\n\n<details><summary>Import changes for all files</summary>\n\n|Files|Import difference|\n|-|-|\n|<details><summary>7 files</summary> `Mathlib.Data.Nat.Choose.Cast` `Mathlib.RingTheory.Polynomial.Pochhammer` `Mathlib.Algebra.Polynomial.HasseDeriv` `Mathlib.Algebra.Polynomial.Taylor` `Mathlib.RingTheory.Polynomial.Bernstein` `Mathlib.RingTheory.Binomial` `Mathlib.Data.Nat.Factorial.Cast`</details>|5|\n| `Mathlib.Analysis.SpecialFunctions.OrdinaryHypergeometric`|1386|\n\n</details>\n\n</details>\n\n---\n\n<details><summary>\n\n#### Declarations diff\n\n</summary>\n\n`+ ascPochhammer_eq_zero_iff`\n`+ ascPochhammer_eq_zero_of_nonpos_int`\n`+ ordinaryHypergeometric`\n`+ ordinaryHypergeometricSeries`\n`+ ordinaryHypergeometricSeries_apply_eq`\n`+ ordinaryHypergeometricSeries_apply_eq'`\n`+ ordinaryHypergeometricSeries_apply_zero`\n`+ ordinaryHypergeometricSeries_eq_zero_iff`\n`+ ordinaryHypergeometricSeries_eq_zero_of_nonpos_int`\n`+ ordinaryHypergeometricSeries_radius_eq_one`\n`+ ordinaryHypergeometricSeries_ratio_tendsto_one_atTop`\n`+ ordinaryHypergeometricSeries_succ_norm_div_norm`\n`+ ordinaryHypergeometricSeries_symm`\n`+ ordinaryHypergeometric_eq_tsum`\n`+ ordinaryHypergeometric_op`\n`+ ordinaryHypergeometric_radius_top_of_nonpos_int₁`\n`+ ordinaryHypergeometric_radius_top_of_nonpos_int₂`\n`+ ordinaryHypergeometric_radius_top_of_nonpos_int₃`\n`+ ordinaryHypergeometric_ratio_tendsto_nhds_atTop`\n`+ ordinaryHypergeometric_sum_eq`\n`+ ordinaryHypergeometric_unop`\n`+ ordinaryHypergeometric_zero`\n<details>\n  <summary>You can run this locally as follows</summary>\n\n\n```bash\n## summary with just the declaration names:\n./scripts/declarations_diff.sh <optional_commit>\n\n## more verbose report:\n./scripts/declarations_diff.sh long <optional_commit>\n```\n</details>\n\nThe doc-module for `script/declarations_diff.sh` contains some details about this script.\n\n</details>",
               "author": {
                 "login": "github-actions"
               }
@@ -1903,6 +2009,9 @@
                 "id": "MDQ6VXNlcjc3MzQzNjQ=",
                 "login": "ocfnash"
               }
+            },
+            {
+              "__typename": "PullRequestCommit"
             }
           ]
         }
