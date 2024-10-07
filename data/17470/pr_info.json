@@ -24,6 +24,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6O4c0i",
+              "body": "I think it's already good enough for automatic use (indeed, it solves the original poster issue), as it's nicely compositional. If it turns out it doesn't solve all problems we can revisit later, but my guess is this formulation is the right one.",
+              "createdAt": "2024-10-07T14:55:02Z",
+              "author": {
+                "login": "sgouezel"
+              }
             }
           ]
         },
@@ -261,7 +269,7 @@
         "milestone": null,
         "number": 17470,
         "potentialMergeCommit": {
-          "oid": "1e9662538ef7da54a6d6f661ebb8117d191a355b"
+          "oid": "30b612288794f1c7f0bc11d16f6e382f7f4831d5"
         },
         "projectCards": {
           "nodes": []
@@ -511,7 +519,7 @@
           }
         },
         "title": "chore: add funprop attributes for differentiability of usual functions",
-        "updatedAt": "2024-10-06T20:45:56Z",
+        "updatedAt": "2024-10-07T14:55:03Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17470",
         "timelineItems": {
           "nodes": [
@@ -543,6 +551,15 @@
               "body": "Thanks! The changes to `Trigonometric/Deriv` look good to me.\r\n\r\nThe other changes *look* good, but I need some more time to double-think if they are suitable in light of [this comment about uncurried vs compositional form](https://github.com/leanprover-community/mathlib4/pull/17304#issuecomment-2388527997). Have you thought about that detail already? If you have, feel free to maintainer merge on my behalf.",
               "author": {
                 "login": "grunweg"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6O4c0i",
+              "createdAt": "2024-10-07T14:55:02Z",
+              "body": "I think it's already good enough for automatic use (indeed, it solves the original poster issue), as it's nicely compositional. If it turns out it doesn't solve all problems we can revisit later, but my guess is this formulation is the right one.",
+              "author": {
+                "login": "sgouezel"
               }
             }
           ]

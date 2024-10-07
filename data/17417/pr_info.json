@@ -844,6 +844,10 @@
         "labels": {
           "nodes": [
             {
+              "id": "LA_kwDOFcwZ1c7P265b",
+              "name": "awaiting-author"
+            },
+            {
               "id": "LA_kwDOFcwZ1c8AAAABViJbOw",
               "name": "t-topology"
             }
@@ -861,7 +865,7 @@
         "milestone": null,
         "number": 17417,
         "potentialMergeCommit": {
-          "oid": "911175d8bf703a77ebf00baec4704a1cea9c4462"
+          "oid": "92b93a5f9dc8eb32ea002079a0ff135143b64fed"
         },
         "projectCards": {
           "nodes": []
@@ -938,6 +942,10 @@
             {
               "id": "MDQ6VXNlcjQ4NjU2Nzkz",
               "login": "ADedecker"
+            },
+            {
+              "id": "MDQ6VXNlcjU2MzY3MDU=",
+              "login": "jcommelin"
             }
           ]
         },
@@ -1061,7 +1069,7 @@
           }
         },
         "title": "feat(Counterexamples/DiscreteTopologyNonDiscreteUniformity): add a counterexample about discrete uniformity and Cauchy filters",
-        "updatedAt": "2024-10-07T14:04:11Z",
+        "updatedAt": "2024-10-07T15:04:28Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17417",
         "timelineItems": {
           "nodes": [
@@ -1126,6 +1134,15 @@
               "body": "Do you care about the particular form of the counterexample ? If not, I think you can do much less work (and get a metric structure as a bonus) by endowing `ℕ` with the distance induced by the injection `fun n : ℕ ↦ (2 : ℝ) ^ (-n : ℤ)`. Then the identity is obviously Cauchy, and the topology is discrete because the singleton `{n}` is the preimage of the open set `Ioo ((2 : ℝ) ^ (-n - 1 : ℤ)) ((2 : ℝ) ^ (-n+1 : ℤ))`.",
               "author": {
                 "login": "ADedecker"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6Y-hzjzwAAAANiy4h2",
+              "createdAt": "2024-10-07T15:04:28Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c7P265b",
+                "name": "awaiting-author"
               }
             }
           ]
