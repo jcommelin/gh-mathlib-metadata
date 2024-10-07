@@ -1418,8 +1418,8 @@
                         "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHQp1BGQ",
                         "name": "Build",
-                        "conclusion": null,
-                        "status": "QUEUED",
+                        "conclusion": "FAILURE",
+                        "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11218489186/job/31182373145"
                       },
                       {
@@ -1437,6 +1437,14 @@
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11218489184/job/31182374268"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQtZpQw",
+                        "name": "Post-CI job",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11218489186/job/31186118979"
                       },
                       {
                         "__typename": "CheckRun",
@@ -1854,6 +1862,10 @@
         "labels": {
           "nodes": [
             {
+              "id": "LA_kwDOFcwZ1c8AAAABIFoUmw",
+              "name": "merge-conflict"
+            },
+            {
               "id": "LA_kwDOFcwZ1c8AAAABViJjTQ",
               "name": "t-algebra"
             },
@@ -1872,15 +1884,13 @@
         },
         "maintainerCanModify": false,
         "mergeCommit": null,
-        "mergeStateStatus": "BLOCKED",
-        "mergeable": "MERGEABLE",
+        "mergeStateStatus": "DIRTY",
+        "mergeable": "CONFLICTING",
         "mergedAt": null,
         "mergedBy": null,
         "milestone": null,
         "number": 17447,
-        "potentialMergeCommit": {
-          "oid": "cf8aeaa9a980ef9a58c9d8d82ff937072d814914"
-        },
+        "potentialMergeCommit": null,
         "projectCards": {
           "nodes": []
         },
@@ -1952,6 +1962,10 @@
             {
               "id": "MDQ6VXNlcjE0MDkwNTkz",
               "login": "YaelDillies"
+            },
+            {
+              "id": "U_kgDOBcsTTQ",
+              "login": "leanprover-community-bot-assistant"
             }
           ]
         },
@@ -2027,8 +2041,8 @@
                 "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHQp1BGQ",
                 "name": "Build",
-                "conclusion": null,
-                "status": "QUEUED",
+                "conclusion": "FAILURE",
+                "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11218489186/job/31182373145"
               },
               {
@@ -2046,6 +2060,14 @@
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11218489184/job/31182374268"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQtZpQw",
+                "name": "Post-CI job",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11218489186/job/31186118979"
               },
               {
                 "__typename": "CheckRun",
@@ -2067,7 +2089,7 @@
           }
         },
         "title": "chore: generalise yet more lemmas from `LinearOrderedField` to `GroupWithZero`",
-        "updatedAt": "2024-10-07T15:09:53Z",
+        "updatedAt": "2024-10-07T19:36:37Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17447",
         "timelineItems": {
           "nodes": [
@@ -2139,6 +2161,15 @@
             },
             {
               "__typename": "PullRequestCommit"
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6ZE0trzwAAAANjAJmP",
+              "createdAt": "2024-10-07T19:36:37Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABIFoUmw",
+                "name": "merge-conflict"
+              }
             }
           ]
         }
