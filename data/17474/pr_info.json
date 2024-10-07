@@ -40,6 +40,14 @@
               "author": {
                 "login": "eric-wieser"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6O3ZUf",
+              "body": "I personally prefer removing the use of `*MapClass` in defs because they cause annoying defeq check issues e.g. the problem Eric mentioned above, resulting in `simp` or `rw` not firing correctly.",
+              "createdAt": "2024-10-07T13:08:57Z",
+              "author": {
+                "login": "erdOne"
+              }
             }
           ]
         },
@@ -859,7 +867,7 @@
         "milestone": null,
         "number": 17474,
         "potentialMergeCommit": {
-          "oid": "c2c47599aa2392dc57f66a784a0e90ed2571f37c"
+          "oid": "5ef405aa81de3fc74dff44ed18495f62d2f77850"
         },
         "projectCards": {
           "nodes": []
@@ -970,6 +978,10 @@
             {
               "id": "MDQ6VXNlcjQyNTI2MA==",
               "login": "eric-wieser"
+            },
+            {
+              "id": "MDQ6VXNlcjM2NDE0Mjcw",
+              "login": "erdOne"
             }
           ]
         },
@@ -1125,7 +1137,7 @@
           }
         },
         "title": "chore: remove confounding coercions from `Submodule.(co)map`",
-        "updatedAt": "2024-10-07T08:31:14Z",
+        "updatedAt": "2024-10-07T13:08:58Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17474",
         "timelineItems": {
           "nodes": [
@@ -1206,6 +1218,15 @@
               "body": "That's a test I added recently, that checks that tactics stop quickly when you tell them to. I don't see how this PR could have affected it, so rerunning should suffice.",
               "author": {
                 "login": "eric-wieser"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6O3ZUf",
+              "createdAt": "2024-10-07T13:08:57Z",
+              "body": "I personally prefer removing the use of `*MapClass` in defs because they cause annoying defeq check issues e.g. the problem Eric mentioned above, resulting in `simp` or `rw` not firing correctly.",
+              "author": {
+                "login": "erdOne"
               }
             }
           ]
