@@ -373,13 +373,15 @@
         },
         "maintainerCanModify": false,
         "mergeCommit": null,
-        "mergeStateStatus": "UNKNOWN",
-        "mergeable": "UNKNOWN",
+        "mergeStateStatus": "BLOCKED",
+        "mergeable": "MERGEABLE",
         "mergedAt": null,
         "mergedBy": null,
         "milestone": null,
         "number": 17516,
-        "potentialMergeCommit": null,
+        "potentialMergeCommit": {
+          "oid": "b497602dbffacfc772a8ebf5f9b545ec51feaad6"
+        },
         "projectCards": {
           "nodes": []
         },
@@ -435,7 +437,14 @@
         ],
         "reviewDecision": null,
         "reviewRequests": {
-          "nodes": []
+          "nodes": [
+            {
+              "requestedReviewer": {
+                "id": "MDQ6VXNlcjE0MDkwNTkz",
+                "login": "YaelDillies"
+              }
+            }
+          ]
         },
         "reviews": {
           "nodes": []
@@ -574,7 +583,7 @@
           }
         },
         "title": "chore(Order/InitialSeg): `PrincipalSeg.down` → `PrincipalSeg.mem_range_iff_rel`",
-        "updatedAt": "2024-10-07T18:52:18Z",
+        "updatedAt": "2024-10-07T21:28:59Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17516",
         "timelineItems": {
           "nodes": [
@@ -624,6 +633,15 @@
               "label": {
                 "id": "LA_kwDOFcwZ1c8AAAABKteTVQ",
                 "name": "awaiting-CI"
+              }
+            },
+            {
+              "__typename": "ReviewRequestedEvent",
+              "id": "RRE_lADOFcwZ1c6ZQFbHzwAAAANjEoNK",
+              "createdAt": "2024-10-07T21:28:59Z",
+              "requestedReviewer": {
+                "id": "MDQ6VXNlcjE0MDkwNTkz",
+                "login": "YaelDillies"
               }
             }
           ]

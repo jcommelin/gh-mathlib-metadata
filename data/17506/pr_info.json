@@ -40,6 +40,14 @@
               "author": {
                 "login": "YaelDillies"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6O7aI4",
+              "body": "Build failed (retrying...):\n  * [Build](https://github.com/leanprover-community/mathlib4/actions/runs/11223665936/job/31198767728)",
+              "createdAt": "2024-10-07T21:32:11Z",
+              "author": {
+                "login": "mathlib-bors"
+              }
             }
           ]
         },
@@ -682,19 +690,19 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHQ5QsCQ",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11223590334/job/31198555145"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHQ5QqCg",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11223590333/job/31198554634"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQ5QsCQ",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11223590334/job/31198555145"
                       },
                       {
                         "__typename": "CheckRun",
@@ -705,12 +713,20 @@
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11223590333/job/31198555650"
                       },
                       {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQ7G9pw",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11223590334/job/31200492967"
+                      },
+                      {
                         "__typename": "StatusContext",
-                        "id": "SC_kwDOFcwZ1c8AAAAHaRRRPQ",
+                        "id": "SC_kwDOFcwZ1c8AAAAHaSPfog",
                         "context": "bors",
-                        "state": "PENDING",
+                        "state": "FAILURE",
                         "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6271",
-                        "description": "Running"
+                        "description": "Build failed"
                       },
                       {
                         "__typename": "CheckRun",
@@ -1070,19 +1086,19 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHQ5QsCQ",
-                "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11223590334/job/31198555145"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHQ5QqCg",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11223590333/job/31198554634"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQ5QsCQ",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11223590334/job/31198555145"
               },
               {
                 "__typename": "CheckRun",
@@ -1093,12 +1109,20 @@
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11223590333/job/31198555650"
               },
               {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQ7G9pw",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11223590334/job/31200492967"
+              },
+              {
                 "__typename": "StatusContext",
-                "id": "SC_kwDOFcwZ1c8AAAAHaRRRPQ",
+                "id": "SC_kwDOFcwZ1c8AAAAHaSPfog",
                 "context": "bors",
-                "state": "PENDING",
+                "state": "FAILURE",
                 "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6271",
-                "description": "Running"
+                "description": "Build failed"
               },
               {
                 "__typename": "CheckRun",
@@ -1120,7 +1144,7 @@
           }
         },
         "title": "feat: `c * a / (c * b) ≤ a / b`",
-        "updatedAt": "2024-10-07T20:40:33Z",
+        "updatedAt": "2024-10-07T21:32:12Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17506",
         "timelineItems": {
           "nodes": [
@@ -1256,6 +1280,15 @@
             },
             {
               "__typename": "ReferencedEvent"
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6O7aI4",
+              "createdAt": "2024-10-07T21:32:11Z",
+              "body": "Build failed (retrying...):\n  * [Build](https://github.com/leanprover-community/mathlib4/actions/runs/11223665936/job/31198767728)",
+              "author": {
+                "login": "mathlib-bors"
+              }
             }
           ]
         }
