@@ -32,6 +32,14 @@
               "author": {
                 "login": "alreadydone"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6O1BhX",
+              "body": "That's a test I added recently, that checks that tactics stop quickly when you tell them to. I don't see how this PR could have affected it, so rerunning should suffice.",
+              "createdAt": "2024-10-07T08:31:13Z",
+              "author": {
+                "login": "eric-wieser"
+              }
             }
           ]
         },
@@ -851,7 +859,7 @@
         "milestone": null,
         "number": 17474,
         "potentialMergeCommit": {
-          "oid": "191cf916501dd8be310ab17ee8e26cc6d6b90c88"
+          "oid": "c2c47599aa2392dc57f66a784a0e90ed2571f37c"
         },
         "projectCards": {
           "nodes": []
@@ -1117,7 +1125,7 @@
           }
         },
         "title": "chore: remove confounding coercions from `Submodule.(co)map`",
-        "updatedAt": "2024-10-07T05:52:01Z",
+        "updatedAt": "2024-10-07T08:31:14Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17474",
         "timelineItems": {
           "nodes": [
@@ -1189,6 +1197,15 @@
               "body": "> The downside of this approach (or arguably, of the fact these defs assume `LinearMapClass` is that it's now much harder to use `map_comp` to combine `map f (map e S)`.\r\n\r\nI introduced `(co)map_semilinearMap` for this purpose, but it seems to be more convenient to replace `rw` with `erw` to fix those breakages concerning `map_comp` ...\r\n\r\nUnfortunately there's still a test failure that I have no idea about:\r\n![image](https://github.com/user-attachments/assets/0fec8f6a-d018-4490-8a6c-d82e8505789d)",
               "author": {
                 "login": "alreadydone"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6O1BhX",
+              "createdAt": "2024-10-07T08:31:13Z",
+              "body": "That's a test I added recently, that checks that tactics stop quickly when you tell them to. I don't see how this PR could have affected it, so rerunning should suffice.",
+              "author": {
+                "login": "eric-wieser"
               }
             }
           ]
