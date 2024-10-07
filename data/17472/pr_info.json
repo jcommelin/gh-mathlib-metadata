@@ -2,7 +2,7 @@
   "data": {
     "repository": {
       "pullRequest": {
-        "additions": 145,
+        "additions": 146,
         "assignees": {
           "nodes": []
         },
@@ -12,14 +12,14 @@
         "autoMergeRequest": null,
         "baseRefName": "master",
         "body": "Also\r\n\r\n- replace some proofs by `fun_prop`\r\n- use `Prod.map` instead of an inline lambda in some lemmas\r\n- fix `to_additive` name for `ContinuousAddMonoidHom.prod` and `ContinuousAddMonoidHom.prodMap`\r\n  (were `sum` and `sum_map`).\r\n\r\n\r\n\r\n---\r\n<!-- The text above the `---` will become the commit message when your\r\nPR is merged. Please leave a blank newline before the `---`, otherwise\r\nGitHub will format the text above it as a title.\r\n\r\nFor details on the \"pull request lifecycle\" in mathlib, please see:\r\nhttps://leanprover-community.github.io/contribute/index.html\r\n\r\nIn particular, note that most reviewers will only notice your PR\r\nif it passes the continuous integration checks.\r\nPlease ask for help on https://leanprover.zulipchat.com if needed.\r\n\r\nTo indicate co-authors, include lines at the bottom of the commit message\r\n(that is, before the `---`) using the following format:\r\n\r\nCo-authored-by: Author Name <author@email.com>\r\n\r\nIf you are moving or deleting declarations, please include these lines at the bottom of the commit message\r\n(that is, before the `---`) using the following format:\r\n\r\nMoves:\r\n- Vector.* -> Mathlib.Vector.*\r\n- ...\r\n\r\nDeletions:\r\n- Nat.bit1_add_bit1\r\n- ...\r\n\r\nAny other comments you want to keep out of the PR commit should go\r\nbelow the `---`, and placed outside this HTML comment, or else they\r\nwill be invisible to reviewers.\r\n\r\nIf this PR depends on other PRs, please list them below this comment,\r\nusing the following format:\r\n- [ ] depends on: #abc [optional extra text]\r\n- [ ] depends on: #xyz [optional extra text]\r\n\r\n-->\r\n\r\n[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)\r\n",
-        "changedFiles": 39,
+        "changedFiles": 40,
         "closed": false,
         "closedAt": null,
         "comments": {
           "nodes": [
             {
               "id": "IC_kwDOFcwZ1c6OyP4m",
-              "body": "### PR summary [af66ae50cd](https://github.com/leanprover-community/mathlib4/pull/17472/commits/af66ae50cd218d0ccc7bf9a2ef6933594eb4b4db)\n\n<details><summary>\n\n#### Import changes for modified files\n\n</summary>\n\nDependency changes\n\n| File | Base Count | Head Count | Change |\n| --- | --- | --- | --- |\n| Mathlib.Topology.Inseparable | 570 | 571 | +1 (+0.18%) |\n| Mathlib.Topology.Separation | 595 | 596 | +1 (+0.17%) |\n| Mathlib.Topology.DenseEmbedding | 596 | 597 | +1 (+0.17%) |\n| Mathlib.Topology.Order.OrderClosed | 596 | 597 | +1 (+0.17%) |\n| Mathlib.Topology.Homeomorph | 651 | 652 | +1 (+0.15%) |\n| Mathlib.Topology.ContinuousMap.Basic | 653 | 654 | +1 (+0.15%) |\n| Mathlib.Topology.CompactOpen | 654 | 655 | +1 (+0.15%) |\n| Mathlib.Topology.Maps.Proper.Basic | 655 | 656 | +1 (+0.15%) |\n| Mathlib.Topology.UniformSpace.AbstractCompletion | 661 | 662 | +1 (+0.15%) |\n| Mathlib.Topology.UniformSpace.Completion | 662 | 663 | +1 (+0.15%) |\n| Mathlib.Topology.UniformSpace.Compact | 666 | 667 | +1 (+0.15%) |\n| Mathlib.Topology.Algebra.MulAction | 684 | 685 | +1 (+0.15%) |\n| Mathlib.Topology.Algebra.ProperConstSMul | 686 | 687 | +1 (+0.15%) |\n| Mathlib.Topology.Algebra.Monoid | 746 | 747 | +1 (+0.13%) |\n| Mathlib.Topology.FiberBundle.Constructions | 774 | 775 | +1 (+0.13%) |\n\n\n<details><summary>Import changes for all files</summary>\n\n|Files|Import difference|\n|-|-|\n|<details><summary>279 files</summary> `Mathlib.Topology.Algebra.Monoid` `Mathlib.Geometry.RingedSpace.PresheafedSpace.Gluing` `Mathlib.CategoryTheory.Sites.Coherent.ExtensiveTopology` `Mathlib.Topology.Order.LawsonTopology` `Mathlib.Topology.Instances.Nat` `Mathlib.CategoryTheory.Sites.Pullback` `Mathlib.Topology.Algebra.Semigroup` `Mathlib.Topology.CompactOpen` `Mathlib.Geometry.RingedSpace.PresheafedSpace.HasColimits` `Mathlib.CategoryTheory.Sites.Coherent.Comparison` `Mathlib.Topology.IndicatorConstPointwise` `Mathlib.Geometry.Manifold.LocalInvariantProperties` `Mathlib.Topology.ContinuousMap.Ordered` `Mathlib.Topology.MetricSpace.Antilipschitz` `Mathlib.Topology.Algebra.Order.Compact` `Mathlib.Topology.DerivedSet` `Mathlib.AlgebraicGeometry.PrimeSpectrum.TensorProduct` `Mathlib.Topology.DiscreteSubset` `Mathlib.Topology.Compactification.OnePoint` `Mathlib.Topology.Instances.PNat` `Mathlib.Topology.DenseEmbedding` `Mathlib.Topology.UniformSpace.Ascoli` `Mathlib.Topology.UniformSpace.Compact` `Mathlib.Topology.MetricSpace.ShrinkingLemma` `Mathlib.Topology.Order.Lattice` `Mathlib.Topology.Sheaves.Sheaf` `Mathlib.Topology.Instances.Int` `Mathlib.Topology.MetricSpace.Pseudo.Real` `Mathlib.Geometry.Manifold.ChartedSpace` `Mathlib.Topology.FiberBundle.Constructions` `Mathlib.Combinatorics.Hall.Basic` `Mathlib.Topology.Sets.Closeds` `Mathlib.Topology.Order.ScottTopology` `Mathlib.CategoryTheory.Sites.SheafCohomology.Basic` `Mathlib.Topology.ExtremallyDisconnected` `Mathlib.Topology.Category.TopCat.EpiMono` `Mathlib.Topology.Sheaves.SheafCondition.Sites` `Mathlib.Analysis.Normed.Group.CocompactMap` `Mathlib.CategoryTheory.Sites.Subsheaf` `Mathlib.Topology.MetricSpace.Ultra.TotallyDisconnected` `Mathlib.Topology.MetricSpace.Sequences` `Mathlib.Topology.ShrinkingLemma` `Mathlib.Topology.CountableSeparatingOn` `Mathlib.Topology.Order.ExtendFrom` `Mathlib.Topology.Sheaves.MayerVietoris` `Mathlib.Topology.Sheaves.SheafCondition.UniqueGluing` `Mathlib.Topology.Category.CompHausLike.EffectiveEpi` `Mathlib.CategoryTheory.Sites.EpiMono` `Mathlib.Topology.Filter` `Mathlib.Topology.Order.PartialSups` `Mathlib.Analysis.BoxIntegral.Box.Basic` `Mathlib.Algebra.Category.ModuleCat.Sheaf.Colimits` `Mathlib.Topology.UniformSpace.CompactConvergence` `Mathlib.Topology.Sheaves.Forget` `Mathlib.Analysis.Oscillation` `Mathlib.LinearAlgebra.Matrix.Gershgorin` `Mathlib.Algebra.Category.ModuleCat.Sheaf` `Mathlib.Topology.LocalAtTarget` `Mathlib.CategoryTheory.Sites.Coherent.ReflectsPreregular` `Mathlib.Algebra.Category.ModuleCat.Sheaf.Free` `Mathlib.Topology.LocallyConstant.Basic` `Mathlib.Topology.Order.ProjIcc` `Mathlib.Topology.MetricSpace.Cauchy` `Mathlib.Topology.Order.Hom.Esakia` `Mathlib.Topology.Baire.LocallyCompactRegular` `Mathlib.Topology.Instances.Discrete` `Mathlib.Topology.Spectral.Hom` `Mathlib.CategoryTheory.Sites.InducedTopology` `Mathlib.Topology.PartialHomeomorph` `Mathlib.Topology.ClopenBox` `Mathlib.CategoryTheory.Sites.LocallySurjective` `Mathlib.Topology.MetricSpace.Pseudo.Basic` `Mathlib.CategoryTheory.Sites.LocallyFullyFaithful` `Mathlib.Topology.Sequences` `Mathlib.Topology.Order.Monotone` `Mathlib.Topology.Sheaves.SheafCondition.OpensLeCover` `Mathlib.Topology.Algebra.WithZeroTopology` `Mathlib.AlgebraicGeometry.PrimeSpectrum.Basic` `Mathlib.Analysis.Normed.Field.Basic` `Mathlib.Topology.Order.LowerUpperTopology` `Mathlib.Topology.UniformSpace.AbstractCompletion` `Mathlib.Topology.Category.TopCat.Basic` `Mathlib.Topology.Maps.Proper.Basic` `Mathlib.CategoryTheory.Sites.ConstantSheaf` `Mathlib.Topology.Sober` `Mathlib.Topology.Separation` `Mathlib.Topology.ExtendFrom` `Mathlib.Topology.UniformSpace.CompleteSeparated` `Mathlib.CategoryTheory.Sites.Coherent.RegularSheaves` `Mathlib.Topology.MetricSpace.ProperSpace` `Mathlib.Topology.Category.TopCat.Limits.Cofiltered` `Mathlib.Algebra.Category.ModuleCat.Sheaf.ChangeOfRings` `Mathlib.Topology.Order.Filter` `Mathlib.Combinatorics.Configuration` `Mathlib.Topology.Algebra.Star` `Mathlib.Topology.Order.Basic` `Mathlib.SetTheory.Ordinal.Topology` `Mathlib.Topology.Instances.ENat` `Mathlib.Topology.Homeomorph` `Mathlib.Topology.ContinuousMap.Basic` `Mathlib.Combinatorics.SimpleGraph.Ends.Defs` `Mathlib.Topology.List` `Mathlib.CategoryTheory.Sites.Coherent.Basic` `Mathlib.CategoryTheory.Sites.LocallyInjective` `Mathlib.Geometry.RingedSpace.OpenImmersion` `Mathlib.Topology.ContinuousMap.CocompactMap` `Mathlib.Algebra.Category.ModuleCat.Sheaf.Limits` `Mathlib.Topology.MetricSpace.Pseudo.Pi` `Mathlib.Topology.MetricSpace.Equicontinuity` `Mathlib.Topology.Gluing` `Mathlib.Topology.Sets.Order` `Mathlib.AlgebraicGeometry.PrimeSpectrum.Noetherian` `Mathlib.Topology.MetricSpace.Ultra.Basic` `Mathlib.Topology.MetricSpace.Isometry` `Mathlib.Topology.Hom.Open` `Mathlib.Topology.Algebra.MulAction` `Mathlib.AlgebraicGeometry.PrimeSpectrum.Module` `Mathlib.Topology.Category.TopCat.OpenNhds` `Mathlib.Combinatorics.SimpleGraph.Finsubgraph` `Mathlib.Topology.MetricSpace.Infsep` `Mathlib.Topology.Order.NhdsSet` `Mathlib.Topology.Category.CompHausLike.Basic` `Mathlib.Geometry.RingedSpace.Basic` `Mathlib.Topology.Sheaves.SheafCondition.EqualizerProducts` `Mathlib.Topology.Order.LeftRightLim` `Mathlib.CategoryTheory.Sites.LeftExact` `Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Topology` `Mathlib.Topology.FiberPartition` `Mathlib.Topology.Compactness.PseudometrizableLindelof` `Mathlib.Topology.Order.MonotoneConvergence` `Mathlib.Analysis.NormedSpace.MStructure` `Mathlib.Topology.ContinuousMap.Sigma` `Mathlib.Analysis.BoxIntegral.Partition.Tagged` `Mathlib.Topology.Algebra.ProperConstSMul` `Mathlib.Topology.Algebra.ConstMulAction` `Mathlib.Topology.NoetherianSpace` `Mathlib.CategoryTheory.Sites.Coherent.LocallySurjective` `Mathlib.Topology.MetricSpace.Pseudo.Lemmas` `Mathlib.Topology.EMetricSpace.Basic` `Mathlib.Algebra.Category.ModuleCat.Sheaf.Generators` `Mathlib.Analysis.Normed.Group.Bounded` `Mathlib.Algebra.Category.ModuleCat.Sheaf.Abelian` `Mathlib.Topology.Category.TopCat.Opens` `Mathlib.CategoryTheory.CofilteredSystem` `Mathlib.Topology.Algebra.Algebra.Rat` `Mathlib.Topology.Covering` `Mathlib.Topology.UniformSpace.UniformEmbedding` `Mathlib.CategoryTheory.Sites.Spaces` `Mathlib.Algebra.ContinuedFractions.Computation.ApproximationCorollaries` `Mathlib.Topology.UniformSpace.Completion` `Mathlib.Topology.Category.TopCat.Limits.Konig` `Mathlib.CategoryTheory.Sites.Coherent.Equivalence` `Mathlib.Topology.Metrizable.Basic` `Mathlib.CategoryTheory.Galois.Full` `Mathlib.Topology.FiberBundle.Trivialization` `Mathlib.Topology.Sheaves.Limits` `Mathlib.Geometry.RingedSpace.SheafedSpace` `Mathlib.Analysis.Normed.Group.Int` `Mathlib.CategoryTheory.Galois.Prorepresentability` `Mathlib.Topology.StoneCech` `Mathlib.Topology.FiberBundle.Basic` `Mathlib.Geometry.RingedSpace.LocallyRingedSpace` `Mathlib.Topology.Specialization` `Mathlib.Topology.Sheaves.LocallySurjective` `Mathlib.Topology.Order.UpperLowerSetTopology` `Mathlib.CategoryTheory.Sites.Equivalence` `Mathlib.Topology.UniformSpace.UniformConvergence` `Mathlib.CategoryTheory.Sites.Coherent.ExtensiveSheaves` `Mathlib.Topology.Algebra.Constructions` `Mathlib.Topology.UniformSpace.Cauchy` `Mathlib.Topology.MetricSpace.CauSeqFilter` `Mathlib.Topology.EMetricSpace.Diam` `Mathlib.Topology.Order.DenselyOrdered` `Mathlib.Topology.UniformSpace.Separation` `Mathlib.CategoryTheory.Sites.Coherent.CoherentTopology` `Mathlib.Topology.Category.TopCat.Adjunctions` `Mathlib.Topology.SeparatedMap` `Mathlib.Dynamics.Minimal` `Mathlib.Geometry.RingedSpace.Stalks` `Mathlib.Topology.Order.LeftRightNhds` `Mathlib.Combinatorics.Hindman` `Mathlib.AlgebraicGeometry.PrimeSpectrum.Maximal` `Mathlib.Topology.MetricSpace.Basic` `Mathlib.Topology.Maps.Proper.UniversallyClosed` `Mathlib.CategoryTheory.EffectiveEpi.Extensive` `Mathlib.Geometry.RingedSpace.LocallyRingedSpace.ResidueField` `Mathlib.Topology.EMetricSpace.Lipschitz` `Mathlib.Topology.Category.CompHausLike.SigmaComparison` `Mathlib.Topology.Order.OrderClosed` `Mathlib.Topology.Category.TopCat.Limits.Products` `Mathlib.Topology.Sets.Compacts` `Mathlib.Topology.MetricSpace.Gluing` `Mathlib.CategoryTheory.Sites.Coherent.CoherentSheaves` `Mathlib.Analysis.BoxIntegral.Partition.Basic` `Mathlib.RepresentationTheory.Action.Continuous` `Mathlib.Topology.EMetricSpace.Paracompact` `Mathlib.Analysis.CStarAlgebra.Module.Synonym` `Mathlib.Topology.FiberBundle.IsHomeomorphicTrivialBundle` `Mathlib.Topology.Sheaves.Functors` `Mathlib.CategoryTheory.Sites.DenseSubsite` `Mathlib.Topology.Sheaves.Operations` `Mathlib.Topology.Category.Sequential` `Mathlib.Algebra.Category.ModuleCat.Presheaf.Sheafification` `Mathlib.Topology.DiscreteQuotient` `Mathlib.Topology.UniformSpace.Pi` `Mathlib.Topology.MetricSpace.ProperSpace.Lemmas` `Mathlib.Topology.Sets.Opens` `Mathlib.CategoryTheory.Sites.PreservesLocallyBijective` `Mathlib.CategoryTheory.Sites.LocallyBijective` `Mathlib.Topology.Category.CompHausLike.Limits` `Mathlib.Topology.EMetricSpace.Pi` `Mathlib.Topology.Order.Category.AlexDisc` `Mathlib.Topology.Algebra.InfiniteSum.Defs` `Mathlib.Topology.LocallyConstant.Algebra` `Mathlib.Topology.Sheaves.Skyscraper` `Mathlib.InformationTheory.Hamming` `Mathlib.NumberTheory.DirichletCharacter.Bounds` `Mathlib.Dynamics.FixedPoints.Topology` `Mathlib.Topology.Sheaves.SheafCondition.PairwiseIntersections` `Mathlib.CategoryTheory.Galois.Action` `Mathlib.Topology.Order.T5` `Mathlib.Topology.KrullDimension` `Mathlib.Topology.Order.Priestley` `Mathlib.CategoryTheory.Extensive` `Mathlib.Topology.Perfect` `Mathlib.Analysis.Normed.Group.Submodule` `Mathlib.Topology.Sheaves.PUnit` `Mathlib.Topology.Compactness.Paracompact` `Mathlib.Topology.Sheaves.Presheaf` `Mathlib.CategoryTheory.Adhesive` `Mathlib.Topology.Order.IntermediateValue` `Mathlib.Topology.Category.TopCat.Limits.Basic` `Mathlib.Topology.IsLocalHomeomorph` `Mathlib.Analysis.NormedSpace.IndicatorFunction` `Mathlib.Topology.Algebra.Order.Rolle` `Mathlib.Analysis.Normed.Group.Constructions` `Mathlib.Topology.Category.TopCat.Yoneda` `Mathlib.Topology.UniformSpace.UniformConvergenceTopology` `Mathlib.AlgebraicGeometry.PrimeSpectrum.IsOpenComapC` `Mathlib.Topology.Algebra.GroupWithZero` `Mathlib.Topology.Connected.Separation` `Mathlib.Topology.Category.UniformSpace` `Mathlib.Topology.Order.ExtrClosure` `Mathlib.CategoryTheory.Sites.Coherent.SheafComparison` `Mathlib.Topology.Category.FinTopCat` `Mathlib.Geometry.RingedSpace.PresheafedSpace` `Mathlib.Topology.Metrizable.Uniformity` `Mathlib.Topology.ContinuousMap.T0Sierpinski` `Mathlib.Topology.Metrizable.ContinuousMap` `Mathlib.Topology.UniformSpace.Equicontinuity` `Mathlib.Topology.Category.TopCat.EffectiveEpi` `Mathlib.Topology.Order.Hom.Basic` `Mathlib.Topology.Order.IsLUB` `Mathlib.Analysis.Convex.Radon` `Mathlib.Algebra.Category.ModuleCat.Sheaf.PushforwardContinuous` `Mathlib.Topology.Algebra.Constructions.DomMulAct` `Mathlib.Analysis.BoxIntegral.Partition.Split` `Mathlib.Topology.Compactness.Exterior` `Mathlib.Algebra.Category.ModuleCat.Presheaf.Sheafify` `Mathlib.Topology.Order.MonotoneContinuity` `Mathlib.Algebra.Category.ModuleCat.Sheaf.Quasicoherent` `Mathlib.Topology.Algebra.InfiniteSum.Basic` `Mathlib.Topology.AlexandrovDiscrete` `Mathlib.Topology.UniformSpace.Equiv` `Mathlib.Geometry.RingedSpace.LocallyRingedSpace.HasColimits` `Mathlib.CategoryTheory.Sites.Coherent.ReflectsPrecoherent` `Mathlib.Topology.Sheaves.Stalks` `Mathlib.Analysis.Normed.Group.Basic` `Mathlib.Topology.Exterior` `Mathlib.Combinatorics.SimpleGraph.Ends.Properties` `Mathlib.Topology.Instances.Sign` `Mathlib.Topology.MetricSpace.Pseudo.Constructions` `Mathlib.CategoryTheory.Sites.Coherent.RegularTopology` `Mathlib.Topology.Category.TopCat.Limits.Pullbacks` `Mathlib.Topology.Inseparable` `Mathlib.Topology.Support` `Mathlib.Topology.MetricSpace.Bounded` `Mathlib.Topology.QuasiSeparated` `Mathlib.Topology.Algebra.Order.Archimedean`</details>|1|\n\n</details>\n\n</details>\n\n---\n\n<details><summary>\n\n#### Declarations diff\n\n</summary>\n\n`+ Continuous.prodMap`\n`+ ContinuousAt.prodMap`\n`+ ContinuousAt.prodMap'`\n`+ DenseRange.prodMap`\n`+ Embedding.prodMap`\n`+ Inducing.prodMap`\n`+ IsOpenMap.prodMap`\n`+ IsProperMap.prodMap`\n`+ OpenEmbedding.prodMap`\n`+ UniformContinuous.prodMap`\n`+ _root_.ContinuousAddMonoidHom.sum_map`\n`+++ prodMap`\n`++-- prod`\n<details>\n  <summary>You can run this locally as follows</summary>\n\n\n```bash\n## summary with just the declaration names:\n./scripts/declarations_diff.sh <optional_commit>\n\n## more verbose report:\n./scripts/declarations_diff.sh long <optional_commit>\n```\n</details>\n\nThe doc-module for `script/declarations_diff.sh` contains some details about this script.\n\n</details>",
+              "body": "### PR summary [5cd618ea92](https://github.com/leanprover-community/mathlib4/pull/17472/commits/5cd618ea9227f220becc7b1a6e09c2c0113eca34)\n\n<details><summary>\n\n#### Import changes for modified files\n\n</summary>\n\nDependency changes\n\n| File | Base Count | Head Count | Change |\n| --- | --- | --- | --- |\n| Mathlib.Topology.Inseparable | 570 | 571 | +1 (+0.18%) |\n| Mathlib.Topology.Separation | 595 | 596 | +1 (+0.17%) |\n| Mathlib.Topology.DenseEmbedding | 596 | 597 | +1 (+0.17%) |\n| Mathlib.Topology.Order.OrderClosed | 596 | 597 | +1 (+0.17%) |\n| Mathlib.Topology.Homeomorph | 651 | 652 | +1 (+0.15%) |\n| Mathlib.Topology.ContinuousMap.Basic | 653 | 654 | +1 (+0.15%) |\n| Mathlib.Topology.CompactOpen | 654 | 655 | +1 (+0.15%) |\n| Mathlib.Topology.Maps.Proper.Basic | 655 | 656 | +1 (+0.15%) |\n| Mathlib.Topology.UniformSpace.AbstractCompletion | 661 | 662 | +1 (+0.15%) |\n| Mathlib.Topology.UniformSpace.Completion | 662 | 663 | +1 (+0.15%) |\n| Mathlib.Topology.UniformSpace.Compact | 666 | 667 | +1 (+0.15%) |\n| Mathlib.Topology.Algebra.MulAction | 684 | 685 | +1 (+0.15%) |\n| Mathlib.Topology.Algebra.ProperConstSMul | 686 | 687 | +1 (+0.15%) |\n| Mathlib.Topology.Algebra.Monoid | 746 | 747 | +1 (+0.13%) |\n| Mathlib.Topology.FiberBundle.Constructions | 774 | 775 | +1 (+0.13%) |\n\n\n<details><summary>Import changes for all files</summary>\n\n|Files|Import difference|\n|-|-|\n|<details><summary>279 files</summary> `Mathlib.Topology.Algebra.Monoid` `Mathlib.Geometry.RingedSpace.PresheafedSpace.Gluing` `Mathlib.CategoryTheory.Sites.Coherent.ExtensiveTopology` `Mathlib.Topology.Order.LawsonTopology` `Mathlib.Topology.Instances.Nat` `Mathlib.CategoryTheory.Sites.Pullback` `Mathlib.Topology.Algebra.Semigroup` `Mathlib.Topology.CompactOpen` `Mathlib.Geometry.RingedSpace.PresheafedSpace.HasColimits` `Mathlib.CategoryTheory.Sites.Coherent.Comparison` `Mathlib.Topology.IndicatorConstPointwise` `Mathlib.Geometry.Manifold.LocalInvariantProperties` `Mathlib.Topology.ContinuousMap.Ordered` `Mathlib.Topology.MetricSpace.Antilipschitz` `Mathlib.Topology.Algebra.Order.Compact` `Mathlib.Topology.DerivedSet` `Mathlib.AlgebraicGeometry.PrimeSpectrum.TensorProduct` `Mathlib.Topology.DiscreteSubset` `Mathlib.Topology.Compactification.OnePoint` `Mathlib.Topology.Instances.PNat` `Mathlib.Topology.DenseEmbedding` `Mathlib.Topology.UniformSpace.Ascoli` `Mathlib.Topology.UniformSpace.Compact` `Mathlib.Topology.MetricSpace.ShrinkingLemma` `Mathlib.Topology.Order.Lattice` `Mathlib.Topology.Sheaves.Sheaf` `Mathlib.Topology.Instances.Int` `Mathlib.Topology.MetricSpace.Pseudo.Real` `Mathlib.Geometry.Manifold.ChartedSpace` `Mathlib.Topology.FiberBundle.Constructions` `Mathlib.Combinatorics.Hall.Basic` `Mathlib.Topology.Sets.Closeds` `Mathlib.Topology.Order.ScottTopology` `Mathlib.CategoryTheory.Sites.SheafCohomology.Basic` `Mathlib.Topology.ExtremallyDisconnected` `Mathlib.Topology.Category.TopCat.EpiMono` `Mathlib.Topology.Sheaves.SheafCondition.Sites` `Mathlib.Analysis.Normed.Group.CocompactMap` `Mathlib.CategoryTheory.Sites.Subsheaf` `Mathlib.Topology.MetricSpace.Ultra.TotallyDisconnected` `Mathlib.Topology.MetricSpace.Sequences` `Mathlib.Topology.ShrinkingLemma` `Mathlib.Topology.CountableSeparatingOn` `Mathlib.Topology.Order.ExtendFrom` `Mathlib.Topology.Sheaves.MayerVietoris` `Mathlib.Topology.Sheaves.SheafCondition.UniqueGluing` `Mathlib.Topology.Category.CompHausLike.EffectiveEpi` `Mathlib.CategoryTheory.Sites.EpiMono` `Mathlib.Topology.Filter` `Mathlib.Topology.Order.PartialSups` `Mathlib.Analysis.BoxIntegral.Box.Basic` `Mathlib.Algebra.Category.ModuleCat.Sheaf.Colimits` `Mathlib.Topology.UniformSpace.CompactConvergence` `Mathlib.Topology.Sheaves.Forget` `Mathlib.Analysis.Oscillation` `Mathlib.LinearAlgebra.Matrix.Gershgorin` `Mathlib.Algebra.Category.ModuleCat.Sheaf` `Mathlib.Topology.LocalAtTarget` `Mathlib.CategoryTheory.Sites.Coherent.ReflectsPreregular` `Mathlib.Algebra.Category.ModuleCat.Sheaf.Free` `Mathlib.Topology.LocallyConstant.Basic` `Mathlib.Topology.Order.ProjIcc` `Mathlib.Topology.MetricSpace.Cauchy` `Mathlib.Topology.Order.Hom.Esakia` `Mathlib.Topology.Baire.LocallyCompactRegular` `Mathlib.Topology.Instances.Discrete` `Mathlib.Topology.Spectral.Hom` `Mathlib.CategoryTheory.Sites.InducedTopology` `Mathlib.Topology.PartialHomeomorph` `Mathlib.Topology.ClopenBox` `Mathlib.CategoryTheory.Sites.LocallySurjective` `Mathlib.Topology.MetricSpace.Pseudo.Basic` `Mathlib.CategoryTheory.Sites.LocallyFullyFaithful` `Mathlib.Topology.Sequences` `Mathlib.Topology.Order.Monotone` `Mathlib.Topology.Sheaves.SheafCondition.OpensLeCover` `Mathlib.Topology.Algebra.WithZeroTopology` `Mathlib.AlgebraicGeometry.PrimeSpectrum.Basic` `Mathlib.Analysis.Normed.Field.Basic` `Mathlib.Topology.Order.LowerUpperTopology` `Mathlib.Topology.UniformSpace.AbstractCompletion` `Mathlib.Topology.Category.TopCat.Basic` `Mathlib.Topology.Maps.Proper.Basic` `Mathlib.CategoryTheory.Sites.ConstantSheaf` `Mathlib.Topology.Sober` `Mathlib.Topology.Separation` `Mathlib.Topology.ExtendFrom` `Mathlib.Topology.UniformSpace.CompleteSeparated` `Mathlib.CategoryTheory.Sites.Coherent.RegularSheaves` `Mathlib.Topology.MetricSpace.ProperSpace` `Mathlib.Topology.Category.TopCat.Limits.Cofiltered` `Mathlib.Algebra.Category.ModuleCat.Sheaf.ChangeOfRings` `Mathlib.Topology.Order.Filter` `Mathlib.Combinatorics.Configuration` `Mathlib.Topology.Algebra.Star` `Mathlib.Topology.Order.Basic` `Mathlib.SetTheory.Ordinal.Topology` `Mathlib.Topology.Instances.ENat` `Mathlib.Topology.Homeomorph` `Mathlib.Topology.ContinuousMap.Basic` `Mathlib.Combinatorics.SimpleGraph.Ends.Defs` `Mathlib.Topology.List` `Mathlib.CategoryTheory.Sites.Coherent.Basic` `Mathlib.CategoryTheory.Sites.LocallyInjective` `Mathlib.Geometry.RingedSpace.OpenImmersion` `Mathlib.Topology.ContinuousMap.CocompactMap` `Mathlib.Algebra.Category.ModuleCat.Sheaf.Limits` `Mathlib.Topology.MetricSpace.Pseudo.Pi` `Mathlib.Topology.MetricSpace.Equicontinuity` `Mathlib.Topology.Gluing` `Mathlib.Topology.Sets.Order` `Mathlib.AlgebraicGeometry.PrimeSpectrum.Noetherian` `Mathlib.Topology.MetricSpace.Ultra.Basic` `Mathlib.Topology.MetricSpace.Isometry` `Mathlib.Topology.Hom.Open` `Mathlib.Topology.Algebra.MulAction` `Mathlib.AlgebraicGeometry.PrimeSpectrum.Module` `Mathlib.Topology.Category.TopCat.OpenNhds` `Mathlib.Combinatorics.SimpleGraph.Finsubgraph` `Mathlib.Topology.MetricSpace.Infsep` `Mathlib.Topology.Order.NhdsSet` `Mathlib.Topology.Category.CompHausLike.Basic` `Mathlib.Geometry.RingedSpace.Basic` `Mathlib.Topology.Sheaves.SheafCondition.EqualizerProducts` `Mathlib.Topology.Order.LeftRightLim` `Mathlib.CategoryTheory.Sites.LeftExact` `Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Topology` `Mathlib.Topology.FiberPartition` `Mathlib.Topology.Compactness.PseudometrizableLindelof` `Mathlib.Topology.Order.MonotoneConvergence` `Mathlib.Analysis.NormedSpace.MStructure` `Mathlib.Topology.ContinuousMap.Sigma` `Mathlib.Analysis.BoxIntegral.Partition.Tagged` `Mathlib.Topology.Algebra.ProperConstSMul` `Mathlib.Topology.Algebra.ConstMulAction` `Mathlib.Topology.NoetherianSpace` `Mathlib.CategoryTheory.Sites.Coherent.LocallySurjective` `Mathlib.Topology.MetricSpace.Pseudo.Lemmas` `Mathlib.Topology.EMetricSpace.Basic` `Mathlib.Algebra.Category.ModuleCat.Sheaf.Generators` `Mathlib.Analysis.Normed.Group.Bounded` `Mathlib.Algebra.Category.ModuleCat.Sheaf.Abelian` `Mathlib.Topology.Category.TopCat.Opens` `Mathlib.CategoryTheory.CofilteredSystem` `Mathlib.Topology.Algebra.Algebra.Rat` `Mathlib.Topology.Covering` `Mathlib.Topology.UniformSpace.UniformEmbedding` `Mathlib.CategoryTheory.Sites.Spaces` `Mathlib.Algebra.ContinuedFractions.Computation.ApproximationCorollaries` `Mathlib.Topology.UniformSpace.Completion` `Mathlib.Topology.Category.TopCat.Limits.Konig` `Mathlib.CategoryTheory.Sites.Coherent.Equivalence` `Mathlib.Topology.Metrizable.Basic` `Mathlib.CategoryTheory.Galois.Full` `Mathlib.Topology.FiberBundle.Trivialization` `Mathlib.Topology.Sheaves.Limits` `Mathlib.Geometry.RingedSpace.SheafedSpace` `Mathlib.Analysis.Normed.Group.Int` `Mathlib.CategoryTheory.Galois.Prorepresentability` `Mathlib.Topology.StoneCech` `Mathlib.Topology.FiberBundle.Basic` `Mathlib.Geometry.RingedSpace.LocallyRingedSpace` `Mathlib.Topology.Specialization` `Mathlib.Topology.Sheaves.LocallySurjective` `Mathlib.Topology.Order.UpperLowerSetTopology` `Mathlib.CategoryTheory.Sites.Equivalence` `Mathlib.Topology.UniformSpace.UniformConvergence` `Mathlib.CategoryTheory.Sites.Coherent.ExtensiveSheaves` `Mathlib.Topology.Algebra.Constructions` `Mathlib.Topology.UniformSpace.Cauchy` `Mathlib.Topology.MetricSpace.CauSeqFilter` `Mathlib.Topology.EMetricSpace.Diam` `Mathlib.Topology.Order.DenselyOrdered` `Mathlib.Topology.UniformSpace.Separation` `Mathlib.CategoryTheory.Sites.Coherent.CoherentTopology` `Mathlib.Topology.Category.TopCat.Adjunctions` `Mathlib.Topology.SeparatedMap` `Mathlib.Dynamics.Minimal` `Mathlib.Geometry.RingedSpace.Stalks` `Mathlib.Topology.Order.LeftRightNhds` `Mathlib.Combinatorics.Hindman` `Mathlib.AlgebraicGeometry.PrimeSpectrum.Maximal` `Mathlib.Topology.MetricSpace.Basic` `Mathlib.Topology.Maps.Proper.UniversallyClosed` `Mathlib.CategoryTheory.EffectiveEpi.Extensive` `Mathlib.Geometry.RingedSpace.LocallyRingedSpace.ResidueField` `Mathlib.Topology.EMetricSpace.Lipschitz` `Mathlib.Topology.Category.CompHausLike.SigmaComparison` `Mathlib.Topology.Order.OrderClosed` `Mathlib.Topology.Category.TopCat.Limits.Products` `Mathlib.Topology.Sets.Compacts` `Mathlib.Topology.MetricSpace.Gluing` `Mathlib.CategoryTheory.Sites.Coherent.CoherentSheaves` `Mathlib.Analysis.BoxIntegral.Partition.Basic` `Mathlib.RepresentationTheory.Action.Continuous` `Mathlib.Topology.EMetricSpace.Paracompact` `Mathlib.Analysis.CStarAlgebra.Module.Synonym` `Mathlib.Topology.FiberBundle.IsHomeomorphicTrivialBundle` `Mathlib.Topology.Sheaves.Functors` `Mathlib.CategoryTheory.Sites.DenseSubsite` `Mathlib.Topology.Sheaves.Operations` `Mathlib.Topology.Category.Sequential` `Mathlib.Algebra.Category.ModuleCat.Presheaf.Sheafification` `Mathlib.Topology.DiscreteQuotient` `Mathlib.Topology.UniformSpace.Pi` `Mathlib.Topology.MetricSpace.ProperSpace.Lemmas` `Mathlib.Topology.Sets.Opens` `Mathlib.CategoryTheory.Sites.PreservesLocallyBijective` `Mathlib.CategoryTheory.Sites.LocallyBijective` `Mathlib.Topology.Category.CompHausLike.Limits` `Mathlib.Topology.EMetricSpace.Pi` `Mathlib.Topology.Order.Category.AlexDisc` `Mathlib.Topology.Algebra.InfiniteSum.Defs` `Mathlib.Topology.LocallyConstant.Algebra` `Mathlib.Topology.Sheaves.Skyscraper` `Mathlib.InformationTheory.Hamming` `Mathlib.NumberTheory.DirichletCharacter.Bounds` `Mathlib.Dynamics.FixedPoints.Topology` `Mathlib.Topology.Sheaves.SheafCondition.PairwiseIntersections` `Mathlib.CategoryTheory.Galois.Action` `Mathlib.Topology.Order.T5` `Mathlib.Topology.KrullDimension` `Mathlib.Topology.Order.Priestley` `Mathlib.CategoryTheory.Extensive` `Mathlib.Topology.Perfect` `Mathlib.Analysis.Normed.Group.Submodule` `Mathlib.Topology.Sheaves.PUnit` `Mathlib.Topology.Compactness.Paracompact` `Mathlib.Topology.Sheaves.Presheaf` `Mathlib.CategoryTheory.Adhesive` `Mathlib.Topology.Order.IntermediateValue` `Mathlib.Topology.Category.TopCat.Limits.Basic` `Mathlib.Topology.IsLocalHomeomorph` `Mathlib.Analysis.NormedSpace.IndicatorFunction` `Mathlib.Topology.Algebra.Order.Rolle` `Mathlib.Analysis.Normed.Group.Constructions` `Mathlib.Topology.Category.TopCat.Yoneda` `Mathlib.Topology.UniformSpace.UniformConvergenceTopology` `Mathlib.AlgebraicGeometry.PrimeSpectrum.IsOpenComapC` `Mathlib.Topology.Algebra.GroupWithZero` `Mathlib.Topology.Connected.Separation` `Mathlib.Topology.Category.UniformSpace` `Mathlib.Topology.Order.ExtrClosure` `Mathlib.CategoryTheory.Sites.Coherent.SheafComparison` `Mathlib.Topology.Category.FinTopCat` `Mathlib.Geometry.RingedSpace.PresheafedSpace` `Mathlib.Topology.Metrizable.Uniformity` `Mathlib.Topology.ContinuousMap.T0Sierpinski` `Mathlib.Topology.Metrizable.ContinuousMap` `Mathlib.Topology.UniformSpace.Equicontinuity` `Mathlib.Topology.Category.TopCat.EffectiveEpi` `Mathlib.Topology.Order.Hom.Basic` `Mathlib.Topology.Order.IsLUB` `Mathlib.Analysis.Convex.Radon` `Mathlib.Algebra.Category.ModuleCat.Sheaf.PushforwardContinuous` `Mathlib.Topology.Algebra.Constructions.DomMulAct` `Mathlib.Analysis.BoxIntegral.Partition.Split` `Mathlib.Topology.Compactness.Exterior` `Mathlib.Algebra.Category.ModuleCat.Presheaf.Sheafify` `Mathlib.Topology.Order.MonotoneContinuity` `Mathlib.Algebra.Category.ModuleCat.Sheaf.Quasicoherent` `Mathlib.Topology.Algebra.InfiniteSum.Basic` `Mathlib.Topology.AlexandrovDiscrete` `Mathlib.Topology.UniformSpace.Equiv` `Mathlib.Geometry.RingedSpace.LocallyRingedSpace.HasColimits` `Mathlib.CategoryTheory.Sites.Coherent.ReflectsPrecoherent` `Mathlib.Topology.Sheaves.Stalks` `Mathlib.Analysis.Normed.Group.Basic` `Mathlib.Topology.Exterior` `Mathlib.Combinatorics.SimpleGraph.Ends.Properties` `Mathlib.Topology.Instances.Sign` `Mathlib.Topology.MetricSpace.Pseudo.Constructions` `Mathlib.CategoryTheory.Sites.Coherent.RegularTopology` `Mathlib.Topology.Category.TopCat.Limits.Pullbacks` `Mathlib.Topology.Inseparable` `Mathlib.Topology.Support` `Mathlib.Topology.MetricSpace.Bounded` `Mathlib.Topology.QuasiSeparated` `Mathlib.Topology.Algebra.Order.Archimedean`</details>|1|\n\n</details>\n\n</details>\n\n---\n\n<details><summary>\n\n#### Declarations diff\n\n</summary>\n\n`+ Continuous.prodMap`\n`+ ContinuousAt.prodMap`\n`+ ContinuousAt.prodMap'`\n`+ DenseRange.prodMap`\n`+ Embedding.prodMap`\n`+ Inducing.prodMap`\n`+ IsOpenMap.prodMap`\n`+ IsProperMap.prodMap`\n`+ OpenEmbedding.prodMap`\n`+ UniformContinuous.prodMap`\n`+ _root_.ContinuousAddMonoidHom.sum_map`\n`+++ prodMap`\n`++-- prod`\n<details>\n  <summary>You can run this locally as follows</summary>\n\n\n```bash\n## summary with just the declaration names:\n./scripts/declarations_diff.sh <optional_commit>\n\n## more verbose report:\n./scripts/declarations_diff.sh long <optional_commit>\n```\n</details>\n\nThe doc-module for `script/declarations_diff.sh` contains some details about this script.\n\n</details>",
               "createdAt": "2024-10-06T18:31:19Z",
               "author": {
                 "login": "github-actions"
@@ -969,8 +969,8 @@
                         "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHQQSHiw",
                         "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
+                        "conclusion": "FAILURE",
+                        "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11209799583/job/31155586955"
                       },
                       {
@@ -988,6 +988,14 @@
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11209799581/job/31155587499"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQSL5jQ",
+                        "name": "Post-CI job",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11209799583/job/31157582221"
                       },
                       {
                         "__typename": "CheckRun",
@@ -1009,13 +1017,262 @@
                   }
                 }
               }
+            },
+            {
+              "commit": {
+                "oid": "41095e5f9c89f6760a661781d7b523575a2eb214",
+                "additions": 1,
+                "deletions": 1,
+                "committedDate": "2024-10-07T12:20:48Z",
+                "author": {
+                  "name": "Yury G. Kudryashov",
+                  "email": "urkud@urkud.name"
+                },
+                "statusCheckRollup": {
+                  "contexts": {
+                    "nodes": [
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQgUluw",
+                        "name": "label-and-report-new-contributor",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215367802/job/31172404667"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQgUlxA",
+                        "name": "build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215367801/job/31172404676"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQgUdsA",
+                        "name": "Cancel Previous Runs (CI)",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215366925/job/31172402608"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQgUgZw",
+                        "name": "Cancel Previous Runs (CI)",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215366910/job/31172403303"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQgUl_g",
+                        "name": "Lint style",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215367813/job/31172404734"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQgUfMw",
+                        "name": "Lint style",
+                        "conclusion": "CANCELLED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215366910/job/31172402995"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQgUfLw",
+                        "name": "Lint style (fork)",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215366925/job/31172402991"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQgUnqA",
+                        "name": "Check all files imported",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215367813/job/31172405160"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQgUdTA",
+                        "name": "Build",
+                        "conclusion": "CANCELLED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215366910/job/31172402508"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQgUglA",
+                        "name": "Build (fork)",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215366925/job/31172403348"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQgWs_g",
+                        "name": "Post-CI job",
+                        "conclusion": "CANCELLED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215366910/job/31172439294"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQgUh7Q",
+                        "name": "Post-CI job (fork)",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215366925/job/31172403693"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQgWWHw",
+                        "name": "New Contributor Check",
+                        "conclusion": "NEUTRAL",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/runs/31172433439"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "commit": {
+                "oid": "5cd618ea9227f220becc7b1a6e09c2c0113eca34",
+                "additions": 310,
+                "deletions": 96,
+                "committedDate": "2024-10-07T12:21:14Z",
+                "author": {
+                  "name": "Yury G. Kudryashov",
+                  "email": "urkud@urkud.name"
+                },
+                "statusCheckRollup": {
+                  "contexts": {
+                    "nodes": [
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQgVkDg",
+                        "name": "label-and-report-new-contributor",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215373313/job/31172420622"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQgVkFg",
+                        "name": "build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215373316/job/31172420630"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQgVdvQ",
+                        "name": "Cancel Previous Runs (CI)",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215372847/job/31172419005"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQgVdZg",
+                        "name": "Cancel Previous Runs (CI)",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215372845/job/31172418918"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQgVljA",
+                        "name": "Lint style",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215373345/job/31172421004"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQgVghQ",
+                        "name": "Lint style (fork)",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215372847/job/31172419717"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQgVezw",
+                        "name": "Lint style",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215372845/job/31172419279"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQgVkBQ",
+                        "name": "Check all files imported",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215373345/job/31172420613"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQgVgIw",
+                        "name": "Build",
+                        "conclusion": null,
+                        "status": "IN_PROGRESS",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215372845/job/31172419619"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQgVfQA",
+                        "name": "Build (fork)",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215372847/job/31172419392"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQgVh9A",
+                        "name": "Post-CI job (fork)",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215372847/job/31172420084"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQgXSHQ",
+                        "name": "New Contributor Check",
+                        "conclusion": "NEUTRAL",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/runs/31172448797"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQgWpnw",
+                        "name": "Summary",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://dashboard.mergify.com/event-logs?pullRequestNumber=17472&login=leanprover-community&repository=mathlib4"
+                      }
+                    ]
+                  }
+                }
+              }
             }
           ]
         },
         "createdAt": "2024-10-06T18:30:37Z",
-        "deletions": 127,
+        "deletions": 128,
         "files": {
           "nodes": [
+            {
+              "path": "Counterexamples/SorgenfreyLine.lean",
+              "additions": 1,
+              "deletions": 1
+            },
             {
               "path": "Mathlib/Analysis/Calculus/FDeriv/Comp.lean",
               "additions": 1,
@@ -1214,7 +1471,7 @@
           ]
         },
         "headRefName": "YK-cont-prodmap",
-        "headRefOid": "af66ae50cd218d0ccc7bf9a2ef6933594eb4b4db",
+        "headRefOid": "5cd618ea9227f220becc7b1a6e09c2c0113eca34",
         "headRepository": {
           "name": "mathlib4",
           "owner": {
@@ -1261,7 +1518,7 @@
         "milestone": null,
         "number": 17472,
         "potentialMergeCommit": {
-          "oid": "2eeb776465d8b947f5858624ac52077be99669a9"
+          "oid": "036d026cdde069b5dd83eedfa1eb54e6a429a1e2"
         },
         "projectCards": {
           "nodes": []
@@ -1403,103 +1660,103 @@
             "nodes": [
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHQQSLIA",
+                "id": "CR_kwDOFcwZ1c8AAAAHQgVkDg",
                 "name": "label-and-report-new-contributor",
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11209799962/job/31155587872"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215373313/job/31172420622"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHQQSLXg",
+                "id": "CR_kwDOFcwZ1c8AAAAHQgVkFg",
                 "name": "build",
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11209799965/job/31155587934"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215373316/job/31172420630"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHQQSG_g",
+                "id": "CR_kwDOFcwZ1c8AAAAHQgVdvQ",
                 "name": "Cancel Previous Runs (CI)",
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11209799581/job/31155586814"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215372847/job/31172419005"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHQQSG4Q",
+                "id": "CR_kwDOFcwZ1c8AAAAHQgVdZg",
                 "name": "Cancel Previous Runs (CI)",
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11209799583/job/31155586785"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215372845/job/31172418918"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHQQSMOw",
+                "id": "CR_kwDOFcwZ1c8AAAAHQgVljA",
                 "name": "Lint style",
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11209799963/job/31155588155"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215373345/job/31172421004"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHQQSIvQ",
+                "id": "CR_kwDOFcwZ1c8AAAAHQgVghQ",
                 "name": "Lint style (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11209799581/job/31155587261"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215372847/job/31172419717"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHQQSIJw",
+                "id": "CR_kwDOFcwZ1c8AAAAHQgVezw",
                 "name": "Lint style",
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11209799583/job/31155587111"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215372845/job/31172419279"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHQQSLRA",
+                "id": "CR_kwDOFcwZ1c8AAAAHQgVkBQ",
                 "name": "Check all files imported",
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11209799963/job/31155587908"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215373345/job/31172420613"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHQQSHiw",
+                "id": "CR_kwDOFcwZ1c8AAAAHQgVgIw",
                 "name": "Build",
                 "conclusion": null,
                 "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11209799583/job/31155586955"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215372845/job/31172419619"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHQQSHvA",
+                "id": "CR_kwDOFcwZ1c8AAAAHQgVfQA",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11209799581/job/31155587004"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215372847/job/31172419392"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHQQSJqw",
+                "id": "CR_kwDOFcwZ1c8AAAAHQgVh9A",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11209799581/job/31155587499"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11215372847/job/31172420084"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHQQTKTw",
+                "id": "CR_kwDOFcwZ1c8AAAAHQgXSHQ",
                 "name": "New Contributor Check",
                 "conclusion": "NEUTRAL",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/runs/31155604047"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/runs/31172448797"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHQQTSAA",
+                "id": "CR_kwDOFcwZ1c8AAAAHQgWpnw",
                 "name": "Summary",
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
@@ -1509,7 +1766,7 @@
           }
         },
         "title": "chore(Topology): rename some `prod_map`/`prod` to `prodMap`",
-        "updatedAt": "2024-10-07T06:21:07Z",
+        "updatedAt": "2024-10-07T12:22:00Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17472",
         "timelineItems": {
           "nodes": [
@@ -1538,7 +1795,7 @@
               "__typename": "IssueComment",
               "id": "IC_kwDOFcwZ1c6OyP4m",
               "createdAt": "2024-10-06T18:31:19Z",
-              "body": "### PR summary [af66ae50cd](https://github.com/leanprover-community/mathlib4/pull/17472/commits/af66ae50cd218d0ccc7bf9a2ef6933594eb4b4db)\n\n<details><summary>\n\n#### Import changes for modified files\n\n</summary>\n\nDependency changes\n\n| File | Base Count | Head Count | Change |\n| --- | --- | --- | --- |\n| Mathlib.Topology.Inseparable | 570 | 571 | +1 (+0.18%) |\n| Mathlib.Topology.Separation | 595 | 596 | +1 (+0.17%) |\n| Mathlib.Topology.DenseEmbedding | 596 | 597 | +1 (+0.17%) |\n| Mathlib.Topology.Order.OrderClosed | 596 | 597 | +1 (+0.17%) |\n| Mathlib.Topology.Homeomorph | 651 | 652 | +1 (+0.15%) |\n| Mathlib.Topology.ContinuousMap.Basic | 653 | 654 | +1 (+0.15%) |\n| Mathlib.Topology.CompactOpen | 654 | 655 | +1 (+0.15%) |\n| Mathlib.Topology.Maps.Proper.Basic | 655 | 656 | +1 (+0.15%) |\n| Mathlib.Topology.UniformSpace.AbstractCompletion | 661 | 662 | +1 (+0.15%) |\n| Mathlib.Topology.UniformSpace.Completion | 662 | 663 | +1 (+0.15%) |\n| Mathlib.Topology.UniformSpace.Compact | 666 | 667 | +1 (+0.15%) |\n| Mathlib.Topology.Algebra.MulAction | 684 | 685 | +1 (+0.15%) |\n| Mathlib.Topology.Algebra.ProperConstSMul | 686 | 687 | +1 (+0.15%) |\n| Mathlib.Topology.Algebra.Monoid | 746 | 747 | +1 (+0.13%) |\n| Mathlib.Topology.FiberBundle.Constructions | 774 | 775 | +1 (+0.13%) |\n\n\n<details><summary>Import changes for all files</summary>\n\n|Files|Import difference|\n|-|-|\n|<details><summary>279 files</summary> `Mathlib.Topology.Algebra.Monoid` `Mathlib.Geometry.RingedSpace.PresheafedSpace.Gluing` `Mathlib.CategoryTheory.Sites.Coherent.ExtensiveTopology` `Mathlib.Topology.Order.LawsonTopology` `Mathlib.Topology.Instances.Nat` `Mathlib.CategoryTheory.Sites.Pullback` `Mathlib.Topology.Algebra.Semigroup` `Mathlib.Topology.CompactOpen` `Mathlib.Geometry.RingedSpace.PresheafedSpace.HasColimits` `Mathlib.CategoryTheory.Sites.Coherent.Comparison` `Mathlib.Topology.IndicatorConstPointwise` `Mathlib.Geometry.Manifold.LocalInvariantProperties` `Mathlib.Topology.ContinuousMap.Ordered` `Mathlib.Topology.MetricSpace.Antilipschitz` `Mathlib.Topology.Algebra.Order.Compact` `Mathlib.Topology.DerivedSet` `Mathlib.AlgebraicGeometry.PrimeSpectrum.TensorProduct` `Mathlib.Topology.DiscreteSubset` `Mathlib.Topology.Compactification.OnePoint` `Mathlib.Topology.Instances.PNat` `Mathlib.Topology.DenseEmbedding` `Mathlib.Topology.UniformSpace.Ascoli` `Mathlib.Topology.UniformSpace.Compact` `Mathlib.Topology.MetricSpace.ShrinkingLemma` `Mathlib.Topology.Order.Lattice` `Mathlib.Topology.Sheaves.Sheaf` `Mathlib.Topology.Instances.Int` `Mathlib.Topology.MetricSpace.Pseudo.Real` `Mathlib.Geometry.Manifold.ChartedSpace` `Mathlib.Topology.FiberBundle.Constructions` `Mathlib.Combinatorics.Hall.Basic` `Mathlib.Topology.Sets.Closeds` `Mathlib.Topology.Order.ScottTopology` `Mathlib.CategoryTheory.Sites.SheafCohomology.Basic` `Mathlib.Topology.ExtremallyDisconnected` `Mathlib.Topology.Category.TopCat.EpiMono` `Mathlib.Topology.Sheaves.SheafCondition.Sites` `Mathlib.Analysis.Normed.Group.CocompactMap` `Mathlib.CategoryTheory.Sites.Subsheaf` `Mathlib.Topology.MetricSpace.Ultra.TotallyDisconnected` `Mathlib.Topology.MetricSpace.Sequences` `Mathlib.Topology.ShrinkingLemma` `Mathlib.Topology.CountableSeparatingOn` `Mathlib.Topology.Order.ExtendFrom` `Mathlib.Topology.Sheaves.MayerVietoris` `Mathlib.Topology.Sheaves.SheafCondition.UniqueGluing` `Mathlib.Topology.Category.CompHausLike.EffectiveEpi` `Mathlib.CategoryTheory.Sites.EpiMono` `Mathlib.Topology.Filter` `Mathlib.Topology.Order.PartialSups` `Mathlib.Analysis.BoxIntegral.Box.Basic` `Mathlib.Algebra.Category.ModuleCat.Sheaf.Colimits` `Mathlib.Topology.UniformSpace.CompactConvergence` `Mathlib.Topology.Sheaves.Forget` `Mathlib.Analysis.Oscillation` `Mathlib.LinearAlgebra.Matrix.Gershgorin` `Mathlib.Algebra.Category.ModuleCat.Sheaf` `Mathlib.Topology.LocalAtTarget` `Mathlib.CategoryTheory.Sites.Coherent.ReflectsPreregular` `Mathlib.Algebra.Category.ModuleCat.Sheaf.Free` `Mathlib.Topology.LocallyConstant.Basic` `Mathlib.Topology.Order.ProjIcc` `Mathlib.Topology.MetricSpace.Cauchy` `Mathlib.Topology.Order.Hom.Esakia` `Mathlib.Topology.Baire.LocallyCompactRegular` `Mathlib.Topology.Instances.Discrete` `Mathlib.Topology.Spectral.Hom` `Mathlib.CategoryTheory.Sites.InducedTopology` `Mathlib.Topology.PartialHomeomorph` `Mathlib.Topology.ClopenBox` `Mathlib.CategoryTheory.Sites.LocallySurjective` `Mathlib.Topology.MetricSpace.Pseudo.Basic` `Mathlib.CategoryTheory.Sites.LocallyFullyFaithful` `Mathlib.Topology.Sequences` `Mathlib.Topology.Order.Monotone` `Mathlib.Topology.Sheaves.SheafCondition.OpensLeCover` `Mathlib.Topology.Algebra.WithZeroTopology` `Mathlib.AlgebraicGeometry.PrimeSpectrum.Basic` `Mathlib.Analysis.Normed.Field.Basic` `Mathlib.Topology.Order.LowerUpperTopology` `Mathlib.Topology.UniformSpace.AbstractCompletion` `Mathlib.Topology.Category.TopCat.Basic` `Mathlib.Topology.Maps.Proper.Basic` `Mathlib.CategoryTheory.Sites.ConstantSheaf` `Mathlib.Topology.Sober` `Mathlib.Topology.Separation` `Mathlib.Topology.ExtendFrom` `Mathlib.Topology.UniformSpace.CompleteSeparated` `Mathlib.CategoryTheory.Sites.Coherent.RegularSheaves` `Mathlib.Topology.MetricSpace.ProperSpace` `Mathlib.Topology.Category.TopCat.Limits.Cofiltered` `Mathlib.Algebra.Category.ModuleCat.Sheaf.ChangeOfRings` `Mathlib.Topology.Order.Filter` `Mathlib.Combinatorics.Configuration` `Mathlib.Topology.Algebra.Star` `Mathlib.Topology.Order.Basic` `Mathlib.SetTheory.Ordinal.Topology` `Mathlib.Topology.Instances.ENat` `Mathlib.Topology.Homeomorph` `Mathlib.Topology.ContinuousMap.Basic` `Mathlib.Combinatorics.SimpleGraph.Ends.Defs` `Mathlib.Topology.List` `Mathlib.CategoryTheory.Sites.Coherent.Basic` `Mathlib.CategoryTheory.Sites.LocallyInjective` `Mathlib.Geometry.RingedSpace.OpenImmersion` `Mathlib.Topology.ContinuousMap.CocompactMap` `Mathlib.Algebra.Category.ModuleCat.Sheaf.Limits` `Mathlib.Topology.MetricSpace.Pseudo.Pi` `Mathlib.Topology.MetricSpace.Equicontinuity` `Mathlib.Topology.Gluing` `Mathlib.Topology.Sets.Order` `Mathlib.AlgebraicGeometry.PrimeSpectrum.Noetherian` `Mathlib.Topology.MetricSpace.Ultra.Basic` `Mathlib.Topology.MetricSpace.Isometry` `Mathlib.Topology.Hom.Open` `Mathlib.Topology.Algebra.MulAction` `Mathlib.AlgebraicGeometry.PrimeSpectrum.Module` `Mathlib.Topology.Category.TopCat.OpenNhds` `Mathlib.Combinatorics.SimpleGraph.Finsubgraph` `Mathlib.Topology.MetricSpace.Infsep` `Mathlib.Topology.Order.NhdsSet` `Mathlib.Topology.Category.CompHausLike.Basic` `Mathlib.Geometry.RingedSpace.Basic` `Mathlib.Topology.Sheaves.SheafCondition.EqualizerProducts` `Mathlib.Topology.Order.LeftRightLim` `Mathlib.CategoryTheory.Sites.LeftExact` `Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Topology` `Mathlib.Topology.FiberPartition` `Mathlib.Topology.Compactness.PseudometrizableLindelof` `Mathlib.Topology.Order.MonotoneConvergence` `Mathlib.Analysis.NormedSpace.MStructure` `Mathlib.Topology.ContinuousMap.Sigma` `Mathlib.Analysis.BoxIntegral.Partition.Tagged` `Mathlib.Topology.Algebra.ProperConstSMul` `Mathlib.Topology.Algebra.ConstMulAction` `Mathlib.Topology.NoetherianSpace` `Mathlib.CategoryTheory.Sites.Coherent.LocallySurjective` `Mathlib.Topology.MetricSpace.Pseudo.Lemmas` `Mathlib.Topology.EMetricSpace.Basic` `Mathlib.Algebra.Category.ModuleCat.Sheaf.Generators` `Mathlib.Analysis.Normed.Group.Bounded` `Mathlib.Algebra.Category.ModuleCat.Sheaf.Abelian` `Mathlib.Topology.Category.TopCat.Opens` `Mathlib.CategoryTheory.CofilteredSystem` `Mathlib.Topology.Algebra.Algebra.Rat` `Mathlib.Topology.Covering` `Mathlib.Topology.UniformSpace.UniformEmbedding` `Mathlib.CategoryTheory.Sites.Spaces` `Mathlib.Algebra.ContinuedFractions.Computation.ApproximationCorollaries` `Mathlib.Topology.UniformSpace.Completion` `Mathlib.Topology.Category.TopCat.Limits.Konig` `Mathlib.CategoryTheory.Sites.Coherent.Equivalence` `Mathlib.Topology.Metrizable.Basic` `Mathlib.CategoryTheory.Galois.Full` `Mathlib.Topology.FiberBundle.Trivialization` `Mathlib.Topology.Sheaves.Limits` `Mathlib.Geometry.RingedSpace.SheafedSpace` `Mathlib.Analysis.Normed.Group.Int` `Mathlib.CategoryTheory.Galois.Prorepresentability` `Mathlib.Topology.StoneCech` `Mathlib.Topology.FiberBundle.Basic` `Mathlib.Geometry.RingedSpace.LocallyRingedSpace` `Mathlib.Topology.Specialization` `Mathlib.Topology.Sheaves.LocallySurjective` `Mathlib.Topology.Order.UpperLowerSetTopology` `Mathlib.CategoryTheory.Sites.Equivalence` `Mathlib.Topology.UniformSpace.UniformConvergence` `Mathlib.CategoryTheory.Sites.Coherent.ExtensiveSheaves` `Mathlib.Topology.Algebra.Constructions` `Mathlib.Topology.UniformSpace.Cauchy` `Mathlib.Topology.MetricSpace.CauSeqFilter` `Mathlib.Topology.EMetricSpace.Diam` `Mathlib.Topology.Order.DenselyOrdered` `Mathlib.Topology.UniformSpace.Separation` `Mathlib.CategoryTheory.Sites.Coherent.CoherentTopology` `Mathlib.Topology.Category.TopCat.Adjunctions` `Mathlib.Topology.SeparatedMap` `Mathlib.Dynamics.Minimal` `Mathlib.Geometry.RingedSpace.Stalks` `Mathlib.Topology.Order.LeftRightNhds` `Mathlib.Combinatorics.Hindman` `Mathlib.AlgebraicGeometry.PrimeSpectrum.Maximal` `Mathlib.Topology.MetricSpace.Basic` `Mathlib.Topology.Maps.Proper.UniversallyClosed` `Mathlib.CategoryTheory.EffectiveEpi.Extensive` `Mathlib.Geometry.RingedSpace.LocallyRingedSpace.ResidueField` `Mathlib.Topology.EMetricSpace.Lipschitz` `Mathlib.Topology.Category.CompHausLike.SigmaComparison` `Mathlib.Topology.Order.OrderClosed` `Mathlib.Topology.Category.TopCat.Limits.Products` `Mathlib.Topology.Sets.Compacts` `Mathlib.Topology.MetricSpace.Gluing` `Mathlib.CategoryTheory.Sites.Coherent.CoherentSheaves` `Mathlib.Analysis.BoxIntegral.Partition.Basic` `Mathlib.RepresentationTheory.Action.Continuous` `Mathlib.Topology.EMetricSpace.Paracompact` `Mathlib.Analysis.CStarAlgebra.Module.Synonym` `Mathlib.Topology.FiberBundle.IsHomeomorphicTrivialBundle` `Mathlib.Topology.Sheaves.Functors` `Mathlib.CategoryTheory.Sites.DenseSubsite` `Mathlib.Topology.Sheaves.Operations` `Mathlib.Topology.Category.Sequential` `Mathlib.Algebra.Category.ModuleCat.Presheaf.Sheafification` `Mathlib.Topology.DiscreteQuotient` `Mathlib.Topology.UniformSpace.Pi` `Mathlib.Topology.MetricSpace.ProperSpace.Lemmas` `Mathlib.Topology.Sets.Opens` `Mathlib.CategoryTheory.Sites.PreservesLocallyBijective` `Mathlib.CategoryTheory.Sites.LocallyBijective` `Mathlib.Topology.Category.CompHausLike.Limits` `Mathlib.Topology.EMetricSpace.Pi` `Mathlib.Topology.Order.Category.AlexDisc` `Mathlib.Topology.Algebra.InfiniteSum.Defs` `Mathlib.Topology.LocallyConstant.Algebra` `Mathlib.Topology.Sheaves.Skyscraper` `Mathlib.InformationTheory.Hamming` `Mathlib.NumberTheory.DirichletCharacter.Bounds` `Mathlib.Dynamics.FixedPoints.Topology` `Mathlib.Topology.Sheaves.SheafCondition.PairwiseIntersections` `Mathlib.CategoryTheory.Galois.Action` `Mathlib.Topology.Order.T5` `Mathlib.Topology.KrullDimension` `Mathlib.Topology.Order.Priestley` `Mathlib.CategoryTheory.Extensive` `Mathlib.Topology.Perfect` `Mathlib.Analysis.Normed.Group.Submodule` `Mathlib.Topology.Sheaves.PUnit` `Mathlib.Topology.Compactness.Paracompact` `Mathlib.Topology.Sheaves.Presheaf` `Mathlib.CategoryTheory.Adhesive` `Mathlib.Topology.Order.IntermediateValue` `Mathlib.Topology.Category.TopCat.Limits.Basic` `Mathlib.Topology.IsLocalHomeomorph` `Mathlib.Analysis.NormedSpace.IndicatorFunction` `Mathlib.Topology.Algebra.Order.Rolle` `Mathlib.Analysis.Normed.Group.Constructions` `Mathlib.Topology.Category.TopCat.Yoneda` `Mathlib.Topology.UniformSpace.UniformConvergenceTopology` `Mathlib.AlgebraicGeometry.PrimeSpectrum.IsOpenComapC` `Mathlib.Topology.Algebra.GroupWithZero` `Mathlib.Topology.Connected.Separation` `Mathlib.Topology.Category.UniformSpace` `Mathlib.Topology.Order.ExtrClosure` `Mathlib.CategoryTheory.Sites.Coherent.SheafComparison` `Mathlib.Topology.Category.FinTopCat` `Mathlib.Geometry.RingedSpace.PresheafedSpace` `Mathlib.Topology.Metrizable.Uniformity` `Mathlib.Topology.ContinuousMap.T0Sierpinski` `Mathlib.Topology.Metrizable.ContinuousMap` `Mathlib.Topology.UniformSpace.Equicontinuity` `Mathlib.Topology.Category.TopCat.EffectiveEpi` `Mathlib.Topology.Order.Hom.Basic` `Mathlib.Topology.Order.IsLUB` `Mathlib.Analysis.Convex.Radon` `Mathlib.Algebra.Category.ModuleCat.Sheaf.PushforwardContinuous` `Mathlib.Topology.Algebra.Constructions.DomMulAct` `Mathlib.Analysis.BoxIntegral.Partition.Split` `Mathlib.Topology.Compactness.Exterior` `Mathlib.Algebra.Category.ModuleCat.Presheaf.Sheafify` `Mathlib.Topology.Order.MonotoneContinuity` `Mathlib.Algebra.Category.ModuleCat.Sheaf.Quasicoherent` `Mathlib.Topology.Algebra.InfiniteSum.Basic` `Mathlib.Topology.AlexandrovDiscrete` `Mathlib.Topology.UniformSpace.Equiv` `Mathlib.Geometry.RingedSpace.LocallyRingedSpace.HasColimits` `Mathlib.CategoryTheory.Sites.Coherent.ReflectsPrecoherent` `Mathlib.Topology.Sheaves.Stalks` `Mathlib.Analysis.Normed.Group.Basic` `Mathlib.Topology.Exterior` `Mathlib.Combinatorics.SimpleGraph.Ends.Properties` `Mathlib.Topology.Instances.Sign` `Mathlib.Topology.MetricSpace.Pseudo.Constructions` `Mathlib.CategoryTheory.Sites.Coherent.RegularTopology` `Mathlib.Topology.Category.TopCat.Limits.Pullbacks` `Mathlib.Topology.Inseparable` `Mathlib.Topology.Support` `Mathlib.Topology.MetricSpace.Bounded` `Mathlib.Topology.QuasiSeparated` `Mathlib.Topology.Algebra.Order.Archimedean`</details>|1|\n\n</details>\n\n</details>\n\n---\n\n<details><summary>\n\n#### Declarations diff\n\n</summary>\n\n`+ Continuous.prodMap`\n`+ ContinuousAt.prodMap`\n`+ ContinuousAt.prodMap'`\n`+ DenseRange.prodMap`\n`+ Embedding.prodMap`\n`+ Inducing.prodMap`\n`+ IsOpenMap.prodMap`\n`+ IsProperMap.prodMap`\n`+ OpenEmbedding.prodMap`\n`+ UniformContinuous.prodMap`\n`+ _root_.ContinuousAddMonoidHom.sum_map`\n`+++ prodMap`\n`++-- prod`\n<details>\n  <summary>You can run this locally as follows</summary>\n\n\n```bash\n## summary with just the declaration names:\n./scripts/declarations_diff.sh <optional_commit>\n\n## more verbose report:\n./scripts/declarations_diff.sh long <optional_commit>\n```\n</details>\n\nThe doc-module for `script/declarations_diff.sh` contains some details about this script.\n\n</details>",
+              "body": "### PR summary [5cd618ea92](https://github.com/leanprover-community/mathlib4/pull/17472/commits/5cd618ea9227f220becc7b1a6e09c2c0113eca34)\n\n<details><summary>\n\n#### Import changes for modified files\n\n</summary>\n\nDependency changes\n\n| File | Base Count | Head Count | Change |\n| --- | --- | --- | --- |\n| Mathlib.Topology.Inseparable | 570 | 571 | +1 (+0.18%) |\n| Mathlib.Topology.Separation | 595 | 596 | +1 (+0.17%) |\n| Mathlib.Topology.DenseEmbedding | 596 | 597 | +1 (+0.17%) |\n| Mathlib.Topology.Order.OrderClosed | 596 | 597 | +1 (+0.17%) |\n| Mathlib.Topology.Homeomorph | 651 | 652 | +1 (+0.15%) |\n| Mathlib.Topology.ContinuousMap.Basic | 653 | 654 | +1 (+0.15%) |\n| Mathlib.Topology.CompactOpen | 654 | 655 | +1 (+0.15%) |\n| Mathlib.Topology.Maps.Proper.Basic | 655 | 656 | +1 (+0.15%) |\n| Mathlib.Topology.UniformSpace.AbstractCompletion | 661 | 662 | +1 (+0.15%) |\n| Mathlib.Topology.UniformSpace.Completion | 662 | 663 | +1 (+0.15%) |\n| Mathlib.Topology.UniformSpace.Compact | 666 | 667 | +1 (+0.15%) |\n| Mathlib.Topology.Algebra.MulAction | 684 | 685 | +1 (+0.15%) |\n| Mathlib.Topology.Algebra.ProperConstSMul | 686 | 687 | +1 (+0.15%) |\n| Mathlib.Topology.Algebra.Monoid | 746 | 747 | +1 (+0.13%) |\n| Mathlib.Topology.FiberBundle.Constructions | 774 | 775 | +1 (+0.13%) |\n\n\n<details><summary>Import changes for all files</summary>\n\n|Files|Import difference|\n|-|-|\n|<details><summary>279 files</summary> `Mathlib.Topology.Algebra.Monoid` `Mathlib.Geometry.RingedSpace.PresheafedSpace.Gluing` `Mathlib.CategoryTheory.Sites.Coherent.ExtensiveTopology` `Mathlib.Topology.Order.LawsonTopology` `Mathlib.Topology.Instances.Nat` `Mathlib.CategoryTheory.Sites.Pullback` `Mathlib.Topology.Algebra.Semigroup` `Mathlib.Topology.CompactOpen` `Mathlib.Geometry.RingedSpace.PresheafedSpace.HasColimits` `Mathlib.CategoryTheory.Sites.Coherent.Comparison` `Mathlib.Topology.IndicatorConstPointwise` `Mathlib.Geometry.Manifold.LocalInvariantProperties` `Mathlib.Topology.ContinuousMap.Ordered` `Mathlib.Topology.MetricSpace.Antilipschitz` `Mathlib.Topology.Algebra.Order.Compact` `Mathlib.Topology.DerivedSet` `Mathlib.AlgebraicGeometry.PrimeSpectrum.TensorProduct` `Mathlib.Topology.DiscreteSubset` `Mathlib.Topology.Compactification.OnePoint` `Mathlib.Topology.Instances.PNat` `Mathlib.Topology.DenseEmbedding` `Mathlib.Topology.UniformSpace.Ascoli` `Mathlib.Topology.UniformSpace.Compact` `Mathlib.Topology.MetricSpace.ShrinkingLemma` `Mathlib.Topology.Order.Lattice` `Mathlib.Topology.Sheaves.Sheaf` `Mathlib.Topology.Instances.Int` `Mathlib.Topology.MetricSpace.Pseudo.Real` `Mathlib.Geometry.Manifold.ChartedSpace` `Mathlib.Topology.FiberBundle.Constructions` `Mathlib.Combinatorics.Hall.Basic` `Mathlib.Topology.Sets.Closeds` `Mathlib.Topology.Order.ScottTopology` `Mathlib.CategoryTheory.Sites.SheafCohomology.Basic` `Mathlib.Topology.ExtremallyDisconnected` `Mathlib.Topology.Category.TopCat.EpiMono` `Mathlib.Topology.Sheaves.SheafCondition.Sites` `Mathlib.Analysis.Normed.Group.CocompactMap` `Mathlib.CategoryTheory.Sites.Subsheaf` `Mathlib.Topology.MetricSpace.Ultra.TotallyDisconnected` `Mathlib.Topology.MetricSpace.Sequences` `Mathlib.Topology.ShrinkingLemma` `Mathlib.Topology.CountableSeparatingOn` `Mathlib.Topology.Order.ExtendFrom` `Mathlib.Topology.Sheaves.MayerVietoris` `Mathlib.Topology.Sheaves.SheafCondition.UniqueGluing` `Mathlib.Topology.Category.CompHausLike.EffectiveEpi` `Mathlib.CategoryTheory.Sites.EpiMono` `Mathlib.Topology.Filter` `Mathlib.Topology.Order.PartialSups` `Mathlib.Analysis.BoxIntegral.Box.Basic` `Mathlib.Algebra.Category.ModuleCat.Sheaf.Colimits` `Mathlib.Topology.UniformSpace.CompactConvergence` `Mathlib.Topology.Sheaves.Forget` `Mathlib.Analysis.Oscillation` `Mathlib.LinearAlgebra.Matrix.Gershgorin` `Mathlib.Algebra.Category.ModuleCat.Sheaf` `Mathlib.Topology.LocalAtTarget` `Mathlib.CategoryTheory.Sites.Coherent.ReflectsPreregular` `Mathlib.Algebra.Category.ModuleCat.Sheaf.Free` `Mathlib.Topology.LocallyConstant.Basic` `Mathlib.Topology.Order.ProjIcc` `Mathlib.Topology.MetricSpace.Cauchy` `Mathlib.Topology.Order.Hom.Esakia` `Mathlib.Topology.Baire.LocallyCompactRegular` `Mathlib.Topology.Instances.Discrete` `Mathlib.Topology.Spectral.Hom` `Mathlib.CategoryTheory.Sites.InducedTopology` `Mathlib.Topology.PartialHomeomorph` `Mathlib.Topology.ClopenBox` `Mathlib.CategoryTheory.Sites.LocallySurjective` `Mathlib.Topology.MetricSpace.Pseudo.Basic` `Mathlib.CategoryTheory.Sites.LocallyFullyFaithful` `Mathlib.Topology.Sequences` `Mathlib.Topology.Order.Monotone` `Mathlib.Topology.Sheaves.SheafCondition.OpensLeCover` `Mathlib.Topology.Algebra.WithZeroTopology` `Mathlib.AlgebraicGeometry.PrimeSpectrum.Basic` `Mathlib.Analysis.Normed.Field.Basic` `Mathlib.Topology.Order.LowerUpperTopology` `Mathlib.Topology.UniformSpace.AbstractCompletion` `Mathlib.Topology.Category.TopCat.Basic` `Mathlib.Topology.Maps.Proper.Basic` `Mathlib.CategoryTheory.Sites.ConstantSheaf` `Mathlib.Topology.Sober` `Mathlib.Topology.Separation` `Mathlib.Topology.ExtendFrom` `Mathlib.Topology.UniformSpace.CompleteSeparated` `Mathlib.CategoryTheory.Sites.Coherent.RegularSheaves` `Mathlib.Topology.MetricSpace.ProperSpace` `Mathlib.Topology.Category.TopCat.Limits.Cofiltered` `Mathlib.Algebra.Category.ModuleCat.Sheaf.ChangeOfRings` `Mathlib.Topology.Order.Filter` `Mathlib.Combinatorics.Configuration` `Mathlib.Topology.Algebra.Star` `Mathlib.Topology.Order.Basic` `Mathlib.SetTheory.Ordinal.Topology` `Mathlib.Topology.Instances.ENat` `Mathlib.Topology.Homeomorph` `Mathlib.Topology.ContinuousMap.Basic` `Mathlib.Combinatorics.SimpleGraph.Ends.Defs` `Mathlib.Topology.List` `Mathlib.CategoryTheory.Sites.Coherent.Basic` `Mathlib.CategoryTheory.Sites.LocallyInjective` `Mathlib.Geometry.RingedSpace.OpenImmersion` `Mathlib.Topology.ContinuousMap.CocompactMap` `Mathlib.Algebra.Category.ModuleCat.Sheaf.Limits` `Mathlib.Topology.MetricSpace.Pseudo.Pi` `Mathlib.Topology.MetricSpace.Equicontinuity` `Mathlib.Topology.Gluing` `Mathlib.Topology.Sets.Order` `Mathlib.AlgebraicGeometry.PrimeSpectrum.Noetherian` `Mathlib.Topology.MetricSpace.Ultra.Basic` `Mathlib.Topology.MetricSpace.Isometry` `Mathlib.Topology.Hom.Open` `Mathlib.Topology.Algebra.MulAction` `Mathlib.AlgebraicGeometry.PrimeSpectrum.Module` `Mathlib.Topology.Category.TopCat.OpenNhds` `Mathlib.Combinatorics.SimpleGraph.Finsubgraph` `Mathlib.Topology.MetricSpace.Infsep` `Mathlib.Topology.Order.NhdsSet` `Mathlib.Topology.Category.CompHausLike.Basic` `Mathlib.Geometry.RingedSpace.Basic` `Mathlib.Topology.Sheaves.SheafCondition.EqualizerProducts` `Mathlib.Topology.Order.LeftRightLim` `Mathlib.CategoryTheory.Sites.LeftExact` `Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Topology` `Mathlib.Topology.FiberPartition` `Mathlib.Topology.Compactness.PseudometrizableLindelof` `Mathlib.Topology.Order.MonotoneConvergence` `Mathlib.Analysis.NormedSpace.MStructure` `Mathlib.Topology.ContinuousMap.Sigma` `Mathlib.Analysis.BoxIntegral.Partition.Tagged` `Mathlib.Topology.Algebra.ProperConstSMul` `Mathlib.Topology.Algebra.ConstMulAction` `Mathlib.Topology.NoetherianSpace` `Mathlib.CategoryTheory.Sites.Coherent.LocallySurjective` `Mathlib.Topology.MetricSpace.Pseudo.Lemmas` `Mathlib.Topology.EMetricSpace.Basic` `Mathlib.Algebra.Category.ModuleCat.Sheaf.Generators` `Mathlib.Analysis.Normed.Group.Bounded` `Mathlib.Algebra.Category.ModuleCat.Sheaf.Abelian` `Mathlib.Topology.Category.TopCat.Opens` `Mathlib.CategoryTheory.CofilteredSystem` `Mathlib.Topology.Algebra.Algebra.Rat` `Mathlib.Topology.Covering` `Mathlib.Topology.UniformSpace.UniformEmbedding` `Mathlib.CategoryTheory.Sites.Spaces` `Mathlib.Algebra.ContinuedFractions.Computation.ApproximationCorollaries` `Mathlib.Topology.UniformSpace.Completion` `Mathlib.Topology.Category.TopCat.Limits.Konig` `Mathlib.CategoryTheory.Sites.Coherent.Equivalence` `Mathlib.Topology.Metrizable.Basic` `Mathlib.CategoryTheory.Galois.Full` `Mathlib.Topology.FiberBundle.Trivialization` `Mathlib.Topology.Sheaves.Limits` `Mathlib.Geometry.RingedSpace.SheafedSpace` `Mathlib.Analysis.Normed.Group.Int` `Mathlib.CategoryTheory.Galois.Prorepresentability` `Mathlib.Topology.StoneCech` `Mathlib.Topology.FiberBundle.Basic` `Mathlib.Geometry.RingedSpace.LocallyRingedSpace` `Mathlib.Topology.Specialization` `Mathlib.Topology.Sheaves.LocallySurjective` `Mathlib.Topology.Order.UpperLowerSetTopology` `Mathlib.CategoryTheory.Sites.Equivalence` `Mathlib.Topology.UniformSpace.UniformConvergence` `Mathlib.CategoryTheory.Sites.Coherent.ExtensiveSheaves` `Mathlib.Topology.Algebra.Constructions` `Mathlib.Topology.UniformSpace.Cauchy` `Mathlib.Topology.MetricSpace.CauSeqFilter` `Mathlib.Topology.EMetricSpace.Diam` `Mathlib.Topology.Order.DenselyOrdered` `Mathlib.Topology.UniformSpace.Separation` `Mathlib.CategoryTheory.Sites.Coherent.CoherentTopology` `Mathlib.Topology.Category.TopCat.Adjunctions` `Mathlib.Topology.SeparatedMap` `Mathlib.Dynamics.Minimal` `Mathlib.Geometry.RingedSpace.Stalks` `Mathlib.Topology.Order.LeftRightNhds` `Mathlib.Combinatorics.Hindman` `Mathlib.AlgebraicGeometry.PrimeSpectrum.Maximal` `Mathlib.Topology.MetricSpace.Basic` `Mathlib.Topology.Maps.Proper.UniversallyClosed` `Mathlib.CategoryTheory.EffectiveEpi.Extensive` `Mathlib.Geometry.RingedSpace.LocallyRingedSpace.ResidueField` `Mathlib.Topology.EMetricSpace.Lipschitz` `Mathlib.Topology.Category.CompHausLike.SigmaComparison` `Mathlib.Topology.Order.OrderClosed` `Mathlib.Topology.Category.TopCat.Limits.Products` `Mathlib.Topology.Sets.Compacts` `Mathlib.Topology.MetricSpace.Gluing` `Mathlib.CategoryTheory.Sites.Coherent.CoherentSheaves` `Mathlib.Analysis.BoxIntegral.Partition.Basic` `Mathlib.RepresentationTheory.Action.Continuous` `Mathlib.Topology.EMetricSpace.Paracompact` `Mathlib.Analysis.CStarAlgebra.Module.Synonym` `Mathlib.Topology.FiberBundle.IsHomeomorphicTrivialBundle` `Mathlib.Topology.Sheaves.Functors` `Mathlib.CategoryTheory.Sites.DenseSubsite` `Mathlib.Topology.Sheaves.Operations` `Mathlib.Topology.Category.Sequential` `Mathlib.Algebra.Category.ModuleCat.Presheaf.Sheafification` `Mathlib.Topology.DiscreteQuotient` `Mathlib.Topology.UniformSpace.Pi` `Mathlib.Topology.MetricSpace.ProperSpace.Lemmas` `Mathlib.Topology.Sets.Opens` `Mathlib.CategoryTheory.Sites.PreservesLocallyBijective` `Mathlib.CategoryTheory.Sites.LocallyBijective` `Mathlib.Topology.Category.CompHausLike.Limits` `Mathlib.Topology.EMetricSpace.Pi` `Mathlib.Topology.Order.Category.AlexDisc` `Mathlib.Topology.Algebra.InfiniteSum.Defs` `Mathlib.Topology.LocallyConstant.Algebra` `Mathlib.Topology.Sheaves.Skyscraper` `Mathlib.InformationTheory.Hamming` `Mathlib.NumberTheory.DirichletCharacter.Bounds` `Mathlib.Dynamics.FixedPoints.Topology` `Mathlib.Topology.Sheaves.SheafCondition.PairwiseIntersections` `Mathlib.CategoryTheory.Galois.Action` `Mathlib.Topology.Order.T5` `Mathlib.Topology.KrullDimension` `Mathlib.Topology.Order.Priestley` `Mathlib.CategoryTheory.Extensive` `Mathlib.Topology.Perfect` `Mathlib.Analysis.Normed.Group.Submodule` `Mathlib.Topology.Sheaves.PUnit` `Mathlib.Topology.Compactness.Paracompact` `Mathlib.Topology.Sheaves.Presheaf` `Mathlib.CategoryTheory.Adhesive` `Mathlib.Topology.Order.IntermediateValue` `Mathlib.Topology.Category.TopCat.Limits.Basic` `Mathlib.Topology.IsLocalHomeomorph` `Mathlib.Analysis.NormedSpace.IndicatorFunction` `Mathlib.Topology.Algebra.Order.Rolle` `Mathlib.Analysis.Normed.Group.Constructions` `Mathlib.Topology.Category.TopCat.Yoneda` `Mathlib.Topology.UniformSpace.UniformConvergenceTopology` `Mathlib.AlgebraicGeometry.PrimeSpectrum.IsOpenComapC` `Mathlib.Topology.Algebra.GroupWithZero` `Mathlib.Topology.Connected.Separation` `Mathlib.Topology.Category.UniformSpace` `Mathlib.Topology.Order.ExtrClosure` `Mathlib.CategoryTheory.Sites.Coherent.SheafComparison` `Mathlib.Topology.Category.FinTopCat` `Mathlib.Geometry.RingedSpace.PresheafedSpace` `Mathlib.Topology.Metrizable.Uniformity` `Mathlib.Topology.ContinuousMap.T0Sierpinski` `Mathlib.Topology.Metrizable.ContinuousMap` `Mathlib.Topology.UniformSpace.Equicontinuity` `Mathlib.Topology.Category.TopCat.EffectiveEpi` `Mathlib.Topology.Order.Hom.Basic` `Mathlib.Topology.Order.IsLUB` `Mathlib.Analysis.Convex.Radon` `Mathlib.Algebra.Category.ModuleCat.Sheaf.PushforwardContinuous` `Mathlib.Topology.Algebra.Constructions.DomMulAct` `Mathlib.Analysis.BoxIntegral.Partition.Split` `Mathlib.Topology.Compactness.Exterior` `Mathlib.Algebra.Category.ModuleCat.Presheaf.Sheafify` `Mathlib.Topology.Order.MonotoneContinuity` `Mathlib.Algebra.Category.ModuleCat.Sheaf.Quasicoherent` `Mathlib.Topology.Algebra.InfiniteSum.Basic` `Mathlib.Topology.AlexandrovDiscrete` `Mathlib.Topology.UniformSpace.Equiv` `Mathlib.Geometry.RingedSpace.LocallyRingedSpace.HasColimits` `Mathlib.CategoryTheory.Sites.Coherent.ReflectsPrecoherent` `Mathlib.Topology.Sheaves.Stalks` `Mathlib.Analysis.Normed.Group.Basic` `Mathlib.Topology.Exterior` `Mathlib.Combinatorics.SimpleGraph.Ends.Properties` `Mathlib.Topology.Instances.Sign` `Mathlib.Topology.MetricSpace.Pseudo.Constructions` `Mathlib.CategoryTheory.Sites.Coherent.RegularTopology` `Mathlib.Topology.Category.TopCat.Limits.Pullbacks` `Mathlib.Topology.Inseparable` `Mathlib.Topology.Support` `Mathlib.Topology.MetricSpace.Bounded` `Mathlib.Topology.QuasiSeparated` `Mathlib.Topology.Algebra.Order.Archimedean`</details>|1|\n\n</details>\n\n</details>\n\n---\n\n<details><summary>\n\n#### Declarations diff\n\n</summary>\n\n`+ Continuous.prodMap`\n`+ ContinuousAt.prodMap`\n`+ ContinuousAt.prodMap'`\n`+ DenseRange.prodMap`\n`+ Embedding.prodMap`\n`+ Inducing.prodMap`\n`+ IsOpenMap.prodMap`\n`+ IsProperMap.prodMap`\n`+ OpenEmbedding.prodMap`\n`+ UniformContinuous.prodMap`\n`+ _root_.ContinuousAddMonoidHom.sum_map`\n`+++ prodMap`\n`++-- prod`\n<details>\n  <summary>You can run this locally as follows</summary>\n\n\n```bash\n## summary with just the declaration names:\n./scripts/declarations_diff.sh <optional_commit>\n\n## more verbose report:\n./scripts/declarations_diff.sh long <optional_commit>\n```\n</details>\n\nThe doc-module for `script/declarations_diff.sh` contains some details about this script.\n\n</details>",
               "author": {
                 "login": "github-actions"
               }
@@ -1572,6 +1829,12 @@
                 "id": "LA_kwDOFcwZ1c8AAAABh1mAHA",
                 "name": "maintainer-merge"
               }
+            },
+            {
+              "__typename": "PullRequestCommit"
+            },
+            {
+              "__typename": "PullRequestCommit"
             },
             {
               "__typename": "PullRequestCommit"
