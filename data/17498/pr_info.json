@@ -72,6 +72,14 @@
               "author": {
                 "login": "mathlib-bors"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6O4wzM",
+              "body": "As this PR is labelled `auto-merge-after-CI`, we are now sending it to bors:\n\nbors merge",
+              "createdAt": "2024-10-07T15:26:16Z",
+              "author": {
+                "login": "leanprover-community-mathlib4-bot"
+              }
             }
           ]
         },
@@ -228,14 +236,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHQnQS0w",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11217652741/job/31179674323"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHQnQSUA",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -244,11 +244,35 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQnQS0w",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11217652741/job/31179674323"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHQnQWxQ",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11217652748/job/31179675333"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQqy4UQ",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11217652741/job/31183386705"
+                      },
+                      {
+                        "__typename": "StatusContext",
+                        "id": "SC_kwDOFcwZ1c8AAAAHaJqDbg",
+                        "context": "bors",
+                        "state": "PENDING",
+                        "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6265",
+                        "description": "Waiting in queue"
                       },
                       {
                         "__typename": "CheckRun",
@@ -430,6 +454,10 @@
               "name": "delegated"
             },
             {
+              "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
+              "name": "ready-to-merge"
+            },
+            {
               "id": "LA_kwDOFcwZ1c8AAAABWsHQeA",
               "name": "auto-merge-after-CI"
             },
@@ -474,7 +502,7 @@
         "milestone": null,
         "number": 17498,
         "potentialMergeCommit": {
-          "oid": "bc3af11a9531a644e1685a7c197b9eea568a4a81"
+          "oid": "06b651931c09e3e2f6ac9f0609f69c5a61901581"
         },
         "projectCards": {
           "nodes": []
@@ -603,6 +631,10 @@
             {
               "id": "U_kgDOBfZl7g",
               "login": "mattrobball"
+            },
+            {
+              "id": "U_kgDOB75MNQ",
+              "login": "leanprover-community-mathlib4-bot"
             },
             {
               "id": "MDQ6VXNlcjEwMTA1MDE2",
@@ -756,14 +788,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHQnQS0w",
-                "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11217652741/job/31179674323"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHQnQSUA",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -772,11 +796,35 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQnQS0w",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11217652741/job/31179674323"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHQnQWxQ",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11217652748/job/31179675333"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQqy4UQ",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11217652741/job/31183386705"
+              },
+              {
+                "__typename": "StatusContext",
+                "id": "SC_kwDOFcwZ1c8AAAAHaJqDbg",
+                "context": "bors",
+                "state": "PENDING",
+                "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6265",
+                "description": "Waiting in queue"
               },
               {
                 "__typename": "CheckRun",
@@ -798,7 +846,7 @@
           }
         },
         "title": "chore: process and remove adaptation_note for nightly-2024-09-06",
-        "updatedAt": "2024-10-07T14:42:00Z",
+        "updatedAt": "2024-10-07T15:26:28Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17498",
         "timelineItems": {
           "nodes": [
@@ -920,6 +968,24 @@
               "label": {
                 "id": "LA_kwDOFcwZ1c8AAAABWsHQeA",
                 "name": "auto-merge-after-CI"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6O4wzM",
+              "createdAt": "2024-10-07T15:26:16Z",
+              "body": "As this PR is labelled `auto-merge-after-CI`, we are now sending it to bors:\n\nbors merge",
+              "author": {
+                "login": "leanprover-community-mathlib4-bot"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6ZOD-ozwAAAANi0U_3",
+              "createdAt": "2024-10-07T15:26:28Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
+                "name": "ready-to-merge"
               }
             }
           ]
