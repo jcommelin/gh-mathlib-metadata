@@ -636,6 +636,14 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQvS1XQ",
+                        "name": "Add ready-to-merge label",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11220284674/job/31188104541"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHQHjYhg",
                         "name": "Ping maintainers on Zulip",
                         "conclusion": "SKIPPED",
@@ -644,11 +652,27 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQvS13A",
+                        "name": "Ping maintainers on Zulip",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11220284675/job/31188104668"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHQHjYog",
                         "name": "Fix style issues from lint",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11206124519/job/31146432674"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQvS1Zw",
+                        "name": "Fix style issues from lint",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11220284680/job/31188104551"
                       },
                       {
                         "__typename": "CheckRun",
@@ -697,6 +721,14 @@
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11206124516/job/31146432758"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQvS3iA",
+                        "name": "Add delegated label",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11220284674/job/31188105096"
                       },
                       {
                         "__typename": "CheckRun",
@@ -840,6 +872,10 @@
         "labels": {
           "nodes": [
             {
+              "id": "LA_kwDOFcwZ1c8AAAABFGXRbg",
+              "name": "please-adopt"
+            },
+            {
               "id": "LA_kwDOFcwZ1c8AAAABViJjTQ",
               "name": "t-algebra"
             }
@@ -867,7 +903,7 @@
         "milestone": null,
         "number": 17474,
         "potentialMergeCommit": {
-          "oid": "5ef405aa81de3fc74dff44ed18495f62d2f77850"
+          "oid": "29188e0cfbf0c1e42ad5249fbcda442b79ce0b24"
         },
         "projectCards": {
           "nodes": []
@@ -945,6 +981,15 @@
                 "login": "eric-wieser"
               },
               "submittedAt": "2024-10-06T23:40:17Z"
+            },
+            {
+              "id": "PRR_kwDOFcwZ1c6MOB1-",
+              "body": "",
+              "state": "COMMENTED",
+              "author": {
+                "login": "alreadydone"
+              },
+              "submittedAt": "2024-10-07T16:55:08Z"
             }
           ]
         },
@@ -957,6 +1002,20 @@
                     "id": "PRRC_kwDOFcwZ1c5qpReH",
                     "body": "```suggestion\r\n  __ := ((e : M →ₛₗ[σ₁₂] M₂).domRestrict p).codRestrict (p.map e) fun x ↦ ⟨x, by simp⟩\r\n```",
                     "createdAt": "2024-10-06T18:45:09Z",
+                    "author": {
+                      "login": "alreadydone"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5qugKF",
+                    "body": "mathlib3#16105 was the PR that made `Submodule.(co)map` accept `SemilinearMapClass`, and the author @dupuisf explained his motivation [there](https://github.com/leanprover-community/mathlib3/pull/16105#issuecomment-1219588209). Overall indeed I don't see much advantage of this generality, and it seems to me that using the coercion to `SemilinearMap` would be good enough. So my plan now is to leave this PR to you and make my other PR independent of this one. Let me also bring the reviewer of the original PR @Vierkantor to the discussion.\r\n\r\nThe change (in Lean 3) required specifying the type of `involute` here, but now it's no longer necessary (if you write `involte.toLinearMap` it still works, so this is something we can golf regardless of the decision whether to remove the `.toLinearMap`. One could be tempted to replace `.toLinearMap` by coercions, but then you probably have to specify the type. IIRC the distinction between `.toLinearMap` and coercion can require `erw`s.",
+                    "createdAt": "2024-10-07T16:55:08Z",
                     "author": {
                       "login": "alreadydone"
                     }
@@ -999,6 +1058,14 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQvS1XQ",
+                "name": "Add ready-to-merge label",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11220284674/job/31188104541"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHQHjYhg",
                 "name": "Ping maintainers on Zulip",
                 "conclusion": "SKIPPED",
@@ -1007,11 +1074,27 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQvS13A",
+                "name": "Ping maintainers on Zulip",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11220284675/job/31188104668"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHQHjYog",
                 "name": "Fix style issues from lint",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11206124519/job/31146432674"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQvS1Zw",
+                "name": "Fix style issues from lint",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11220284680/job/31188104551"
               },
               {
                 "__typename": "CheckRun",
@@ -1060,6 +1143,14 @@
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11206124516/job/31146432758"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQvS3iA",
+                "name": "Add delegated label",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11220284674/job/31188105096"
               },
               {
                 "__typename": "CheckRun",
@@ -1137,7 +1228,7 @@
           }
         },
         "title": "chore: remove confounding coercions from `Submodule.(co)map`",
-        "updatedAt": "2024-10-07T13:08:58Z",
+        "updatedAt": "2024-10-07T16:55:26Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17474",
         "timelineItems": {
           "nodes": [
@@ -1227,6 +1318,24 @@
               "body": "I personally prefer removing the use of `*MapClass` in defs because they cause annoying defeq check issues e.g. the problem Eric mentioned above, resulting in `simp` or `rw` not firing correctly.",
               "author": {
                 "login": "erdOne"
+              }
+            },
+            {
+              "__typename": "PullRequestReview",
+              "id": "PRR_kwDOFcwZ1c6MOB1-",
+              "createdAt": "2024-10-07T16:55:08Z",
+              "body": "",
+              "author": {
+                "login": "alreadydone"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6ZHR5izwAAAANi4_Qv",
+              "createdAt": "2024-10-07T16:55:26Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABFGXRbg",
+                "name": "please-adopt"
               }
             }
           ]
