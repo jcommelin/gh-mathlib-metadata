@@ -38,24 +38,10 @@ prs=$(echo "$response" | jq -r --arg PAST_TIME "$PAST_TIME" --arg CURRENT_TIME "
   .number
 ')
 
-if [ -z $prs ]; then
+if [ -z $prs ] then
   echo "No PRs were updated in the last $TIMEDELTA minutes"
   exit 37
 fi
 
+./gather_many.sh $prs
 # Iterate over each PR number
-for pr in $prs; do
-  # Create the directory for the PR
-  dir="data/$pr"
-  mkdir -p "$dir"
-
-  # Run pr_info.sh and save the output
-  ./pr_info.sh "$pr" | jq '.' > "$dir/pr_info.json"
-
-  # Run pr_reactions.sh and save the output
-  ./pr_reactions.sh "$pr" | jq '.' > "$dir/pr_reactions.json"
-
-  # Save the current timestamp
-  echo "$CURRENT_TIME" > "$dir/timestamp.txt"
-done
-
