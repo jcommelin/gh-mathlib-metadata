@@ -32,6 +32,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6O5EC-",
+              "body": "This PR was included in a batch that was canceled, it will be automatically retried",
+              "createdAt": "2024-10-07T16:00:36Z",
+              "author": {
+                "login": "mathlib-bors"
+              }
             }
           ]
         },
@@ -220,11 +228,11 @@
                       },
                       {
                         "__typename": "StatusContext",
-                        "id": "SC_kwDOFcwZ1c8AAAAHaIKCcg",
+                        "id": "SC_kwDOFcwZ1c8AAAAHaKnRtg",
                         "context": "bors",
-                        "state": "PENDING",
+                        "state": "FAILURE",
                         "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6264",
-                        "description": "Waiting in queue"
+                        "description": "Canceled"
                       },
                       {
                         "__typename": "CheckRun",
@@ -325,7 +333,7 @@
         "milestone": null,
         "number": 17497,
         "potentialMergeCommit": {
-          "oid": "30b1cd367e247b9fa827b9a274ab6c7541861ab4"
+          "oid": "4ecc4e40fd3c47f2b6095f1c75d8108c82b88dfd"
         },
         "projectCards": {
           "nodes": []
@@ -606,11 +614,11 @@
               },
               {
                 "__typename": "StatusContext",
-                "id": "SC_kwDOFcwZ1c8AAAAHaIKCcg",
+                "id": "SC_kwDOFcwZ1c8AAAAHaKnRtg",
                 "context": "bors",
-                "state": "PENDING",
+                "state": "FAILURE",
                 "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6264",
-                "description": "Waiting in queue"
+                "description": "Canceled"
               },
               {
                 "__typename": "CheckRun",
@@ -632,7 +640,7 @@
           }
         },
         "title": "chore(Condensed): fix typos in docstrings",
-        "updatedAt": "2024-10-07T14:34:15Z",
+        "updatedAt": "2024-10-07T16:00:37Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17497",
         "timelineItems": {
           "nodes": [
@@ -709,6 +717,18 @@
               "label": {
                 "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
                 "name": "ready-to-merge"
+              }
+            },
+            {
+              "__typename": "ReferencedEvent"
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6O5EC-",
+              "createdAt": "2024-10-07T16:00:36Z",
+              "body": "This PR was included in a batch that was canceled, it will be automatically retried",
+              "author": {
+                "login": "mathlib-bors"
               }
             }
           ]

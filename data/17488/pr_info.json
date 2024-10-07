@@ -40,6 +40,14 @@
               "author": {
                 "login": "j-loreaux"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6O5EGT",
+              "body": "This PR was included in a batch that was canceled, it will be automatically retried",
+              "createdAt": "2024-10-07T16:00:41Z",
+              "author": {
+                "login": "mathlib-bors"
+              }
             }
           ]
         },
@@ -196,11 +204,11 @@
                       },
                       {
                         "__typename": "StatusContext",
-                        "id": "SC_kwDOFcwZ1c8AAAAHaIV6FQ",
+                        "id": "SC_kwDOFcwZ1c8AAAAHaKnSbw",
                         "context": "bors",
-                        "state": "PENDING",
+                        "state": "FAILURE",
                         "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6264",
-                        "description": "Waiting in queue"
+                        "description": "Canceled"
                       },
                       {
                         "__typename": "CheckRun",
@@ -285,7 +293,7 @@
         "milestone": null,
         "number": 17488,
         "potentialMergeCommit": {
-          "oid": "aa1f2b03bd351b10b3f5bf18bcea744d3e6f6660"
+          "oid": "adec04a920670a92ed37ffd8036c2d7f87533fea"
         },
         "projectCards": {
           "nodes": []
@@ -521,11 +529,11 @@
               },
               {
                 "__typename": "StatusContext",
-                "id": "SC_kwDOFcwZ1c8AAAAHaIV6FQ",
+                "id": "SC_kwDOFcwZ1c8AAAAHaKnSbw",
                 "context": "bors",
-                "state": "PENDING",
+                "state": "FAILURE",
                 "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6264",
-                "description": "Waiting in queue"
+                "description": "Canceled"
               },
               {
                 "__typename": "CheckRun",
@@ -547,7 +555,7 @@
           }
         },
         "title": "chore(Mathlib/Data/Nat/Defs): remove `Nat.add_def`",
-        "updatedAt": "2024-10-07T14:40:35Z",
+        "updatedAt": "2024-10-07T16:00:42Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17488",
         "timelineItems": {
           "nodes": [
@@ -636,6 +644,18 @@
               "label": {
                 "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
                 "name": "ready-to-merge"
+              }
+            },
+            {
+              "__typename": "ReferencedEvent"
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6O5EGT",
+              "createdAt": "2024-10-07T16:00:41Z",
+              "body": "This PR was included in a batch that was canceled, it will be automatically retried",
+              "author": {
+                "login": "mathlib-bors"
               }
             }
           ]

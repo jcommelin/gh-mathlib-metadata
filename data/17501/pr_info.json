@@ -40,6 +40,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6O5EGp",
+              "body": "This PR was included in a batch that was canceled, it will be automatically retried",
+              "createdAt": "2024-10-07T16:00:42Z",
+              "author": {
+                "login": "mathlib-bors"
+              }
             }
           ]
         },
@@ -164,19 +172,19 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHQoYkZQ",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "QUEUED",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11218023757/job/31180858469"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHQoYn4w",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11218023760/job/31180859363"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQoYkZQ",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11218023757/job/31180858469"
                       },
                       {
                         "__typename": "CheckRun",
@@ -187,12 +195,20 @@
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11218023760/job/31180859777"
                       },
                       {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQpmk5w",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11218023757/job/31182136551"
+                      },
+                      {
                         "__typename": "StatusContext",
-                        "id": "SC_kwDOFcwZ1c8AAAAHaIpbng",
+                        "id": "SC_kwDOFcwZ1c8AAAAHaKnQ4g",
                         "context": "bors",
-                        "state": "PENDING",
+                        "state": "FAILURE",
                         "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6264",
-                        "description": "Waiting in queue"
+                        "description": "Canceled"
                       },
                       {
                         "__typename": "CheckRun",
@@ -288,7 +304,7 @@
         "milestone": null,
         "number": 17501,
         "potentialMergeCommit": {
-          "oid": "54cf2d2c0662352ccad40c3c3909d2ca5ee3600c"
+          "oid": "d24c4cfbea9238e5dd84d3bc2073bfed36fbf7fb"
         },
         "projectCards": {
           "nodes": []
@@ -496,19 +512,19 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHQoYkZQ",
-                "name": "Build",
-                "conclusion": null,
-                "status": "QUEUED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11218023757/job/31180858469"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHQoYn4w",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11218023760/job/31180859363"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQoYkZQ",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11218023757/job/31180858469"
               },
               {
                 "__typename": "CheckRun",
@@ -519,12 +535,20 @@
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11218023760/job/31180859777"
               },
               {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQpmk5w",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11218023757/job/31182136551"
+              },
+              {
                 "__typename": "StatusContext",
-                "id": "SC_kwDOFcwZ1c8AAAAHaIpbng",
+                "id": "SC_kwDOFcwZ1c8AAAAHaKnQ4g",
                 "context": "bors",
-                "state": "PENDING",
+                "state": "FAILURE",
                 "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6264",
-                "description": "Waiting in queue"
+                "description": "Canceled"
               },
               {
                 "__typename": "CheckRun",
@@ -546,7 +570,7 @@
           }
         },
         "title": "chore(RamificationInertia): remove superfluous DecidableEq",
-        "updatedAt": "2024-10-07T14:51:13Z",
+        "updatedAt": "2024-10-07T16:00:43Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17501",
         "timelineItems": {
           "nodes": [
@@ -632,6 +656,18 @@
               "label": {
                 "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
                 "name": "ready-to-merge"
+              }
+            },
+            {
+              "__typename": "ReferencedEvent"
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6O5EGp",
+              "createdAt": "2024-10-07T16:00:42Z",
+              "body": "This PR was included in a batch that was canceled, it will be automatically retried",
+              "author": {
+                "login": "mathlib-bors"
               }
             }
           ]

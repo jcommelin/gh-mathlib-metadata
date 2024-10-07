@@ -40,6 +40,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6O5ECr",
+              "body": "This PR was included in a batch that was canceled, it will be automatically retried",
+              "createdAt": "2024-10-07T16:00:35Z",
+              "author": {
+                "login": "mathlib-bors"
+              }
             }
           ]
         },
@@ -196,11 +204,11 @@
                       },
                       {
                         "__typename": "StatusContext",
-                        "id": "SC_kwDOFcwZ1c8AAAAHaIJCGw",
+                        "id": "SC_kwDOFcwZ1c8AAAAHaKnVjQ",
                         "context": "bors",
-                        "state": "PENDING",
+                        "state": "FAILURE",
                         "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6264",
-                        "description": "Waiting in queue"
+                        "description": "Canceled"
                       },
                       {
                         "__typename": "CheckRun",
@@ -293,7 +301,7 @@
         "milestone": null,
         "number": 17425,
         "potentialMergeCommit": {
-          "oid": "a46d032e04e6d2d48bf9b18dcfbfef5926c33ecc"
+          "oid": "a6e1fe4e7d8e61db818088a065c1592ea9a39373"
         },
         "projectCards": {
           "nodes": []
@@ -537,11 +545,11 @@
               },
               {
                 "__typename": "StatusContext",
-                "id": "SC_kwDOFcwZ1c8AAAAHaIJCGw",
+                "id": "SC_kwDOFcwZ1c8AAAAHaKnVjQ",
                 "context": "bors",
-                "state": "PENDING",
+                "state": "FAILURE",
                 "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6264",
-                "description": "Waiting in queue"
+                "description": "Canceled"
               },
               {
                 "__typename": "CheckRun",
@@ -563,7 +571,7 @@
           }
         },
         "title": "feat: Noetherian/Artinian is closed under extensions (submodule form)",
-        "updatedAt": "2024-10-07T14:33:46Z",
+        "updatedAt": "2024-10-07T16:00:36Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17425",
         "timelineItems": {
           "nodes": [
@@ -675,6 +683,18 @@
               "label": {
                 "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
                 "name": "ready-to-merge"
+              }
+            },
+            {
+              "__typename": "ReferencedEvent"
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6O5ECr",
+              "createdAt": "2024-10-07T16:00:35Z",
+              "body": "This PR was included in a batch that was canceled, it will be automatically retried",
+              "author": {
+                "login": "mathlib-bors"
               }
             }
           ]

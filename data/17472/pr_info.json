@@ -32,6 +32,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6O5EEn",
+              "body": "This PR was included in a batch that was canceled, it will be automatically retried",
+              "createdAt": "2024-10-07T16:00:39Z",
+              "author": {
+                "login": "mathlib-bors"
+              }
             }
           ]
         },
@@ -1413,11 +1421,11 @@
                       },
                       {
                         "__typename": "StatusContext",
-                        "id": "SC_kwDOFcwZ1c8AAAAHaIOroQ",
+                        "id": "SC_kwDOFcwZ1c8AAAAHaKnS-Q",
                         "context": "bors",
-                        "state": "PENDING",
+                        "state": "FAILURE",
                         "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6264",
-                        "description": "Waiting in queue"
+                        "description": "Canceled"
                       },
                       {
                         "__typename": "CheckRun",
@@ -1714,7 +1722,7 @@
         "milestone": null,
         "number": 17472,
         "potentialMergeCommit": {
-          "oid": "cf30dcf89a0644677ee7393271027a44b500b011"
+          "oid": "460921210d88a2d2f506307a11386771c768961b"
         },
         "projectCards": {
           "nodes": []
@@ -2001,11 +2009,11 @@
               },
               {
                 "__typename": "StatusContext",
-                "id": "SC_kwDOFcwZ1c8AAAAHaIOroQ",
+                "id": "SC_kwDOFcwZ1c8AAAAHaKnS-Q",
                 "context": "bors",
-                "state": "PENDING",
+                "state": "FAILURE",
                 "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6264",
-                "description": "Waiting in queue"
+                "description": "Canceled"
               },
               {
                 "__typename": "CheckRun",
@@ -2027,7 +2035,7 @@
           }
         },
         "title": "chore(Topology): rename some `prod_map`/`prod` to `prodMap`",
-        "updatedAt": "2024-10-07T14:36:48Z",
+        "updatedAt": "2024-10-07T16:00:40Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17472",
         "timelineItems": {
           "nodes": [
@@ -2128,6 +2136,18 @@
               "label": {
                 "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
                 "name": "ready-to-merge"
+              }
+            },
+            {
+              "__typename": "ReferencedEvent"
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6O5EEn",
+              "createdAt": "2024-10-07T16:00:39Z",
+              "body": "This PR was included in a batch that was canceled, it will be automatically retried",
+              "author": {
+                "login": "mathlib-bors"
               }
             }
           ]

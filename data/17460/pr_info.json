@@ -40,6 +40,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6O5ECT",
+              "body": "This PR was included in a batch that was canceled, it will be automatically retried",
+              "createdAt": "2024-10-07T16:00:35Z",
+              "author": {
+                "login": "mathlib-bors"
+              }
             }
           ]
         },
@@ -514,11 +522,11 @@
                       },
                       {
                         "__typename": "StatusContext",
-                        "id": "SC_kwDOFcwZ1c8AAAAHaIIN4Q",
+                        "id": "SC_kwDOFcwZ1c8AAAAHaKnUbg",
                         "context": "bors",
-                        "state": "PENDING",
+                        "state": "FAILURE",
                         "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6264",
-                        "description": "Waiting in queue"
+                        "description": "Canceled"
                       },
                       {
                         "__typename": "CheckRun",
@@ -620,7 +628,7 @@
         "milestone": null,
         "number": 17460,
         "potentialMergeCommit": {
-          "oid": "989c93f3961edacb8a11055bf34630f1632edfed"
+          "oid": "1cae40c7ac1a5d034fe1871470b1de19caf8f0ea"
         },
         "projectCards": {
           "nodes": []
@@ -908,11 +916,11 @@
               },
               {
                 "__typename": "StatusContext",
-                "id": "SC_kwDOFcwZ1c8AAAAHaIIN4Q",
+                "id": "SC_kwDOFcwZ1c8AAAAHaKnUbg",
                 "context": "bors",
-                "state": "PENDING",
+                "state": "FAILURE",
                 "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6264",
-                "description": "Waiting in queue"
+                "description": "Canceled"
               },
               {
                 "__typename": "CheckRun",
@@ -934,7 +942,7 @@
           }
         },
         "title": "feat(RingTheory/Ideal/Operations): drop `IsDedekindDomain` assumptions of some lemmas and move them to `Ideal/Operations.lean`",
-        "updatedAt": "2024-10-07T14:33:17Z",
+        "updatedAt": "2024-10-07T16:00:36Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17460",
         "timelineItems": {
           "nodes": [
@@ -1083,6 +1091,18 @@
               "label": {
                 "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
                 "name": "ready-to-merge"
+              }
+            },
+            {
+              "__typename": "ReferencedEvent"
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6O5ECT",
+              "createdAt": "2024-10-07T16:00:35Z",
+              "body": "This PR was included in a batch that was canceled, it will be automatically retried",
+              "author": {
+                "login": "mathlib-bors"
               }
             }
           ]

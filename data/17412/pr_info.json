@@ -24,6 +24,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6O5ED7",
+              "body": "This PR was included in a batch that was canceled, it will be automatically retried",
+              "createdAt": "2024-10-07T16:00:37Z",
+              "author": {
+                "login": "mathlib-bors"
+              }
             }
           ]
         },
@@ -692,11 +700,11 @@
                       },
                       {
                         "__typename": "StatusContext",
-                        "id": "SC_kwDOFcwZ1c8AAAAHaILmOQ",
+                        "id": "SC_kwDOFcwZ1c8AAAAHaKnWXg",
                         "context": "bors",
-                        "state": "PENDING",
+                        "state": "FAILURE",
                         "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6264",
-                        "description": "Waiting in queue"
+                        "description": "Canceled"
                       },
                       {
                         "__typename": "CheckRun",
@@ -979,7 +987,7 @@
         "milestone": null,
         "number": 17412,
         "potentialMergeCommit": {
-          "oid": "136df593e8b824227efed77d2b5c21bfaceafc58"
+          "oid": "a2b44a1fb1a52e1a440989d80718e11f06fe0b09"
         },
         "projectCards": {
           "nodes": []
@@ -1211,11 +1219,11 @@
               },
               {
                 "__typename": "StatusContext",
-                "id": "SC_kwDOFcwZ1c8AAAAHaILmOQ",
+                "id": "SC_kwDOFcwZ1c8AAAAHaKnWXg",
                 "context": "bors",
-                "state": "PENDING",
+                "state": "FAILURE",
                 "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6264",
-                "description": "Waiting in queue"
+                "description": "Canceled"
               },
               {
                 "__typename": "CheckRun",
@@ -1237,7 +1245,7 @@
           }
         },
         "title": "chore: generalise lemmas from `OrderedSemiring` to `MonoidWithZero`",
-        "updatedAt": "2024-10-07T14:35:08Z",
+        "updatedAt": "2024-10-07T16:00:39Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17412",
         "timelineItems": {
           "nodes": [
@@ -1340,6 +1348,18 @@
               "label": {
                 "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
                 "name": "ready-to-merge"
+              }
+            },
+            {
+              "__typename": "ReferencedEvent"
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6O5ED7",
+              "createdAt": "2024-10-07T16:00:37Z",
+              "body": "This PR was included in a batch that was canceled, it will be automatically retried",
+              "author": {
+                "login": "mathlib-bors"
               }
             }
           ]
