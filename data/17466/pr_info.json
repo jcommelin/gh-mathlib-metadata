@@ -246,6 +246,54 @@
                     "nodes": [
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQtNawg",
+                        "name": "Add ready-to-merge label",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11219601314/job/31185918658"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQtNaPA",
+                        "name": "Ping maintainers on Zulip",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11219601303/job/31185918524"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQtOD2g",
+                        "name": "Ping maintainers on Zulip",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11219604856/job/31185929178"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQtNZCA",
+                        "name": "Fix style issues from lint",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11219601325/job/31185918216"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQtOERQ",
+                        "name": "Fix style issues from lint",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11219604868/job/31185929285"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQtOE6Q",
+                        "name": "Add ready-to-merge label",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11219604854/job/31185929449"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHQsIL2A",
                         "name": "label-and-report-new-contributor",
                         "conclusion": "SUCCESS",
@@ -286,6 +334,22 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQtNYiw",
+                        "name": "Add delegated label",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11219601314/job/31185918091"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQtODkA",
+                        "name": "Add delegated label",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11219604854/job/31185929104"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHQsINIQ",
                         "name": "Lint style (fork)",
                         "conclusion": "SKIPPED",
@@ -313,7 +377,7 @@
                         "id": "CR_kwDOFcwZ1c8AAAAHQsINag",
                         "name": "Build",
                         "conclusion": null,
-                        "status": "QUEUED",
+                        "status": "IN_PROGRESS",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11219250942/job/31184784746"
                       },
                       {
@@ -331,6 +395,14 @@
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11219250941/job/31184785403"
+                      },
+                      {
+                        "__typename": "StatusContext",
+                        "id": "SC_kwDOFcwZ1c8AAAAHaK59Sw",
+                        "context": "bors",
+                        "state": "PENDING",
+                        "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6266",
+                        "description": "Waiting in queue"
                       },
                       {
                         "__typename": "CheckRun",
@@ -383,6 +455,10 @@
         "labels": {
           "nodes": [
             {
+              "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
+              "name": "ready-to-merge"
+            },
+            {
               "id": "LA_kwDOFcwZ1c8AAAABViJjTQ",
               "name": "t-algebra"
             }
@@ -391,13 +467,13 @@
         "latestReviews": {
           "nodes": [
             {
-              "id": "PRR_kwDOFcwZ1c6MGl8z",
-              "body": "",
-              "state": "COMMENTED",
+              "id": "PRR_kwDOFcwZ1c6MNtAe",
+              "body": "bors merge",
+              "state": "APPROVED",
               "author": {
                 "login": "b-mehta"
               },
-              "submittedAt": "2024-10-06T13:55:24Z"
+              "submittedAt": "2024-10-07T16:11:32Z"
             }
           ]
         },
@@ -465,7 +541,7 @@
             }
           }
         ],
-        "reviewDecision": null,
+        "reviewDecision": "APPROVED",
         "reviewRequests": {
           "nodes": []
         },
@@ -488,6 +564,24 @@
                 "login": "YaelDillies"
               },
               "submittedAt": "2024-10-07T15:50:15Z"
+            },
+            {
+              "id": "PRR_kwDOFcwZ1c6MNs5V",
+              "body": "",
+              "state": "COMMENTED",
+              "author": {
+                "login": "b-mehta"
+              },
+              "submittedAt": "2024-10-07T16:11:19Z"
+            },
+            {
+              "id": "PRR_kwDOFcwZ1c6MNtAe",
+              "body": "bors merge",
+              "state": "APPROVED",
+              "author": {
+                "login": "b-mehta"
+              },
+              "submittedAt": "2024-10-07T16:11:32Z"
             }
           ]
         },
@@ -510,6 +604,14 @@
                     "createdAt": "2024-10-07T15:50:15Z",
                     "author": {
                       "login": "YaelDillies"
+                    }
+                  },
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5quR6E",
+                    "body": "Yeah that's fair, let's avoid it in this PR. ",
+                    "createdAt": "2024-10-07T16:11:19Z",
+                    "author": {
+                      "login": "b-mehta"
                     }
                   }
                 ]
@@ -543,6 +645,10 @@
             {
               "id": "MDQ6VXNlcjI5OTU5MjI2",
               "login": "b-mehta"
+            },
+            {
+              "id": "U_kgDOB75MNQ",
+              "login": "leanprover-community-mathlib4-bot"
             }
           ]
         },
@@ -550,6 +656,54 @@
         "statusCheckRollup": {
           "contexts": {
             "nodes": [
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQtNawg",
+                "name": "Add ready-to-merge label",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11219601314/job/31185918658"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQtNaPA",
+                "name": "Ping maintainers on Zulip",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11219601303/job/31185918524"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQtOD2g",
+                "name": "Ping maintainers on Zulip",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11219604856/job/31185929178"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQtNZCA",
+                "name": "Fix style issues from lint",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11219601325/job/31185918216"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQtOERQ",
+                "name": "Fix style issues from lint",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11219604868/job/31185929285"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQtOE6Q",
+                "name": "Add ready-to-merge label",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11219604854/job/31185929449"
+              },
               {
                 "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHQsIL2A",
@@ -592,6 +746,22 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQtNYiw",
+                "name": "Add delegated label",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11219601314/job/31185918091"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQtODkA",
+                "name": "Add delegated label",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11219604854/job/31185929104"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHQsINIQ",
                 "name": "Lint style (fork)",
                 "conclusion": "SKIPPED",
@@ -619,7 +789,7 @@
                 "id": "CR_kwDOFcwZ1c8AAAAHQsINag",
                 "name": "Build",
                 "conclusion": null,
-                "status": "QUEUED",
+                "status": "IN_PROGRESS",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11219250942/job/31184784746"
               },
               {
@@ -637,6 +807,14 @@
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11219250941/job/31184785403"
+              },
+              {
+                "__typename": "StatusContext",
+                "id": "SC_kwDOFcwZ1c8AAAAHaK59Sw",
+                "context": "bors",
+                "state": "PENDING",
+                "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6266",
+                "description": "Waiting in queue"
               },
               {
                 "__typename": "CheckRun",
@@ -658,7 +836,7 @@
           }
         },
         "title": "feat: multiplying an indicator by a constant",
-        "updatedAt": "2024-10-07T15:51:32Z",
+        "updatedAt": "2024-10-07T16:11:44Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17466",
         "timelineItems": {
           "nodes": [
@@ -711,6 +889,24 @@
               "label": {
                 "id": "LA_kwDOFcwZ1c7P265b",
                 "name": "awaiting-author"
+              }
+            },
+            {
+              "__typename": "PullRequestReview",
+              "id": "PRR_kwDOFcwZ1c6MNtAe",
+              "createdAt": "2024-10-07T16:11:32Z",
+              "body": "bors merge",
+              "author": {
+                "login": "b-mehta"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6ZGMdCzwAAAANi252_",
+              "createdAt": "2024-10-07T16:11:44Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
+                "name": "ready-to-merge"
               }
             }
           ]
