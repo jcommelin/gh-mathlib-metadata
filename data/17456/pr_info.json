@@ -40,6 +40,14 @@
               "author": {
                 "login": "leanprover-bot"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6OzkpL",
+              "body": "bors r+",
+              "createdAt": "2024-10-07T04:41:31Z",
+              "author": {
+                "login": "hrmacbeth"
+              }
             }
           ]
         },
@@ -456,14 +464,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHQAZK1g",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11202609485/job/31138925270"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHQAZKMg",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -472,11 +472,35 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQAZK1g",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11202609485/job/31138925270"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHQAZLGw",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11202609484/job/31138925339"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQBNxBQ",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11202609485/job/31139787013"
+                      },
+                      {
+                        "__typename": "StatusContext",
+                        "id": "SC_kwDOFcwZ1c8AAAAHZ9zAVw",
+                        "context": "bors",
+                        "state": "PENDING",
+                        "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6254",
+                        "description": "Waiting in queue"
                       },
                       {
                         "__typename": "CheckRun",
@@ -529,6 +553,10 @@
         "labels": {
           "nodes": [
             {
+              "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
+              "name": "ready-to-merge"
+            },
+            {
               "id": "LA_kwDOFcwZ1c8AAAABViJjTQ",
               "name": "t-algebra"
             }
@@ -556,7 +584,7 @@
         "milestone": null,
         "number": 17456,
         "potentialMergeCommit": {
-          "oid": "a0e73b44f2ecfdfbeca4944ea0dacba63418d63f"
+          "oid": "c0955400901463b3a8dd6f86069ee39e6f8c131b"
         },
         "projectCards": {
           "nodes": []
@@ -681,6 +709,10 @@
               "login": "leanprover-bot"
             },
             {
+              "id": "MDQ6VXNlcjI1MzE2MTYy",
+              "login": "hrmacbeth"
+            },
+            {
               "id": "MDQ6VXNlcjY1NTE0MTMx",
               "login": "Ruben-VandeVelde"
             }
@@ -756,14 +788,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHQAZK1g",
-                "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11202609485/job/31138925270"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHQAZKMg",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -772,11 +796,35 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQAZK1g",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11202609485/job/31138925270"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHQAZLGw",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11202609484/job/31138925339"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQBNxBQ",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11202609485/job/31139787013"
+              },
+              {
+                "__typename": "StatusContext",
+                "id": "SC_kwDOFcwZ1c8AAAAHZ9zAVw",
+                "context": "bors",
+                "state": "PENDING",
+                "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6254",
+                "description": "Waiting in queue"
               },
               {
                 "__typename": "CheckRun",
@@ -798,7 +846,7 @@
           }
         },
         "title": "feat: a reflexive vector space (in the purely algebraic sense) is finite dimensional",
-        "updatedAt": "2024-10-06T14:19:01Z",
+        "updatedAt": "2024-10-07T04:42:30Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17456",
         "timelineItems": {
           "nodes": [
@@ -873,6 +921,24 @@
             },
             {
               "__typename": "PullRequestCommit"
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6OzkpL",
+              "createdAt": "2024-10-07T04:41:31Z",
+              "body": "bors r+",
+              "author": {
+                "login": "hrmacbeth"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6ZFTKJzwAAAANiRzm_",
+              "createdAt": "2024-10-07T04:42:30Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
+                "name": "ready-to-merge"
+              }
             }
           ]
         }
