@@ -24,6 +24,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6O38Ov",
+              "body": "Do you care about the particular form of the counterexample ? If not, I think you can do much less work (and get a metric structure as a bonus) by endowing `ℕ` with the distance induced by the injection `fun n : ℕ ↦ (2 : ℝ) ^ (-n : ℤ)`. Then the identity is obviously Cauchy, and the topology is discrete because the singleton `{n}` is the preimage of the open set `Ioo ((2 : ℝ) ^ (-n - 1 : ℤ)) ((2 : ℝ) ^ (-n+1 : ℤ))`.",
+              "createdAt": "2024-10-07T14:04:10Z",
+              "author": {
+                "login": "ADedecker"
+              }
             }
           ]
         },
@@ -750,14 +758,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHPwV1cA",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11194967908/job/31122093424"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHPwV1Jw",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -766,11 +766,27 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHPwV1cA",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11194967908/job/31122093424"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHPwV17w",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11194967912/job/31122093551"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHPxIrfQ",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11194967908/job/31122926461"
                       },
                       {
                         "__typename": "CheckRun",
@@ -845,7 +861,7 @@
         "milestone": null,
         "number": 17417,
         "potentialMergeCommit": {
-          "oid": "11ba234a8cbcaeedac011e2c1c881e543107d971"
+          "oid": "911175d8bf703a77ebf00baec4704a1cea9c4462"
         },
         "projectCards": {
           "nodes": []
@@ -918,6 +934,10 @@
             {
               "id": "MDQ6VXNlcjY1MDgwMTQ0",
               "login": "faenuccio"
+            },
+            {
+              "id": "MDQ6VXNlcjQ4NjU2Nzkz",
+              "login": "ADedecker"
             }
           ]
         },
@@ -991,14 +1011,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHPwV1cA",
-                "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11194967908/job/31122093424"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHPwV1Jw",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -1007,11 +1019,27 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHPwV1cA",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11194967908/job/31122093424"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHPwV17w",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11194967912/job/31122093551"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHPxIrfQ",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11194967908/job/31122926461"
               },
               {
                 "__typename": "CheckRun",
@@ -1033,7 +1061,7 @@
           }
         },
         "title": "feat(Counterexamples/DiscreteTopologyNonDiscreteUniformity): add a counterexample about discrete uniformity and Cauchy filters",
-        "updatedAt": "2024-10-05T17:17:32Z",
+        "updatedAt": "2024-10-07T14:04:11Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17417",
         "timelineItems": {
           "nodes": [
@@ -1090,6 +1118,15 @@
             },
             {
               "__typename": "PullRequestCommit"
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6O38Ov",
+              "createdAt": "2024-10-07T14:04:10Z",
+              "body": "Do you care about the particular form of the counterexample ? If not, I think you can do much less work (and get a metric structure as a bonus) by endowing `ℕ` with the distance induced by the injection `fun n : ℕ ↦ (2 : ℝ) ^ (-n : ℤ)`. Then the identity is obviously Cauchy, and the topology is discrete because the singleton `{n}` is the preimage of the open set `Ioo ((2 : ℝ) ^ (-n - 1 : ℤ)) ((2 : ℝ) ^ (-n+1 : ℤ))`.",
+              "author": {
+                "login": "ADedecker"
+              }
             }
           ]
         }
