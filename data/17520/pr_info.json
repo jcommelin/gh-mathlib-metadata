@@ -24,6 +24,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6O78tT",
+              "body": "!bench",
+              "createdAt": "2024-10-07T23:00:30Z",
+              "author": {
+                "login": "eric-wieser"
+              }
             }
           ]
         },
@@ -116,14 +124,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHQ58UiQ",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "QUEUED",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11223816809/job/31199270025"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHQ58UTA",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -132,11 +132,27 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQ58UiQ",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11223816809/job/31199270025"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHQ58Wyg",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11223816805/job/31199270602"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQ7DWfw",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11223816809/job/31200433791"
                       },
                       {
                         "__typename": "CheckRun",
@@ -215,7 +231,7 @@
         "milestone": null,
         "number": 17520,
         "potentialMergeCommit": {
-          "oid": "e2a4ac6d0a305c0b76b5760ef1a776fb0e17b9c1"
+          "oid": "42afa03352f02456e709bb7dc459e823f236dc98"
         },
         "projectCards": {
           "nodes": []
@@ -288,6 +304,10 @@
             {
               "id": "MDQ6VXNlcjEwMTA1MDE2",
               "login": "grunweg"
+            },
+            {
+              "id": "MDQ6VXNlcjQyNTI2MA==",
+              "login": "eric-wieser"
             }
           ]
         },
@@ -369,14 +389,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHQ58UiQ",
-                "name": "Build",
-                "conclusion": null,
-                "status": "QUEUED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11223816809/job/31199270025"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHQ58UTA",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -385,11 +397,27 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQ58UiQ",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11223816809/job/31199270025"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHQ58Wyg",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11223816805/job/31199270602"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQ7DWfw",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11223816809/job/31200433791"
               },
               {
                 "__typename": "CheckRun",
@@ -411,7 +439,7 @@
           }
         },
         "title": "chore: weaken typeclass assumptions `MetricSpace` -> `PseudoMetricSpace`",
-        "updatedAt": "2024-10-07T21:00:06Z",
+        "updatedAt": "2024-10-07T23:00:31Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17520",
         "timelineItems": {
           "nodes": [
@@ -461,6 +489,15 @@
               "label": {
                 "id": "LA_kwDOFcwZ1c8AAAABViJqVA",
                 "name": "t-measure-probability"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6O78tT",
+              "createdAt": "2024-10-07T23:00:30Z",
+              "body": "!bench",
+              "author": {
+                "login": "eric-wieser"
               }
             }
           ]
