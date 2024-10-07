@@ -32,6 +32,14 @@
               "author": {
                 "login": "RemyDegenne"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6O3sYb",
+              "body": "The good thing about Yury's proposal is that sometimes we consider uniform distributions over a subset of the full type. This happens in additive combinatorics at least.\r\n\r\nIs that an argument for renaming `ProbabilityTheory.condCount` to `ProbabilityTheory.discreteUniform`?",
+              "createdAt": "2024-10-07T13:38:46Z",
+              "author": {
+                "login": "YaelDillies"
+              }
             }
           ]
         },
@@ -222,7 +230,7 @@
         "milestone": null,
         "number": 17463,
         "potentialMergeCommit": {
-          "oid": "f58abc07994d12047fa41c05c5608cf61ad81c6e"
+          "oid": "88b9f631382f730e6e39cbe00f1074dc1ea47c90"
         },
         "projectCards": {
           "nodes": []
@@ -443,7 +451,7 @@
           }
         },
         "title": "feat: `essSup` of the uniform measure",
-        "updatedAt": "2024-10-07T07:24:33Z",
+        "updatedAt": "2024-10-07T13:38:48Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17463",
         "timelineItems": {
           "nodes": [
@@ -493,6 +501,15 @@
               "body": "Same comment as on the other PR that included that code: I'd be sad if the standard way to write the uniform distribution in Mathlib was `.count[|.univ]` and the standard way to talk about it in a name was `cond_count`. Nodoby but the initiated would find those.\r\n\r\nYou should introduce a definition named `discreteUniform` or `finiteUniform` or something similar, defined with `.count[|.univ]`  or directly with count and a smul. Add the minimal amount of API to make it usable, then use it in this PR. A uniform distribution on a finite type is common and useful enough to warrant a definition.",
               "author": {
                 "login": "RemyDegenne"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6O3sYb",
+              "createdAt": "2024-10-07T13:38:46Z",
+              "body": "The good thing about Yury's proposal is that sometimes we consider uniform distributions over a subset of the full type. This happens in additive combinatorics at least.\r\n\r\nIs that an argument for renaming `ProbabilityTheory.condCount` to `ProbabilityTheory.discreteUniform`?",
+              "author": {
+                "login": "YaelDillies"
               }
             }
           ]
