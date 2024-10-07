@@ -48,6 +48,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6O2rJD",
+              "body": "The tag seems to be missing indeed per the failure in #17486 so I'm hesitant to merge this before that is done. ",
+              "createdAt": "2024-10-07T11:43:54Z",
+              "author": {
+                "login": "bryangingechen"
+              }
             }
           ]
         },
@@ -188,14 +196,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHQUOXaA",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11211243970/job/31159719784"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHQUOZsg",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -204,11 +204,27 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQUOXaA",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11211243970/job/31159719784"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHQUOdow",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11211243991/job/31159721379"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQXfwhA",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11211243970/job/31163150468"
                       },
                       {
                         "__typename": "CheckRun",
@@ -300,7 +316,7 @@
         "milestone": null,
         "number": 17487,
         "potentialMergeCommit": {
-          "oid": "0a915c77b849099b168b777f1805e7f07b9b6fb6"
+          "oid": "079a1931df50d772a31d6bda0d2cd8d57a593155"
         },
         "projectCards": {
           "nodes": []
@@ -383,6 +399,10 @@
             {
               "id": "MDQ6VXNlcjI5NDY3NzQ1",
               "login": "adomani"
+            },
+            {
+              "id": "MDQ6VXNlcjUyMDk5NTI=",
+              "login": "bryangingechen"
             },
             {
               "id": "MDQ6VXNlcjEwMTA1MDE2",
@@ -516,14 +536,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHQUOXaA",
-                "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11211243970/job/31159719784"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHQUOZsg",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -532,11 +544,27 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQUOXaA",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11211243970/job/31159719784"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHQUOdow",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11211243991/job/31159721379"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQXfwhA",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11211243970/job/31163150468"
               },
               {
                 "__typename": "CheckRun",
@@ -566,7 +594,7 @@
           }
         },
         "title": "chore: bump lean4checker to v4.13.0-rc3",
-        "updatedAt": "2024-10-07T09:02:29Z",
+        "updatedAt": "2024-10-07T11:43:56Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17487",
         "timelineItems": {
           "nodes": [
@@ -652,6 +680,15 @@
               "label": {
                 "id": "LA_kwDOFcwZ1c8AAAABh1mAHA",
                 "name": "maintainer-merge"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6O2rJD",
+              "createdAt": "2024-10-07T11:43:54Z",
+              "body": "The tag seems to be missing indeed per the failure in #17486 so I'm hesitant to merge this before that is done. ",
+              "author": {
+                "login": "bryangingechen"
               }
             }
           ]
