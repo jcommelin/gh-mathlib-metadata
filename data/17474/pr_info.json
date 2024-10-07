@@ -24,6 +24,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6Oz4Sf",
+              "body": "> The downside of this approach (or arguably, of the fact these defs assume `LinearMapClass` is that it's now much harder to use `map_comp` to combine `map f (map e S)`.\r\n\r\nI introduced `(co)map_semilinearMap` for this purpose, but it seems to be more convenient to replace `rw` with `erw` to fix those breakages concerning `map_comp` ...\r\n\r\nUnfortunately there's still a test failure that I have no idea about:\r\n![image](https://github.com/user-attachments/assets/0fec8f6a-d018-4490-8a6c-d82e8505789d)",
+              "createdAt": "2024-10-07T05:51:44Z",
+              "author": {
+                "login": "alreadydone"
+              }
             }
           ]
         },
@@ -836,15 +844,13 @@
         },
         "maintainerCanModify": false,
         "mergeCommit": null,
-        "mergeStateStatus": "BLOCKED",
-        "mergeable": "MERGEABLE",
+        "mergeStateStatus": "UNKNOWN",
+        "mergeable": "UNKNOWN",
         "mergedAt": null,
         "mergedBy": null,
         "milestone": null,
         "number": 17474,
-        "potentialMergeCommit": {
-          "oid": "94f54718b8fb564b790a84c4d8c2386fe3238f3b"
-        },
+        "potentialMergeCommit": null,
         "projectCards": {
           "nodes": []
         },
@@ -1109,7 +1115,7 @@
           }
         },
         "title": "chore: remove confounding coercions from `Submodule.(co)map`",
-        "updatedAt": "2024-10-06T23:40:17Z",
+        "updatedAt": "2024-10-07T05:52:01Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17474",
         "timelineItems": {
           "nodes": [
@@ -1172,6 +1178,15 @@
               "body": "The downside of this approach (or arguably, of the fact these defs assume `LinearMapClass` is that it's now much harder to use `map_comp` to combine `map f (map e S)`.",
               "author": {
                 "login": "eric-wieser"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6Oz4Sf",
+              "createdAt": "2024-10-07T05:51:44Z",
+              "body": "> The downside of this approach (or arguably, of the fact these defs assume `LinearMapClass` is that it's now much harder to use `map_comp` to combine `map f (map e S)`.\r\n\r\nI introduced `(co)map_semilinearMap` for this purpose, but it seems to be more convenient to replace `rw` with `erw` to fix those breakages concerning `map_comp` ...\r\n\r\nUnfortunately there's still a test failure that I have no idea about:\r\n![image](https://github.com/user-attachments/assets/0fec8f6a-d018-4490-8a6c-d82e8505789d)",
+              "author": {
+                "login": "alreadydone"
               }
             }
           ]
