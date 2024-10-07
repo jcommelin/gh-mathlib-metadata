@@ -24,6 +24,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6O0NxO",
+              "body": "That's not a `feat`!\n\nCould you please move this notation to `Algebra.ZeroOne` (which you could rename `Algebra.Notation)? I have the plan of making `abs` notation again so that we can prove properties of `abs` on `Int` without importing ordered algebra.",
+              "createdAt": "2024-10-07T06:52:29Z",
+              "author": {
+                "login": "YaelDillies"
+              }
             }
           ]
         },
@@ -337,6 +345,14 @@
         "labels": {
           "nodes": [
             {
+              "id": "LA_kwDOFcwZ1c7P265b",
+              "name": "awaiting-author"
+            },
+            {
+              "id": "LA_kwDOFcwZ1c8AAAABViJjTQ",
+              "name": "t-algebra"
+            },
+            {
               "id": "LA_kwDOFcwZ1c8AAAABViJlpQ",
               "name": "t-order"
             }
@@ -347,15 +363,13 @@
         },
         "maintainerCanModify": false,
         "mergeCommit": null,
-        "mergeStateStatus": "BLOCKED",
-        "mergeable": "MERGEABLE",
+        "mergeStateStatus": "UNKNOWN",
+        "mergeable": "UNKNOWN",
         "mergedAt": null,
         "mergedBy": null,
         "milestone": null,
         "number": 17426,
-        "potentialMergeCommit": {
-          "oid": "a2560f051242bc4ede3cb00b10113f860fdca4c6"
-        },
+        "potentialMergeCommit": null,
         "projectCards": {
           "nodes": []
         },
@@ -434,6 +448,10 @@
             {
               "id": "MDQ6VXNlcjg5MjA1OTg=",
               "login": "j-loreaux"
+            },
+            {
+              "id": "MDQ6VXNlcjE0MDkwNTkz",
+              "login": "YaelDillies"
             }
           ]
         },
@@ -556,8 +574,8 @@
             ]
           }
         },
-        "title": "feat: turn `posPart` into a notation class again",
-        "updatedAt": "2024-10-06T17:35:39Z",
+        "title": "refactor: turn `posPart` into a notation class again",
+        "updatedAt": "2024-10-07T06:53:01Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17426",
         "timelineItems": {
           "nodes": [
@@ -592,6 +610,36 @@
               "requestedReviewer": {
                 "id": "MDQ6VXNlcjE0MDkwNTkz",
                 "login": "YaelDillies"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6O0NxO",
+              "createdAt": "2024-10-07T06:52:29Z",
+              "body": "That's not a `feat`!\n\nCould you please move this notation to `Algebra.ZeroOne` (which you could rename `Algebra.Notation)? I have the plan of making `abs` notation again so that we can prove properties of `abs` on `Int` without importing ordered algebra.",
+              "author": {
+                "login": "YaelDillies"
+              }
+            },
+            {
+              "__typename": "RenamedTitleEvent"
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6ZBSEKzwAAAANiWTH2",
+              "createdAt": "2024-10-07T06:53:01Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c7P265b",
+                "name": "awaiting-author"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6ZBSEKzwAAAANiWTIC",
+              "createdAt": "2024-10-07T06:53:01Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABViJjTQ",
+                "name": "t-algebra"
               }
             }
           ]
