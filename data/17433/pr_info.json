@@ -24,6 +24,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6O1l5o",
+              "body": "Thanks a lot!\r\n\r\nbors merge",
+              "createdAt": "2024-10-07T09:35:01Z",
+              "author": {
+                "login": "kbuzzard"
+              }
             }
           ]
         },
@@ -1312,14 +1320,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHQVR7DQ",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11211604139/job/31160826637"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHQVR4pg",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -1328,11 +1328,35 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQVR7DQ",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11211604139/job/31160826637"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHQVR-iw",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11211604142/job/31160827531"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQYHuhw",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11211604139/job/31163805319"
+                      },
+                      {
+                        "__typename": "StatusContext",
+                        "id": "SC_kwDOFcwZ1c8AAAAHaBrGtA",
+                        "context": "bors",
+                        "state": "PENDING",
+                        "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6258",
+                        "description": "Waiting in queue"
                       },
                       {
                         "__typename": "CheckRun",
@@ -1385,6 +1409,10 @@
         "labels": {
           "nodes": [
             {
+              "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
+              "name": "ready-to-merge"
+            },
+            {
               "id": "LA_kwDOFcwZ1c8AAAABViJjTQ",
               "name": "t-algebra"
             }
@@ -1421,7 +1449,7 @@
         "milestone": null,
         "number": 17433,
         "potentialMergeCommit": {
-          "oid": "6dd93809ce8e4bbed52e59ce92e704d2a2e5b4b2"
+          "oid": "ebd1b6aca408febcc12c220c0d5a798af92ddfb6"
         },
         "projectCards": {
           "nodes": []
@@ -1589,6 +1617,10 @@
               "login": "judithludwig"
             },
             {
+              "id": "MDQ6VXNlcjMxODY3ODI3",
+              "login": "kbuzzard"
+            },
+            {
               "id": "MDQ6VXNlcjU2MTY2MjM2",
               "login": "CBirkbeck"
             },
@@ -1668,14 +1700,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHQVR7DQ",
-                "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11211604139/job/31160826637"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHQVR4pg",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -1684,11 +1708,35 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQVR7DQ",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11211604139/job/31160826637"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHQVR-iw",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11211604142/job/31160827531"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQYHuhw",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11211604139/job/31163805319"
+              },
+              {
+                "__typename": "StatusContext",
+                "id": "SC_kwDOFcwZ1c8AAAAHaBrGtA",
+                "context": "bors",
+                "state": "PENDING",
+                "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6258",
+                "description": "Waiting in queue"
               },
               {
                 "__typename": "CheckRun",
@@ -1710,7 +1758,7 @@
           }
         },
         "title": "feat(LinearAlgebra/Matrix/GeneralLinearGroup): add lemmas on hom induced from a ring hom",
-        "updatedAt": "2024-10-07T08:27:58Z",
+        "updatedAt": "2024-10-07T09:35:13Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17433",
         "timelineItems": {
           "nodes": [
@@ -1809,6 +1857,24 @@
             },
             {
               "__typename": "PullRequestCommit"
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6O1l5o",
+              "createdAt": "2024-10-07T09:35:01Z",
+              "body": "Thanks a lot!\r\n\r\nbors merge",
+              "author": {
+                "login": "kbuzzard"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6ZDJjbzwAAAANifbaf",
+              "createdAt": "2024-10-07T09:35:12Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
+                "name": "ready-to-merge"
+              }
             }
           ]
         }
