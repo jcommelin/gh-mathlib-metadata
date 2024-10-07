@@ -1,13 +1,14 @@
 #!/usr/bin/env bash
 
-# Surface errors in this script to CI, so they get noticed.
-# See e.g. http://redsymbol.net/articles/unofficial-bash-strict-mode/ for explanation.
-set -e -u -o pipefail
-
+# Gather updated PR information for all mathlib PRs which were updated "recently".
 # This script returns the exit code
 # - 0 if no errors occurred, and data for at least one PR was downloaded,
 # - 37 if no errors occurred, but the list of PRs was empty,
 # - 1 if the was an error fetching data.
+
+# Surface errors in this script to CI, so they get noticed.
+# See e.g. http://redsymbol.net/articles/unofficial-bash-strict-mode/ for explanation.
+set -e -u -o pipefail
 
 TIMEDELTA=$1
 
