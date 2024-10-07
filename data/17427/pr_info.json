@@ -24,6 +24,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6O2dX2",
+              "body": "Looks good now, but please update the PR header to reflect the renaming (since that will become the commit message).",
+              "createdAt": "2024-10-07T11:18:03Z",
+              "author": {
+                "login": "loefflerd"
+              }
             }
           ]
         },
@@ -796,14 +804,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHQFHN_g",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11204921529/job/31143874046"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHQFHOGg",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -812,11 +812,27 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQFHN_g",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11204921529/job/31143874046"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHQFHO5A",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11204921531/job/31143874276"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHQF3-ig",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11204921529/job/31144672906"
                       },
                       {
                         "__typename": "CheckRun",
@@ -889,6 +905,10 @@
         "labels": {
           "nodes": [
             {
+              "id": "LA_kwDOFcwZ1c7P265b",
+              "name": "awaiting-author"
+            },
+            {
               "id": "LA_kwDOFcwZ1c8AAAABViJbOw",
               "name": "t-topology"
             }
@@ -916,7 +936,7 @@
         "milestone": null,
         "number": 17427,
         "potentialMergeCommit": {
-          "oid": "45a052d42566b33cff8edf0656db7e7ab4a09e51"
+          "oid": "0ad949c782d5d35a5f3479321e2de4e52cafe9e9"
         },
         "projectCards": {
           "nodes": []
@@ -1188,14 +1208,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHQFHN_g",
-                "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11204921529/job/31143874046"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHQFHOGg",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -1204,11 +1216,27 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQFHN_g",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11204921529/job/31143874046"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHQFHO5A",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11204921531/job/31143874276"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHQF3-ig",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11204921529/job/31144672906"
               },
               {
                 "__typename": "CheckRun",
@@ -1230,7 +1258,7 @@
           }
         },
         "title": "feat: strengthen `instTotallyDisconnectedSpaceOfIsUltrametricDist` to `TotallySeparatedSpace`",
-        "updatedAt": "2024-10-06T20:24:37Z",
+        "updatedAt": "2024-10-07T11:18:11Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17427",
         "timelineItems": {
           "nodes": [
@@ -1326,6 +1354,24 @@
             },
             {
               "__typename": "PullRequestCommit"
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6O2dX2",
+              "createdAt": "2024-10-07T11:18:03Z",
+              "body": "Looks good now, but please update the PR header to reflect the renaming (since that will become the commit message).",
+              "author": {
+                "login": "loefflerd"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6ZCHBDzwAAAANik_RY",
+              "createdAt": "2024-10-07T11:18:11Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c7P265b",
+                "name": "awaiting-author"
+              }
             }
           ]
         }
