@@ -40,6 +40,14 @@
               "author": {
                 "login": "ahhwuhu"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PAt8L",
+              "body": "> > Can you please fix the error?\r\n> \r\n> it tells me that Polynomial.Legendre definition missing documentation string. I don't know how to fix this error.\r\n\r\nAny definition must have a docstring. Just write something like\r\n```lean\r\n/--  `Legendre n` is the polynomial blahblah -/\r\nnoncomputable def Legendre (n : ℕ) : ℝ[X] :=\r\n```",
+              "createdAt": "2024-10-08T09:25:34Z",
+              "author": {
+                "login": "riccardobrasca"
+              }
             }
           ]
         },
@@ -706,7 +714,7 @@
           }
         },
         "title": "feat: Define Legendre polynomials and prove some basic prop.",
-        "updatedAt": "2024-10-08T09:20:12Z",
+        "updatedAt": "2024-10-08T09:25:36Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17500",
         "timelineItems": {
           "nodes": [
@@ -771,6 +779,15 @@
               "body": "> Can you please fix the error?\r\n\r\nit tells me that Polynomial.Legendre definition missing documentation string. I don't know how to fix this error.",
               "author": {
                 "login": "ahhwuhu"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PAt8L",
+              "createdAt": "2024-10-08T09:25:34Z",
+              "body": "> > Can you please fix the error?\r\n> \r\n> it tells me that Polynomial.Legendre definition missing documentation string. I don't know how to fix this error.\r\n\r\nAny definition must have a docstring. Just write something like\r\n```lean\r\n/--  `Legendre n` is the polynomial blahblah -/\r\nnoncomputable def Legendre (n : ℕ) : ℝ[X] :=\r\n```",
+              "author": {
+                "login": "riccardobrasca"
               }
             }
           ]
