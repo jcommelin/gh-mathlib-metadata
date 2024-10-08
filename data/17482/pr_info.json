@@ -24,6 +24,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PGmkh",
+              "body": "In some cases `dcomp` is used for reindexing of a dependent function. But https://loogle.lean-lang.org/?q=Function.dcomp returns only 5 results, one of them is the definition and two others I'm overriding in this PR (I added them in #15694), so we may want to drop `dcomp` completely (deprecate, unfold notation in 2 lemmas, delete in N months).",
+              "createdAt": "2024-10-08T21:41:14Z",
+              "author": {
+                "login": "urkud"
+              }
             }
           ]
         },
@@ -909,7 +917,7 @@
         "milestone": null,
         "number": 17482,
         "potentialMergeCommit": {
-          "oid": "ea6b4d6ce1baee79adbebffa8580b0352d12fbe1"
+          "oid": "6c407974f546cca8036dffd6a38bc6f84e301d99"
         },
         "projectCards": {
           "nodes": []
@@ -1326,7 +1334,7 @@
           }
         },
         "title": "feat(Logic/Function): define `Pi.map`",
-        "updatedAt": "2024-10-08T21:38:07Z",
+        "updatedAt": "2024-10-08T21:45:03Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17482",
         "timelineItems": {
           "nodes": [
@@ -1386,6 +1394,15 @@
               "body": "I like this change a lot, but it leaves a question: what is the use for `dcomp` now? Is the point just to have another reducibility setting? Should we deprecate `dcomp` as well?",
               "author": {
                 "login": "ADedecker"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PGmkh",
+              "createdAt": "2024-10-08T21:41:14Z",
+              "body": "In some cases `dcomp` is used for reindexing of a dependent function. But https://loogle.lean-lang.org/?q=Function.dcomp returns only 5 results, one of them is the definition and two others I'm overriding in this PR (I added them in #15694), so we may want to drop `dcomp` completely (deprecate, unfold notation in 2 lemmas, delete in N months).",
+              "author": {
+                "login": "urkud"
               }
             }
           ]
