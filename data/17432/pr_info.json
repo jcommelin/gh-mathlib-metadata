@@ -32,6 +32,14 @@
               "author": {
                 "login": "jcommelin"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6O_Jy8",
+              "body": "Build failed (retrying...):\n  * [Build](https://github.com/leanprover-community/mathlib4/actions/runs/11228858247/job/31213459344)",
+              "createdAt": "2024-10-08T06:00:21Z",
+              "author": {
+                "login": "mathlib-bors"
+              }
             }
           ]
         },
@@ -286,11 +294,11 @@
                       },
                       {
                         "__typename": "StatusContext",
-                        "id": "SC_kwDOFcwZ1c8AAAAHaXDWYQ",
+                        "id": "SC_kwDOFcwZ1c8AAAAHaX4Ucg",
                         "context": "bors",
-                        "state": "PENDING",
+                        "state": "FAILURE",
                         "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6276",
-                        "description": "Waiting in queue"
+                        "description": "Build failed"
                       },
                       {
                         "__typename": "CheckRun",
@@ -403,7 +411,7 @@
         "milestone": null,
         "number": 17432,
         "potentialMergeCommit": {
-          "oid": "4171c4da5c87c17ac18fe37ae40994229897fcd6"
+          "oid": "37b4b99ac08dd19b0f8cd67c4efe0faffadfcca1"
         },
         "projectCards": {
           "nodes": []
@@ -585,11 +593,11 @@
               },
               {
                 "__typename": "StatusContext",
-                "id": "SC_kwDOFcwZ1c8AAAAHaXDWYQ",
+                "id": "SC_kwDOFcwZ1c8AAAAHaX4Ucg",
                 "context": "bors",
-                "state": "PENDING",
+                "state": "FAILURE",
                 "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6276",
-                "description": "Waiting in queue"
+                "description": "Build failed"
               },
               {
                 "__typename": "CheckRun",
@@ -611,7 +619,7 @@
           }
         },
         "title": "chore: more coherent lemma names between `nhds` and `nhdsWithin`",
-        "updatedAt": "2024-10-08T04:28:47Z",
+        "updatedAt": "2024-10-08T06:00:22Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17432",
         "timelineItems": {
           "nodes": [
@@ -664,6 +672,18 @@
               "label": {
                 "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
                 "name": "ready-to-merge"
+              }
+            },
+            {
+              "__typename": "ReferencedEvent"
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6O_Jy8",
+              "createdAt": "2024-10-08T06:00:21Z",
+              "body": "Build failed (retrying...):\n  * [Build](https://github.com/leanprover-community/mathlib4/actions/runs/11228858247/job/31213459344)",
+              "author": {
+                "login": "mathlib-bors"
               }
             }
           ]

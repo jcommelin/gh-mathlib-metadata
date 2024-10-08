@@ -24,6 +24,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6O_JzG",
+              "body": "Build failed (retrying...):\n  * [Build](https://github.com/leanprover-community/mathlib4/actions/runs/11228858247/job/31213459344)",
+              "createdAt": "2024-10-08T06:00:21Z",
+              "author": {
+                "login": "mathlib-bors"
+              }
             }
           ]
         },
@@ -581,11 +589,11 @@
                       },
                       {
                         "__typename": "StatusContext",
-                        "id": "SC_kwDOFcwZ1c8AAAAHaXETeQ",
+                        "id": "SC_kwDOFcwZ1c8AAAAHaX4ULA",
                         "context": "bors",
-                        "state": "PENDING",
+                        "state": "FAILURE",
                         "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6276",
-                        "description": "Waiting in queue"
+                        "description": "Build failed"
                       },
                       {
                         "__typename": "CheckRun",
@@ -687,7 +695,7 @@
         "milestone": null,
         "number": 17480,
         "potentialMergeCommit": {
-          "oid": "d7cb72f8e276bbfb8d521b7dee8c87bef77dd30a"
+          "oid": "43ad7173a45d311421562e10f613ef6766214f20"
         },
         "projectCards": {
           "nodes": []
@@ -1058,11 +1066,11 @@
               },
               {
                 "__typename": "StatusContext",
-                "id": "SC_kwDOFcwZ1c8AAAAHaXETeQ",
+                "id": "SC_kwDOFcwZ1c8AAAAHaX4ULA",
                 "context": "bors",
-                "state": "PENDING",
+                "state": "FAILURE",
                 "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6276",
-                "description": "Waiting in queue"
+                "description": "Build failed"
               },
               {
                 "__typename": "CheckRun",
@@ -1084,7 +1092,7 @@
           }
         },
         "title": "chore(SetTheory/Cardinal/Ordinal): remove 200 line porting note",
-        "updatedAt": "2024-10-08T04:30:38Z",
+        "updatedAt": "2024-10-08T06:00:22Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17480",
         "timelineItems": {
           "nodes": [
@@ -1162,6 +1170,18 @@
               "label": {
                 "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
                 "name": "ready-to-merge"
+              }
+            },
+            {
+              "__typename": "ReferencedEvent"
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6O_JzG",
+              "createdAt": "2024-10-08T06:00:21Z",
+              "body": "Build failed (retrying...):\n  * [Build](https://github.com/leanprover-community/mathlib4/actions/runs/11228858247/job/31213459344)",
+              "author": {
+                "login": "mathlib-bors"
               }
             }
           ]
