@@ -40,6 +40,14 @@
               "author": {
                 "login": "YaelDillies"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6O_Aqu",
+              "body": "I think all the theorems are fine.\r\n\r\nTheorems about sums and products are in the compositional form which is necessary as they are high order functions. Of course, you could also add primed version where the result of the sum is a function and you evaluate it. Similar to the linked PR with my comment.\r\n\r\nTheorems about `sin`,... are not in compositional form and it is totally ok. For simple functions it is fine to state the theorems in \"simple/uncurried\" form. User wise `fun_prop` should behave the same whether you state differentiability theorem for `sin` in compositional or uncurried form. There might be a mild speed difference(but I'm not sure what is faster) and difference in the length of the generated proof term. ",
+              "createdAt": "2024-10-08T05:37:30Z",
+              "author": {
+                "login": "lecopivo"
+              }
             }
           ]
         },
@@ -277,7 +285,7 @@
         "milestone": null,
         "number": 17470,
         "potentialMergeCommit": {
-          "oid": "b1146672bfba875c5c1b5da48988f43f1916226f"
+          "oid": "53ff2e9386dd8f400a989127b8b81b30e86b66b6"
         },
         "projectCards": {
           "nodes": []
@@ -364,6 +372,10 @@
             {
               "id": "MDQ6VXNlcjE0MDkwNTkz",
               "login": "YaelDillies"
+            },
+            {
+              "id": "MDQ6VXNlcjY1OTYzMDU=",
+              "login": "lecopivo"
             },
             {
               "id": "MDQ6VXNlcjEwMTA1MDE2",
@@ -531,7 +543,7 @@
           }
         },
         "title": "chore: add funprop attributes for differentiability of usual functions",
-        "updatedAt": "2024-10-08T04:33:48Z",
+        "updatedAt": "2024-10-08T05:37:31Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17470",
         "timelineItems": {
           "nodes": [
@@ -588,6 +600,15 @@
             },
             {
               "__typename": "SubscribedEvent"
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6O_Aqu",
+              "createdAt": "2024-10-08T05:37:30Z",
+              "body": "I think all the theorems are fine.\r\n\r\nTheorems about sums and products are in the compositional form which is necessary as they are high order functions. Of course, you could also add primed version where the result of the sum is a function and you evaluate it. Similar to the linked PR with my comment.\r\n\r\nTheorems about `sin`,... are not in compositional form and it is totally ok. For simple functions it is fine to state the theorems in \"simple/uncurried\" form. User wise `fun_prop` should behave the same whether you state differentiability theorem for `sin` in compositional or uncurried form. There might be a mild speed difference(but I'm not sure what is faster) and difference in the length of the generated proof term. ",
+              "author": {
+                "login": "lecopivo"
+              }
             }
           ]
         }
