@@ -32,6 +32,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PFgG2",
+              "body": "Ha ha you do indeed seem to be right! Maybe to_additive should emit a warning if it didn't actually do anything?\r\n\r\nbors merge",
+              "createdAt": "2024-10-08T18:49:40Z",
+              "author": {
+                "login": "kbuzzard"
+              }
             }
           ]
         },
@@ -187,6 +195,14 @@
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11237277988/job/31242089452"
                       },
                       {
+                        "__typename": "StatusContext",
+                        "id": "SC_kwDOFcwZ1c8AAAAHao_wEA",
+                        "context": "bors",
+                        "state": "PENDING",
+                        "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6292",
+                        "description": "Running"
+                      },
+                      {
                         "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHRgRJhg",
                         "name": "New Contributor Check",
@@ -237,6 +253,10 @@
         "labels": {
           "nodes": [
             {
+              "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
+              "name": "ready-to-merge"
+            },
+            {
               "id": "LA_kwDOFcwZ1c8AAAABJc1VKA",
               "name": "easy"
             },
@@ -272,7 +292,7 @@
         "milestone": null,
         "number": 17540,
         "potentialMergeCommit": {
-          "oid": "a85eeaab1b3562e171c0f4d3c64643f31a508366"
+          "oid": "33be42a1bd27e8af7253eb6cdb8417dcd5ade93b"
         },
         "projectCards": {
           "nodes": []
@@ -355,6 +375,10 @@
             {
               "id": "MDQ6VXNlcjI5OTU5MjI2",
               "login": "b-mehta"
+            },
+            {
+              "id": "MDQ6VXNlcjMxODY3ODI3",
+              "login": "kbuzzard"
             },
             {
               "id": "MDQ6VXNlcjE0MDkwNTkz",
@@ -503,6 +527,14 @@
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11237277988/job/31242089452"
               },
               {
+                "__typename": "StatusContext",
+                "id": "SC_kwDOFcwZ1c8AAAAHao_wEA",
+                "context": "bors",
+                "state": "PENDING",
+                "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6292",
+                "description": "Running"
+              },
+              {
                 "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHRgRJhg",
                 "name": "New Contributor Check",
@@ -522,7 +554,7 @@
           }
         },
         "title": "fix(Group/PosPart): fix multiplicative version",
-        "updatedAt": "2024-10-08T15:19:45Z",
+        "updatedAt": "2024-10-08T18:49:52Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17540",
         "timelineItems": {
           "nodes": [
@@ -591,6 +623,27 @@
                 "id": "LA_kwDOFcwZ1c8AAAABh1mAHA",
                 "name": "maintainer-merge"
               }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PFgG2",
+              "createdAt": "2024-10-08T18:49:40Z",
+              "body": "Ha ha you do indeed seem to be right! Maybe to_additive should emit a warning if it didn't actually do anything?\r\n\r\nbors merge",
+              "author": {
+                "login": "kbuzzard"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6ZYhVmzwAAAANj7i2Y",
+              "createdAt": "2024-10-08T18:49:52Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
+                "name": "ready-to-merge"
+              }
+            },
+            {
+              "__typename": "ReferencedEvent"
             }
           ]
         }
