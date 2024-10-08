@@ -11,7 +11,7 @@
         },
         "autoMergeRequest": null,
         "baseRefName": "master",
-        "body": "---\r\n<!-- The text above the `---` will become the commit message when your\r\nPR is merged. Please leave a blank newline before the `---`, otherwise\r\nGitHub will format the text above it as a title.\r\n\r\nFor details on the \"pull request lifecycle\" in mathlib, please see:\r\nhttps://leanprover-community.github.io/contribute/index.html\r\n\r\nIn particular, note that most reviewers will only notice your PR\r\nif it passes the continuous integration checks.\r\nPlease ask for help on https://leanprover.zulipchat.com if needed.\r\n\r\nTo indicate co-authors, include lines at the bottom of the commit message\r\n(that is, before the `---`) using the following format:\r\n\r\nCo-authored-by: Author Name <author@email.com>\r\n\r\nIf you are moving or deleting declarations, please include these lines at the bottom of the commit message\r\n(that is, before the `---`) using the following format:\r\n\r\nMoves:\r\n- Vector.* -> Mathlib.Vector.*\r\n- ...\r\n\r\nDeletions:\r\n- Nat.bit1_add_bit1\r\n- ...\r\n\r\nAny other comments you want to keep out of the PR commit should go\r\nbelow the `---`, and placed outside this HTML comment, or else they\r\nwill be invisible to reviewers.\r\n\r\nIf this PR depends on other PRs, please list them below this comment,\r\nusing the following format:\r\n- [ ] depends on: #abc [optional extra text]\r\n- [ ] depends on: #xyz [optional extra text]\r\n\r\n-->\r\n\r\n[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)\r\n",
+        "body": "When `C` is a triangulated category, we introduce a bijection `ShiftedHom.opEquiv` which identifies `X ⟶ Y⟦n⟧` and `op Y ⟶ (op X)⟦n⟧`.\r\nAlong with the compatibilities that are obtained, this shall be the main ingredient in the construction of the (contravariant) long exact sequence of `Ext` in abelian categories #15092.\r\n\r\n---\r\n<!-- The text above the `---` will become the commit message when your\r\nPR is merged. Please leave a blank newline before the `---`, otherwise\r\nGitHub will format the text above it as a title.\r\n\r\nFor details on the \"pull request lifecycle\" in mathlib, please see:\r\nhttps://leanprover-community.github.io/contribute/index.html\r\n\r\nIn particular, note that most reviewers will only notice your PR\r\nif it passes the continuous integration checks.\r\nPlease ask for help on https://leanprover.zulipchat.com if needed.\r\n\r\nTo indicate co-authors, include lines at the bottom of the commit message\r\n(that is, before the `---`) using the following format:\r\n\r\nCo-authored-by: Author Name <author@email.com>\r\n\r\nIf you are moving or deleting declarations, please include these lines at the bottom of the commit message\r\n(that is, before the `---`) using the following format:\r\n\r\nMoves:\r\n- Vector.* -> Mathlib.Vector.*\r\n- ...\r\n\r\nDeletions:\r\n- Nat.bit1_add_bit1\r\n- ...\r\n\r\nAny other comments you want to keep out of the PR commit should go\r\nbelow the `---`, and placed outside this HTML comment, or else they\r\nwill be invisible to reviewers.\r\n\r\nIf this PR depends on other PRs, please list them below this comment,\r\nusing the following format:\r\n- [ ] depends on: #abc [optional extra text]\r\n- [ ] depends on: #xyz [optional extra text]\r\n\r\n-->\r\n\r\n[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)\r\n",
         "changedFiles": 6,
         "closed": false,
         "closedAt": null,
@@ -206,11 +206,11 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHRrGR5w",
+                        "id": "CR_kwDOFcwZ1c8AAAAHRra04g",
                         "name": "Cancel Previous Runs (CI)",
                         "conclusion": "SUCCESS",
                         "status": "COMPLETED",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11240768083/job/31250813415"
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11240768083/job/31251150050"
                       },
                       {
                         "__typename": "CheckRun",
@@ -230,11 +230,11 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHRrGQrw",
+                        "id": "CR_kwDOFcwZ1c8AAAAHRra2NA",
                         "name": "Lint style",
                         "conclusion": "SUCCESS",
                         "status": "COMPLETED",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11240768083/job/31250813103"
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11240768083/job/31251150388"
                       },
                       {
                         "__typename": "CheckRun",
@@ -246,11 +246,11 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHRrGPhw",
+                        "id": "CR_kwDOFcwZ1c8AAAAHRra30A",
                         "name": "Build",
-                        "conclusion": "FAILURE",
-                        "status": "COMPLETED",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11240768083/job/31250812807"
+                        "conclusion": null,
+                        "status": "IN_PROGRESS",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11240768083/job/31251150800"
                       },
                       {
                         "__typename": "CheckRun",
@@ -267,14 +267,6 @@
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11240768075/job/31250813931"
-                      },
-                      {
-                        "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHRrLYqg",
-                        "name": "Post-CI job",
-                        "conclusion": "SKIPPED",
-                        "status": "COMPLETED",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11240768083/job/31250897066"
                       },
                       {
                         "__typename": "CheckRun",
@@ -479,11 +471,11 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHRrGR5w",
+                "id": "CR_kwDOFcwZ1c8AAAAHRra04g",
                 "name": "Cancel Previous Runs (CI)",
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11240768083/job/31250813415"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11240768083/job/31251150050"
               },
               {
                 "__typename": "CheckRun",
@@ -503,11 +495,11 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHRrGQrw",
+                "id": "CR_kwDOFcwZ1c8AAAAHRra2NA",
                 "name": "Lint style",
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11240768083/job/31250813103"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11240768083/job/31251150388"
               },
               {
                 "__typename": "CheckRun",
@@ -519,11 +511,11 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHRrGPhw",
+                "id": "CR_kwDOFcwZ1c8AAAAHRra30A",
                 "name": "Build",
-                "conclusion": "FAILURE",
-                "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11240768083/job/31250812807"
+                "conclusion": null,
+                "status": "IN_PROGRESS",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11240768083/job/31251150800"
               },
               {
                 "__typename": "CheckRun",
@@ -540,14 +532,6 @@
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11240768075/job/31250813931"
-              },
-              {
-                "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHRrLYqg",
-                "name": "Post-CI job",
-                "conclusion": "SKIPPED",
-                "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11240768083/job/31250897066"
               },
               {
                 "__typename": "CheckRun",
@@ -569,7 +553,7 @@
           }
         },
         "title": "feat(CategoryTheory/Shift): shifted morphisms in the opposite category",
-        "updatedAt": "2024-10-08T17:39:41Z",
+        "updatedAt": "2024-10-08T17:51:58Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17546",
         "timelineItems": {
           "nodes": [
