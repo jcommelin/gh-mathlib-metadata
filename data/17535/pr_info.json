@@ -1546,14 +1546,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHRazHKg",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11235546088/job/31233722154"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHRazJZQ",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -1562,11 +1554,27 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHRazHKg",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11235546088/job/31233722154"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHRazLjA",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11235546070/job/31233723276"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHRcuA5w",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11235546088/job/31235735783"
                       },
                       {
                         "__typename": "CheckRun",
@@ -1625,26 +1633,7 @@
           ]
         },
         "latestReviews": {
-          "nodes": [
-            {
-              "id": "PRR_kwDOFcwZ1c6MVImH",
-              "body": "",
-              "state": "COMMENTED",
-              "author": {
-                "login": "eric-wieser"
-              },
-              "submittedAt": "2024-10-08T12:31:38Z"
-            },
-            {
-              "id": "PRR_kwDOFcwZ1c6MUzng",
-              "body": "",
-              "state": "COMMENTED",
-              "author": {
-                "login": "j-loreaux"
-              },
-              "submittedAt": "2024-10-08T12:08:21Z"
-            }
-          ]
+          "nodes": []
         },
         "maintainerCanModify": false,
         "mergeCommit": null,
@@ -1655,7 +1644,7 @@
         "milestone": null,
         "number": 17535,
         "potentialMergeCommit": {
-          "oid": "fca71cce34b885ef6b858a278961428664d3f460"
+          "oid": "e4b6a6142242579b38280bf2bde90d85776267bd"
         },
         "projectCards": {
           "nodes": []
@@ -1712,7 +1701,20 @@
         ],
         "reviewDecision": null,
         "reviewRequests": {
-          "nodes": []
+          "nodes": [
+            {
+              "requestedReviewer": {
+                "id": "MDQ6VXNlcjg5MjA1OTg=",
+                "login": "j-loreaux"
+              }
+            },
+            {
+              "requestedReviewer": {
+                "id": "MDQ6VXNlcjQyNTI2MA==",
+                "login": "eric-wieser"
+              }
+            }
+          ]
         },
         "reviews": {
           "nodes": [
@@ -2221,14 +2223,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHRazHKg",
-                "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11235546088/job/31233722154"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHRazJZQ",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -2237,11 +2231,27 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHRazHKg",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11235546088/job/31233722154"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHRazLjA",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11235546070/job/31233723276"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHRcuA5w",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11235546088/job/31235735783"
               },
               {
                 "__typename": "CheckRun",
@@ -2263,7 +2273,7 @@
           }
         },
         "title": "feat(Matrix): extracting entries as a linear map",
-        "updatedAt": "2024-10-08T12:40:36Z",
+        "updatedAt": "2024-10-08T13:34:27Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17535",
         "timelineItems": {
           "nodes": [
@@ -2390,6 +2400,24 @@
             },
             {
               "__typename": "PullRequestCommit"
+            },
+            {
+              "__typename": "ReviewRequestedEvent",
+              "id": "RRE_lADOFcwZ1c6ZWZjuzwAAAANjqnRg",
+              "createdAt": "2024-10-08T13:34:23Z",
+              "requestedReviewer": {
+                "id": "MDQ6VXNlcjg5MjA1OTg=",
+                "login": "j-loreaux"
+              }
+            },
+            {
+              "__typename": "ReviewRequestedEvent",
+              "id": "RRE_lADOFcwZ1c6ZWZjuzwAAAANjqni_",
+              "createdAt": "2024-10-08T13:34:27Z",
+              "requestedReviewer": {
+                "id": "MDQ6VXNlcjQyNTI2MA==",
+                "login": "eric-wieser"
+              }
             }
           ]
         }
