@@ -24,6 +24,22 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PGgP2",
+              "body": "See #15947. In fact the `piSetoid` equiv is the one I need there; I simply did the `prod` version as well for completeness. Once that's in I have followup material ready to PR about `leftRel` and `rightRel`\r\n\r\n```lean\r\n@[to_additive]\r\nlemma leftRel_prod {β : Type*} [Group β] (s' : Subgroup β) :\r\n    leftRel (s.prod s') = (leftRel s).prod (leftRel s') := by\r\n\r\n@[to_additive]\r\nlemma rightRel_prod {β : Type*} [Group β] (s' : Subgroup β) :\r\n    rightRel (s.prod s') = (rightRel s).prod (rightRel s') := by\r\n\r\n@[to_additive]\r\nlemma leftRel_pi {ι : Type*} {β : ι → Type*} [∀ i, Group (β i)] (s' : ∀ i, Subgroup (β i)) :\r\n    leftRel (Subgroup.pi Set.univ s') = @piSetoid _ _ fun i ↦ leftRel (s' i) := by\r\n\r\n@[to_additive]\r\nlemma rightRel_pi {ι : Type*} {β : ι → Type*} [∀ i, Group (β i)] (s' : ∀ i, Subgroup (β i)) :\r\n    rightRel (Subgroup.pi Set.univ s') = @piSetoid _ _ fun i ↦ rightRel (s' i) := by\r\n```\r\n\r\nand then my actual goal there, also ready to PR, is\r\n\r\n```lean\r\n@[to_additive]\r\nlemma index_prod (H : Subgroup G) (K : Subgroup G') : (H.prod K).index = H.index * K.index := by\r\n\r\n@[to_additive]\r\nlemma index_pi {ι : Type*} [Fintype ι] (H : ι → Subgroup G) :\r\n    (Subgroup.pi Set.univ H).index = ∏ i, (H i).index := by\r\n```\r\n\r\n(where again, the `pi` version is the one I have a use for and the `prod` one is for completeness).",
+              "createdAt": "2024-10-08T21:23:21Z",
+              "author": {
+                "login": "jsm28"
+              }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PGgf-",
+              "body": "(I agree that `piSetoid` would be better as a `def`.)",
+              "createdAt": "2024-10-08T21:24:06Z",
+              "author": {
+                "login": "jsm28"
+              }
             }
           ]
         },
@@ -296,6 +312,10 @@
             {
               "id": "MDQ6VXNlcjE4ODgxMw==",
               "login": "urkud"
+            },
+            {
+              "id": "MDQ6VXNlcjEwNTM3Nzkz",
+              "login": "jsm28"
             }
           ]
         },
@@ -427,7 +447,7 @@
           }
         },
         "title": "feat(Equiv/QuotProd): new file",
-        "updatedAt": "2024-10-08T19:46:07Z",
+        "updatedAt": "2024-10-08T21:24:07Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17550",
         "timelineItems": {
           "nodes": [
@@ -459,6 +479,24 @@
               "label": {
                 "id": "LA_kwDOFcwZ1c8AAAABYQuqiA",
                 "name": "t-logic"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PGgP2",
+              "createdAt": "2024-10-08T21:23:21Z",
+              "body": "See #15947. In fact the `piSetoid` equiv is the one I need there; I simply did the `prod` version as well for completeness. Once that's in I have followup material ready to PR about `leftRel` and `rightRel`\r\n\r\n```lean\r\n@[to_additive]\r\nlemma leftRel_prod {β : Type*} [Group β] (s' : Subgroup β) :\r\n    leftRel (s.prod s') = (leftRel s).prod (leftRel s') := by\r\n\r\n@[to_additive]\r\nlemma rightRel_prod {β : Type*} [Group β] (s' : Subgroup β) :\r\n    rightRel (s.prod s') = (rightRel s).prod (rightRel s') := by\r\n\r\n@[to_additive]\r\nlemma leftRel_pi {ι : Type*} {β : ι → Type*} [∀ i, Group (β i)] (s' : ∀ i, Subgroup (β i)) :\r\n    leftRel (Subgroup.pi Set.univ s') = @piSetoid _ _ fun i ↦ leftRel (s' i) := by\r\n\r\n@[to_additive]\r\nlemma rightRel_pi {ι : Type*} {β : ι → Type*} [∀ i, Group (β i)] (s' : ∀ i, Subgroup (β i)) :\r\n    rightRel (Subgroup.pi Set.univ s') = @piSetoid _ _ fun i ↦ rightRel (s' i) := by\r\n```\r\n\r\nand then my actual goal there, also ready to PR, is\r\n\r\n```lean\r\n@[to_additive]\r\nlemma index_prod (H : Subgroup G) (K : Subgroup G') : (H.prod K).index = H.index * K.index := by\r\n\r\n@[to_additive]\r\nlemma index_pi {ι : Type*} [Fintype ι] (H : ι → Subgroup G) :\r\n    (Subgroup.pi Set.univ H).index = ∏ i, (H i).index := by\r\n```\r\n\r\n(where again, the `pi` version is the one I have a use for and the `prod` one is for completeness).",
+              "author": {
+                "login": "jsm28"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PGgf-",
+              "createdAt": "2024-10-08T21:24:06Z",
+              "body": "(I agree that `piSetoid` would be better as a `def`.)",
+              "author": {
+                "login": "jsm28"
               }
             }
           ]
