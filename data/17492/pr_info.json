@@ -2826,8 +2826,8 @@
                         "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHSRPvug",
                         "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
+                        "conclusion": "FAILURE",
+                        "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11254115982/job/31290814394"
                       },
                       {
@@ -2845,6 +2845,14 @@
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11254115983/job/31290815186"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHSSTTQA",
+                        "name": "Post-CI job",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11254115982/job/31291921216"
                       },
                       {
                         "__typename": "CheckRun",
@@ -2994,10 +3002,6 @@
             {
               "id": "MDU6TGFiZWwzMjg4OTQyMDg2",
               "name": "blocked-by-other-PR"
-            },
-            {
-              "id": "LA_kwDOFcwZ1c8AAAABIFoUmw",
-              "name": "merge-conflict"
             },
             {
               "id": "LA_kwDOFcwZ1c8AAAABViJbOw",
@@ -3181,8 +3185,8 @@
                 "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHSRPvug",
                 "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
+                "conclusion": "FAILURE",
+                "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11254115982/job/31290814394"
               },
               {
@@ -3200,6 +3204,14 @@
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11254115983/job/31290815186"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHSSTTQA",
+                "name": "Post-CI job",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11254115982/job/31291921216"
               },
               {
                 "__typename": "CheckRun",
@@ -3221,7 +3233,7 @@
           }
         },
         "title": "chore(ContinuousLinearMapWOT): generalize and golf",
-        "updatedAt": "2024-10-09T11:35:59Z",
+        "updatedAt": "2024-10-09T12:28:45Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17492",
         "timelineItems": {
           "nodes": [
@@ -3355,6 +3367,15 @@
             },
             {
               "__typename": "PullRequestCommit"
+            },
+            {
+              "__typename": "UnlabeledEvent",
+              "id": "UNLE_lADOFcwZ1c6ZMwC9zwAAAANkkR2O",
+              "createdAt": "2024-10-09T12:28:45Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABIFoUmw",
+                "name": "merge-conflict"
+              }
             }
           ]
         }
