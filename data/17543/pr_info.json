@@ -48,6 +48,14 @@
               "author": {
                 "login": "b-mehta"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6POk2p",
+              "body": "@b-mehta I *think* that `refine` can get confused, but that's primarily because `dense_induction` is weird in that the term on which we are doing induction (namely `x`) doesn't reference `s` in it's type, so it's a bit underdetermined. Nevertheless, I think Eric is right, so long as you actually use the `induction` tactic. For instance, this works for `Subsemigroup.dense_induction`.\r\n```lean\r\ntheorem dense_induction {p : M → Prop} {s : Set M} (hs : closure s = ⊤)\r\n    (mem : ∀ x ∈ s, p x)\r\n    (mul : ∀ x y, p x → p y → p (x * y))\r\n    (x : M) : p x := by\r\n  induction hs.symm ▸ mem_top x using closure_induction with\r\n  | mem x hx => exact mem x hx\r\n  | mul x _ y _ hpx hpy => exact mul x y hpx hpy\r\n```\r\n\r\nOverall, while it was a lot of work to go through changing things, it wasn't terrible. This `dense_induction` issue hardly ever came up (at least in terms of *new* places where I needed to specify the motive). You're welcome to have a look and let me know what you think.\r\n",
+              "createdAt": "2024-10-09T18:05:33Z",
+              "author": {
+                "login": "j-loreaux"
+              }
             }
           ]
         },
@@ -1133,7 +1141,7 @@
         "milestone": null,
         "number": 17543,
         "potentialMergeCommit": {
-          "oid": "f273b00caa74b23c5a91e89263b9e801e2b85807"
+          "oid": "db49e7095a1055534d66749adf18d0e7b27574b2"
         },
         "projectCards": {
           "nodes": []
@@ -1426,7 +1434,7 @@
           }
         },
         "title": "refactor: migrate to dependent induction lemmas",
-        "updatedAt": "2024-10-09T17:27:53Z",
+        "updatedAt": "2024-10-09T18:05:46Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17543",
         "timelineItems": {
           "nodes": [
@@ -1576,6 +1584,21 @@
             },
             {
               "__typename": "PullRequestCommit"
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6POk2p",
+              "createdAt": "2024-10-09T18:05:33Z",
+              "body": "@b-mehta I *think* that `refine` can get confused, but that's primarily because `dense_induction` is weird in that the term on which we are doing induction (namely `x`) doesn't reference `s` in it's type, so it's a bit underdetermined. Nevertheless, I think Eric is right, so long as you actually use the `induction` tactic. For instance, this works for `Subsemigroup.dense_induction`.\r\n```lean\r\ntheorem dense_induction {p : M → Prop} {s : Set M} (hs : closure s = ⊤)\r\n    (mem : ∀ x ∈ s, p x)\r\n    (mul : ∀ x y, p x → p y → p (x * y))\r\n    (x : M) : p x := by\r\n  induction hs.symm ▸ mem_top x using closure_induction with\r\n  | mem x hx => exact mem x hx\r\n  | mul x _ y _ hpx hpy => exact mul x y hpx hpy\r\n```\r\n\r\nOverall, while it was a lot of work to go through changing things, it wasn't terrible. This `dense_induction` issue hardly ever came up (at least in terms of *new* places where I needed to specify the motive). You're welcome to have a look and let me know what you think.\r\n",
+              "author": {
+                "login": "j-loreaux"
+              }
+            },
+            {
+              "__typename": "MentionedEvent"
+            },
+            {
+              "__typename": "SubscribedEvent"
             }
           ]
         }
