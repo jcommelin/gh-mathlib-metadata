@@ -24,6 +24,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PJDHN",
+              "body": "I think this doesn't actually change that much in terms of the imports added in #17452 : the previous imports of `Topology.MetricSpace.Algebra` just happened to be very low in terms of algebra (e.g before tensor products). But maybe this just suggests that we shouldn't be scared of importing more algebra since it is still basic algebra.\r\n\r\nBut I think this change is good in itself, and we can do better by stating it for `Module.Projective` (the file about projective modules is at distance 1 from `Mathlib.LinearAlgebra.FreeModule.Basic`, all other imports are useless, so that doesn't sound like import creep) : it is just a special case of [Module.projective_lifting_property](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Module/Projective.html#Module.projective_lifting_property).\r\n\r\nAt some point we should be able to do the same for [LinearMap.exists_leftInverse_of_injective](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Basis/VectorSpace.html#LinearMap.exists_leftInverse_of_injective) (in injective modules), but we don't seem to have the `Free -> Injective` instance so it's not useful for now.\r\n\r\nI'm not sure my explanations are clear, feel free to tell me if not :sweat_smile: ",
+              "createdAt": "2024-10-09T07:10:00Z",
+              "author": {
+                "login": "ADedecker"
+              }
             }
           ]
         },
@@ -246,14 +254,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHR3-QdQ",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11245050130/job/31264313461"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHR3-Qbw",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -262,11 +262,27 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHR3-QdQ",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11245050130/job/31264313461"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHR3-SJA",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11245050126/job/31264313892"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHR41-SQ",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11245050130/job/31265226313"
                       },
                       {
                         "__typename": "CheckRun",
@@ -341,7 +357,7 @@
         "milestone": null,
         "number": 17560,
         "potentialMergeCommit": {
-          "oid": "15eeb7bc1aa22871f661a742109a5f4aeeded433"
+          "oid": "eb0da87a03f395bf79be44fd1734064b30775b3e"
         },
         "projectCards": {
           "nodes": []
@@ -421,6 +437,10 @@
             {
               "id": "MDQ6VXNlcjQyNTI2MA==",
               "login": "eric-wieser"
+            },
+            {
+              "id": "MDQ6VXNlcjQ4NjU2Nzkz",
+              "login": "ADedecker"
             }
           ]
         },
@@ -494,14 +514,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHR3-QdQ",
-                "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11245050130/job/31264313461"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHR3-Qbw",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -510,11 +522,27 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHR3-QdQ",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11245050130/job/31264313461"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHR3-SJA",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11245050126/job/31264313892"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHR41-SQ",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11245050130/job/31265226313"
               },
               {
                 "__typename": "CheckRun",
@@ -536,7 +564,7 @@
           }
         },
         "title": "feat: generalize `LinearMap.exists_rightInverse_of_surjective` to free modules",
-        "updatedAt": "2024-10-08T22:59:05Z",
+        "updatedAt": "2024-10-09T07:10:02Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17560",
         "timelineItems": {
           "nodes": [
@@ -567,7 +595,7 @@
               "createdAt": "2024-10-08T22:24:54Z",
               "source": {
                 "id": "PR_kwDOFcwZ1c59th9V",
-                "title": "feat: add `Normed` instances for SeparationQuotient",
+                "title": "[Merged by Bors] - feat: add `Normed` instances for SeparationQuotient",
                 "url": "https://github.com/leanprover-community/mathlib4/pull/17452"
               }
             },
@@ -581,6 +609,18 @@
               "body": "### PR summary [be144cd9da](https://github.com/leanprover-community/mathlib4/pull/17560/commits/be144cd9dae108460f9e8aae0d1ff50a6cc80d58)\n\n#### Import changes for modified files\n\nNo significant changes to the import graph\n\n\n<details><summary>Import changes for all files</summary>\n\n|Files|Import difference|\n|-|-|\n\n</details>\n\n---\n\n#### Declarations diff\n\n`+ exists_rightInverse_of_surjective`\n`- LinearMap.exists_rightInverse_of_surjective`\n<details>\n  <summary>You can run this locally as follows</summary>\n\n\n```bash\n## summary with just the declaration names:\n./scripts/declarations_diff.sh <optional_commit>\n\n## more verbose report:\n./scripts/declarations_diff.sh long <optional_commit>\n```\n</details>\n\nThe doc-module for `script/declarations_diff.sh` contains some details about this script.",
               "author": {
                 "login": "github-actions"
+              }
+            },
+            {
+              "__typename": "ReferencedEvent"
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PJDHN",
+              "createdAt": "2024-10-09T07:10:00Z",
+              "body": "I think this doesn't actually change that much in terms of the imports added in #17452 : the previous imports of `Topology.MetricSpace.Algebra` just happened to be very low in terms of algebra (e.g before tensor products). But maybe this just suggests that we shouldn't be scared of importing more algebra since it is still basic algebra.\r\n\r\nBut I think this change is good in itself, and we can do better by stating it for `Module.Projective` (the file about projective modules is at distance 1 from `Mathlib.LinearAlgebra.FreeModule.Basic`, all other imports are useless, so that doesn't sound like import creep) : it is just a special case of [Module.projective_lifting_property](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Module/Projective.html#Module.projective_lifting_property).\r\n\r\nAt some point we should be able to do the same for [LinearMap.exists_leftInverse_of_injective](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Basis/VectorSpace.html#LinearMap.exists_leftInverse_of_injective) (in injective modules), but we don't seem to have the `Free -> Injective` instance so it's not useful for now.\r\n\r\nI'm not sure my explanations are clear, feel free to tell me if not :sweat_smile: ",
+              "author": {
+                "login": "ADedecker"
               }
             }
           ]
