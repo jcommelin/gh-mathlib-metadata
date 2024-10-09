@@ -56,6 +56,14 @@
               "author": {
                 "login": "alreadydone"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PJtFx",
+              "body": "> > At some point we should be able to do the same for [LinearMap.exists_leftInverse_of_injective](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Basis/VectorSpace.html#LinearMap.exists_leftInverse_of_injective) (in injective modules), but we don't seem to have the `Free -> Injective` instance so it's not useful for now.\r\n> \r\n> Free modules are usually very far from being injective, and I don't think `LinearMap.exists_leftInverse_of_injective` hold for the injection from the Z-module Z into Q, for example. (Q is an injective Z-module but Z is not.)\r\n\r\nOf course you're right, this was nonsense. But [LinearMap.exists_leftInverse_of_injective](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Basis/VectorSpace.html#LinearMap.exists_leftInverse_of_injective) should still generalize to the case where `V` is an injective module, right? So really the main thing is that it doesn't hold for free modules because they are not necessarily injective? Or am I saying nonsense again?",
+              "createdAt": "2024-10-09T08:31:53Z",
+              "author": {
+                "login": "ADedecker"
+              }
             }
           ]
         },
@@ -684,7 +692,7 @@
           }
         },
         "title": "feat: generalize `LinearMap.exists_rightInverse_of_surjective` to free modules",
-        "updatedAt": "2024-10-09T08:21:12Z",
+        "updatedAt": "2024-10-09T08:31:55Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17560",
         "timelineItems": {
           "nodes": [
@@ -786,6 +794,15 @@
               "body": "> At some point we should be able to do the same for [LinearMap.exists_leftInverse_of_injective](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Basis/VectorSpace.html#LinearMap.exists_leftInverse_of_injective) (in injective modules), but we don't seem to have the `Free -> Injective` instance so it's not useful for now.\r\n\r\nFree modules are usually very far from being injective, and I don't think `LinearMap.exists_leftInverse_of_injective` hold for the injection from the Z-module Z into Q, for example. (Q is an injective Z-module but Z is not.)",
               "author": {
                 "login": "alreadydone"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PJtFx",
+              "createdAt": "2024-10-09T08:31:53Z",
+              "body": "> > At some point we should be able to do the same for [LinearMap.exists_leftInverse_of_injective](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Basis/VectorSpace.html#LinearMap.exists_leftInverse_of_injective) (in injective modules), but we don't seem to have the `Free -> Injective` instance so it's not useful for now.\r\n> \r\n> Free modules are usually very far from being injective, and I don't think `LinearMap.exists_leftInverse_of_injective` hold for the injection from the Z-module Z into Q, for example. (Q is an injective Z-module but Z is not.)\r\n\r\nOf course you're right, this was nonsense. But [LinearMap.exists_leftInverse_of_injective](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Basis/VectorSpace.html#LinearMap.exists_leftInverse_of_injective) should still generalize to the case where `V` is an injective module, right? So really the main thing is that it doesn't hold for free modules because they are not necessarily injective? Or am I saying nonsense again?",
+              "author": {
+                "login": "ADedecker"
               }
             }
           ]
