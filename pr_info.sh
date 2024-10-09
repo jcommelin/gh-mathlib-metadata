@@ -9,4 +9,4 @@ REPO=mathlib4
 
 PR_NUMBER=$1
 
-gh api graphql -f owner=$OWNER -f repo=$REPO -F prNumber=$PR_NUMBER -F query=@pr_info.graphql -H "Authorization: token $GH_TOKEN"
+gh api graphql -f owner=$OWNER -f repo=$REPO -F prNumber=$PR_NUMBER -F query=@pr_info.graphql
