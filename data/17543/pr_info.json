@@ -24,6 +24,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PK5ud",
+              "body": "It's great that we add these dependent induction lemmas, but I think it's sometimes nice to also have access to the non-dependent ones, since they're sometimes easier to work with. For example, when it's necessary to specify the motive to a dependent induction in the case where the application is not dependent, you often end up with things looking syntactically really confusing. I'd personally slightly prefer keeping the old ones around, under other names. But if it turns out that adjusting mathlib to your change is easy enough, then it's probably fine...",
+              "createdAt": "2024-10-09T10:58:08Z",
+              "author": {
+                "login": "b-mehta"
+              }
             }
           ]
         },
@@ -383,7 +391,7 @@
         "milestone": null,
         "number": 17543,
         "potentialMergeCommit": {
-          "oid": "11d6edd11b18fa37ed009ba334f68be84918403c"
+          "oid": "09ccd829d47967919113aba3fe66260a2cbb03e0"
         },
         "projectCards": {
           "nodes": []
@@ -504,6 +512,10 @@
             {
               "id": "MDQ6VXNlcjg5MjA1OTg=",
               "login": "j-loreaux"
+            },
+            {
+              "id": "MDQ6VXNlcjI5OTU5MjI2",
+              "login": "b-mehta"
             },
             {
               "id": "MDQ6VXNlcjQyNTI2MA==",
@@ -703,7 +715,7 @@
           }
         },
         "title": "refactor: migrate to dependent induction lemmas",
-        "updatedAt": "2024-10-08T16:28:19Z",
+        "updatedAt": "2024-10-09T10:58:10Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17543",
         "timelineItems": {
           "nodes": [
@@ -765,6 +777,15 @@
               "body": "",
               "author": {
                 "login": "eric-wieser"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PK5ud",
+              "createdAt": "2024-10-09T10:58:08Z",
+              "body": "It's great that we add these dependent induction lemmas, but I think it's sometimes nice to also have access to the non-dependent ones, since they're sometimes easier to work with. For example, when it's necessary to specify the motive to a dependent induction in the case where the application is not dependent, you often end up with things looking syntactically really confusing. I'd personally slightly prefer keeping the old ones around, under other names. But if it turns out that adjusting mathlib to your change is easy enough, then it's probably fine...",
+              "author": {
+                "login": "b-mehta"
               }
             }
           ]
