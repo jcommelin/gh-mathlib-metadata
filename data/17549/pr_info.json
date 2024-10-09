@@ -44,6 +44,30 @@
                     "nodes": [
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHR8FcVQ",
+                        "name": "Add ready-to-merge label",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11246582468/job/31268625493"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHR8FbXw",
+                        "name": "Ping maintainers on Zulip",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11246582456/job/31268625247"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHR8FcHQ",
+                        "name": "Fix style issues from lint",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11246582452/job/31268625437"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHRvvoSA",
                         "name": "Add topic label",
                         "conclusion": "SUCCESS",
@@ -89,6 +113,14 @@
                         "conclusion": "SUCCESS",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11242306271/job/31255685719"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHR8Fe9A",
+                        "name": "Add delegated label",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11246582468/job/31268626164"
                       },
                       {
                         "__typename": "CheckRun",
@@ -207,7 +239,17 @@
           ]
         },
         "latestReviews": {
-          "nodes": []
+          "nodes": [
+            {
+              "id": "PRR_kwDOFcwZ1c6Malyk",
+              "body": "Thanks for the contribution!\r\nSome suggestions:",
+              "state": "COMMENTED",
+              "author": {
+                "login": "mbkybky"
+              },
+              "submittedAt": "2024-10-09T01:31:05Z"
+            }
+          ]
         },
         "maintainerCanModify": false,
         "mergeCommit": null,
@@ -218,7 +260,7 @@
         "milestone": null,
         "number": 17549,
         "potentialMergeCommit": {
-          "oid": "31b07c660a3214a0a51187bf52e91f0583f2e986"
+          "oid": "0be72c5bc497fd3ceaa079701ad9cf50c74242f8"
         },
         "projectCards": {
           "nodes": []
@@ -278,10 +320,77 @@
           "nodes": []
         },
         "reviews": {
-          "nodes": []
+          "nodes": [
+            {
+              "id": "PRR_kwDOFcwZ1c6Malyk",
+              "body": "Thanks for the contribution!\r\nSome suggestions:",
+              "state": "COMMENTED",
+              "author": {
+                "login": "mbkybky"
+              },
+              "submittedAt": "2024-10-09T01:31:05Z"
+            }
+          ]
         },
         "reviewThreads": {
-          "nodes": []
+          "nodes": [
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5q2fsj",
+                    "body": "The naming convention requires `def`s to be in `lowerCamelCase`, i.e., `nilradMaxLocalizationIsSelf` in this case.",
+                    "createdAt": "2024-10-09T01:20:50Z",
+                    "author": {
+                      "login": "mbkybky"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5q2gCA",
+                    "body": "```suggestion\r\ncontain 0. If the nilradical of `R` is maximal then there is a `R`-algebra isomorphism between\r\n`R` and `S`. -/\r\n```",
+                    "createdAt": "2024-10-09T01:23:48Z",
+                    "author": {
+                      "login": "mbkybky"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5q2gG7",
+                    "body": "```suggestion\r\n    exact (IsMaximal.eq_of_le h hI.ne_top (sInf_le hI.isPrime)).symm\r\n```",
+                    "createdAt": "2024-10-09T01:24:19Z",
+                    "author": {
+                      "login": "mbkybky"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5q2g2C",
+                    "body": "I think maybe this theorem should be moved to immediately follow the theorem `mem_maximalIdeal`.",
+                    "createdAt": "2024-10-09T01:30:34Z",
+                    "author": {
+                      "login": "mbkybky"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
         },
         "closingIssuesReferences": {
           "nodes": []
@@ -291,6 +400,10 @@
             {
               "id": "MDQ6VXNlcjU4NzU0OTU0",
               "login": "maddycrim"
+            },
+            {
+              "id": "U_kgDOCF96oQ",
+              "login": "mbkybky"
             }
           ]
         },
@@ -298,6 +411,30 @@
         "statusCheckRollup": {
           "contexts": {
             "nodes": [
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHR8FcVQ",
+                "name": "Add ready-to-merge label",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11246582468/job/31268625493"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHR8FbXw",
+                "name": "Ping maintainers on Zulip",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11246582456/job/31268625247"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHR8FcHQ",
+                "name": "Fix style issues from lint",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11246582452/job/31268625437"
+              },
               {
                 "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHRvvoSA",
@@ -345,6 +482,14 @@
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11242306271/job/31255685719"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHR8Fe9A",
+                "name": "Add delegated label",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11246582468/job/31268626164"
               },
               {
                 "__typename": "CheckRun",
@@ -422,7 +567,7 @@
           }
         },
         "title": "feat (LocalRing/MaximalIdeal/Basic): add LocalRing.not_mem_maximalIdeal and nilradmax_localization_IsSelf",
-        "updatedAt": "2024-10-08T19:24:28Z",
+        "updatedAt": "2024-10-09T01:31:05Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17549",
         "timelineItems": {
           "nodes": [
@@ -454,6 +599,15 @@
               "label": {
                 "id": "LA_kwDOFcwZ1c8AAAABViJjTQ",
                 "name": "t-algebra"
+              }
+            },
+            {
+              "__typename": "PullRequestReview",
+              "id": "PRR_kwDOFcwZ1c6Malyk",
+              "createdAt": "2024-10-09T01:20:49Z",
+              "body": "Thanks for the contribution!\r\nSome suggestions:",
+              "author": {
+                "login": "mbkybky"
               }
             }
           ]
