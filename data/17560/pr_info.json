@@ -27,10 +27,34 @@
             },
             {
               "id": "IC_kwDOFcwZ1c6PJDHN",
-              "body": "I think this doesn't actually change that much in terms of the imports added in #17452 : the previous imports of `Topology.MetricSpace.Algebra` just happened to be very low in terms of algebra (e.g before tensor products). But maybe this just suggests that we shouldn't be scared of importing more algebra since it is still basic algebra.\r\n\r\nBut I think this change is good in itself, and we can do better by stating it for `Module.Projective` (the file about projective modules is at distance 1 from `Mathlib.LinearAlgebra.FreeModule.Basic`, all other imports are useless, so that doesn't sound like import creep) : it is just a special case of [Module.projective_lifting_property](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Module/Projective.html#Module.projective_lifting_property).\r\n\r\nAt some point we should be able to do the same for [LinearMap.exists_leftInverse_of_injective](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Basis/VectorSpace.html#LinearMap.exists_leftInverse_of_injective) (in injective modules), but we don't seem to have the `Free -> Injective` instance so it's not useful for now.\r\n\r\nI'm not sure my explanations are clear, feel free to tell me if not :sweat_smile: ",
+              "body": "I think this doesn't actually change that much in terms of the imports added in #17452 : the previous imports of `Topology.MetricSpace.Algebra` just happened to be very low in terms of algebra (e.g before tensor products). But maybe this just suggests that we shouldn't be scared of importing more algebra since it is still basic algebra.\r\n\r\nBut I think this change is good in itself, and we can do better by stating it for `Module.Projective` (the file about projective modules is at distance 1 from `Mathlib.LinearAlgebra.FreeModule.Basic`, all other imports are useless, so that doesn't sound like import creep) : it is just a special case of [Module.projective_lifting_property](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Module/Projective.html#Module.projective_lifting_property).\r\n\r\n~~At some point we should be able to do the same for [LinearMap.exists_leftInverse_of_injective](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Basis/VectorSpace.html#LinearMap.exists_leftInverse_of_injective) (in injective modules), but we don't seem to have the `Free -> Injective` instance so it's not useful for now.~~ This is nonsense.\r\n\r\nI'm not sure my explanations are clear, feel free to tell me if not :sweat_smile: ",
               "createdAt": "2024-10-09T07:10:00Z",
               "author": {
                 "login": "ADedecker"
+              }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PJgwA",
+              "body": "The changes in this PR look sensible to me, but the proposed generalisation to projective modules also does. Let me label it awaiting-author accordingly.\r\nawaiting-author",
+              "createdAt": "2024-10-09T08:08:33Z",
+              "author": {
+                "login": "grunweg"
+              }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PJk2c",
+              "body": "> [Module.projective_lifting_property](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Module/Projective.html#Module.projective_lifting_property) is more general than this, right?\r\n\r\nYes, that's what I alluded to above. But I still think we should have a name for this special case which does *not* mention \"projective\", because some people will be looking for it without knowing what a projective module is. ",
+              "createdAt": "2024-10-09T08:16:19Z",
+              "author": {
+                "login": "ADedecker"
+              }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PJmp0",
+              "body": "> At some point we should be able to do the same for [LinearMap.exists_leftInverse_of_injective](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Basis/VectorSpace.html#LinearMap.exists_leftInverse_of_injective) (in injective modules), but we don't seem to have the `Free -> Injective` instance so it's not useful for now.\r\n\r\nFree modules are usually very far from being injective, and I don't think `LinearMap.exists_leftInverse_of_injective` hold for the injection from the Z-module Z into Q, for example. (Q is an injective Z-module but Z is not.)",
+              "createdAt": "2024-10-09T08:19:37Z",
+              "author": {
+                "login": "alreadydone"
               }
             }
           ]
@@ -190,6 +214,30 @@
                     "nodes": [
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHSHsKuw",
+                        "name": "Add ready-to-merge label",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11250908913/job/31280794299"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHSHsKuA",
+                        "name": "Ping maintainers on Zulip",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11250908920/job/31280794296"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHSHsKdQ",
+                        "name": "Fix style issues from lint",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11250908911/job/31280794229"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHR3-Q6w",
                         "name": "label-and-report-new-contributor",
                         "conclusion": "SUCCESS",
@@ -227,6 +275,14 @@
                         "conclusion": "SUCCESS",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11245050250/job/31264313639"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHSHsMdw",
+                        "name": "Add delegated label",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11250908913/job/31280794743"
                       },
                       {
                         "__typename": "CheckRun",
@@ -340,13 +396,27 @@
         "labels": {
           "nodes": [
             {
+              "id": "LA_kwDOFcwZ1c7P265b",
+              "name": "awaiting-author"
+            },
+            {
               "id": "LA_kwDOFcwZ1c8AAAABViJjTQ",
               "name": "t-algebra"
             }
           ]
         },
         "latestReviews": {
-          "nodes": []
+          "nodes": [
+            {
+              "id": "PRR_kwDOFcwZ1c6Mc9wa",
+              "body": "~~[Module.projective_lifting_property](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Module/Projective.html#Module.projective_lifting_property) is more general than this, right?~~ Oh, it's already mentioned.",
+              "state": "COMMENTED",
+              "author": {
+                "login": "alreadydone"
+              },
+              "submittedAt": "2024-10-09T08:13:23Z"
+            }
+          ]
         },
         "maintainerCanModify": false,
         "mergeCommit": null,
@@ -357,7 +427,7 @@
         "milestone": null,
         "number": 17560,
         "potentialMergeCommit": {
-          "oid": "eb0da87a03f395bf79be44fd1734064b30775b3e"
+          "oid": "0fa86c88221767f769537a962c645c03f462a3d2"
         },
         "projectCards": {
           "nodes": []
@@ -424,7 +494,17 @@
           ]
         },
         "reviews": {
-          "nodes": []
+          "nodes": [
+            {
+              "id": "PRR_kwDOFcwZ1c6Mc9wa",
+              "body": "~~[Module.projective_lifting_property](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Module/Projective.html#Module.projective_lifting_property) is more general than this, right?~~ Oh, it's already mentioned.",
+              "state": "COMMENTED",
+              "author": {
+                "login": "alreadydone"
+              },
+              "submittedAt": "2024-10-09T08:13:23Z"
+            }
+          ]
         },
         "reviewThreads": {
           "nodes": []
@@ -441,6 +521,14 @@
             {
               "id": "MDQ6VXNlcjQ4NjU2Nzkz",
               "login": "ADedecker"
+            },
+            {
+              "id": "MDQ6VXNlcjEwMTA1MDE2",
+              "login": "grunweg"
+            },
+            {
+              "id": "MDQ6VXNlcjMwNjQxNDU=",
+              "login": "alreadydone"
             }
           ]
         },
@@ -448,6 +536,30 @@
         "statusCheckRollup": {
           "contexts": {
             "nodes": [
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHSHsKuw",
+                "name": "Add ready-to-merge label",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11250908913/job/31280794299"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHSHsKuA",
+                "name": "Ping maintainers on Zulip",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11250908920/job/31280794296"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHSHsKdQ",
+                "name": "Fix style issues from lint",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11250908911/job/31280794229"
+              },
               {
                 "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHR3-Q6w",
@@ -487,6 +599,14 @@
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11245050250/job/31264313639"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHSHsMdw",
+                "name": "Add delegated label",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11250908913/job/31280794743"
               },
               {
                 "__typename": "CheckRun",
@@ -564,7 +684,7 @@
           }
         },
         "title": "feat: generalize `LinearMap.exists_rightInverse_of_surjective` to free modules",
-        "updatedAt": "2024-10-09T07:10:02Z",
+        "updatedAt": "2024-10-09T08:21:12Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17560",
         "timelineItems": {
           "nodes": [
@@ -618,9 +738,54 @@
               "__typename": "IssueComment",
               "id": "IC_kwDOFcwZ1c6PJDHN",
               "createdAt": "2024-10-09T07:10:00Z",
-              "body": "I think this doesn't actually change that much in terms of the imports added in #17452 : the previous imports of `Topology.MetricSpace.Algebra` just happened to be very low in terms of algebra (e.g before tensor products). But maybe this just suggests that we shouldn't be scared of importing more algebra since it is still basic algebra.\r\n\r\nBut I think this change is good in itself, and we can do better by stating it for `Module.Projective` (the file about projective modules is at distance 1 from `Mathlib.LinearAlgebra.FreeModule.Basic`, all other imports are useless, so that doesn't sound like import creep) : it is just a special case of [Module.projective_lifting_property](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Module/Projective.html#Module.projective_lifting_property).\r\n\r\nAt some point we should be able to do the same for [LinearMap.exists_leftInverse_of_injective](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Basis/VectorSpace.html#LinearMap.exists_leftInverse_of_injective) (in injective modules), but we don't seem to have the `Free -> Injective` instance so it's not useful for now.\r\n\r\nI'm not sure my explanations are clear, feel free to tell me if not :sweat_smile: ",
+              "body": "I think this doesn't actually change that much in terms of the imports added in #17452 : the previous imports of `Topology.MetricSpace.Algebra` just happened to be very low in terms of algebra (e.g before tensor products). But maybe this just suggests that we shouldn't be scared of importing more algebra since it is still basic algebra.\r\n\r\nBut I think this change is good in itself, and we can do better by stating it for `Module.Projective` (the file about projective modules is at distance 1 from `Mathlib.LinearAlgebra.FreeModule.Basic`, all other imports are useless, so that doesn't sound like import creep) : it is just a special case of [Module.projective_lifting_property](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Module/Projective.html#Module.projective_lifting_property).\r\n\r\n~~At some point we should be able to do the same for [LinearMap.exists_leftInverse_of_injective](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Basis/VectorSpace.html#LinearMap.exists_leftInverse_of_injective) (in injective modules), but we don't seem to have the `Free -> Injective` instance so it's not useful for now.~~ This is nonsense.\r\n\r\nI'm not sure my explanations are clear, feel free to tell me if not :sweat_smile: ",
               "author": {
                 "login": "ADedecker"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PJgwA",
+              "createdAt": "2024-10-09T08:08:33Z",
+              "body": "The changes in this PR look sensible to me, but the proposed generalisation to projective modules also does. Let me label it awaiting-author accordingly.\r\nawaiting-author",
+              "author": {
+                "login": "grunweg"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6ZcSRTzwAAAANkVG7T",
+              "createdAt": "2024-10-09T08:08:43Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c7P265b",
+                "name": "awaiting-author"
+              }
+            },
+            {
+              "__typename": "PullRequestReview",
+              "id": "PRR_kwDOFcwZ1c6Mc9wa",
+              "createdAt": "2024-10-09T08:13:23Z",
+              "body": "~~[Module.projective_lifting_property](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Module/Projective.html#Module.projective_lifting_property) is more general than this, right?~~ Oh, it's already mentioned.",
+              "author": {
+                "login": "alreadydone"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PJk2c",
+              "createdAt": "2024-10-09T08:16:19Z",
+              "body": "> [Module.projective_lifting_property](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Module/Projective.html#Module.projective_lifting_property) is more general than this, right?\r\n\r\nYes, that's what I alluded to above. But I still think we should have a name for this special case which does *not* mention \"projective\", because some people will be looking for it without knowing what a projective module is. ",
+              "author": {
+                "login": "ADedecker"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PJmp0",
+              "createdAt": "2024-10-09T08:19:37Z",
+              "body": "> At some point we should be able to do the same for [LinearMap.exists_leftInverse_of_injective](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Basis/VectorSpace.html#LinearMap.exists_leftInverse_of_injective) (in injective modules), but we don't seem to have the `Free -> Injective` instance so it's not useful for now.\r\n\r\nFree modules are usually very far from being injective, and I don't think `LinearMap.exists_leftInverse_of_injective` hold for the injection from the Z-module Z into Q, for example. (Q is an injective Z-module but Z is not.)",
+              "author": {
+                "login": "alreadydone"
               }
             }
           ]
