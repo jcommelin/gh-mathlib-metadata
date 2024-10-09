@@ -32,6 +32,14 @@
               "author": {
                 "login": "mariainesdff"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PRAAz",
+              "body": "Consider my PR on proving that locally compact iff complete and DVR of the valuation ring and finite residue field. To talk about the valuation ring `Valued.integer`, I need a `Valued` in the TC. This is easier to provide to the TC table by a TC-implicit argument `[IsUltrametricDist X]` than an explicit `(h : IsNonarchimedean norm)`. If it is an explicit argument, then there is no way to create the scoped instance -- an explicit argument of the proof about the norm is not available to TC synthesis.\r\n\r\nhttps://github.com/leanprover-community/mathlib4/pull/16733/files#diff-e2953739e89168dcbb0040fe18b7996a54734ee000cfa73813c6a324d3c2f8a9R26-R37",
+              "createdAt": "2024-10-09T23:12:33Z",
+              "author": {
+                "login": "pechersky"
+              }
             }
           ]
         },
@@ -230,7 +238,7 @@
         "milestone": null,
         "number": 17561,
         "potentialMergeCommit": {
-          "oid": "d68c7a92b32e6e4da80d704c93becf4ab0479a19"
+          "oid": "186619516b58342feef5c1b932691ba073524eb7"
         },
         "projectCards": {
           "nodes": []
@@ -451,7 +459,7 @@
           }
         },
         "title": "chore(Topology/Algebra/Valued/NormedValued): rely on TC IsUltrametricDist instead of explicit arg",
-        "updatedAt": "2024-10-09T10:19:34Z",
+        "updatedAt": "2024-10-09T23:12:34Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17561",
         "timelineItems": {
           "nodes": [
@@ -519,6 +527,15 @@
               "body": "> That doesn't work well for defining a valuation or the data of a `Valued`.\r\n\r\nCould you explain what you mean by this? I have been successfully using the existing version.",
               "author": {
                 "login": "mariainesdff"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PRAAz",
+              "createdAt": "2024-10-09T23:12:33Z",
+              "body": "Consider my PR on proving that locally compact iff complete and DVR of the valuation ring and finite residue field. To talk about the valuation ring `Valued.integer`, I need a `Valued` in the TC. This is easier to provide to the TC table by a TC-implicit argument `[IsUltrametricDist X]` than an explicit `(h : IsNonarchimedean norm)`. If it is an explicit argument, then there is no way to create the scoped instance -- an explicit argument of the proof about the norm is not available to TC synthesis.\r\n\r\nhttps://github.com/leanprover-community/mathlib4/pull/16733/files#diff-e2953739e89168dcbb0040fe18b7996a54734ee000cfa73813c6a324d3c2f8a9R26-R37",
+              "author": {
+                "login": "pechersky"
               }
             }
           ]
