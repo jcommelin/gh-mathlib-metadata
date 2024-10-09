@@ -40,6 +40,14 @@
               "author": {
                 "login": "eric-wieser"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PMbsa",
+              "body": "> You should never have to specify the motive explicitly though? \r\n\r\nNote that the current state of this PR has exactly one adaptation going from the non-dependent to the dependent one, in `dense_induction`. And the motive is specified explicitly here, in a non-dependent way: exactly the situation I'm worried about. \r\nIt's possible that this is an isolated example, but I just want to flag it because it does get annoying in practice.\r\n",
+              "createdAt": "2024-10-09T13:47:32Z",
+              "author": {
+                "login": "b-mehta"
+              }
             }
           ]
         },
@@ -399,7 +407,7 @@
         "milestone": null,
         "number": 17543,
         "potentialMergeCommit": {
-          "oid": "00afe48d631948929982ab70631c178a8b44228b"
+          "oid": "cebae3bb0e486f947ba612d5c0b2b20dd6e302dd"
         },
         "projectCards": {
           "nodes": []
@@ -723,7 +731,7 @@
           }
         },
         "title": "refactor: migrate to dependent induction lemmas",
-        "updatedAt": "2024-10-09T12:46:16Z",
+        "updatedAt": "2024-10-09T13:47:33Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17543",
         "timelineItems": {
           "nodes": [
@@ -803,6 +811,15 @@
               "body": "You should never have to specify the motive explicitly though? Usually when you do, this is because:\r\n* The induction principle was not dependent, and should have been\r\n* The induction principle has the arguments in the wrong order\r\n* `elab_as_elim` is missing from the theorem\r\n* You tried to use `apply` with an `elab_as_elim`",
               "author": {
                 "login": "eric-wieser"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PMbsa",
+              "createdAt": "2024-10-09T13:47:32Z",
+              "body": "> You should never have to specify the motive explicitly though? \r\n\r\nNote that the current state of this PR has exactly one adaptation going from the non-dependent to the dependent one, in `dense_induction`. And the motive is specified explicitly here, in a non-dependent way: exactly the situation I'm worried about. \r\nIt's possible that this is an isolated example, but I just want to flag it because it does get annoying in practice.\r\n",
+              "author": {
+                "login": "b-mehta"
               }
             }
           ]
