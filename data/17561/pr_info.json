@@ -24,6 +24,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PKmAX",
+              "body": "> That doesn't work well for defining a valuation or the data of a `Valued`.\r\n\r\nCould you explain what you mean by this? I have been successfully using the existing version.",
+              "createdAt": "2024-10-09T10:19:32Z",
+              "author": {
+                "login": "mariainesdff"
+              }
             }
           ]
         },
@@ -116,14 +124,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHR4FQ6w",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11245088403/job/31264428267"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHR4FRBQ",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -132,11 +132,27 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHR4FQ6w",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11245088403/job/31264428267"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHR4FSjg",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11245088377/job/31264428686"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHR4XHzg",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11245088403/job/31264720846"
                       },
                       {
                         "__typename": "CheckRun",
@@ -214,7 +230,7 @@
         "milestone": null,
         "number": 17561,
         "potentialMergeCommit": {
-          "oid": "c2d14459c96879c7cd0f7071efb9a8aea5b63247"
+          "oid": "d68c7a92b32e6e4da80d704c93becf4ab0479a19"
         },
         "projectCards": {
           "nodes": []
@@ -300,6 +316,10 @@
             {
               "id": "MDQ6VXNlcjUzNDIwODY=",
               "login": "pechersky"
+            },
+            {
+              "id": "MDQ6VXNlcjg4NTM2NDkz",
+              "login": "mariainesdff"
             }
           ]
         },
@@ -381,14 +401,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHR4FQ6w",
-                "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11245088403/job/31264428267"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHR4FRBQ",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -397,11 +409,27 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHR4FQ6w",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11245088403/job/31264428267"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHR4FSjg",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11245088377/job/31264428686"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHR4XHzg",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11245088403/job/31264720846"
               },
               {
                 "__typename": "CheckRun",
@@ -423,7 +451,7 @@
           }
         },
         "title": "chore(Topology/Algebra/Valued/NormedValued): rely on TC IsUltrametricDist instead of explicit arg",
-        "updatedAt": "2024-10-08T23:04:00Z",
+        "updatedAt": "2024-10-09T10:19:34Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17561",
         "timelineItems": {
           "nodes": [
@@ -482,6 +510,15 @@
               "label": {
                 "id": "LA_kwDOFcwZ1c8AAAABViJbOw",
                 "name": "t-topology"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PKmAX",
+              "createdAt": "2024-10-09T10:19:32Z",
+              "body": "> That doesn't work well for defining a valuation or the data of a `Valued`.\r\n\r\nCould you explain what you mean by this? I have been successfully using the existing version.",
+              "author": {
+                "login": "mariainesdff"
               }
             }
           ]
