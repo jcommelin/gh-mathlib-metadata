@@ -40,6 +40,30 @@
               "author": {
                 "login": "eric-wieser"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PL5I3",
+              "body": "Ah, I see. My opinion on this is \"just use `SeparationQuotient`\", so I'm not even sure we really need to state the other construction. But we can discuss that somewhere else.\r\n\r\nbors d+ \r\n(In case you want to wait on @yoh-tanimoto's review)",
+              "createdAt": "2024-10-09T12:59:49Z",
+              "author": {
+                "login": "ADedecker"
+              }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PL5L5",
+              "body": ":v: eric-wieser can now approve this pull request. To approve and merge a pull request, simply reply with `bors r+`. More detailed instructions are available [here](https://bors.tech/documentation/getting-started/#reviewing-pull-requests).",
+              "createdAt": "2024-10-09T12:59:52Z",
+              "author": {
+                "login": "mathlib-bors"
+              }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PL-3n",
+              "body": "bors merge\r\n\r\n> so I'm not even sure we really need to state the other construction. But we can discuss that somewhere else.\r\n\r\nI think it would be nice to state simply to show equivalence, but probably if @yoh-tanimoto has further goals it isn't actually necessary to reach them.",
+              "createdAt": "2024-10-09T13:05:23Z",
+              "author": {
+                "login": "eric-wieser"
+              }
             }
           ]
         },
@@ -294,14 +318,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHST4ZzA",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11254991033/job/31293577676"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHST4W2A",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -310,11 +326,35 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHST4ZzA",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11254991033/job/31293577676"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHST4YtA",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11254991018/job/31293577396"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHSU2DNA",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11254991033/job/31294587700"
+                      },
+                      {
+                        "__typename": "StatusContext",
+                        "id": "SC_kwDOFcwZ1c8AAAAHa52dUg",
+                        "context": "bors",
+                        "state": "PENDING",
+                        "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6309",
+                        "description": "Waiting in queue"
                       },
                       {
                         "__typename": "CheckRun",
@@ -367,6 +407,14 @@
         "labels": {
           "nodes": [
             {
+              "id": "LA_kwDOFcwZ1c8AAAABAt13Ow",
+              "name": "delegated"
+            },
+            {
+              "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
+              "name": "ready-to-merge"
+            },
+            {
               "id": "LA_kwDOFcwZ1c8AAAABViJeVg",
               "name": "t-analysis"
             }
@@ -384,7 +432,7 @@
         "milestone": null,
         "number": 17576,
         "potentialMergeCommit": {
-          "oid": "997201e993fb189410f15c55b656a5c64781b61f"
+          "oid": "d8b2770e73a180b12dd47bc1876548d7467b626f"
         },
         "projectCards": {
           "nodes": []
@@ -572,14 +620,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHST4ZzA",
-                "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11254991033/job/31293577676"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHST4W2A",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -588,11 +628,35 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHST4ZzA",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11254991033/job/31293577676"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHST4YtA",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11254991018/job/31293577396"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHSU2DNA",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11254991033/job/31294587700"
+              },
+              {
+                "__typename": "StatusContext",
+                "id": "SC_kwDOFcwZ1c8AAAAHa52dUg",
+                "context": "bors",
+                "state": "PENDING",
+                "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6309",
+                "description": "Waiting in queue"
               },
               {
                 "__typename": "CheckRun",
@@ -614,7 +678,7 @@
           }
         },
         "title": "feat: `InnerProductSpace (SeparationQuotient E)`",
-        "updatedAt": "2024-10-09T12:33:29Z",
+        "updatedAt": "2024-10-09T13:05:34Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17576",
         "timelineItems": {
           "nodes": [
@@ -691,6 +755,63 @@
               "body": "My thought here is that https://github.com/leanprover-community/mathlib4/pull/16707 could probably cover the equivalence between `SeparationQuotient` and the quotient module by the null-space submodule; but that we shouldn't take that as the definition, and should just directly lift the `inner` operation through the quotient as I did for `norm` in #17452, and as we already did for `dist`.",
               "author": {
                 "login": "eric-wieser"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PL5I3",
+              "createdAt": "2024-10-09T12:59:49Z",
+              "body": "Ah, I see. My opinion on this is \"just use `SeparationQuotient`\", so I'm not even sure we really need to state the other construction. But we can discuss that somewhere else.\r\n\r\nbors d+ \r\n(In case you want to wait on @yoh-tanimoto's review)",
+              "author": {
+                "login": "ADedecker"
+              }
+            },
+            {
+              "__typename": "MentionedEvent"
+            },
+            {
+              "__typename": "SubscribedEvent"
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PL5L5",
+              "createdAt": "2024-10-09T12:59:52Z",
+              "body": ":v: eric-wieser can now approve this pull request. To approve and merge a pull request, simply reply with `bors r+`. More detailed instructions are available [here](https://bors.tech/documentation/getting-started/#reviewing-pull-requests).",
+              "author": {
+                "login": "mathlib-bors"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6ZhLtqzwAAAANkmFAD",
+              "createdAt": "2024-10-09T13:00:02Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABAt13Ow",
+                "name": "delegated"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PL-3n",
+              "createdAt": "2024-10-09T13:05:23Z",
+              "body": "bors merge\r\n\r\n> so I'm not even sure we really need to state the other construction. But we can discuss that somewhere else.\r\n\r\nI think it would be nice to state simply to show equivalence, but probably if @yoh-tanimoto has further goals it isn't actually necessary to reach them.",
+              "author": {
+                "login": "eric-wieser"
+              }
+            },
+            {
+              "__typename": "MentionedEvent"
+            },
+            {
+              "__typename": "SubscribedEvent"
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6ZhLtqzwAAAANkmaeZ",
+              "createdAt": "2024-10-09T13:05:33Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
+                "name": "ready-to-merge"
               }
             }
           ]
