@@ -24,6 +24,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PM9SE",
+              "body": "So there is a bit of regression in the area of sheaves, most of which is easy enough to fix. But most definitions in `Mathlib.AlgebraicGeometry.Morphisms.QuasiSeparated` seem to just completely fail because their expected `CommRingCat` becomes `Bundled CommRing`, meaning all their nice instances are gone. Adding type ascriptions doesn't seem to help, so I'm going to try and see if the issue can be resolved a bit higher up...",
+              "createdAt": "2024-10-09T14:40:50Z",
+              "author": {
+                "login": "Vierkantor"
+              }
             }
           ]
         },
@@ -248,8 +256,8 @@
                         "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHSalqhQ",
                         "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
+                        "conclusion": "FAILURE",
+                        "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11257125459/job/31300610693"
                       },
                       {
@@ -267,6 +275,14 @@
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11257125473/job/31300611267"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHSa0Ojw",
+                        "name": "Post-CI job",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11257125459/job/31300849295"
                       },
                       {
                         "__typename": "CheckRun",
@@ -538,8 +554,8 @@
                 "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHSalqhQ",
                 "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
+                "conclusion": "FAILURE",
+                "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11257125459/job/31300610693"
               },
               {
@@ -557,6 +573,14 @@
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11257125473/job/31300611267"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHSa0Ojw",
+                "name": "Post-CI job",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11257125459/job/31300849295"
               },
               {
                 "__typename": "CheckRun",
@@ -578,7 +602,7 @@
           }
         },
         "title": "chore: add unification hint for forgetful functor Bundled -> Type",
-        "updatedAt": "2024-10-09T14:30:21Z",
+        "updatedAt": "2024-10-09T14:40:51Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17583",
         "timelineItems": {
           "nodes": [
@@ -614,6 +638,15 @@
             },
             {
               "__typename": "PullRequestCommit"
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PM9SE",
+              "createdAt": "2024-10-09T14:40:50Z",
+              "body": "So there is a bit of regression in the area of sheaves, most of which is easy enough to fix. But most definitions in `Mathlib.AlgebraicGeometry.Morphisms.QuasiSeparated` seem to just completely fail because their expected `CommRingCat` becomes `Bundled CommRing`, meaning all their nice instances are gone. Adding type ascriptions doesn't seem to help, so I'm going to try and see if the issue can be resolved a bit higher up...",
+              "author": {
+                "login": "Vierkantor"
+              }
             }
           ]
         }
