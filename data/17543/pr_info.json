@@ -32,6 +32,14 @@
               "author": {
                 "login": "b-mehta"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PLwxK",
+              "body": "You should never have to specify the motive explicitly though? Usually when you do, this is because:\r\n* The induction principle was not dependent, and should have been\r\n* The induction principle has the arguments in the wrong order\r\n* `elab_as_elim` is missing from the theorem\r\n* You tried to use `apply` with an `elab_as_elim`",
+              "createdAt": "2024-10-09T12:46:14Z",
+              "author": {
+                "login": "eric-wieser"
+              }
             }
           ]
         },
@@ -391,7 +399,7 @@
         "milestone": null,
         "number": 17543,
         "potentialMergeCommit": {
-          "oid": "09ccd829d47967919113aba3fe66260a2cbb03e0"
+          "oid": "00afe48d631948929982ab70631c178a8b44228b"
         },
         "projectCards": {
           "nodes": []
@@ -715,7 +723,7 @@
           }
         },
         "title": "refactor: migrate to dependent induction lemmas",
-        "updatedAt": "2024-10-09T10:58:10Z",
+        "updatedAt": "2024-10-09T12:46:16Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17543",
         "timelineItems": {
           "nodes": [
@@ -786,6 +794,15 @@
               "body": "It's great that we add these dependent induction lemmas, but I think it's sometimes nice to also have access to the non-dependent ones, since they're sometimes easier to work with. For example, when it's necessary to specify the motive to a dependent induction in the case where the application is not dependent, you often end up with things looking syntactically really confusing. I'd personally slightly prefer keeping the old ones around, under other names. But if it turns out that adjusting mathlib to your change is easy enough, then it's probably fine...",
               "author": {
                 "login": "b-mehta"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PLwxK",
+              "createdAt": "2024-10-09T12:46:14Z",
+              "body": "You should never have to specify the motive explicitly though? Usually when you do, this is because:\r\n* The induction principle was not dependent, and should have been\r\n* The induction principle has the arguments in the wrong order\r\n* `elab_as_elim` is missing from the theorem\r\n* You tried to use `apply` with an `elab_as_elim`",
+              "author": {
+                "login": "eric-wieser"
               }
             }
           ]
