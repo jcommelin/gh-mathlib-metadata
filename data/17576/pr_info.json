@@ -64,6 +64,14 @@
               "author": {
                 "login": "eric-wieser"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PMYG1",
+              "body": "you two are very quick, and the code is so short, I'm impressed!\r\n\r\n@ADedecker No, I don't have a single line of code of GNS. I'm not sure what I will work on next, so if you wish, please go ahead.\r\n\r\nI don't know whether other constructions (by `lift` of `toDualMap`?) are needed, but implementing `lift`s as (continuous) linear maps is necessary, I think. For example, if you have an automorphism of a C^*-algebra preserving the state, in the GNS representation it is represented by a unitary operator. That should be the norm completion of the lift.\r\n\r\nShould I use #16707 for this purpose, or open a new one?",
+              "createdAt": "2024-10-09T13:41:38Z",
+              "author": {
+                "login": "yoh-tanimoto"
+              }
             }
           ]
         },
@@ -350,11 +358,11 @@
                       },
                       {
                         "__typename": "StatusContext",
-                        "id": "SC_kwDOFcwZ1c8AAAAHa52dUg",
+                        "id": "SC_kwDOFcwZ1c8AAAAHa6lHqg",
                         "context": "bors",
                         "state": "PENDING",
                         "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6309",
-                        "description": "Waiting in queue"
+                        "description": "Running"
                       },
                       {
                         "__typename": "CheckRun",
@@ -432,7 +440,7 @@
         "milestone": null,
         "number": 17576,
         "potentialMergeCommit": {
-          "oid": "d8b2770e73a180b12dd47bc1876548d7467b626f"
+          "oid": "76e2c26981b2778658ce86487f1db0d12655f1f5"
         },
         "projectCards": {
           "nodes": []
@@ -547,6 +555,10 @@
             {
               "id": "MDQ6VXNlcjQ4NjU2Nzkz",
               "login": "ADedecker"
+            },
+            {
+              "id": "MDQ6VXNlcjU3NTYyNTU2",
+              "login": "yoh-tanimoto"
             }
           ]
         },
@@ -652,11 +664,11 @@
               },
               {
                 "__typename": "StatusContext",
-                "id": "SC_kwDOFcwZ1c8AAAAHa52dUg",
+                "id": "SC_kwDOFcwZ1c8AAAAHa6lHqg",
                 "context": "bors",
                 "state": "PENDING",
                 "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6309",
-                "description": "Waiting in queue"
+                "description": "Running"
               },
               {
                 "__typename": "CheckRun",
@@ -678,7 +690,7 @@
           }
         },
         "title": "feat: `InnerProductSpace (SeparationQuotient E)`",
-        "updatedAt": "2024-10-09T13:05:34Z",
+        "updatedAt": "2024-10-09T13:42:04Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17576",
         "timelineItems": {
           "nodes": [
@@ -813,6 +825,24 @@
                 "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
                 "name": "ready-to-merge"
               }
+            },
+            {
+              "__typename": "ReferencedEvent"
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PMYG1",
+              "createdAt": "2024-10-09T13:41:38Z",
+              "body": "you two are very quick, and the code is so short, I'm impressed!\r\n\r\n@ADedecker No, I don't have a single line of code of GNS. I'm not sure what I will work on next, so if you wish, please go ahead.\r\n\r\nI don't know whether other constructions (by `lift` of `toDualMap`?) are needed, but implementing `lift`s as (continuous) linear maps is necessary, I think. For example, if you have an automorphism of a C^*-algebra preserving the state, in the GNS representation it is represented by a unitary operator. That should be the norm completion of the lift.\r\n\r\nShould I use #16707 for this purpose, or open a new one?",
+              "author": {
+                "login": "yoh-tanimoto"
+              }
+            },
+            {
+              "__typename": "MentionedEvent"
+            },
+            {
+              "__typename": "SubscribedEvent"
             }
           ]
         }
