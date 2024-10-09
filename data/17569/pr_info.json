@@ -56,6 +56,14 @@
               "author": {
                 "login": "leanprover-bot"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PKfiJ",
+              "body": "Not sure why the linter is failing on the benchmark machine but the GitHub actions are passing. Are you happy to merge or do we want to debug this further first?",
+              "createdAt": "2024-10-09T10:06:31Z",
+              "author": {
+                "login": "Vierkantor"
+              }
             }
           ]
         },
@@ -148,14 +156,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHSKL3jg",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11251735062/job/31283410830"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHSKL07g",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -164,11 +164,27 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHSKL3jg",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11251735062/job/31283410830"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHSKL6Jg",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11251735049/job/31283411494"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHSM76eQ",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11251735062/job/31286295161"
                       },
                       {
                         "__typename": "CheckRun",
@@ -411,14 +427,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHSKL3jg",
-                "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11251735062/job/31283410830"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHSKL07g",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -427,11 +435,27 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHSKL3jg",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11251735062/job/31283410830"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHSKL6Jg",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11251735049/job/31283411494"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHSM76eQ",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11251735062/job/31286295161"
               },
               {
                 "__typename": "CheckRun",
@@ -453,7 +477,7 @@
           }
         },
         "title": "chore: get rid of `erw`s in Mathlib.Algebra.Group.InjSurj",
-        "updatedAt": "2024-10-09T09:45:18Z",
+        "updatedAt": "2024-10-09T10:06:33Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17569",
         "timelineItems": {
           "nodes": [
@@ -530,6 +554,15 @@
               "body": "Here are the [benchmark results](http://speed.lean-fro.org/mathlib4/run-detail/9b5736ec-76c5-4ae0-8f30-c50e099866c1) for commit 600253b2f08792e53c20d5d4fc3111f7f5074251.\nThe entire run failed.\nFound no significant differences.",
               "author": {
                 "login": "leanprover-bot"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PKfiJ",
+              "createdAt": "2024-10-09T10:06:31Z",
+              "body": "Not sure why the linter is failing on the benchmark machine but the GitHub actions are passing. Are you happy to merge or do we want to debug this further first?",
+              "author": {
+                "login": "Vierkantor"
               }
             }
           ]

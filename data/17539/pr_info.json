@@ -174,6 +174,30 @@
                     "nodes": [
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHSNIMiw",
+                        "name": "Add ready-to-merge label",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11252731847/job/31286496395"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHSNIGGg",
+                        "name": "Ping maintainers on Zulip",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11252731840/job/31286494746"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHSNICYQ",
+                        "name": "Fix style issues from lint",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11252731812/job/31286493793"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHSMBhug",
                         "name": "label-and-report-new-contributor",
                         "conclusion": "SUCCESS",
@@ -211,6 +235,14 @@
                         "conclusion": "SUCCESS",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11252376651/job/31285338708"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHSNIFsA",
+                        "name": "Add delegated label",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11252731847/job/31286494640"
                       },
                       {
                         "__typename": "CheckRun",
@@ -401,6 +433,10 @@
         "labels": {
           "nodes": [
             {
+              "id": "LA_kwDOFcwZ1c7P265b",
+              "name": "awaiting-author"
+            },
+            {
               "id": "LA_kwDOFcwZ1c8AAAABViJjTQ",
               "name": "t-algebra"
             },
@@ -411,17 +447,29 @@
           ]
         },
         "latestReviews": {
-          "nodes": []
+          "nodes": [
+            {
+              "id": "PRR_kwDOFcwZ1c6Md8R8",
+              "body": "",
+              "state": "CHANGES_REQUESTED",
+              "author": {
+                "login": "Ruben-VandeVelde"
+              },
+              "submittedAt": "2024-10-09T10:04:07Z"
+            }
+          ]
         },
         "maintainerCanModify": false,
         "mergeCommit": null,
-        "mergeStateStatus": "UNKNOWN",
-        "mergeable": "UNKNOWN",
+        "mergeStateStatus": "BLOCKED",
+        "mergeable": "MERGEABLE",
         "mergedAt": null,
         "mergedBy": null,
         "milestone": null,
         "number": 17539,
-        "potentialMergeCommit": null,
+        "potentialMergeCommit": {
+          "oid": "0391deb3cd881127cf04998d059da1250888c6f8"
+        },
         "projectCards": {
           "nodes": []
         },
@@ -475,15 +523,96 @@
             }
           }
         ],
-        "reviewDecision": null,
+        "reviewDecision": "CHANGES_REQUESTED",
         "reviewRequests": {
           "nodes": []
         },
         "reviews": {
-          "nodes": []
+          "nodes": [
+            {
+              "id": "PRR_kwDOFcwZ1c6Md8R8",
+              "body": "",
+              "state": "CHANGES_REQUESTED",
+              "author": {
+                "login": "Ruben-VandeVelde"
+              },
+              "submittedAt": "2024-10-09T10:04:07Z"
+            }
+          ]
         },
         "reviewThreads": {
-          "nodes": []
+          "nodes": [
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5q4nbE",
+                    "body": "Should this one be deprecated too?",
+                    "createdAt": "2024-10-09T09:55:33Z",
+                    "author": {
+                      "login": "Ruben-VandeVelde"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5q4oAa",
+                    "body": "zpow_ne_zero doesn't seem like the right replacement",
+                    "createdAt": "2024-10-09T09:57:00Z",
+                    "author": {
+                      "login": "Ruben-VandeVelde"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5q4pHT",
+                    "body": "The diff would be rather more readable if proofs that were on the next line stayed there:\r\n```suggestion\r\ntheorem zpow_lt_iff_lt (hx : 1 < a) : a ^ m < a ^ n ↔ m < n :=\r\n  zpow_lt_zpow_iff_right₀ hx\r\n```\r\nAlso for example zpow_le_iff_le, zpow_inj",
+                    "createdAt": "2024-10-09T09:59:44Z",
+                    "author": {
+                      "login": "Ruben-VandeVelde"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5q4pci",
+                    "body": "Why deprecate those?",
+                    "createdAt": "2024-10-09T10:00:38Z",
+                    "author": {
+                      "login": "Ruben-VandeVelde"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5q4pwc",
+                    "body": "```suggestion\r\nvariable [PosMulStrictMono G₀] {m n : ℤ}\r\n```\r\n(m and n seem to be used only once; not sure if it's worth putting them in a variable)",
+                    "createdAt": "2024-10-09T10:01:31Z",
+                    "author": {
+                      "login": "Ruben-VandeVelde"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
         },
         "closingIssuesReferences": {
           "nodes": []
@@ -495,6 +624,10 @@
               "login": "YaelDillies"
             },
             {
+              "id": "MDQ6VXNlcjY1NTE0MTMx",
+              "login": "Ruben-VandeVelde"
+            },
+            {
               "id": "U_kgDOBcsTTQ",
               "login": "leanprover-community-bot-assistant"
             }
@@ -504,6 +637,30 @@
         "statusCheckRollup": {
           "contexts": {
             "nodes": [
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHSNIMiw",
+                "name": "Add ready-to-merge label",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11252731847/job/31286496395"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHSNIGGg",
+                "name": "Ping maintainers on Zulip",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11252731840/job/31286494746"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHSNICYQ",
+                "name": "Fix style issues from lint",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11252731812/job/31286493793"
+              },
               {
                 "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHSMBhug",
@@ -543,6 +700,14 @@
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11252376651/job/31285338708"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHSNIFsA",
+                "name": "Add delegated label",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11252731847/job/31286494640"
               },
               {
                 "__typename": "CheckRun",
@@ -612,7 +777,7 @@
           }
         },
         "title": "chore: generalise `zpow` lemmas from `LinearOrderedSemifield` to `GroupWithZero`",
-        "updatedAt": "2024-10-09T09:41:30Z",
+        "updatedAt": "2024-10-09T10:04:14Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17539",
         "timelineItems": {
           "nodes": [
@@ -671,6 +836,24 @@
             },
             {
               "__typename": "PullRequestCommit"
+            },
+            {
+              "__typename": "PullRequestReview",
+              "id": "PRR_kwDOFcwZ1c6Md8R8",
+              "createdAt": "2024-10-09T09:55:33Z",
+              "body": "",
+              "author": {
+                "login": "Ruben-VandeVelde"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6ZYGgKzwAAAANkcLI4",
+              "createdAt": "2024-10-09T10:04:14Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c7P265b",
+                "name": "awaiting-author"
+              }
             }
           ]
         }
