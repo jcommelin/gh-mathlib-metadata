@@ -24,6 +24,22 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PPhig",
+              "body": "bors d+\r\n\r\nPlease change the expected result in the failing test.",
+              "createdAt": "2024-10-09T19:10:59Z",
+              "author": {
+                "login": "eric-wieser"
+              }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PPhkd",
+              "body": ":v: kmill can now approve this pull request. To approve and merge a pull request, simply reply with `bors r+`. More detailed instructions are available [here](https://bors.tech/documentation/getting-started/#reviewing-pull-requests).",
+              "createdAt": "2024-10-09T19:11:01Z",
+              "author": {
+                "login": "mathlib-bors"
+              }
             }
           ]
         },
@@ -118,8 +134,8 @@
                         "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHSlBtyg",
                         "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
+                        "conclusion": "FAILURE",
+                        "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11260411067/job/31311556042"
                       },
                       {
@@ -137,6 +153,14 @@
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11260411068/job/31311556793"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHSn0J2Q",
+                        "name": "Post-CI job",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11260411067/job/31314479577"
                       },
                       {
                         "__typename": "CheckRun",
@@ -189,6 +213,10 @@
         "labels": {
           "nodes": [
             {
+              "id": "LA_kwDOFcwZ1c8AAAABAt13Ow",
+              "name": "delegated"
+            },
+            {
               "id": "LA_kwDOFcwZ1c8AAAABJc1VKA",
               "name": "easy"
             },
@@ -210,7 +238,7 @@
         "milestone": null,
         "number": 17590,
         "potentialMergeCommit": {
-          "oid": "9489c3e300022b4078f4a29d5ea91aa812f4f0be"
+          "oid": "d58be7b44d318f6973a50e697eab2515f90ef5f7"
         },
         "projectCards": {
           "nodes": []
@@ -283,6 +311,10 @@
             {
               "id": "MDQ6VXNlcjIzNTMwNw==",
               "login": "kmill"
+            },
+            {
+              "id": "MDQ6VXNlcjQyNTI2MA==",
+              "login": "eric-wieser"
             }
           ]
         },
@@ -366,8 +398,8 @@
                 "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHSlBtyg",
                 "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
+                "conclusion": "FAILURE",
+                "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11260411067/job/31311556042"
               },
               {
@@ -385,6 +417,14 @@
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11260411068/job/31311556793"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHSn0J2Q",
+                "name": "Post-CI job",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11260411067/job/31314479577"
               },
               {
                 "__typename": "CheckRun",
@@ -406,7 +446,7 @@
           }
         },
         "title": "fix: remove `ToExpr Int` instance",
-        "updatedAt": "2024-10-09T17:57:13Z",
+        "updatedAt": "2024-10-09T19:11:09Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17590",
         "timelineItems": {
           "nodes": [
@@ -438,6 +478,33 @@
               "label": {
                 "id": "LA_kwDOFcwZ1c8AAAABKAKYew",
                 "name": "t-meta"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PPhig",
+              "createdAt": "2024-10-09T19:10:59Z",
+              "body": "bors d+\r\n\r\nPlease change the expected result in the failing test.",
+              "author": {
+                "login": "eric-wieser"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PPhkd",
+              "createdAt": "2024-10-09T19:11:01Z",
+              "body": ":v: kmill can now approve this pull request. To approve and merge a pull request, simply reply with `bors r+`. More detailed instructions are available [here](https://bors.tech/documentation/getting-started/#reviewing-pull-requests).",
+              "author": {
+                "login": "mathlib-bors"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6Zk286zwAAAANk7vLv",
+              "createdAt": "2024-10-09T19:11:09Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABAt13Ow",
+                "name": "delegated"
               }
             }
           ]
