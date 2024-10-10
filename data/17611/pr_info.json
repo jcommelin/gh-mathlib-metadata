@@ -27,7 +27,7 @@
             },
             {
               "id": "IC_kwDOFcwZ1c6PVDcw",
-              "body": "could also be called `fermat_add_one` I suppose",
+              "body": "could also be called ~`fermat_add_one`~ `fermat_succ` I suppose",
               "createdAt": "2024-10-10T10:07:29Z",
               "author": {
                 "login": "mo271"
@@ -37,6 +37,22 @@
               "id": "IC_kwDOFcwZ1c6PWXrS",
               "body": "IMHO `fermat_succ` is better",
               "createdAt": "2024-10-10T12:51:54Z",
+              "author": {
+                "login": "acmepjz"
+              }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PWaLS",
+              "body": "In general I agree, but there are other formulas describing `fermat n + 1` in terms of `fermat n` ",
+              "createdAt": "2024-10-10T12:56:39Z",
+              "author": {
+                "login": "mo271"
+              }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PXR7P",
+              "body": "> In general I agree, but there are other formulas describing `fermat n + 1` in terms of `fermat n`\r\n\r\nThen you have to `fermat_succ_eq_blah_blah`, or `fermat_succ_eq'` (primed naming scheme is strongly discouraged if you have several formulas for `fermat (n + 1)` I think).",
+              "createdAt": "2024-10-10T14:25:48Z",
               "author": {
                 "login": "acmepjz"
               }
@@ -230,7 +246,7 @@
         "milestone": null,
         "number": 17611,
         "potentialMergeCommit": {
-          "oid": "02a2c816ed223c45c3b087bd9da6719433589101"
+          "oid": "7a1262d332285cfe11742d3f132d7a18bf46b597"
         },
         "projectCards": {
           "nodes": []
@@ -239,7 +255,11 @@
           {
             "content": "THUMBS_UP",
             "users": {
-              "nodes": []
+              "nodes": [
+                {
+                  "login": "acmepjz"
+                }
+              ]
             }
           },
           {
@@ -438,7 +458,7 @@
           }
         },
         "title": "feat(NumberTheory/Fermat): fermat_eq_fermat_sub_one_pow_two_add_one",
-        "updatedAt": "2024-10-10T12:51:56Z",
+        "updatedAt": "2024-10-10T14:25:50Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17611",
         "timelineItems": {
           "nodes": [
@@ -467,7 +487,7 @@
               "__typename": "IssueComment",
               "id": "IC_kwDOFcwZ1c6PVDcw",
               "createdAt": "2024-10-10T10:07:29Z",
-              "body": "could also be called `fermat_add_one` I suppose",
+              "body": "could also be called ~`fermat_add_one`~ `fermat_succ` I suppose",
               "author": {
                 "login": "mo271"
               }
@@ -477,6 +497,24 @@
               "id": "IC_kwDOFcwZ1c6PWXrS",
               "createdAt": "2024-10-10T12:51:54Z",
               "body": "IMHO `fermat_succ` is better",
+              "author": {
+                "login": "acmepjz"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PWaLS",
+              "createdAt": "2024-10-10T12:56:39Z",
+              "body": "In general I agree, but there are other formulas describing `fermat n + 1` in terms of `fermat n` ",
+              "author": {
+                "login": "mo271"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PXR7P",
+              "createdAt": "2024-10-10T14:25:48Z",
+              "body": "> In general I agree, but there are other formulas describing `fermat n + 1` in terms of `fermat n`\r\n\r\nThen you have to `fermat_succ_eq_blah_blah`, or `fermat_succ_eq'` (primed naming scheme is strongly discouraged if you have several formulas for `fermat (n + 1)` I think).",
               "author": {
                 "login": "acmepjz"
               }
