@@ -32,6 +32,14 @@
               "author": {
                 "login": "hanwenzhu"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PT-CT",
+              "body": "In principle, rewriting Python into Lean always seems nice. I am not sure to what extend the HTTP operations are supported; that's something you'd have to find out. (There are some threads on zulip about this. Advanced features are not supported, but this PR only needs basic things.)",
+              "createdAt": "2024-10-10T08:06:06Z",
+              "author": {
+                "login": "grunweg"
+              }
             }
           ]
         },
@@ -50,6 +58,30 @@
                 "statusCheckRollup": {
                   "contexts": {
                     "nodes": [
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHS_vQ_Q",
+                        "name": "Add ready-to-merge label",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11269932049/job/31339565309"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHS_vMyw",
+                        "name": "Ping maintainers on Zulip",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11269932048/job/31339564235"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHS_vNSg",
+                        "name": "Fix style issues from lint",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11269932040/job/31339564362"
+                      },
                       {
                         "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHS6J49A",
@@ -97,6 +129,14 @@
                         "conclusion": "SUCCESS",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11267868425/job/31333710294"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHS_vNig",
+                        "name": "Add delegated label",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11269932049/job/31339564426"
                       },
                       {
                         "__typename": "CheckRun",
@@ -210,13 +250,27 @@
         "labels": {
           "nodes": [
             {
+              "id": "LA_kwDOFcwZ1c7P265b",
+              "name": "awaiting-author"
+            },
+            {
               "id": "LA_kwDOFcwZ1c8AAAABKAKYew",
               "name": "t-meta"
             }
           ]
         },
         "latestReviews": {
-          "nodes": []
+          "nodes": [
+            {
+              "id": "PRR_kwDOFcwZ1c6ModDs",
+              "body": "The general shape looks reasonable to me, and this seems like a nice clean-up. Thanks for the PR!\r\nI left a few detail questions inline.",
+              "state": "APPROVED",
+              "author": {
+                "login": "grunweg"
+              },
+              "submittedAt": "2024-10-10T08:04:52Z"
+            }
+          ]
         },
         "maintainerCanModify": false,
         "mergeCommit": null,
@@ -227,7 +281,7 @@
         "milestone": null,
         "number": 17605,
         "potentialMergeCommit": {
-          "oid": "2bafdc869cb4d96aa1136fafcacb89689f30477f"
+          "oid": "c445fe308e633be690afa4771b08357257a4a0a8"
         },
         "projectCards": {
           "nodes": []
@@ -282,15 +336,68 @@
             }
           }
         ],
-        "reviewDecision": null,
+        "reviewDecision": "APPROVED",
         "reviewRequests": {
           "nodes": []
         },
         "reviews": {
-          "nodes": []
+          "nodes": [
+            {
+              "id": "PRR_kwDOFcwZ1c6ModDs",
+              "body": "The general shape looks reasonable to me, and this seems like a nice clean-up. Thanks for the PR!\r\nI left a few detail questions inline.",
+              "state": "APPROVED",
+              "author": {
+                "login": "grunweg"
+              },
+              "submittedAt": "2024-10-10T08:04:52Z"
+            }
+          ]
         },
         "reviewThreads": {
-          "nodes": []
+          "nodes": [
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5q_EU6",
+                    "body": "Clarifying to my future self: `urlencode` returns an ASCII string, and that must be encoded to bytes before using it in a request. Actually, reading the documentation --- shouldn't you encode this to bytes, using e.g. `bytes(url, 'utf-8')` where (`url` is `urllib.parse.urlencode({'code': query})`)?\r\n\r\n> For an HTTP POST request method, data should be a buffer in the standard application/x-www-form-urlencoded format. The [urllib.parse.urlencode()](https://docs.python.org/3/library/urllib.parse.html#urllib.parse.urlencode) function takes a mapping or sequence of 2-tuples and returns an ASCII string in this format. It should be encoded to bytes before being used as the data parameter.",
+                    "createdAt": "2024-10-10T08:00:04Z",
+                    "author": {
+                      "login": "grunweg"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5q_EmW",
+                    "body": "Optional: capitalise the headers as `Content-Type` and `User-Agent`? (This is only a stylistic question.)",
+                    "createdAt": "2024-10-10T08:00:48Z",
+                    "author": {
+                      "login": "grunweg"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5q_FwX",
+                    "body": "Actually, `request` apparently required Python 3.8 --- so I would definitely increase the requirement here.\r\nGiven that Python 3.8 is end-of-live, I'd be happy increasing the requirement to 3.9.\r\n\r\nThat said: you're not checking that version anywhere, are you?",
+                    "createdAt": "2024-10-10T08:04:20Z",
+                    "author": {
+                      "login": "grunweg"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
         },
         "closingIssuesReferences": {
           "nodes": []
@@ -300,6 +407,10 @@
             {
               "id": "MDQ6VXNlcjI5NTQ0NjUz",
               "login": "hanwenzhu"
+            },
+            {
+              "id": "MDQ6VXNlcjEwMTA1MDE2",
+              "login": "grunweg"
             }
           ]
         },
@@ -307,6 +418,30 @@
         "statusCheckRollup": {
           "contexts": {
             "nodes": [
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHS_vQ_Q",
+                "name": "Add ready-to-merge label",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11269932049/job/31339565309"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHS_vMyw",
+                "name": "Ping maintainers on Zulip",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11269932048/job/31339564235"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHS_vNSg",
+                "name": "Fix style issues from lint",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11269932040/job/31339564362"
+              },
               {
                 "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHS6J49A",
@@ -354,6 +489,14 @@
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11267868425/job/31333710294"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHS_vNig",
+                "name": "Add delegated label",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11269932049/job/31339564426"
               },
               {
                 "__typename": "CheckRun",
@@ -431,7 +574,7 @@
           }
         },
         "title": "chore(Tactic/Polyrith): remove Python `requests` dependency in SageMath call",
-        "updatedAt": "2024-10-10T07:51:56Z",
+        "updatedAt": "2024-10-10T08:06:17Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17605",
         "timelineItems": {
           "nodes": [
@@ -467,6 +610,33 @@
             },
             {
               "__typename": "RenamedTitleEvent"
+            },
+            {
+              "__typename": "PullRequestReview",
+              "id": "PRR_kwDOFcwZ1c6ModDs",
+              "createdAt": "2024-10-10T08:00:04Z",
+              "body": "The general shape looks reasonable to me, and this seems like a nice clean-up. Thanks for the PR!\r\nI left a few detail questions inline.",
+              "author": {
+                "login": "grunweg"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PT-CT",
+              "createdAt": "2024-10-10T08:06:06Z",
+              "body": "In principle, rewriting Python into Lean always seems nice. I am not sure to what extend the HTTP operations are supported; that's something you'd have to find out. (There are some threads on zulip about this. Advanced features are not supported, but this PR only needs basic things.)",
+              "author": {
+                "login": "grunweg"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6Zo3zSzwAAAANla3eB",
+              "createdAt": "2024-10-10T08:06:17Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c7P265b",
+                "name": "awaiting-author"
+              }
             }
           ]
         }
