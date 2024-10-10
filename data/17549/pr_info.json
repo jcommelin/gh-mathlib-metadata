@@ -535,17 +535,7 @@
           ]
         },
         "latestReviews": {
-          "nodes": [
-            {
-              "id": "PRR_kwDOFcwZ1c6Mlsff",
-              "body": "Do you think the conclusion that `R` is `LocalRing` if `nilradical` of `R` is maximal will be used afterwards? If you think it will be useful ‌in future, you can extract it and write it as a separate `instance`.",
-              "state": "APPROVED",
-              "author": {
-                "login": "mbkybky"
-              },
-              "submittedAt": "2024-10-10T02:15:24Z"
-            }
-          ]
+          "nodes": []
         },
         "maintainerCanModify": false,
         "mergeCommit": null,
@@ -613,7 +603,14 @@
         ],
         "reviewDecision": "APPROVED",
         "reviewRequests": {
-          "nodes": []
+          "nodes": [
+            {
+              "requestedReviewer": {
+                "id": "U_kgDOCF96oQ",
+                "login": "mbkybky"
+              }
+            }
+          ]
         },
         "reviews": {
           "nodes": [
@@ -864,7 +861,7 @@
           }
         },
         "title": "feat (LocalRing/MaximalIdeal/Basic): add LocalRing.not_mem_maximalIdeal and nilradmax_localization_IsSelf",
-        "updatedAt": "2024-10-10T02:28:45Z",
+        "updatedAt": "2024-10-10T02:56:56Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17549",
         "timelineItems": {
           "nodes": [
@@ -937,6 +934,15 @@
               "createdAt": "2024-10-10T02:15:24Z",
               "body": "Do you think the conclusion that `R` is `LocalRing` if `nilradical` of `R` is maximal will be used afterwards? If you think it will be useful ‌in future, you can extract it and write it as a separate `instance`.",
               "author": {
+                "login": "mbkybky"
+              }
+            },
+            {
+              "__typename": "ReviewRequestedEvent",
+              "id": "RRE_lADOFcwZ1c6ZbHKgzwAAAANlK279",
+              "createdAt": "2024-10-10T02:56:56Z",
+              "requestedReviewer": {
+                "id": "U_kgDOCF96oQ",
                 "login": "mbkybky"
               }
             }
