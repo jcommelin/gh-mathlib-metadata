@@ -48,6 +48,14 @@
               "author": {
                 "login": "mathlib-bors"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PXeJJ",
+              "body": "It builds now, so:\r\n\r\nbors r+",
+              "createdAt": "2024-10-10T14:40:50Z",
+              "author": {
+                "login": "Vierkantor"
+              }
             }
           ]
         },
@@ -352,14 +360,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHTSao6g",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11276125935/job/31359150314"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHTSaphQ",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -368,11 +368,35 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHTSao6g",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11276125935/job/31359150314"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHTSarQg",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11276125950/job/31359150914"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHTTIyPQ",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11276125935/job/31359906365"
+                      },
+                      {
+                        "__typename": "StatusContext",
+                        "id": "SC_kwDOFcwZ1c8AAAAHbWG_Sw",
+                        "context": "bors",
+                        "state": "PENDING",
+                        "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6331",
+                        "description": "Running"
                       },
                       {
                         "__typename": "CheckRun",
@@ -924,6 +948,10 @@
               "name": "delegated"
             },
             {
+              "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
+              "name": "ready-to-merge"
+            },
+            {
               "id": "LA_kwDOFcwZ1c8AAAABlkjS4g",
               "name": "tech debt"
             }
@@ -1098,14 +1126,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHTSao6g",
-                "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11276125935/job/31359150314"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHTSaphQ",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -1114,11 +1134,35 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHTSao6g",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11276125935/job/31359150314"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHTSarQg",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11276125950/job/31359150914"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHTTIyPQ",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11276125935/job/31359906365"
+              },
+              {
+                "__typename": "StatusContext",
+                "id": "SC_kwDOFcwZ1c8AAAAHbWG_Sw",
+                "context": "bors",
+                "state": "PENDING",
+                "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6331",
+                "description": "Running"
               },
               {
                 "__typename": "CheckRun",
@@ -1140,7 +1184,7 @@
           }
         },
         "title": "chore: automatically replace `erw` with `rw` that work as well",
-        "updatedAt": "2024-10-10T14:28:34Z",
+        "updatedAt": "2024-10-10T14:41:01Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17615",
         "timelineItems": {
           "nodes": [
@@ -1228,6 +1272,27 @@
                 "title": "chore: clean up after #17615",
                 "url": "https://github.com/leanprover-community/mathlib4/pull/17617"
               }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PXeJJ",
+              "createdAt": "2024-10-10T14:40:50Z",
+              "body": "It builds now, so:\r\n\r\nbors r+",
+              "author": {
+                "login": "Vierkantor"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6ZtpbHzwAAAANly3k1",
+              "createdAt": "2024-10-10T14:41:01Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
+                "name": "ready-to-merge"
+              }
+            },
+            {
+              "__typename": "ReferencedEvent"
             }
           ]
         }
