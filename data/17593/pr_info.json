@@ -11,7 +11,7 @@
         },
         "autoMergeRequest": null,
         "baseRefName": "master",
-        "body": "There are still some useless lemmas that were simply ported from `Algebra.Order.Monoid.Lemmas`, such as just chain an existing lemma with an assumption and lemmas whose assumptions imply `1 ≤ 0`. This PR removes them.\r\n\r\nAlso, some lemmas have both assumptions like `1 < a` `0 < a`. This PR uses `ZeroLEOneClass` to remove redundant assumptions.\r\n\r\n---\r\n<!-- The text above the `---` will become the commit message when your\r\nPR is merged. Please leave a blank newline before the `---`, otherwise\r\nGitHub will format the text above it as a title.\r\n\r\nFor details on the \"pull request lifecycle\" in mathlib, please see:\r\nhttps://leanprover-community.github.io/contribute/index.html\r\n\r\nIn particular, note that most reviewers will only notice your PR\r\nif it passes the continuous integration checks.\r\nPlease ask for help on https://leanprover.zulipchat.com if needed.\r\n\r\nTo indicate co-authors, include lines at the bottom of the commit message\r\n(that is, before the `---`) using the following format:\r\n\r\nCo-authored-by: Author Name <author@email.com>\r\n\r\nIf you are moving or deleting declarations, please include these lines at the bottom of the commit message\r\n(that is, before the `---`) using the following format:\r\n\r\nMoves:\r\n- Vector.* -> Mathlib.Vector.*\r\n- ...\r\n\r\nDeletions:\r\n- Nat.bit1_add_bit1\r\n- ...\r\n\r\nAny other comments you want to keep out of the PR commit should go\r\nbelow the `---`, and placed outside this HTML comment, or else they\r\nwill be invisible to reviewers.\r\n\r\nIf this PR depends on other PRs, please list them below this comment,\r\nusing the following format:\r\n- [ ] depends on: #abc [optional extra text]\r\n- [ ] depends on: #xyz [optional extra text]\r\n\r\n-->\r\n\r\nPorted from https://github.com/leanprover-community/mathlib/pull/16525 and https://github.com/leanprover-community/mathlib/pull/18158\r\n\r\nAdapted from #9250. This version is easier to review.\r\n\r\n[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)\r\n",
+        "body": "There are still some useless lemmas that were simply ported from `Algebra.Order.Monoid.Lemmas`, such as just chain an existing lemma with an assumption and lemmas whose assumptions imply `1 ≤ 0`. This PR removes them.\r\n\r\nAlso, some lemmas have both assumptions like `1 < a` `0 < a`. This PR uses `ZeroLEOneClass` to remove redundant assumptions.\r\n\r\n---\r\n<!-- The text above the `---` will become the commit message when your\r\nPR is merged. Please leave a blank newline before the `---`, otherwise\r\nGitHub will format the text above it as a title.\r\n\r\nFor details on the \"pull request lifecycle\" in mathlib, please see:\r\nhttps://leanprover-community.github.io/contribute/index.html\r\n\r\nIn particular, note that most reviewers will only notice your PR\r\nif it passes the continuous integration checks.\r\nPlease ask for help on https://leanprover.zulipchat.com if needed.\r\n\r\nTo indicate co-authors, include lines at the bottom of the commit message\r\n(that is, before the `---`) using the following format:\r\n\r\nCo-authored-by: Author Name <author@email.com>\r\n\r\nIf you are moving or deleting declarations, please include these lines at the bottom of the commit message\r\n(that is, before the `---`) using the following format:\r\n\r\nMoves:\r\n- Vector.* -> Mathlib.Vector.*\r\n- ...\r\n\r\nDeletions:\r\n- Nat.bit1_add_bit1\r\n- ...\r\n\r\nAny other comments you want to keep out of the PR commit should go\r\nbelow the `---`, and placed outside this HTML comment, or else they\r\nwill be invisible to reviewers.\r\n\r\nIf this PR depends on other PRs, please list them below this comment,\r\nusing the following format:\r\n- [ ] depends on: #abc [optional extra text]\r\n- [ ] depends on: #xyz [optional extra text]\r\n\r\n-->\r\n- [ ] depends on: #17623\r\n\r\nPorted from https://github.com/leanprover-community/mathlib/pull/16525 and https://github.com/leanprover-community/mathlib/pull/18158\r\n\r\nAdapted from #9250. This version is easier to review.\r\n\r\n[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)\r\n",
         "changedFiles": 5,
         "closed": false,
         "closedAt": null,
@@ -23,6 +23,14 @@
               "createdAt": "2024-10-09T19:29:44Z",
               "author": {
                 "login": "github-actions"
+              }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PYTz5",
+              "body": "I split the part that adds lemmas as #17623.",
+              "createdAt": "2024-10-10T16:03:54Z",
+              "author": {
+                "login": "FR-vdash-bot"
               }
             }
           ]
@@ -3864,7 +3872,7 @@
           }
         },
         "title": "chore(Algebra/Order/GroupWithZero/Unbundled): deprecate useless lemmas, use `ZeroLEOneClass`",
-        "updatedAt": "2024-10-10T15:27:33Z",
+        "updatedAt": "2024-10-10T16:04:09Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17593",
         "timelineItems": {
           "nodes": [
@@ -3993,6 +4001,25 @@
             },
             {
               "__typename": "PullRequestCommit"
+            },
+            {
+              "__typename": "CrossReferencedEvent",
+              "id": "CRE_kwDOFcwZ1c5cVBpt",
+              "createdAt": "2024-10-10T16:01:38Z",
+              "source": {
+                "id": "PR_kwDOFcwZ1c5-PnhR",
+                "title": "feat(Algebra/Order/GroupWithZero): add some lemmas",
+                "url": "https://github.com/leanprover-community/mathlib4/pull/17623"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PYTz5",
+              "createdAt": "2024-10-10T16:03:54Z",
+              "body": "I split the part that adds lemmas as #17623.",
+              "author": {
+                "login": "FR-vdash-bot"
+              }
             }
           ]
         }
