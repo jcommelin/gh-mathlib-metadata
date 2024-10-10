@@ -24,6 +24,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PWGAu",
+              "body": "I think it would be better to define this first in the `IsPointwiseLeftKanExtensionAt` namespace in the `Pointwise` file:\r\n```lean\r\nnamespace IsPointwiseLeftKanExtensionAt\r\n\r\nvariable {E} {Y : D} (h : E.IsPointwiseLeftKanExtensionAt Y)\r\n  [HasColimit (CostructuredArrow.proj L Y ⋙ F)]\r\n\r\nnoncomputable def isoColimit :\r\n    E.right.obj Y ≅ colimit (CostructuredArrow.proj L Y ⋙ F) :=\r\n  h.coconePointUniqueUpToIso (colimit.isColimit _)\r\n\r\n@[reassoc (attr := simp)]\r\nlemma ι_isoColimit_inv (g : CostructuredArrow L Y) :\r\n    colimit.ι _ g ≫ h.isoColimit.inv = E.hom.app g.left ≫ E.right.map g.hom :=\r\n  IsColimit.comp_coconePointUniqueUpToIso_inv _ _ _\r\n\r\n@[reassoc (attr := simp)]\r\nlemma ι_isoColimit_hom (g : CostructuredArrow L Y) :\r\n    E.hom.app g.left ≫ E.right.map g.hom ≫ h.isoColimit.hom =\r\n      colimit.ι (CostructuredArrow.proj L Y ⋙ F) g := by\r\n  simpa using h.comp_coconePointUniqueUpToIso_hom (colimit.isColimit _) g\r\n\r\nend IsPointwiseLeftKanExtensionAt\r\n```\r\nand then it can be applied to the particular sitatuation of `L.lan`.",
+              "createdAt": "2024-10-10T12:17:12Z",
+              "author": {
+                "login": "joelriou"
+              }
             }
           ]
         },
@@ -909,6 +917,10 @@
         "labels": {
           "nodes": [
             {
+              "id": "LA_kwDOFcwZ1c7P265b",
+              "name": "awaiting-author"
+            },
+            {
               "id": "LA_kwDOFcwZ1c8AAAABViJTYQ",
               "name": "t-category-theory"
             }
@@ -945,7 +957,7 @@
         "milestone": null,
         "number": 17531,
         "potentialMergeCommit": {
-          "oid": "ad2cf547f6790753652451cf14a859bfa246625f"
+          "oid": "4cf30029ff6f16a460badd2f4d07c7f550673705"
         },
         "projectCards": {
           "nodes": []
@@ -1168,12 +1180,12 @@
               "login": "javra"
             },
             {
-              "id": "MDQ6VXNlcjIwNjUzNTI=",
-              "login": "TwoFX"
-            },
-            {
               "id": "MDQ6VXNlcjM3NzcyOTQ5",
               "login": "joelriou"
+            },
+            {
+              "id": "MDQ6VXNlcjIwNjUzNTI=",
+              "login": "TwoFX"
             }
           ]
         },
@@ -1361,7 +1373,7 @@
           }
         },
         "title": "feat(CategoryTheory/KanExtensions): Evaluating `lan` twice amounts to taking a colimit",
-        "updatedAt": "2024-10-10T11:50:56Z",
+        "updatedAt": "2024-10-10T12:32:56Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17531",
         "timelineItems": {
           "nodes": [
@@ -1486,6 +1498,24 @@
               "body": "",
               "author": {
                 "login": "joelriou"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PWGAu",
+              "createdAt": "2024-10-10T12:17:12Z",
+              "body": "I think it would be better to define this first in the `IsPointwiseLeftKanExtensionAt` namespace in the `Pointwise` file:\r\n```lean\r\nnamespace IsPointwiseLeftKanExtensionAt\r\n\r\nvariable {E} {Y : D} (h : E.IsPointwiseLeftKanExtensionAt Y)\r\n  [HasColimit (CostructuredArrow.proj L Y ⋙ F)]\r\n\r\nnoncomputable def isoColimit :\r\n    E.right.obj Y ≅ colimit (CostructuredArrow.proj L Y ⋙ F) :=\r\n  h.coconePointUniqueUpToIso (colimit.isColimit _)\r\n\r\n@[reassoc (attr := simp)]\r\nlemma ι_isoColimit_inv (g : CostructuredArrow L Y) :\r\n    colimit.ι _ g ≫ h.isoColimit.inv = E.hom.app g.left ≫ E.right.map g.hom :=\r\n  IsColimit.comp_coconePointUniqueUpToIso_inv _ _ _\r\n\r\n@[reassoc (attr := simp)]\r\nlemma ι_isoColimit_hom (g : CostructuredArrow L Y) :\r\n    E.hom.app g.left ≫ E.right.map g.hom ≫ h.isoColimit.hom =\r\n      colimit.ι (CostructuredArrow.proj L Y ⋙ F) g := by\r\n  simpa using h.comp_coconePointUniqueUpToIso_hom (colimit.isColimit _) g\r\n\r\nend IsPointwiseLeftKanExtensionAt\r\n```\r\nand then it can be applied to the particular sitatuation of `L.lan`.",
+              "author": {
+                "login": "joelriou"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6ZVuPdzwAAAANlqchQ",
+              "createdAt": "2024-10-10T12:32:56Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c7P265b",
+                "name": "awaiting-author"
               }
             }
           ]

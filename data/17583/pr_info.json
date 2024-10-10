@@ -56,6 +56,22 @@
               "author": {
                 "login": "leanprover-bot"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PWIRb",
+              "body": "bors d+",
+              "createdAt": "2024-10-10T12:21:57Z",
+              "author": {
+                "login": "jcommelin"
+              }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PWITD",
+              "body": ":v: Vierkantor can now approve this pull request. To approve and merge a pull request, simply reply with `bors r+`. More detailed instructions are available [here](https://bors.tech/documentation/getting-started/#reviewing-pull-requests).",
+              "createdAt": "2024-10-10T12:22:01Z",
+              "author": {
+                "login": "mathlib-bors"
+              }
             }
           ]
         },
@@ -74,6 +90,30 @@
                 "statusCheckRollup": {
                   "contexts": {
                     "nodes": [
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHTLg_xQ",
+                        "name": "Ping maintainers on Zulip",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11273904256/job/31351914437"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHTLg_nA",
+                        "name": "Fix style issues from lint",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11273904268/job/31351914396"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHTLhBRQ",
+                        "name": "Add ready-to-merge label",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11273904260/job/31351914821"
+                      },
                       {
                         "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHTFUd3g",
@@ -121,6 +161,14 @@
                         "conclusion": "SUCCESS",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11271806909/job/31345417638"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHTLg_rg",
+                        "name": "Add delegated label",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11273904260/job/31351914414"
                       },
                       {
                         "__typename": "CheckRun",
@@ -177,6 +225,14 @@
                         "conclusion": "SUCCESS",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11271675718/job/31345712238"
+                      },
+                      {
+                        "__typename": "StatusContext",
+                        "id": "SC_kwDOFcwZ1c8AAAAHbSosZw",
+                        "context": "bors",
+                        "state": "PENDING",
+                        "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6329",
+                        "description": "Running"
                       },
                       {
                         "__typename": "CheckRun",
@@ -561,6 +617,10 @@
               "name": "blocked-by-other-PR"
             },
             {
+              "id": "LA_kwDOFcwZ1c8AAAABAt13Ow",
+              "name": "delegated"
+            },
+            {
               "id": "LA_kwDOFcwZ1c8AAAABViJTYQ",
               "name": "t-category-theory"
             },
@@ -582,7 +642,7 @@
         "milestone": null,
         "number": 17583,
         "potentialMergeCommit": {
-          "oid": "5e95abedbf620428ae136c1bb7bd09b49b5381fa"
+          "oid": "46aa9dbe70237460e9ff002e799a707a2288fc74"
         },
         "projectCards": {
           "nodes": []
@@ -794,7 +854,7 @@
           }
         },
         "title": "chore: add unification hint for forgetful functor Bundled -> Type",
-        "updatedAt": "2024-10-10T11:33:06Z",
+        "updatedAt": "2024-10-10T12:22:11Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17583",
         "timelineItems": {
           "nodes": [
@@ -954,6 +1014,36 @@
               "body": "Here are the [benchmark results](http://speed.lean-fro.org/mathlib4/run-detail/7cea2d9a-2ac2-4f69-abb8-213cdcae395a) for commit bbe04be5a3862c4431abed4c69c8d848d2433f42.\nThe entire run failed.\nFound no significant differences.",
               "author": {
                 "login": "leanprover-bot"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PWIRb",
+              "createdAt": "2024-10-10T12:21:57Z",
+              "body": "bors d+",
+              "author": {
+                "login": "jcommelin"
+              }
+            },
+            {
+              "__typename": "ReferencedEvent"
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PWITD",
+              "createdAt": "2024-10-10T12:22:01Z",
+              "body": ":v: Vierkantor can now approve this pull request. To approve and merge a pull request, simply reply with `bors r+`. More detailed instructions are available [here](https://bors.tech/documentation/getting-started/#reviewing-pull-requests).",
+              "author": {
+                "login": "mathlib-bors"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6ZivKczwAAAANlp3CA",
+              "createdAt": "2024-10-10T12:22:11Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABAt13Ow",
+                "name": "delegated"
               }
             }
           ]
