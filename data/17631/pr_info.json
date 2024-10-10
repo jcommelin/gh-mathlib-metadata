@@ -24,6 +24,22 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PaMpM",
+              "body": "I think the import of `import Lean.DeclarationRange` causes the unpleaseant \"large-import\" label",
+              "createdAt": "2024-10-10T20:46:47Z",
+              "author": {
+                "login": "mo271"
+              }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PaONV",
+              "body": "Technically, I think that the `large-import` is a consequence of adding `Common` to `Lint`.  Still, in this case it is not such a big deal: the actual imports of `Lint` are not increased, as the extra imported file is simply to add one extra function.",
+              "createdAt": "2024-10-10T20:51:06Z",
+              "author": {
+                "login": "adomani"
+              }
             }
           ]
         },
@@ -613,6 +629,10 @@
             {
               "id": "MDQ6VXNlcjM0OTE2Mjc=",
               "login": "mo271"
+            },
+            {
+              "id": "MDQ6VXNlcjI5NDY3NzQ1",
+              "login": "adomani"
             }
           ]
         },
@@ -736,7 +756,7 @@
           }
         },
         "title": "chore(Tactic/Linter/Lint): improve dupNamespace",
-        "updatedAt": "2024-10-10T20:36:28Z",
+        "updatedAt": "2024-10-10T20:51:08Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17631",
         "timelineItems": {
           "nodes": [
@@ -853,6 +873,24 @@
                 "id": "PR_kwDOFcwZ1c5-Ervs",
                 "title": "feat: lint declarations which contain a double underscore",
                 "url": "https://github.com/leanprover-community/mathlib4/pull/17580"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PaMpM",
+              "createdAt": "2024-10-10T20:46:47Z",
+              "body": "I think the import of `import Lean.DeclarationRange` causes the unpleaseant \"large-import\" label",
+              "author": {
+                "login": "mo271"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PaONV",
+              "createdAt": "2024-10-10T20:51:06Z",
+              "body": "Technically, I think that the `large-import` is a consequence of adding `Common` to `Lint`.  Still, in this case it is not such a big deal: the actual imports of `Lint` are not increased, as the extra imported file is simply to add one extra function.",
+              "author": {
+                "login": "adomani"
               }
             }
           ]
