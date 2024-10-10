@@ -344,6 +344,30 @@
                     "nodes": [
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHS1_D4Q",
+                        "name": "Add ready-to-merge label",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11266217046/job/31329338337"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHS1_DtA",
+                        "name": "Ping maintainers on Zulip",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11266217029/job/31329338292"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHS1_D_g",
+                        "name": "Fix style issues from lint",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11266217037/job/31329338366"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHSk_ckA",
                         "name": "label-and-report-new-contributor",
                         "conclusion": "SUCCESS",
@@ -360,11 +384,11 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHSk_Zkw",
+                        "id": "CR_kwDOFcwZ1c8AAAAHS2gERg",
                         "name": "Cancel Previous Runs (CI)",
                         "conclusion": "SUCCESS",
                         "status": "COMPLETED",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11260400336/job/31311518099"
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11260400336/job/31329879110"
                       },
                       {
                         "__typename": "CheckRun",
@@ -384,11 +408,19 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHSk_aqA",
+                        "id": "CR_kwDOFcwZ1c8AAAAHS1_E2g",
+                        "name": "Add delegated label",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11266217046/job/31329338586"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHS2gFRw",
                         "name": "Lint style (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11260400336/job/31311518376"
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11260400336/job/31329879367"
                       },
                       {
                         "__typename": "CheckRun",
@@ -408,27 +440,35 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHS2gEwg",
+                        "name": "Build (fork)",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11260400336/job/31329879234"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHSk_ZiQ",
                         "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11260400316/job/31311518089"
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHSk_YDw",
-                        "name": "Build (fork)",
-                        "conclusion": "SKIPPED",
-                        "status": "COMPLETED",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11260400336/job/31311517711"
-                      },
-                      {
-                        "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHSk_bmw",
+                        "id": "CR_kwDOFcwZ1c8AAAAHS2gF2w",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11260400336/job/31311518619"
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11260400336/job/31329879515"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHSloZLQ",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11260400316/job/31312189741"
                       },
                       {
                         "__typename": "CheckRun",
@@ -495,7 +535,17 @@
           ]
         },
         "latestReviews": {
-          "nodes": []
+          "nodes": [
+            {
+              "id": "PRR_kwDOFcwZ1c6Mlsff",
+              "body": "Do you think the conclusion that `R` is `LocalRing` if `nilradical` of `R` is maximal will be used afterwards? If you think it will be useful ‌in future, you can extract it and write it as a separate `instance`.",
+              "state": "APPROVED",
+              "author": {
+                "login": "mbkybky"
+              },
+              "submittedAt": "2024-10-10T02:15:24Z"
+            }
+          ]
         },
         "maintainerCanModify": false,
         "mergeCommit": null,
@@ -506,7 +556,7 @@
         "milestone": null,
         "number": 17549,
         "potentialMergeCommit": {
-          "oid": "c4a430f158c324c1fc14ef0e32881419e309acbc"
+          "oid": "ef111918790960a26421649e5931e925bdb40010"
         },
         "projectCards": {
           "nodes": []
@@ -561,16 +611,9 @@
             }
           }
         ],
-        "reviewDecision": null,
+        "reviewDecision": "APPROVED",
         "reviewRequests": {
-          "nodes": [
-            {
-              "requestedReviewer": {
-                "id": "U_kgDOCF96oQ",
-                "login": "mbkybky"
-              }
-            }
-          ]
+          "nodes": []
         },
         "reviews": {
           "nodes": [
@@ -582,6 +625,15 @@
                 "login": "mbkybky"
               },
               "submittedAt": "2024-10-09T01:31:05Z"
+            },
+            {
+              "id": "PRR_kwDOFcwZ1c6Mlsff",
+              "body": "Do you think the conclusion that `R` is `LocalRing` if `nilradical` of `R` is maximal will be used afterwards? If you think it will be useful ‌in future, you can extract it and write it as a separate `instance`.",
+              "state": "APPROVED",
+              "author": {
+                "login": "mbkybky"
+              },
+              "submittedAt": "2024-10-10T02:15:24Z"
             }
           ]
         },
@@ -666,6 +718,30 @@
             "nodes": [
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHS1_D4Q",
+                "name": "Add ready-to-merge label",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11266217046/job/31329338337"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHS1_DtA",
+                "name": "Ping maintainers on Zulip",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11266217029/job/31329338292"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHS1_D_g",
+                "name": "Fix style issues from lint",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11266217037/job/31329338366"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHSk_ckA",
                 "name": "label-and-report-new-contributor",
                 "conclusion": "SUCCESS",
@@ -682,11 +758,11 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHSk_Zkw",
+                "id": "CR_kwDOFcwZ1c8AAAAHS2gERg",
                 "name": "Cancel Previous Runs (CI)",
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11260400336/job/31311518099"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11260400336/job/31329879110"
               },
               {
                 "__typename": "CheckRun",
@@ -706,11 +782,19 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHSk_aqA",
+                "id": "CR_kwDOFcwZ1c8AAAAHS1_E2g",
+                "name": "Add delegated label",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11266217046/job/31329338586"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHS2gFRw",
                 "name": "Lint style (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11260400336/job/31311518376"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11260400336/job/31329879367"
               },
               {
                 "__typename": "CheckRun",
@@ -730,27 +814,35 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHS2gEwg",
+                "name": "Build (fork)",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11260400336/job/31329879234"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHSk_ZiQ",
                 "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11260400316/job/31311518089"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHSk_YDw",
-                "name": "Build (fork)",
-                "conclusion": "SKIPPED",
-                "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11260400336/job/31311517711"
-              },
-              {
-                "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHSk_bmw",
+                "id": "CR_kwDOFcwZ1c8AAAAHS2gF2w",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11260400336/job/31311518619"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11260400336/job/31329879515"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHSloZLQ",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11260400316/job/31312189741"
               },
               {
                 "__typename": "CheckRun",
@@ -772,7 +864,7 @@
           }
         },
         "title": "feat (LocalRing/MaximalIdeal/Basic): add LocalRing.not_mem_maximalIdeal and nilradmax_localization_IsSelf",
-        "updatedAt": "2024-10-09T18:05:19Z",
+        "updatedAt": "2024-10-10T02:28:45Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17549",
         "timelineItems": {
           "nodes": [
@@ -836,6 +928,15 @@
               "createdAt": "2024-10-09T18:05:19Z",
               "requestedReviewer": {
                 "id": "U_kgDOCF96oQ",
+                "login": "mbkybky"
+              }
+            },
+            {
+              "__typename": "PullRequestReview",
+              "id": "PRR_kwDOFcwZ1c6Mlsff",
+              "createdAt": "2024-10-10T02:15:24Z",
+              "body": "Do you think the conclusion that `R` is `LocalRing` if `nilradical` of `R` is maximal will be used afterwards? If you think it will be useful ‌in future, you can extract it and write it as a separate `instance`.",
+              "author": {
                 "login": "mbkybky"
               }
             }
