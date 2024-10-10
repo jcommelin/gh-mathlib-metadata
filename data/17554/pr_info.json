@@ -13,8 +13,8 @@
         "baseRefName": "master",
         "body": "Introduce the class of sifted categories. A category `IsSifted` if it is nonempty and the diagonal functor is a final functor.\r\n\r\n- Show that sifted categories are stable under equivalences of categories.\r\n- Characterize sifted categories as those for which the `Type`-valued colimit functor preserves finite products.\r\n- Show that filtered categories are sifted.\r\n- Show that categories admitting a final functor from sifted categories are also sifted.\r\n\r\n---\r\n<!-- The text above the `---` will become the commit message when your\r\nPR is merged. Please leave a blank newline before the `---`, otherwise\r\nGitHub will format the text above it as a title.\r\n\r\nFor details on the \"pull request lifecycle\" in mathlib, please see:\r\nhttps://leanprover-community.github.io/contribute/index.html\r\n\r\nIn particular, note that most reviewers will only notice your PR\r\nif it passes the continuous integration checks.\r\nPlease ask for help on https://leanprover.zulipchat.com if needed.\r\n\r\nTo indicate co-authors, include lines at the bottom of the commit message\r\n(that is, before the `---`) using the following format:\r\n\r\nCo-authored-by: Author Name <author@email.com>\r\n\r\nIf you are moving or deleting declarations, please include these lines at the bottom of the commit message\r\n(that is, before the `---`) using the following format:\r\n\r\nMoves:\r\n- Vector.* -> Mathlib.Vector.*\r\n- ...\r\n\r\nDeletions:\r\n- Nat.bit1_add_bit1\r\n- ...\r\n\r\nAny other comments you want to keep out of the PR commit should go\r\nbelow the `---`, and placed outside this HTML comment, or else they\r\nwill be invisible to reviewers.\r\n\r\nIf this PR depends on other PRs, please list them below this comment,\r\nusing the following format:\r\n- [ ] depends on: #abc [optional extra text]\r\n- [ ] depends on: #xyz [optional extra text]\r\n\r\n-->\r\n\r\nThe proof of the main part (showing the characterization in term of the colimit functor) relies on a computation that rewrites the colimit-to-limit comparison for the product as a composite of \"Fubini\"-type isomorphisms and of `colimit.pre` for the diagonal functor. I marked the definition and lemmas for this computation as private, because I don’t think they would be useful as standalone lemmas.\r\n\r\nI also went with the \"Monoidal\" notations coming from `ChosenFiniteProduct` instances for the computation, because it seemed to work better for the back-and-forth between presheaves and types, but this require introducing an isomorphism that compares it to the usual product, that I also marked as private since it is auxiliary to the computation here.\r\n\r\nSadly, I had to prove by hand that tensoring on the left/right preserves colimits (also marked private). This should normally come from the fact that the monoidal structure on types is cartesian closed, but the `CartesianClosed` instance defined in `CategoryTheory/Closed/Types` is actually about a different monoidal structure than the one defined in `CategoryTheory/Monoidal/Types/Basic` (the former is the one coming from `monoidalOfHasFiniteProducts`, while the latter is the one from `monoidalOChosenFiniteProducts`). If this gets changed then this should trim a bit of noise from the proof.\r\n\r\n[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)\r\n",
         "changedFiles": 3,
-        "closed": false,
-        "closedAt": null,
+        "closed": true,
+        "closedAt": "2024-10-10T08:49:17Z",
         "comments": {
           "nodes": [
             {
@@ -37,6 +37,14 @@
               "id": "IC_kwDOFcwZ1c6PKmmp",
               "body": "> Could you add a `## References` section to the docstring of the file?\r\n\r\nI added the n-lab as well as Adámek-Rosický-Vitale’s Algebraic theories. Note that both references take preservations of finite products for the colimit functor as the definition.",
               "createdAt": "2024-10-09T10:20:47Z",
+              "author": {
+                "login": "robin-carlier"
+              }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PUZNJ",
+              "body": "Closing and putting on hold untill a refactor of `CartesianClosed` is ready (I will also split the product-preservation part from the rest).",
+              "createdAt": "2024-10-10T08:49:17Z",
               "author": {
                 "login": "robin-carlier"
               }
@@ -912,6 +920,14 @@
                     "nodes": [
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHTB2Avw",
+                        "name": "build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11270634539/job/31341772991"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHSOlmAA",
                         "name": "label-and-report-new-contributor",
                         "conclusion": "SUCCESS",
@@ -1232,10 +1248,18 @@
             }
           ]
         },
-        "state": "OPEN",
+        "state": "CLOSED",
         "statusCheckRollup": {
           "contexts": {
             "nodes": [
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHTB2Avw",
+                "name": "build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11270634539/job/31341772991"
+              },
               {
                 "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHSOlmAA",
@@ -1352,7 +1376,7 @@
           }
         },
         "title": "feat(CategoryTheory/Limits): Sifted categories",
-        "updatedAt": "2024-10-09T10:36:46Z",
+        "updatedAt": "2024-10-10T08:49:17Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17554",
         "timelineItems": {
           "nodes": [
@@ -1467,6 +1491,20 @@
             },
             {
               "__typename": "PullRequestCommit"
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PUZNJ",
+              "createdAt": "2024-10-10T08:49:17Z",
+              "body": "Closing and putting on hold untill a refactor of `CartesianClosed` is ready (I will also split the product-preservation part from the rest).",
+              "author": {
+                "login": "robin-carlier"
+              }
+            },
+            {
+              "__typename": "ClosedEvent",
+              "id": "CE_lADOFcwZ1c6Zb9JpzwAAAANldqQ1",
+              "createdAt": "2024-10-10T08:49:17Z"
             }
           ]
         }

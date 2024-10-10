@@ -389,6 +389,10 @@
               "name": "WIP"
             },
             {
+              "id": "LA_kwDOFcwZ1c8AAAABIFoUmw",
+              "name": "merge-conflict"
+            },
+            {
               "id": "LA_kwDOFcwZ1c8AAAABViJTYQ",
               "name": "t-category-theory"
             }
@@ -399,15 +403,13 @@
         },
         "maintainerCanModify": false,
         "mergeCommit": null,
-        "mergeStateStatus": "BLOCKED",
-        "mergeable": "MERGEABLE",
+        "mergeStateStatus": "UNKNOWN",
+        "mergeable": "UNKNOWN",
         "mergedAt": null,
         "mergedBy": null,
         "milestone": null,
         "number": 17583,
-        "potentialMergeCommit": {
-          "oid": "67f8e06d84c15389956e14dfbb30c564d194592a"
-        },
+        "potentialMergeCommit": null,
         "projectCards": {
           "nodes": []
         },
@@ -479,6 +481,10 @@
             {
               "id": "MDQ6VXNlcjIxMTY1NzA=",
               "login": "Vierkantor"
+            },
+            {
+              "id": "U_kgDOBcsTTQ",
+              "login": "leanprover-community-bot-assistant"
             }
           ]
         },
@@ -602,7 +608,7 @@
           }
         },
         "title": "chore: add unification hint for forgetful functor Bundled -> Type",
-        "updatedAt": "2024-10-09T14:40:51Z",
+        "updatedAt": "2024-10-10T08:54:17Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17583",
         "timelineItems": {
           "nodes": [
@@ -646,6 +652,15 @@
               "body": "So there is a bit of regression in the area of sheaves, most of which is easy enough to fix. But most definitions in `Mathlib.AlgebraicGeometry.Morphisms.QuasiSeparated` seem to just completely fail because their expected `CommRingCat` becomes `Bundled CommRing`, meaning all their nice instances are gone. Adding type ascriptions doesn't seem to help, so I'm going to try and see if the issue can be resolved a bit higher up...",
               "author": {
                 "login": "Vierkantor"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6ZivKczwAAAANleAn8",
+              "createdAt": "2024-10-10T08:54:17Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABIFoUmw",
+                "name": "merge-conflict"
               }
             }
           ]
