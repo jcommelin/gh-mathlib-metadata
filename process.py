@@ -17,7 +17,7 @@ from typing import List
 
 def main():
     output = dict()
-    updated = datetime.now(timezone.utc).strftime("%B %d, %Y at %H:%M UTC")
+    updated = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     output["timestamp"] = updated
     pr_data = []
     # Read all pr info files in the data directory.
