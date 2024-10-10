@@ -458,14 +458,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHS9BNQA",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11268982786/job/31336713536"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHS9BL-g",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -474,11 +466,27 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHS9BNQA",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11268982786/job/31336713536"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHS9BNsg",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11268982782/job/31336713650"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHS-NFrA",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11268982786/job/31337956780"
                       },
                       {
                         "__typename": "CheckRun",
@@ -531,6 +539,10 @@
         "labels": {
           "nodes": [
             {
+              "id": "LA_kwDOFcwZ1c8AAAABIFoUmw",
+              "name": "merge-conflict"
+            },
+            {
               "id": "LA_kwDOFcwZ1c8AAAABViJlpQ",
               "name": "t-order"
             }
@@ -541,15 +553,13 @@
         },
         "maintainerCanModify": false,
         "mergeCommit": null,
-        "mergeStateStatus": "BLOCKED",
-        "mergeable": "MERGEABLE",
+        "mergeStateStatus": "DIRTY",
+        "mergeable": "CONFLICTING",
         "mergedAt": null,
         "mergedBy": null,
         "milestone": null,
         "number": 17598,
-        "potentialMergeCommit": {
-          "oid": "75ecfa4fc9ab928fea51be7ef42016012fe67063"
-        },
+        "potentialMergeCommit": null,
         "projectCards": {
           "nodes": []
         },
@@ -621,6 +631,10 @@
             {
               "id": "MDQ6VXNlcjY1NDY1Njcw",
               "login": "vihdzp"
+            },
+            {
+              "id": "U_kgDOBcsTTQ",
+              "login": "leanprover-community-bot-assistant"
             }
           ]
         },
@@ -694,14 +708,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHS9BNQA",
-                "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11268982786/job/31336713536"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHS9BL-g",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -710,11 +716,27 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHS9BNQA",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11268982786/job/31336713536"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHS9BNsg",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11268982782/job/31336713650"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHS-NFrA",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11268982786/job/31337956780"
               },
               {
                 "__typename": "CheckRun",
@@ -736,7 +758,7 @@
           }
         },
         "title": "feat(Order/InitialSeg): missing instances on initial/principal segments",
-        "updatedAt": "2024-10-10T06:57:06Z",
+        "updatedAt": "2024-10-10T13:27:56Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17598",
         "timelineItems": {
           "nodes": [
@@ -770,7 +792,7 @@
               "createdAt": "2024-10-10T00:51:47Z",
               "source": {
                 "id": "PR_kwDOFcwZ1c59wlrJ",
-                "title": "feat(Order/InitSeg): notation for initial and principal segments of `<`",
+                "title": "[Merged by Bors] - feat(Order/InitSeg): notation for initial and principal segments of `<`",
                 "url": "https://github.com/leanprover-community/mathlib4/pull/17481"
               }
             },
@@ -797,6 +819,15 @@
             },
             {
               "__typename": "PullRequestCommit"
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6Znd2IzwAAAANlt26t",
+              "createdAt": "2024-10-10T13:27:56Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABIFoUmw",
+                "name": "merge-conflict"
+              }
             }
           ]
         }
