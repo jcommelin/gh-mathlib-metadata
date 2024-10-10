@@ -344,19 +344,19 @@
                     "nodes": [
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHS1_D4Q",
+                        "id": "CR_kwDOFcwZ1c8AAAAHS3EdMw",
                         "name": "Add ready-to-merge label",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11266217046/job/31329338337"
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11266217046/job/31330475315"
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHS1_DtA",
+                        "id": "CR_kwDOFcwZ1c8AAAAHS3CofA",
                         "name": "Ping maintainers on Zulip",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11266217029/job/31329338292"
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11266217029/job/31330445436"
                       },
                       {
                         "__typename": "CheckRun",
@@ -408,11 +408,11 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHS1_E2g",
+                        "id": "CR_kwDOFcwZ1c8AAAAHS3EcTA",
                         "name": "Add delegated label",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11266217046/job/31329338586"
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11266217046/job/31330475084"
                       },
                       {
                         "__typename": "CheckRun",
@@ -535,7 +535,17 @@
           ]
         },
         "latestReviews": {
-          "nodes": []
+          "nodes": [
+            {
+              "id": "PRR_kwDOFcwZ1c6Mlsff",
+              "body": "Do you think the conclusion that `R` is `LocalRing` if `nilradical` of `R` is maximal will be used afterwards? If you think it will be useful ‌in future, you can extract it and write it as a separate `instance`.",
+              "state": "APPROVED",
+              "author": {
+                "login": "mbkybky"
+              },
+              "submittedAt": "2024-10-10T02:15:24Z"
+            }
+          ]
         },
         "maintainerCanModify": false,
         "mergeCommit": null,
@@ -546,7 +556,7 @@
         "milestone": null,
         "number": 17549,
         "potentialMergeCommit": {
-          "oid": "ef111918790960a26421649e5931e925bdb40010"
+          "oid": "1f3a7058718a72dd7083ae5e03f93489204ba5ce"
         },
         "projectCards": {
           "nodes": []
@@ -603,14 +613,7 @@
         ],
         "reviewDecision": "APPROVED",
         "reviewRequests": {
-          "nodes": [
-            {
-              "requestedReviewer": {
-                "id": "U_kgDOCF96oQ",
-                "login": "mbkybky"
-              }
-            }
-          ]
+          "nodes": []
         },
         "reviews": {
           "nodes": [
@@ -715,19 +718,19 @@
             "nodes": [
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHS1_D4Q",
+                "id": "CR_kwDOFcwZ1c8AAAAHS3EdMw",
                 "name": "Add ready-to-merge label",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11266217046/job/31329338337"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11266217046/job/31330475315"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHS1_DtA",
+                "id": "CR_kwDOFcwZ1c8AAAAHS3CofA",
                 "name": "Ping maintainers on Zulip",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11266217029/job/31329338292"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11266217029/job/31330445436"
               },
               {
                 "__typename": "CheckRun",
@@ -779,11 +782,11 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHS1_E2g",
+                "id": "CR_kwDOFcwZ1c8AAAAHS3EcTA",
                 "name": "Add delegated label",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11266217046/job/31329338586"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11266217046/job/31330475084"
               },
               {
                 "__typename": "CheckRun",
@@ -861,7 +864,7 @@
           }
         },
         "title": "feat (LocalRing/MaximalIdeal/Basic): add LocalRing.not_mem_maximalIdeal and nilradmax_localization_IsSelf",
-        "updatedAt": "2024-10-10T02:56:56Z",
+        "updatedAt": "2024-10-10T03:03:51Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17549",
         "timelineItems": {
           "nodes": [
@@ -941,6 +944,15 @@
               "__typename": "ReviewRequestedEvent",
               "id": "RRE_lADOFcwZ1c6ZbHKgzwAAAANlK279",
               "createdAt": "2024-10-10T02:56:56Z",
+              "requestedReviewer": {
+                "id": "U_kgDOCF96oQ",
+                "login": "mbkybky"
+              }
+            },
+            {
+              "__typename": "ReviewRequestRemovedEvent",
+              "id": "RRRE_lADOFcwZ1c6ZbHKgzwAAAANlLEv4",
+              "createdAt": "2024-10-10T03:03:51Z",
               "requestedReviewer": {
                 "id": "U_kgDOCF96oQ",
                 "login": "mbkybky"
