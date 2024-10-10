@@ -24,6 +24,22 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PVDxB",
+              "body": "!bench",
+              "createdAt": "2024-10-10T10:08:01Z",
+              "author": {
+                "login": "Vierkantor"
+              }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PVSvR",
+              "body": "Here are the [benchmark results](http://speed.lean-fro.org/mathlib4/run-detail/c117a6f1-95be-4002-bb28-2e4ee01eee0a) for commit 7ced0916f1480ac4971c73f77f9ad2ee4558c818.\nThe entire run failed.\nFound no significant differences.",
+              "createdAt": "2024-10-10T10:35:00Z",
+              "author": {
+                "login": "leanprover-bot"
+              }
             }
           ]
         },
@@ -116,14 +132,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHTE6RTg",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11271675718/job/31344988494"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHTE6Sqw",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -132,11 +140,27 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHTE6RTg",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11271675718/job/31344988494"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHTE6UXg",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11271675717/job/31344989278"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHTFmcbg",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11271675718/job/31345712238"
                       },
                       {
                         "__typename": "CheckRun",
@@ -287,6 +311,10 @@
             {
               "id": "MDQ6VXNlcjIxMTY1NzA=",
               "login": "Vierkantor"
+            },
+            {
+              "id": "MDQ6VXNlcjg1NjY4Mzk0",
+              "login": "leanprover-bot"
             }
           ]
         },
@@ -368,14 +396,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHTE6RTg",
-                "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11271675718/job/31344988494"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHTE6Sqw",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -384,11 +404,27 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHTE6RTg",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11271675718/job/31344988494"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHTE6UXg",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11271675717/job/31344989278"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHTFmcbg",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11271675718/job/31345712238"
               },
               {
                 "__typename": "CheckRun",
@@ -410,7 +446,7 @@
           }
         },
         "title": "chore(Category/Ring): turn CommRingCat and CommSemiRingCat into `abbrev`s",
-        "updatedAt": "2024-10-10T10:03:13Z",
+        "updatedAt": "2024-10-10T10:35:01Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17612",
         "timelineItems": {
           "nodes": [
@@ -464,6 +500,24 @@
                 "id": "PR_kwDOFcwZ1c5-FgMv",
                 "title": "chore: add unification hint for forgetful functor Bundled -> Type",
                 "url": "https://github.com/leanprover-community/mathlib4/pull/17583"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PVDxB",
+              "createdAt": "2024-10-10T10:08:01Z",
+              "body": "!bench",
+              "author": {
+                "login": "Vierkantor"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PVSvR",
+              "createdAt": "2024-10-10T10:35:00Z",
+              "body": "Here are the [benchmark results](http://speed.lean-fro.org/mathlib4/run-detail/c117a6f1-95be-4002-bb28-2e4ee01eee0a) for commit 7ced0916f1480ac4971c73f77f9ad2ee4558c818.\nThe entire run failed.\nFound no significant differences.",
+              "author": {
+                "login": "leanprover-bot"
               }
             }
           ]
