@@ -24,6 +24,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PSwWb",
+              "body": "I would also argue perhaps removing dependency on Python entirely makes sense, and we can move the logic inside Lean except for the HTTP call itself (maybe use something like `Cache.IO.runCurl`?)",
+              "createdAt": "2024-10-10T05:26:40Z",
+              "author": {
+                "login": "hanwenzhu"
+              }
             }
           ]
         },
@@ -423,7 +431,7 @@
           }
         },
         "title": "chore(Tactic/Polyrith): Remove Python `requests` dependency in SageMath call",
-        "updatedAt": "2024-10-10T05:15:53Z",
+        "updatedAt": "2024-10-10T05:26:40Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17605",
         "timelineItems": {
           "nodes": [
@@ -446,6 +454,15 @@
               "label": {
                 "id": "LA_kwDOFcwZ1c8AAAABKAKYew",
                 "name": "t-meta"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PSwWb",
+              "createdAt": "2024-10-10T05:26:40Z",
+              "body": "I would also argue perhaps removing dependency on Python entirely makes sense, and we can move the logic inside Lean except for the HTTP call itself (maybe use something like `Cache.IO.runCurl`?)",
+              "author": {
+                "login": "hanwenzhu"
               }
             }
           ]
