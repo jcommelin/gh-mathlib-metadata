@@ -527,7 +527,14 @@
         ],
         "reviewDecision": null,
         "reviewRequests": {
-          "nodes": []
+          "nodes": [
+            {
+              "requestedReviewer": {
+                "id": "MDQ6VXNlcjE0MDkwNTkz",
+                "login": "YaelDillies"
+              }
+            }
+          ]
         },
         "reviews": {
           "nodes": []
@@ -658,7 +665,7 @@
           }
         },
         "title": "chore(SetTheory/Ordinal/Basic): make `Ordinal.typein` a `PrincipalSeg`",
-        "updatedAt": "2024-10-10T03:33:52Z",
+        "updatedAt": "2024-10-10T03:44:49Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17599",
         "timelineItems": {
           "nodes": [
@@ -697,6 +704,15 @@
             },
             {
               "__typename": "PullRequestCommit"
+            },
+            {
+              "__typename": "ReviewRequestedEvent",
+              "id": "RRE_lADOFcwZ1c6ZoGSyzwAAAANlMCCL",
+              "createdAt": "2024-10-10T03:44:49Z",
+              "requestedReviewer": {
+                "id": "MDQ6VXNlcjE0MDkwNTkz",
+                "login": "YaelDillies"
+              }
             }
           ]
         }
