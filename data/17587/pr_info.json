@@ -56,6 +56,14 @@
               "author": {
                 "login": "kmill"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PTwkd",
+              "body": "What is the policy on when to use implicit arguments? E.g. why is it `card_filter_mem_of_mem_edgeSet (e : Sym2 V) (he : e ∈ G.edgeSet)` and not `card_filter_mem_of_mem_edgeSet {e : Sym2 V} (he : e ∈ G.edgeSet)`?\r\n\r\nAlso, how do we handle edgeSet vs edgeFinset? Just a separate version for each lemma like `card_filter_mem_of_mem_edgeFinset`?",
+              "createdAt": "2024-10-10T07:41:54Z",
+              "author": {
+                "login": "FordUniver"
+              }
             }
           ]
         },
@@ -506,8 +514,8 @@
                         "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHSoxlEA",
                         "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
+                        "conclusion": "FAILURE",
+                        "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11261627972/job/31315485968"
                       },
                       {
@@ -525,6 +533,14 @@
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11261627977/job/31315486368"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHSqV8Pg",
+                        "name": "Post-CI job",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11261627972/job/31317130302"
                       },
                       {
                         "__typename": "CheckRun",
@@ -603,7 +619,7 @@
         "milestone": null,
         "number": 17587,
         "potentialMergeCommit": {
-          "oid": "60ea6329c5df0b9dec129cd6cdc03fc792bd7c9c"
+          "oid": "bd7c19bcdc7331a3cca7415b59be4961bf33aadd"
         },
         "projectCards": {
           "nodes": []
@@ -755,8 +771,8 @@
                 "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHSoxlEA",
                 "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
+                "conclusion": "FAILURE",
+                "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11261627972/job/31315485968"
               },
               {
@@ -774,6 +790,14 @@
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11261627977/job/31315486368"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHSqV8Pg",
+                "name": "Post-CI job",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11261627972/job/31317130302"
               },
               {
                 "__typename": "CheckRun",
@@ -795,7 +819,7 @@
           }
         },
         "title": "feat: Sym2-as-Finset theory",
-        "updatedAt": "2024-10-09T19:20:03Z",
+        "updatedAt": "2024-10-10T07:41:55Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17587",
         "timelineItems": {
           "nodes": [
@@ -887,6 +911,15 @@
             },
             {
               "__typename": "SubscribedEvent"
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PTwkd",
+              "createdAt": "2024-10-10T07:41:54Z",
+              "body": "What is the policy on when to use implicit arguments? E.g. why is it `card_filter_mem_of_mem_edgeSet (e : Sym2 V) (he : e ∈ G.edgeSet)` and not `card_filter_mem_of_mem_edgeSet {e : Sym2 V} (he : e ∈ G.edgeSet)`?\r\n\r\nAlso, how do we handle edgeSet vs edgeFinset? Just a separate version for each lemma like `card_filter_mem_of_mem_edgeFinset`?",
+              "author": {
+                "login": "FordUniver"
+              }
             }
           ]
         }
