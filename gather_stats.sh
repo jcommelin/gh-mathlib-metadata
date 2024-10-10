@@ -59,3 +59,5 @@ for pr in $prs; do
   echo "$CURRENT_TIME" > "$dir/timestamp.txt"
 done
 
+# Write a file with aggregate PR data, to "processed_data/aggregate_pr_data.json".
+python3 process.py
