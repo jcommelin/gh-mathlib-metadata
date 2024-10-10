@@ -24,6 +24,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PX5K6",
+              "body": "Note that in the future, `PreservesLimit` may become a `Prop` (if someone does the refactor that maintainers would agree with), so that we should lose computability at some point.\r\nIn order to develop more API at the same time you get `Functor.toMonoidalFunctorOfChosenFiniteProducts`, I would suggest developing an API `chosenProdComparison` similar to the `prodComparison` in `Limits.Preserves.Shapes.BinaryProducts`. Under the assumption that `F` commutes with suitable colimits, we would get a `chosenProdComparisonIso`. Developing this API (and similarly for the chosen terminal object) should facilitate the proofs in the main definition here.",
+              "createdAt": "2024-10-10T15:14:12Z",
+              "author": {
+                "login": "joelriou"
+              }
             }
           ]
         },
@@ -410,14 +418,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHTJ8Wng",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11273379926/job/31350265502"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHTJ8YVw",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -426,11 +426,27 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHTJ8Wng",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11273379926/job/31350265502"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHTJ8ZfQ",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11273379941/job/31350266237"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHTKZ7Kg",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11273379926/job/31350749994"
                       },
                       {
                         "__typename": "CheckRun",
@@ -483,6 +499,10 @@
         "labels": {
           "nodes": [
             {
+              "id": "LA_kwDOFcwZ1c7P265b",
+              "name": "awaiting-author"
+            },
+            {
               "id": "LA_kwDOFcwZ1c8AAAABViJTYQ",
               "name": "t-category-theory"
             }
@@ -500,7 +520,7 @@
         "milestone": null,
         "number": 17613,
         "potentialMergeCommit": {
-          "oid": "64b466265da682535f9019034ee5ae359b0746a9"
+          "oid": "51af626567fd3b57f8cd98d5fee4d4d7a99c5d70"
         },
         "projectCards": {
           "nodes": []
@@ -573,6 +593,10 @@
             {
               "id": "MDQ6VXNlcjU3MTQyNjQ4",
               "login": "robin-carlier"
+            },
+            {
+              "id": "MDQ6VXNlcjM3NzcyOTQ5",
+              "login": "joelriou"
             }
           ]
         },
@@ -646,14 +670,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHTJ8Wng",
-                "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11273379926/job/31350265502"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHTJ8YVw",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -662,11 +678,27 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHTJ8Wng",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11273379926/job/31350265502"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHTJ8ZfQ",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11273379941/job/31350266237"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHTKZ7Kg",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11273379926/job/31350749994"
               },
               {
                 "__typename": "CheckRun",
@@ -688,7 +720,7 @@
           }
         },
         "title": "feat(CategoryTheory/ChosenFiniteProducts): Monoidal functors between categories with chosen products",
-        "updatedAt": "2024-10-10T11:48:09Z",
+        "updatedAt": "2024-10-10T15:14:16Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17613",
         "timelineItems": {
           "nodes": [
@@ -721,6 +753,24 @@
             },
             {
               "__typename": "PullRequestCommit"
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PX5K6",
+              "createdAt": "2024-10-10T15:14:12Z",
+              "body": "Note that in the future, `PreservesLimit` may become a `Prop` (if someone does the refactor that maintainers would agree with), so that we should lose computability at some point.\r\nIn order to develop more API at the same time you get `Functor.toMonoidalFunctorOfChosenFiniteProducts`, I would suggest developing an API `chosenProdComparison` similar to the `prodComparison` in `Limits.Preserves.Shapes.BinaryProducts`. Under the assumption that `F` commutes with suitable colimits, we would get a `chosenProdComparisonIso`. Developing this API (and similarly for the chosen terminal object) should facilitate the proofs in the main definition here.",
+              "author": {
+                "login": "joelriou"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6ZshBIzwAAAANl1BKe",
+              "createdAt": "2024-10-10T15:14:16Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c7P265b",
+                "name": "awaiting-author"
+              }
             }
           ]
         }

@@ -11,7 +11,7 @@
         },
         "autoMergeRequest": null,
         "baseRefName": "master",
-        "body": "The files `KanComplex.lean`, `Nerve.lean`, are `Quasicategory.lean` moved from AlgebraicTopology into the SimplicialSet subfolder. The file `AlgebraicTopology/SimplicialSet.lean` is moved as well and renamed to`AlgebraicTopology/SimplicialSet/Basic.lean`.\r\n\r\n---\r\n\r\n-->\r\n\r\n[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)\r\n",
+        "body": "The files `KanComplex.lean`, `Nerve.lean`, and `Quasicategory.lean` are moved from AlgebraicTopology into the SimplicialSet subfolder. The file `AlgebraicTopology/SimplicialSet.lean` is moved as well and renamed to`AlgebraicTopology/SimplicialSet/Basic.lean`.\r\n\r\n---\r\n\r\n-->\r\n\r\n[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)\r\n",
         "changedFiles": 8,
         "closed": false,
         "closedAt": null,
@@ -124,14 +124,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHTUN8Zw",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11276673396/job/31361039463"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHTUN6Nw",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -140,11 +132,27 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHTUN8Zw",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11276673396/job/31361039463"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHTUN-2A",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11276673394/job/31361040088"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHTU3Sdw",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11276673396/job/31361716855"
                       },
                       {
                         "__typename": "CheckRun",
@@ -242,15 +250,13 @@
         },
         "maintainerCanModify": false,
         "mergeCommit": null,
-        "mergeStateStatus": "BLOCKED",
-        "mergeable": "MERGEABLE",
+        "mergeStateStatus": "DIRTY",
+        "mergeable": "CONFLICTING",
         "mergedAt": null,
         "mergedBy": null,
         "milestone": null,
         "number": 17620,
-        "potentialMergeCommit": {
-          "oid": "487bd7638ec7c6ea3c249f9cfc99987b342ed6b8"
-        },
+        "potentialMergeCommit": null,
         "projectCards": {
           "nodes": []
         },
@@ -416,14 +422,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHTUN8Zw",
-                "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11276673396/job/31361039463"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHTUN6Nw",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -432,11 +430,27 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHTUN8Zw",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11276673396/job/31361039463"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHTUN-2A",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11276673394/job/31361040088"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHTU3Sdw",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11276673396/job/31361716855"
               },
               {
                 "__typename": "CheckRun",
@@ -457,8 +471,8 @@
             ]
           }
         },
-        "title": "Chore (moved some files into SimplicialSet)",
-        "updatedAt": "2024-10-10T15:04:38Z",
+        "title": "chore(AlgebraicTopology): moved some files into SimplicialSet",
+        "updatedAt": "2024-10-10T15:11:39Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17620",
         "timelineItems": {
           "nodes": [
@@ -509,6 +523,9 @@
               "author": {
                 "login": "emilyriehl"
               }
+            },
+            {
+              "__typename": "RenamedTitleEvent"
             }
           ]
         }
