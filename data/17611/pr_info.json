@@ -24,6 +24,22 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PVDcw",
+              "body": "could also be called `fermat_add_one` I suppose",
+              "createdAt": "2024-10-10T10:07:29Z",
+              "author": {
+                "login": "mo271"
+              }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PWXrS",
+              "body": "IMHO `fermat_succ` is better",
+              "createdAt": "2024-10-10T12:51:54Z",
+              "author": {
+                "login": "acmepjz"
+              }
             }
           ]
         },
@@ -116,14 +132,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHTFHaYw",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11271741843/job/31345203811"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHTFHbGg",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -132,11 +140,27 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHTFHaYw",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11271741843/job/31345203811"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHTFHcTA",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11271741821/job/31345204300"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHTFkpMw",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11271741843/job/31345682739"
                       },
                       {
                         "__typename": "CheckRun",
@@ -206,7 +230,7 @@
         "milestone": null,
         "number": 17611,
         "potentialMergeCommit": {
-          "oid": "59acc924720f1723736d998f5a621282f082c98d"
+          "oid": "02a2c816ed223c45c3b087bd9da6719433589101"
         },
         "projectCards": {
           "nodes": []
@@ -279,6 +303,10 @@
             {
               "id": "MDQ6VXNlcjM0OTE2Mjc=",
               "login": "mo271"
+            },
+            {
+              "id": "MDQ6VXNlcjMzOTc3Nzk=",
+              "login": "acmepjz"
             }
           ]
         },
@@ -360,14 +388,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHTFHaYw",
-                "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11271741843/job/31345203811"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHTFHbGg",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -376,11 +396,27 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHTFHaYw",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11271741843/job/31345203811"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHTFHcTA",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11271741821/job/31345204300"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHTFkpMw",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11271741843/job/31345682739"
               },
               {
                 "__typename": "CheckRun",
@@ -402,7 +438,7 @@
           }
         },
         "title": "feat(NumberTheory/Fermat): fermat_eq_fermat_sub_one_pow_two_add_one",
-        "updatedAt": "2024-10-10T10:00:11Z",
+        "updatedAt": "2024-10-10T12:51:56Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17611",
         "timelineItems": {
           "nodes": [
@@ -425,6 +461,24 @@
               "label": {
                 "id": "LA_kwDOFcwZ1c8AAAABViJLNA",
                 "name": "t-number-theory"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PVDcw",
+              "createdAt": "2024-10-10T10:07:29Z",
+              "body": "could also be called `fermat_add_one` I suppose",
+              "author": {
+                "login": "mo271"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PWXrS",
+              "createdAt": "2024-10-10T12:51:54Z",
+              "body": "IMHO `fermat_succ` is better",
+              "author": {
+                "login": "acmepjz"
               }
             }
           ]

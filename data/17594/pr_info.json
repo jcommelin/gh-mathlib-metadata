@@ -32,6 +32,14 @@
               "author": {
                 "login": "vihdzp"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PWUOh",
+              "body": "When `Setoid` is not an instance, we obviously want to avoid using `· ≈ ·`. Currently mathlib replicates the API around `Quotient.mk` for `Quotient.mk''`, but this is not needed because `Quotient.mk` doesn't use instance parameters now. After adjusting the API we can stop using `Quotient.mk''`.",
+              "createdAt": "2024-10-10T12:45:30Z",
+              "author": {
+                "login": "FR-vdash-bot"
+              }
             }
           ]
         },
@@ -637,7 +645,7 @@
         "milestone": null,
         "number": 17594,
         "potentialMergeCommit": {
-          "oid": "072546d82462faaaaff2b8f0eef37036171a34f5"
+          "oid": "45facfec813845f5273f0eb98a056567dcc944ef"
         },
         "projectCards": {
           "nodes": []
@@ -837,7 +845,7 @@
           }
         },
         "title": "chore: do not use `· ≈ ·` in `Quotient.eq`",
-        "updatedAt": "2024-10-10T00:49:52Z",
+        "updatedAt": "2024-10-10T12:45:31Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17594",
         "timelineItems": {
           "nodes": [
@@ -898,6 +906,15 @@
               "body": "What's the reasoning for this?",
               "author": {
                 "login": "vihdzp"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PWUOh",
+              "createdAt": "2024-10-10T12:45:30Z",
+              "body": "When `Setoid` is not an instance, we obviously want to avoid using `· ≈ ·`. Currently mathlib replicates the API around `Quotient.mk` for `Quotient.mk''`, but this is not needed because `Quotient.mk` doesn't use instance parameters now. After adjusting the API we can stop using `Quotient.mk''`.",
+              "author": {
+                "login": "FR-vdash-bot"
               }
             }
           ]
