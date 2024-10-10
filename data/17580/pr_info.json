@@ -32,6 +32,14 @@
               "author": {
                 "login": "adomani"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PYEyf",
+              "body": "Here are the [benchmark results](http://speed.lean-fro.org/mathlib4/run-detail/e9e1ac43-037d-4e5c-a3a3-e71f6fe67634) for commit be3bc239a87e84cb9b18bd1743e56600c969fcba.\nThe entire run failed.\nFound no significant differences.",
+              "createdAt": "2024-10-10T15:34:37Z",
+              "author": {
+                "login": "leanprover-bot"
+              }
             }
           ]
         },
@@ -1393,6 +1401,30 @@
                     "nodes": [
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHTWclxQ",
+                        "name": "Add ready-to-merge label",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11277376126/job/31363376581"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHTWcZSA",
+                        "name": "Ping maintainers on Zulip",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11277376118/job/31363373384"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHTWcZfQ",
+                        "name": "Fix style issues from lint",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11277376115/job/31363373437"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHTR7PFw",
                         "name": "label-and-report-new-contributor",
                         "conclusion": "SUCCESS",
@@ -1441,6 +1473,14 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHTWcbqg",
+                        "name": "Add delegated label",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11277376126/job/31363373994"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHTR7OhA",
                         "name": "Lint style (fork)",
                         "conclusion": "SKIPPED",
@@ -1459,8 +1499,8 @@
                         "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHTR7Nhg",
                         "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
+                        "conclusion": "FAILURE",
+                        "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11275962378/job/31358635398"
                       },
                       {
@@ -1478,6 +1518,14 @@
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11275962360/job/31358636304"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHTVIEIw",
+                        "name": "Post-CI job",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11275962378/job/31361991715"
                       },
                       {
                         "__typename": "CheckRun",
@@ -1565,7 +1613,17 @@
           ]
         },
         "latestReviews": {
-          "nodes": []
+          "nodes": [
+            {
+              "id": "PRR_kwDOFcwZ1c6MtiHa",
+              "body": "This is not a full review - but the new linter itself looks straightforward, so I wouldn't anticipate many further comments. I haven't really reviewed the code in `Linter/Common.lean`.",
+              "state": "COMMENTED",
+              "author": {
+                "login": "grunweg"
+              },
+              "submittedAt": "2024-10-10T15:38:43Z"
+            }
+          ]
         },
         "maintainerCanModify": false,
         "mergeCommit": null,
@@ -1576,7 +1634,7 @@
         "milestone": null,
         "number": 17580,
         "potentialMergeCommit": {
-          "oid": "7ed2d711ed3f8702f731e7c0103c8a2be9760740"
+          "oid": "0e5aa006ff45f1b7992f9d4805f1d0d0c891942f"
         },
         "projectCards": {
           "nodes": []
@@ -1636,10 +1694,161 @@
           "nodes": []
         },
         "reviews": {
-          "nodes": []
+          "nodes": [
+            {
+              "id": "PRR_kwDOFcwZ1c6MtiHa",
+              "body": "This is not a full review - but the new linter itself looks straightforward, so I wouldn't anticipate many further comments. I haven't really reviewed the code in `Linter/Common.lean`.",
+              "state": "COMMENTED",
+              "author": {
+                "login": "grunweg"
+              },
+              "submittedAt": "2024-10-10T15:38:43Z"
+            }
+          ]
         },
         "reviewThreads": {
-          "nodes": []
+          "nodes": [
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5rB_s0",
+                    "body": "The style linter complains: you should put the module docstring before any open statements.",
+                    "createdAt": "2024-10-10T15:32:42Z",
+                    "author": {
+                      "login": "grunweg"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5rCAL3",
+                    "body": "How about this?\r\nThe `check_declID` linter emits a warning on declarations whose name is non-standard style.\r\n(Currently, this only includes declarations whose names include a double underscore.)",
+                    "createdAt": "2024-10-10T15:34:04Z",
+                    "author": {
+                      "login": "grunweg"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5rCAPp",
+                    "body": "Please update this :-)",
+                    "createdAt": "2024-10-10T15:34:14Z",
+                    "author": {
+                      "login": "grunweg"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5rCASU",
+                    "body": "```suggestion",
+                    "createdAt": "2024-10-10T15:34:21Z",
+                    "author": {
+                      "login": "grunweg"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5rCAfy",
+                    "body": "This is not an identifier *name* (but syntax corresponding to one), right? Can you tweak the comment to make this clearer?",
+                    "createdAt": "2024-10-10T15:34:56Z",
+                    "author": {
+                      "login": "grunweg"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5rCAyf",
+                    "body": "I like these lines! Can you move this above the the `register_option`, then you can just use `@[inherit_doc] here.",
+                    "createdAt": "2024-10-10T15:35:47Z",
+                    "author": {
+                      "login": "grunweg"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5rCBFj",
+                    "body": "Subjective: I would put the `run` on the the same line. I would also name the variable `stx`, and find a different name below. Both of these are matters of taste.",
+                    "createdAt": "2024-10-10T15:36:41Z",
+                    "author": {
+                      "login": "grunweg"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5rCBN4",
+                    "body": "I think mathlib style is to not brace if conditions.",
+                    "createdAt": "2024-10-10T15:37:03Z",
+                    "author": {
+                      "login": "grunweg"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5rCBSj",
+                    "body": "\"follow the mathlib naming conventions\"",
+                    "createdAt": "2024-10-10T15:37:15Z",
+                    "author": {
+                      "login": "grunweg"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5rCBYD",
+                    "body": "You can omit these two lines, right?",
+                    "createdAt": "2024-10-10T15:37:29Z",
+                    "author": {
+                      "login": "grunweg"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
         },
         "closingIssuesReferences": {
           "nodes": []
@@ -1653,6 +1862,14 @@
             {
               "id": "MDQ6VXNlcjI5NDY3NzQ1",
               "login": "adomani"
+            },
+            {
+              "id": "MDQ6VXNlcjg1NjY4Mzk0",
+              "login": "leanprover-bot"
+            },
+            {
+              "id": "MDQ6VXNlcjEwMTA1MDE2",
+              "login": "grunweg"
             }
           ]
         },
@@ -1660,6 +1877,30 @@
         "statusCheckRollup": {
           "contexts": {
             "nodes": [
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHTWclxQ",
+                "name": "Add ready-to-merge label",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11277376126/job/31363376581"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHTWcZSA",
+                "name": "Ping maintainers on Zulip",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11277376118/job/31363373384"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHTWcZfQ",
+                "name": "Fix style issues from lint",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11277376115/job/31363373437"
+              },
               {
                 "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHTR7PFw",
@@ -1710,6 +1951,14 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHTWcbqg",
+                "name": "Add delegated label",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11277376126/job/31363373994"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHTR7OhA",
                 "name": "Lint style (fork)",
                 "conclusion": "SKIPPED",
@@ -1728,8 +1977,8 @@
                 "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHTR7Nhg",
                 "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
+                "conclusion": "FAILURE",
+                "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11275962378/job/31358635398"
               },
               {
@@ -1747,6 +1996,14 @@
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11275962360/job/31358636304"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHTVIEIw",
+                "name": "Post-CI job",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11275962378/job/31361991715"
               },
               {
                 "__typename": "CheckRun",
@@ -1768,7 +2025,7 @@
           }
         },
         "title": "chore(Tactic/Linter/Style): check declIDs",
-        "updatedAt": "2024-10-10T15:01:18Z",
+        "updatedAt": "2024-10-10T15:38:43Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17580",
         "timelineItems": {
           "nodes": [
@@ -1853,6 +2110,24 @@
               "body": "!bench",
               "author": {
                 "login": "adomani"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PYEyf",
+              "createdAt": "2024-10-10T15:34:37Z",
+              "body": "Here are the [benchmark results](http://speed.lean-fro.org/mathlib4/run-detail/e9e1ac43-037d-4e5c-a3a3-e71f6fe67634) for commit be3bc239a87e84cb9b18bd1743e56600c969fcba.\nThe entire run failed.\nFound no significant differences.",
+              "author": {
+                "login": "leanprover-bot"
+              }
+            },
+            {
+              "__typename": "PullRequestReview",
+              "id": "PRR_kwDOFcwZ1c6MtiHa",
+              "createdAt": "2024-10-10T15:32:42Z",
+              "body": "This is not a full review - but the new linter itself looks straightforward, so I wouldn't anticipate many further comments. I haven't really reviewed the code in `Linter/Common.lean`.",
+              "author": {
+                "login": "grunweg"
               }
             }
           ]
