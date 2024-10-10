@@ -56,6 +56,14 @@
               "author": {
                 "login": "loefflerd"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PS6tO",
+              "body": "It looks like we don't have the \"normal\", non-ultrametric triangle inequality for Finsums either, and apparently nobody has missed it yet, which suggests to me that adding the ultrametric Finsum triangle ineq probably isn't a high priority. ",
+              "createdAt": "2024-10-10T05:57:58Z",
+              "author": {
+                "login": "loefflerd"
+              }
             }
           ]
         },
@@ -583,7 +591,7 @@
           }
         },
         "title": "feat(Analysis/Normed/Group/Ultra): triangle ineq for tsum & tprod",
-        "updatedAt": "2024-10-10T05:49:37Z",
+        "updatedAt": "2024-10-10T05:57:59Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17584",
         "timelineItems": {
           "nodes": [
@@ -652,6 +660,15 @@
               "id": "IC_kwDOFcwZ1c6PS4Nu",
               "createdAt": "2024-10-10T05:49:35Z",
               "body": "> Fair! I thought since we `tprod` is over a type, and `finprod` is over a type where the (mul) support is a plain `Set`, that the type would still be fine to use in the iSup binder syntax. The circularity is avoided thus -- `finprod` uses `Set.Finite`, and this way we don't have to juggle a `Finset.sup(')` into an iSup.\r\n\r\nAh, I misunderstood, I'm sorry! I didn't realise `Finprod` was a separate thing, I thought it was just an abbreviation for `Finset.prod` etc. (As you can tell, I've never used it.)",
+              "author": {
+                "login": "loefflerd"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PS6tO",
+              "createdAt": "2024-10-10T05:57:58Z",
+              "body": "It looks like we don't have the \"normal\", non-ultrametric triangle inequality for Finsums either, and apparently nobody has missed it yet, which suggests to me that adding the ultrametric Finsum triangle ineq probably isn't a high priority. ",
               "author": {
                 "login": "loefflerd"
               }
