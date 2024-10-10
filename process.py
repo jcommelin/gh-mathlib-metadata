@@ -15,20 +15,6 @@ from datetime import datetime, timezone
 from typing import List
 
 
-# 'items' is a list of timeline items for this pull request
-def is_in_draft_state(items: dict) -> bool:
-    # xxx what's the default here? is there always an explicit event?
-    is_draft = False
-    events_data = items["nodes"]
-    for event in events_data:
-        type = event["__typename"]
-        if type == "ReadyForReviewEvent":
-            is_draft = False
-        elif type == "ConvertToDraftEvent":
-            is_draft = True
-    return is_draft
-
-
 def main():
     output = dict()
     updated = datetime.now(timezone.utc).strftime("%B %d, %Y at %H:%M UTC")
@@ -42,7 +28,7 @@ def main():
             inner = data["data"]["repository"]["pullRequest"]
             number = inner["number"]
             base_branch = inner["baseRefName"]
-            is_draft = is_in_draft_state(inner["timelineItems"])
+            is_draft = inner["isDraft"]
 
             CI_passes = False
             # Get information about the latest CI run. We just look at the "summary job".
