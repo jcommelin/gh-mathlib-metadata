@@ -40,6 +40,14 @@
               "author": {
                 "login": "pechersky"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6Pefim",
+              "body": "> If it is an explicit argument, then there is no way to create the scoped instance -- an explicit argument of the proof about the norm is not available to TC synthesis.\r\n\r\nBut you could still create a local instance where you need it, instead of a scoped one, right? That is what I did for example to get the `Valued` structure on `Q_p^alg`:\r\n```lean\r\ninstance valuedField : Valued (QPAlg p) ℝ≥0 :=\r\n  NormedField.toValued (QPAlg.isNonarchimedean p)\r\n```\r\n\r\nIn any case, I am not against these changes now that `IsUltrametricDist` is available, but I would change the PR comment - you could get the `Valued` data before; the comment should instead explain that the problem was to make it a scoped instance instead of just a def.",
+              "createdAt": "2024-10-11T10:40:18Z",
+              "author": {
+                "login": "mariainesdff"
+              }
             }
           ]
         },
@@ -231,15 +239,13 @@
         },
         "maintainerCanModify": false,
         "mergeCommit": null,
-        "mergeStateStatus": "BLOCKED",
-        "mergeable": "MERGEABLE",
+        "mergeStateStatus": "UNKNOWN",
+        "mergeable": "UNKNOWN",
         "mergedAt": null,
         "mergedBy": null,
         "milestone": null,
         "number": 17561,
-        "potentialMergeCommit": {
-          "oid": "186619516b58342feef5c1b932691ba073524eb7"
-        },
+        "potentialMergeCommit": null,
         "projectCards": {
           "nodes": []
         },
@@ -459,7 +465,7 @@
           }
         },
         "title": "chore(Topology/Algebra/Valued/NormedValued): rely on TC IsUltrametricDist instead of explicit arg",
-        "updatedAt": "2024-10-09T23:12:34Z",
+        "updatedAt": "2024-10-11T10:40:19Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17561",
         "timelineItems": {
           "nodes": [
@@ -536,6 +542,15 @@
               "body": "Consider my PR on proving that locally compact iff complete and DVR of the valuation ring and finite residue field. To talk about the valuation ring `Valued.integer`, I need a `Valued` in the TC. This is easier to provide to the TC table by a TC-implicit argument `[IsUltrametricDist X]` than an explicit `(h : IsNonarchimedean norm)`. If it is an explicit argument, then there is no way to create the scoped instance -- an explicit argument of the proof about the norm is not available to TC synthesis.\r\n\r\nhttps://github.com/leanprover-community/mathlib4/pull/16733/files#diff-e2953739e89168dcbb0040fe18b7996a54734ee000cfa73813c6a324d3c2f8a9R26-R37",
               "author": {
                 "login": "pechersky"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6Pefim",
+              "createdAt": "2024-10-11T10:40:18Z",
+              "body": "> If it is an explicit argument, then there is no way to create the scoped instance -- an explicit argument of the proof about the norm is not available to TC synthesis.\r\n\r\nBut you could still create a local instance where you need it, instead of a scoped one, right? That is what I did for example to get the `Valued` structure on `Q_p^alg`:\r\n```lean\r\ninstance valuedField : Valued (QPAlg p) ℝ≥0 :=\r\n  NormedField.toValued (QPAlg.isNonarchimedean p)\r\n```\r\n\r\nIn any case, I am not against these changes now that `IsUltrametricDist` is available, but I would change the PR comment - you could get the `Valued` data before; the comment should instead explain that the problem was to make it a scoped instance instead of just a def.",
+              "author": {
+                "login": "mariainesdff"
               }
             }
           ]
