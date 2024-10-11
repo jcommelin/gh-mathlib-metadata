@@ -116,14 +116,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHUNYoUg",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11296335729/job/31420983378"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHUNYoyg",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -132,11 +124,27 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHUNYoUg",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11296335729/job/31420983378"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHUNYrEw",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11296335724/job/31420984083"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHUN6Bqw",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11296335729/job/31421530539"
                       },
                       {
                         "__typename": "CheckRun",
@@ -208,10 +216,6 @@
         "isDraft": false,
         "labels": {
           "nodes": [
-            {
-              "id": "LA_kwDOFcwZ1c8AAAABKteTVQ",
-              "name": "awaiting-CI"
-            },
             {
               "id": "LA_kwDOFcwZ1c8AAAABViJjTQ",
               "name": "t-algebra"
@@ -391,14 +395,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHUNYoUg",
-                "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11296335729/job/31420983378"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHUNYoyg",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -407,11 +403,27 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHUNYoUg",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11296335729/job/31420983378"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHUNYrEw",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11296335724/job/31420984083"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHUN6Bqw",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11296335729/job/31421530539"
               },
               {
                 "__typename": "CheckRun",
@@ -433,7 +445,7 @@
           }
         },
         "title": "feat: generalise `LieModule.independent_genWeightSpace` to any family of compatible endomorphisms",
-        "updatedAt": "2024-10-11T17:03:37Z",
+        "updatedAt": "2024-10-11T17:14:04Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17654",
         "timelineItems": {
           "nodes": [
@@ -474,6 +486,25 @@
               "requestedReviewer": {
                 "id": "MDQ6VXNlcjg5MjA1OTg=",
                 "login": "j-loreaux"
+              }
+            },
+            {
+              "__typename": "UnlabeledEvent",
+              "id": "UNLE_lADOFcwZ1c6Z43iXzwAAAANm8-3e",
+              "createdAt": "2024-10-11T17:14:04Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABKteTVQ",
+                "name": "awaiting-CI"
+              }
+            },
+            {
+              "__typename": "CrossReferencedEvent",
+              "id": "CRE_kwDOFcwZ1c5cnfSg",
+              "createdAt": "2024-10-11T17:17:55Z",
+              "source": {
+                "id": "PR_kwDOFcwZ1c56urxn",
+                "title": "feat(Analysis.InnerProductSpace): Decomposition of finite-dimensional inner product space as direct sum of joint eigenspaces of commuting finite tuples of symmetric operators ",
+                "url": "https://github.com/leanprover-community/mathlib4/pull/16569"
               }
             }
           ]
