@@ -32,6 +32,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6Pfpgp",
+              "body": "bors r+\r\nThanks!",
+              "createdAt": "2024-10-11T13:39:21Z",
+              "author": {
+                "login": "sgouezel"
+              }
             }
           ]
         },
@@ -382,14 +390,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHUBxfNA",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11292565683/job/31408807732"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHUBxe8g",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -398,11 +398,35 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHUBxfNA",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11292565683/job/31408807732"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHUBxhJw",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11292565682/job/31408808231"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHUCuRzA",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11292565683/job/31409803724"
+                      },
+                      {
+                        "__typename": "StatusContext",
+                        "id": "SC_kwDOFcwZ1c8AAAAHbsYWEQ",
+                        "context": "bors",
+                        "state": "PENDING",
+                        "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6351",
+                        "description": "Running"
                       },
                       {
                         "__typename": "CheckRun",
@@ -455,6 +479,10 @@
         "labels": {
           "nodes": [
             {
+              "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
+              "name": "ready-to-merge"
+            },
+            {
               "id": "LA_kwDOFcwZ1c8AAAABViJqVA",
               "name": "t-measure-probability"
             }
@@ -491,7 +519,7 @@
         "milestone": null,
         "number": 17644,
         "potentialMergeCommit": {
-          "oid": "67997c8a826b87abeb8b3e476350cd3364e466b0"
+          "oid": "f35309339471f31b045536d52fe9b9c2bef9a6ae"
         },
         "projectCards": {
           "nodes": []
@@ -634,12 +662,12 @@
               "login": "YaelDillies"
             },
             {
-              "id": "MDQ6VXNlcjEwMTA1MDE2",
-              "login": "grunweg"
-            },
-            {
               "id": "MDQ6VXNlcjEwODE4NDM0",
               "login": "sgouezel"
+            },
+            {
+              "id": "MDQ6VXNlcjEwMTA1MDE2",
+              "login": "grunweg"
             }
           ]
         },
@@ -713,14 +741,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHUBxfNA",
-                "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11292565683/job/31408807732"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHUBxe8g",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -729,11 +749,35 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHUBxfNA",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11292565683/job/31408807732"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHUBxhJw",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11292565682/job/31408808231"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHUCuRzA",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11292565683/job/31409803724"
+              },
+              {
+                "__typename": "StatusContext",
+                "id": "SC_kwDOFcwZ1c8AAAAHbsYWEQ",
+                "context": "bors",
+                "state": "PENDING",
+                "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6351",
+                "description": "Running"
               },
               {
                 "__typename": "CheckRun",
@@ -755,7 +799,7 @@
           }
         },
         "title": "feat: the complement of a null set has full measure",
-        "updatedAt": "2024-10-11T12:44:36Z",
+        "updatedAt": "2024-10-11T13:39:32Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17644",
         "timelineItems": {
           "nodes": [
@@ -845,6 +889,27 @@
                 "id": "LA_kwDOFcwZ1c7P265b",
                 "name": "awaiting-author"
               }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6Pfpgp",
+              "createdAt": "2024-10-11T13:39:21Z",
+              "body": "bors r+\r\nThanks!",
+              "author": {
+                "login": "sgouezel"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6Z2JURzwAAAANmwyJr",
+              "createdAt": "2024-10-11T13:39:32Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
+                "name": "ready-to-merge"
+              }
+            },
+            {
+              "__typename": "ReferencedEvent"
             }
           ]
         }
