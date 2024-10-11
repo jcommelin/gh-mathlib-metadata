@@ -56,6 +56,14 @@
               "author": {
                 "login": "kbuzzard"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PdiTN",
+              "body": "> I look at `Nat.fermat` and think \"whatever does that mean?\" whereas I look at `Nat.fermatNumber` and think \"I know exactly what that will be\" which is I think what we're aiming for.\r\n\r\nThat's fine. But for the same reason, [mersenne](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/LucasLehmer.html#mersenne) should also be renamed, no? This probably should be in another PR.",
+              "createdAt": "2024-10-11T08:20:46Z",
+              "author": {
+                "login": "acmepjz"
+              }
             }
           ]
         },
@@ -568,14 +576,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHT2KEKQ",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11288576316/job/31396627497"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHT2KFFQ",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -584,11 +584,27 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHT2KEKQ",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11288576316/job/31396627497"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHT2KHcw",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11288576314/job/31396628339"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHT2kKCA",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11288576316/job/31397054984"
                       },
                       {
                         "__typename": "CheckRun",
@@ -979,14 +995,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHT2KEKQ",
-                "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11288576316/job/31396627497"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHT2KFFQ",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -995,11 +1003,27 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHT2KEKQ",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11288576316/job/31396627497"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHT2KHcw",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11288576314/job/31396628339"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHT2kKCA",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11288576316/job/31397054984"
               },
               {
                 "__typename": "CheckRun",
@@ -1021,7 +1045,7 @@
           }
         },
         "title": "chore(NumberTheory/Fermat): rename `fermat` to `Nat.fermatNumber`",
-        "updatedAt": "2024-10-11T08:02:59Z",
+        "updatedAt": "2024-10-11T08:20:48Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17618",
         "timelineItems": {
           "nodes": [
@@ -1114,6 +1138,15 @@
               "body": "Re \"it's too long\" -- it will also be never used, so this is fine. There's no big theory of Fermat numbers, I think I would rather argue \"this shouldn't even be there\" than \"this should have a shorter name\". Note that `2^2^n+1` is shorter than `Nat.fermat`. My instinct is just to merge this but if people really want to bikeshed about the name then feel free to do it here. ",
               "author": {
                 "login": "kbuzzard"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PdiTN",
+              "createdAt": "2024-10-11T08:20:46Z",
+              "body": "> I look at `Nat.fermat` and think \"whatever does that mean?\" whereas I look at `Nat.fermatNumber` and think \"I know exactly what that will be\" which is I think what we're aiming for.\r\n\r\nThat's fine. But for the same reason, [mersenne](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/LucasLehmer.html#mersenne) should also be renamed, no? This probably should be in another PR.",
+              "author": {
+                "login": "acmepjz"
               }
             }
           ]
