@@ -32,6 +32,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PfIl9",
+              "body": "Thanks!\r\n\r\nbors merge",
+              "createdAt": "2024-10-11T12:23:37Z",
+              "author": {
+                "login": "riccardobrasca"
+              }
             }
           ]
         },
@@ -187,6 +195,14 @@
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11290707729/job/31403488940"
                       },
                       {
+                        "__typename": "StatusContext",
+                        "id": "SC_kwDOFcwZ1c8AAAAHbq4phQ",
+                        "context": "bors",
+                        "state": "PENDING",
+                        "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6348",
+                        "description": "Waiting in queue"
+                      },
+                      {
                         "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHT8e_Wg",
                         "name": "New Contributor Check",
@@ -237,6 +253,10 @@
         "labels": {
           "nodes": [
             {
+              "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
+              "name": "ready-to-merge"
+            },
+            {
               "id": "LA_kwDOFcwZ1c8AAAABJc1VKA",
               "name": "easy"
             },
@@ -265,13 +285,15 @@
         },
         "maintainerCanModify": false,
         "mergeCommit": null,
-        "mergeStateStatus": "UNKNOWN",
-        "mergeable": "UNKNOWN",
+        "mergeStateStatus": "BLOCKED",
+        "mergeable": "MERGEABLE",
         "mergedAt": null,
         "mergedBy": null,
         "milestone": null,
         "number": 17642,
-        "potentialMergeCommit": null,
+        "potentialMergeCommit": {
+          "oid": "fc5c18be552c9c86aed15c755577bd300c21ac2e"
+        },
         "projectCards": {
           "nodes": []
         },
@@ -353,6 +375,10 @@
             {
               "id": "MDQ6VXNlcjI1NjIzODI5",
               "login": "dagurtomas"
+            },
+            {
+              "id": "MDQ6VXNlcjMyNDkwNTMy",
+              "login": "riccardobrasca"
             },
             {
               "id": "MDQ6VXNlcjEwMTA1MDE2",
@@ -501,6 +527,14 @@
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11290707729/job/31403488940"
               },
               {
+                "__typename": "StatusContext",
+                "id": "SC_kwDOFcwZ1c8AAAAHbq4phQ",
+                "context": "bors",
+                "state": "PENDING",
+                "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6348",
+                "description": "Waiting in queue"
+              },
+              {
                 "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHT8e_Wg",
                 "name": "New Contributor Check",
@@ -520,7 +554,7 @@
           }
         },
         "title": "fix(Condensed): remove unnecessary @",
-        "updatedAt": "2024-10-11T10:34:38Z",
+        "updatedAt": "2024-10-11T12:23:48Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17642",
         "timelineItems": {
           "nodes": [
@@ -579,6 +613,24 @@
               "label": {
                 "id": "LA_kwDOFcwZ1c8AAAABh1mAHA",
                 "name": "maintainer-merge"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PfIl9",
+              "createdAt": "2024-10-11T12:23:37Z",
+              "body": "Thanks!\r\n\r\nbors merge",
+              "author": {
+                "login": "riccardobrasca"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6Z10l9zwAAAANmtAyd",
+              "createdAt": "2024-10-11T12:23:48Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
+                "name": "ready-to-merge"
               }
             }
           ]
