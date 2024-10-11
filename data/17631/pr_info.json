@@ -64,6 +64,22 @@
               "author": {
                 "login": "adomani"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PeOqo",
+              "body": "The way in which I would fix the `export` issue checking, would be by extracting the information of the new declaration added in the environment extension `Lean.aliasExtension`, that `export` seems to update.  I won't have time to get around to this for several hours, so if someone else wants to give it a shot, feel free to do so!  It would be similar to how the `declRange` extension is accessed, but then it might be a little trickier to figure out what has been added, since the information is not recorded with the position where it was added.",
+              "createdAt": "2024-10-11T09:59:13Z",
+              "author": {
+                "login": "adomani"
+              }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PeQep",
+              "body": "Oh, those internal declarations still show up: maybe we simply have to exclude them explicitly.",
+              "createdAt": "2024-10-11T10:03:23Z",
+              "author": {
+                "login": "adomani"
+              }
             }
           ]
         },
@@ -715,7 +731,7 @@
         "milestone": null,
         "number": 17631,
         "potentialMergeCommit": {
-          "oid": "9731e4269b057ee9acb139f26d959bb001310abf"
+          "oid": "9808030fb12e5edeaead44ec679ca8f29ab20374"
         },
         "projectCards": {
           "nodes": []
@@ -907,7 +923,7 @@
           }
         },
         "title": "chore(Tactic/Linter/Lint): improve dupNamespace",
-        "updatedAt": "2024-10-11T09:27:06Z",
+        "updatedAt": "2024-10-11T10:03:24Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17631",
         "timelineItems": {
           "nodes": [
@@ -1070,6 +1086,24 @@
               "id": "IC_kwDOFcwZ1c6PeBF1",
               "createdAt": "2024-10-11T09:27:05Z",
               "body": "I pushed a small change to the linter and a fix for the `to_additive` test.  I'm not sure if this version will ignore those \"internal\" declarations that were triggering the linter, but we will see.\r\n\r\nThere is still the issue of `export`, but `alias` seems to behave as expected now.",
+              "author": {
+                "login": "adomani"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PeOqo",
+              "createdAt": "2024-10-11T09:59:13Z",
+              "body": "The way in which I would fix the `export` issue checking, would be by extracting the information of the new declaration added in the environment extension `Lean.aliasExtension`, that `export` seems to update.  I won't have time to get around to this for several hours, so if someone else wants to give it a shot, feel free to do so!  It would be similar to how the `declRange` extension is accessed, but then it might be a little trickier to figure out what has been added, since the information is not recorded with the position where it was added.",
+              "author": {
+                "login": "adomani"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PeQep",
+              "createdAt": "2024-10-11T10:03:23Z",
+              "body": "Oh, those internal declarations still show up: maybe we simply have to exclude them explicitly.",
               "author": {
                 "login": "adomani"
               }
