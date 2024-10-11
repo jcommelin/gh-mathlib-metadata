@@ -19,7 +19,7 @@
           "nodes": [
             {
               "id": "IC_kwDOFcwZ1c6PfA8Y",
-              "body": "### PR summary [09a0f5782a](https://github.com/leanprover-community/mathlib4/pull/17646/commits/09a0f5782a76f4eda073b029215ac3de29ab61a0)\n\n#### Import changes for modified files\n\nNo significant changes to the import graph\n\n\n<details><summary>Import changes for all files</summary>\n\n|Files|Import difference|\n|-|-|\n\n</details>\n\n---\n\n#### Declarations diff\n\nNo declarations were harmed in the making of this PR! 🐙\n<details>\n  <summary>You can run this locally as follows</summary>\n\n\n```bash\n## summary with just the declaration names:\n./scripts/declarations_diff.sh <optional_commit>\n\n## more verbose report:\n./scripts/declarations_diff.sh long <optional_commit>\n```\n</details>\n\nThe doc-module for `script/declarations_diff.sh` contains some details about this script.",
+              "body": "### PR summary [af9536264f](https://github.com/leanprover-community/mathlib4/pull/17646/commits/af9536264fad838cf2f56c309c6e32113a0271f9)\n\n#### Import changes for modified files\n\nNo significant changes to the import graph\n\n\n<details><summary>Import changes for all files</summary>\n\n|Files|Import difference|\n|-|-|\n\n</details>\n\n---\n\n#### Declarations diff\n\nNo declarations were harmed in the making of this PR! 🐙\n<details>\n  <summary>You can run this locally as follows</summary>\n\n\n```bash\n## summary with just the declaration names:\n./scripts/declarations_diff.sh <optional_commit>\n\n## more verbose report:\n./scripts/declarations_diff.sh long <optional_commit>\n```\n</details>\n\nThe doc-module for `script/declarations_diff.sh` contains some details about this script.",
               "createdAt": "2024-10-11T12:05:38Z",
               "author": {
                 "login": "github-actions"
@@ -442,8 +442,8 @@
                         "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHUGGvLQ",
                         "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
+                        "conclusion": "FAILURE",
+                        "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11293969301/job/31413350189"
                       },
                       {
@@ -464,6 +464,14 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHUItSqA",
+                        "name": "Post-CI job",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11293969301/job/31416079016"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHUGH3Sw",
                         "name": "New Contributor Check",
                         "conclusion": "NEUTRAL",
@@ -473,6 +481,128 @@
                       {
                         "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHUGHo2w",
+                        "name": "Summary",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://dashboard.mergify.com/event-logs?pullRequestNumber=17646&login=leanprover-community&repository=mathlib4"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "commit": {
+                "oid": "af9536264fad838cf2f56c309c6e32113a0271f9",
+                "additions": 1,
+                "deletions": 1,
+                "committedDate": "2024-10-11T15:31:32Z",
+                "author": {
+                  "name": "Yaël Dillies",
+                  "email": "yael.dillies@gmail.com"
+                },
+                "statusCheckRollup": {
+                  "contexts": {
+                    "nodes": [
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHUJvdZw",
+                        "name": "label-and-report-new-contributor",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295128065/job/31417163111"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHUJvdMg",
+                        "name": "build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295128057/job/31417163058"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHUJvXog",
+                        "name": "Cancel Previous Runs (CI)",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295127274/job/31417161634"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHUJvV4g",
+                        "name": "Cancel Previous Runs (CI)",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295127273/job/31417161186"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHUJvdlA",
+                        "name": "Lint style",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295128064/job/31417163156"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHUJvZAQ",
+                        "name": "Lint style (fork)",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295127274/job/31417161985"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHUJvW9w",
+                        "name": "Lint style",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295127273/job/31417161463"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHUJvewQ",
+                        "name": "Check all files imported",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295128064/job/31417163457"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHUJvYTg",
+                        "name": "Build",
+                        "conclusion": null,
+                        "status": "IN_PROGRESS",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295127273/job/31417161806"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHUJvWCw",
+                        "name": "Build (fork)",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295127274/job/31417161227"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHUJvaxA",
+                        "name": "Post-CI job (fork)",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295127274/job/31417162436"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHUJwXzw",
+                        "name": "New Contributor Check",
+                        "conclusion": "NEUTRAL",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/runs/31417178063"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHUJ0XAg",
                         "name": "Summary",
                         "conclusion": "SUCCESS",
                         "status": "COMPLETED",
@@ -497,7 +627,7 @@
           ]
         },
         "headRefName": "finset_card_notation",
-        "headRefOid": "09a0f5782a76f4eda073b029215ac3de29ab61a0",
+        "headRefOid": "af9536264fad838cf2f56c309c6e32113a0271f9",
         "headRepository": {
           "name": "mathlib4",
           "owner": {
@@ -540,7 +670,7 @@
         "milestone": null,
         "number": 17646,
         "potentialMergeCommit": {
-          "oid": "fd8433c3562d4787e25ff300bc0eb3e9cd7fb488"
+          "oid": "3b472824c05e3fcdfbb095982621aefc371daeaa"
         },
         "projectCards": {
           "nodes": []
@@ -549,7 +679,11 @@
           {
             "content": "THUMBS_UP",
             "users": {
-              "nodes": []
+              "nodes": [
+                {
+                  "login": "FordUniver"
+                }
+              ]
             }
           },
           {
@@ -674,103 +808,103 @@
             "nodes": [
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHUGGx_w",
+                "id": "CR_kwDOFcwZ1c8AAAAHUJvdZw",
                 "name": "label-and-report-new-contributor",
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11293969460/job/31413350911"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295128065/job/31417163111"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHUGGx3g",
+                "id": "CR_kwDOFcwZ1c8AAAAHUJvdMg",
                 "name": "build",
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11293969459/job/31413350878"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295128057/job/31417163058"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHUGGvVA",
+                "id": "CR_kwDOFcwZ1c8AAAAHUJvXog",
                 "name": "Cancel Previous Runs (CI)",
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11293969303/job/31413350228"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295127274/job/31417161634"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHUGGwhA",
+                "id": "CR_kwDOFcwZ1c8AAAAHUJvV4g",
                 "name": "Cancel Previous Runs (CI)",
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11293969301/job/31413350532"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295127273/job/31417161186"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHUGGzzQ",
+                "id": "CR_kwDOFcwZ1c8AAAAHUJvdlA",
                 "name": "Lint style",
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11293969462/job/31413351373"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295128064/job/31417163156"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHUGGzQg",
+                "id": "CR_kwDOFcwZ1c8AAAAHUJvZAQ",
                 "name": "Lint style (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11293969303/job/31413351234"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295127274/job/31417161985"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHUGGzCw",
+                "id": "CR_kwDOFcwZ1c8AAAAHUJvW9w",
                 "name": "Lint style",
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11293969301/job/31413351179"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295127273/job/31417161463"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHUGGyWw",
+                "id": "CR_kwDOFcwZ1c8AAAAHUJvewQ",
                 "name": "Check all files imported",
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11293969462/job/31413351003"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295128064/job/31417163457"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHUGGvLQ",
+                "id": "CR_kwDOFcwZ1c8AAAAHUJvYTg",
                 "name": "Build",
                 "conclusion": null,
                 "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11293969301/job/31413350189"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295127273/job/31417161806"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHUGGwoQ",
+                "id": "CR_kwDOFcwZ1c8AAAAHUJvWCw",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11293969303/job/31413350561"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295127274/job/31417161227"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHUGG0tg",
+                "id": "CR_kwDOFcwZ1c8AAAAHUJvaxA",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11293969303/job/31413351606"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295127274/job/31417162436"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHUGH3Sw",
+                "id": "CR_kwDOFcwZ1c8AAAAHUJwXzw",
                 "name": "New Contributor Check",
                 "conclusion": "NEUTRAL",
                 "status": "COMPLETED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/runs/31413368651"
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/runs/31417178063"
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHUGHo2w",
+                "id": "CR_kwDOFcwZ1c8AAAAHUJ0XAg",
                 "name": "Summary",
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
@@ -780,7 +914,7 @@
           }
         },
         "title": "feat: `#s` as notation for `Finset.card s`",
-        "updatedAt": "2024-10-11T14:16:19Z",
+        "updatedAt": "2024-10-11T15:32:29Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17646",
         "timelineItems": {
           "nodes": [
@@ -791,7 +925,7 @@
               "__typename": "IssueComment",
               "id": "IC_kwDOFcwZ1c6PfA8Y",
               "createdAt": "2024-10-11T12:05:38Z",
-              "body": "### PR summary [09a0f5782a](https://github.com/leanprover-community/mathlib4/pull/17646/commits/09a0f5782a76f4eda073b029215ac3de29ab61a0)\n\n#### Import changes for modified files\n\nNo significant changes to the import graph\n\n\n<details><summary>Import changes for all files</summary>\n\n|Files|Import difference|\n|-|-|\n\n</details>\n\n---\n\n#### Declarations diff\n\nNo declarations were harmed in the making of this PR! 🐙\n<details>\n  <summary>You can run this locally as follows</summary>\n\n\n```bash\n## summary with just the declaration names:\n./scripts/declarations_diff.sh <optional_commit>\n\n## more verbose report:\n./scripts/declarations_diff.sh long <optional_commit>\n```\n</details>\n\nThe doc-module for `script/declarations_diff.sh` contains some details about this script.",
+              "body": "### PR summary [af9536264f](https://github.com/leanprover-community/mathlib4/pull/17646/commits/af9536264fad838cf2f56c309c6e32113a0271f9)\n\n#### Import changes for modified files\n\nNo significant changes to the import graph\n\n\n<details><summary>Import changes for all files</summary>\n\n|Files|Import difference|\n|-|-|\n\n</details>\n\n---\n\n#### Declarations diff\n\nNo declarations were harmed in the making of this PR! 🐙\n<details>\n  <summary>You can run this locally as follows</summary>\n\n\n```bash\n## summary with just the declaration names:\n./scripts/declarations_diff.sh <optional_commit>\n\n## more verbose report:\n./scripts/declarations_diff.sh long <optional_commit>\n```\n</details>\n\nThe doc-module for `script/declarations_diff.sh` contains some details about this script.",
               "author": {
                 "login": "github-actions"
               }
@@ -825,6 +959,9 @@
               "author": {
                 "login": "b-mehta"
               }
+            },
+            {
+              "__typename": "PullRequestCommit"
             },
             {
               "__typename": "PullRequestCommit"
