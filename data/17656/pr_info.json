@@ -547,14 +547,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHUPAQ3w",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11296901657/job/31422681311"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHUPASAw",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -563,11 +555,27 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHUPAQ3w",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11296901657/job/31422681311"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHUPATHQ",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11296901662/job/31422681885"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHUQHx1w",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11296901657/job/31423853015"
                       },
                       {
                         "__typename": "CheckRun",
@@ -621,9 +629,14 @@
         },
         "id": "PR_kwDOFcwZ1c5-Xo3h",
         "isCrossRepository": false,
-        "isDraft": true,
+        "isDraft": false,
         "labels": {
-          "nodes": []
+          "nodes": [
+            {
+              "id": "LA_kwDOFcwZ1c8AAAABViJlpQ",
+              "name": "t-order"
+            }
+          ]
         },
         "latestReviews": {
           "nodes": []
@@ -694,7 +707,20 @@
         ],
         "reviewDecision": null,
         "reviewRequests": {
-          "nodes": []
+          "nodes": [
+            {
+              "requestedReviewer": {
+                "id": "MDQ6VXNlcjE0MDkwNTkz",
+                "login": "YaelDillies"
+              }
+            },
+            {
+              "requestedReviewer": {
+                "id": "MDQ6VXNlcjg5MjA1OTg=",
+                "login": "j-loreaux"
+              }
+            }
+          ]
         },
         "reviews": {
           "nodes": []
@@ -791,14 +817,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHUPAQ3w",
-                "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11296901657/job/31422681311"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHUPASAw",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -807,11 +825,27 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHUPAQ3w",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11296901657/job/31422681311"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHUPATHQ",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11296901662/job/31422681885"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHUQHx1w",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11296901657/job/31423853015"
               },
               {
                 "__typename": "CheckRun",
@@ -833,7 +867,7 @@
           }
         },
         "title": "feat(ENNReal): liminf/limsup/iInf/iSup and multiplication",
-        "updatedAt": "2024-10-11T18:07:13Z",
+        "updatedAt": "2024-10-11T18:16:07Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17656",
         "timelineItems": {
           "nodes": [
@@ -872,6 +906,38 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6Z5PXezwAAAANm_JOa",
+              "createdAt": "2024-10-11T18:15:55Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABViJlpQ",
+                "name": "t-order"
+              }
+            },
+            {
+              "__typename": "ReviewRequestedEvent",
+              "id": "RRE_lADOFcwZ1c6Z5PXezwAAAANm_JSN",
+              "createdAt": "2024-10-11T18:15:57Z",
+              "requestedReviewer": {
+                "id": "MDQ6VXNlcjE0MDkwNTkz",
+                "login": "YaelDillies"
+              }
+            },
+            {
+              "__typename": "ReviewRequestedEvent",
+              "id": "RRE_lADOFcwZ1c6Z5PXezwAAAANm_JZs",
+              "createdAt": "2024-10-11T18:16:00Z",
+              "requestedReviewer": {
+                "id": "MDQ6VXNlcjg5MjA1OTg=",
+                "login": "j-loreaux"
+              }
+            },
+            {
+              "__typename": "ReadyForReviewEvent",
+              "id": "RFRE_lADOFcwZ1c6Z5PXezwAAAANm_JqK",
+              "createdAt": "2024-10-11T18:16:07Z"
             }
           ]
         }
