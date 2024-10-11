@@ -32,6 +32,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6Pepqr",
+              "body": "Thanks!\r\nbors r+",
+              "createdAt": "2024-10-11T11:06:44Z",
+              "author": {
+                "login": "RemyDegenne"
+              }
             }
           ]
         },
@@ -187,6 +195,14 @@
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11289628289/job/31400845451"
                       },
                       {
+                        "__typename": "StatusContext",
+                        "id": "SC_kwDOFcwZ1c8AAAAHbpsmbg",
+                        "context": "bors",
+                        "state": "PENDING",
+                        "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6345",
+                        "description": "Running"
+                      },
+                      {
                         "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHT5T4Ww",
                         "name": "New Contributor Check",
@@ -237,6 +253,10 @@
         "labels": {
           "nodes": [
             {
+              "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
+              "name": "ready-to-merge"
+            },
+            {
               "id": "LA_kwDOFcwZ1c8AAAABViJqVA",
               "name": "t-measure-probability"
             },
@@ -261,13 +281,15 @@
         },
         "maintainerCanModify": false,
         "mergeCommit": null,
-        "mergeStateStatus": "UNKNOWN",
-        "mergeable": "UNKNOWN",
+        "mergeStateStatus": "BLOCKED",
+        "mergeable": "MERGEABLE",
         "mergedAt": null,
         "mergedBy": null,
         "milestone": null,
         "number": 17640,
-        "potentialMergeCommit": null,
+        "potentialMergeCommit": {
+          "oid": "3b63df73197a750b4898bf052ffbaf1aeea83b0d"
+        },
         "projectCards": {
           "nodes": []
         },
@@ -349,6 +371,10 @@
             {
               "id": "MDQ6VXNlcjE0MDkwNTkz",
               "login": "YaelDillies"
+            },
+            {
+              "id": "MDQ6VXNlcjQwOTQ3MzI=",
+              "login": "RemyDegenne"
             },
             {
               "id": "MDQ6VXNlcjEwMTA1MDE2",
@@ -497,6 +523,14 @@
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11289628289/job/31400845451"
               },
               {
+                "__typename": "StatusContext",
+                "id": "SC_kwDOFcwZ1c8AAAAHbpsmbg",
+                "context": "bors",
+                "state": "PENDING",
+                "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6345",
+                "description": "Running"
+              },
+              {
                 "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHT5T4Ww",
                 "name": "New Contributor Check",
@@ -516,7 +550,7 @@
           }
         },
         "title": "feat: ` PUnit × α ≃ᵐ α`",
-        "updatedAt": "2024-10-11T10:35:01Z",
+        "updatedAt": "2024-10-11T11:06:55Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17640",
         "timelineItems": {
           "nodes": [
@@ -567,6 +601,27 @@
                 "id": "LA_kwDOFcwZ1c8AAAABh1mAHA",
                 "name": "maintainer-merge"
               }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6Pepqr",
+              "createdAt": "2024-10-11T11:06:44Z",
+              "body": "Thanks!\r\nbors r+",
+              "author": {
+                "login": "RemyDegenne"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6Z1O0hzwAAAANmpa5u",
+              "createdAt": "2024-10-11T11:06:55Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
+                "name": "ready-to-merge"
+              }
+            },
+            {
+              "__typename": "ReferencedEvent"
             }
           ]
         }
