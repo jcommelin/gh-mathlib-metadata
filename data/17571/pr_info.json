@@ -24,6 +24,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6Pc3gd",
+              "body": "LGTM, thanks!\r\nbors r+",
+              "createdAt": "2024-10-11T07:20:37Z",
+              "author": {
+                "login": "RemyDegenne"
+              }
             }
           ]
         },
@@ -665,6 +673,14 @@
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11253208708/job/31288416800"
                       },
                       {
+                        "__typename": "StatusContext",
+                        "id": "SC_kwDOFcwZ1c8AAAAHbmDLTw",
+                        "context": "bors",
+                        "state": "PENDING",
+                        "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6338",
+                        "description": "Running"
+                      },
+                      {
                         "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHSOkFjQ",
                         "name": "New Contributor Check",
@@ -740,6 +756,10 @@
         "labels": {
           "nodes": [
             {
+              "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
+              "name": "ready-to-merge"
+            },
+            {
               "id": "LA_kwDOFcwZ1c8AAAABViJqVA",
               "name": "t-measure-probability"
             }
@@ -769,13 +789,15 @@
         },
         "maintainerCanModify": false,
         "mergeCommit": null,
-        "mergeStateStatus": "UNKNOWN",
-        "mergeable": "UNKNOWN",
+        "mergeStateStatus": "BLOCKED",
+        "mergeable": "MERGEABLE",
         "mergedAt": null,
         "mergedBy": null,
         "milestone": null,
         "number": 17571,
-        "potentialMergeCommit": null,
+        "potentialMergeCommit": {
+          "oid": "609a7888f78c42bd69ce3a34006460efdb7631b2"
+        },
         "projectCards": {
           "nodes": []
         },
@@ -786,6 +808,9 @@
               "nodes": [
                 {
                   "login": "b-mehta"
+                },
+                {
+                  "login": "vihdzp"
                 }
               ]
             }
@@ -962,6 +987,10 @@
               "login": "YaelDillies"
             },
             {
+              "id": "MDQ6VXNlcjQwOTQ3MzI=",
+              "login": "RemyDegenne"
+            },
+            {
               "id": "MDQ6VXNlcjEwODE4NDM0",
               "login": "sgouezel"
             },
@@ -1072,6 +1101,14 @@
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11253208708/job/31288416800"
               },
               {
+                "__typename": "StatusContext",
+                "id": "SC_kwDOFcwZ1c8AAAAHbmDLTw",
+                "context": "bors",
+                "state": "PENDING",
+                "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6338",
+                "description": "Running"
+              },
+              {
                 "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHSOkFjQ",
                 "name": "New Contributor Check",
@@ -1091,7 +1128,7 @@
           }
         },
         "title": "chore: rename `condCount` to `uniformOn`",
-        "updatedAt": "2024-10-09T10:35:30Z",
+        "updatedAt": "2024-10-11T07:20:50Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17571",
         "timelineItems": {
           "nodes": [
@@ -1170,6 +1207,27 @@
             },
             {
               "__typename": "PullRequestCommit"
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6Pc3gd",
+              "createdAt": "2024-10-11T07:20:37Z",
+              "body": "LGTM, thanks!\r\nbors r+",
+              "author": {
+                "login": "RemyDegenne"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6ZgFo-zwAAAANmfC7o",
+              "createdAt": "2024-10-11T07:20:50Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
+                "name": "ready-to-merge"
+              }
+            },
+            {
+              "__typename": "ReferencedEvent"
             }
           ]
         }
