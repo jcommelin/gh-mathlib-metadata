@@ -24,6 +24,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PhB3y",
+              "body": "> Weirdly, having tagged the two-arguments versions don't make `gcongr` fire on one-sided goals.\r\n\r\nDo you mean that having a gcongr lemma `f a₁ b₁ ∼ f a₂ b₂` doesn't let `gcongr` handle `f a b₁ ∼ f a b₂`?  That's working as expected (because sometimes there are easier side conditions in the one-sided cases, so we want to store the one-sided cases in `gcongr` separately).",
+              "createdAt": "2024-10-11T16:59:02Z",
+              "author": {
+                "login": "hrmacbeth"
+              }
             }
           ]
         },
@@ -116,14 +124,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHUKaaKA",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295351619/job/31417866792"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHUKabnA",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -132,11 +132,27 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHUKaaKA",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295351619/job/31417866792"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHUKad7A",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295351623/job/31417867756"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHUMUfpA",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295351619/job/31419867044"
                       },
                       {
                         "__typename": "CheckRun",
@@ -206,7 +222,7 @@
         "milestone": null,
         "number": 17653,
         "potentialMergeCommit": {
-          "oid": "1e8e3f4049b5953e57181672ade7f7b4a7167f44"
+          "oid": "4031a10a4dbd93572d17a7430cbd882cadab2937"
         },
         "projectCards": {
           "nodes": []
@@ -279,6 +295,10 @@
             {
               "id": "MDQ6VXNlcjE0MDkwNTkz",
               "login": "YaelDillies"
+            },
+            {
+              "id": "MDQ6VXNlcjI1MzE2MTYy",
+              "login": "hrmacbeth"
             }
           ]
         },
@@ -360,14 +380,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHUKaaKA",
-                "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295351619/job/31417866792"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHUKabnA",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -376,11 +388,27 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHUKaaKA",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295351619/job/31417866792"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHUKad7A",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295351623/job/31417867756"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHUMUfpA",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295351619/job/31419867044"
               },
               {
                 "__typename": "CheckRun",
@@ -402,7 +430,7 @@
           }
         },
         "title": "feat(Algebra/Group/Pointwise/Set): more `gcongr` lemmas",
-        "updatedAt": "2024-10-11T15:49:28Z",
+        "updatedAt": "2024-10-11T16:59:03Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17653",
         "timelineItems": {
           "nodes": [
@@ -431,6 +459,15 @@
               "label": {
                 "id": "LA_kwDOFcwZ1c8AAAABViJjTQ",
                 "name": "t-algebra"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PhB3y",
+              "createdAt": "2024-10-11T16:59:02Z",
+              "body": "> Weirdly, having tagged the two-arguments versions don't make `gcongr` fire on one-sided goals.\r\n\r\nDo you mean that having a gcongr lemma `f a₁ b₁ ∼ f a₂ b₂` doesn't let `gcongr` handle `f a b₁ ∼ f a b₂`?  That's working as expected (because sometimes there are easier side conditions in the one-sided cases, so we want to store the one-sided cases in `gcongr` separately).",
+              "author": {
+                "login": "hrmacbeth"
               }
             }
           ]
