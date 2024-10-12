@@ -38,10 +38,10 @@ prs=$(echo "$response" | jq -r --arg PAST_TIME "$PAST_TIME" --arg CURRENT_TIME "
   .number
 ')
 
-if [ -z "$prs" ]; then
-  echo "No PRs were updated in the last $TIMEDELTA minutes"
-  exit 37
-fi
+# if [ -z "$prs" ]; then
+#   echo "No PRs were updated in the last $TIMEDELTA minutes"
+#   exit 37
+# fi
 
 # Iterate over each PR number
 for pr in $prs; do
@@ -57,6 +57,32 @@ for pr in $prs; do
 
   # Save the current timestamp
   echo "$CURRENT_TIME" > "$dir/timestamp.txt"
+done
+
+# Backfill up to three PRs for which we don't have detailed data yet.
+# TODO: remove this code when all PR data is present!
+i=0
+for pr in $(cat "missing-prs.txt"); do
+  # Check if the directory exists
+  if [ -d "data/$pr" ]; then
+    echo "[skip] Data exists for #$pr: $CURRENT_TIME"
+    continue
+  fi
+  echo "Attempting to backfill data for PR $pr"
+  # Create the directory for the PR
+  dir="data/$pr"
+  mkdir -p "$dir"
+  # Run pr_info.sh and save the output
+  ./pr_info.sh "$pr" | jq '.' > "$dir/pr_info.json"
+  # Run pr_reactions.sh and save the output
+  ./pr_reactions.sh "$pr" | jq '.' > "$dir/pr_reactions.json"
+  # Save the current timestamp
+  echo "$CURRENT_TIME" > "$dir/timestamp.txt"
+  i=$((i+1))
+  if [ $i -eq 3 ]; then
+    echo "Backfilled three PRs successfully, exiting"
+    break;
+  fi
 done
 
 # Write a file with aggregate PR data, to "processed_data/aggregate_pr_data.json".
