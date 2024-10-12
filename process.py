@@ -34,6 +34,7 @@ def main():
             number = inner["number"]
             base_branch = inner["baseRefName"]
             is_draft = inner["isDraft"]
+            state = inner["state"].lower()
 
             CI_passes = False
             # Get information about the latest CI run. We just look at the "summary job".
@@ -48,7 +49,8 @@ def main():
                 "number": number,
                 "is_draft": is_draft,
                 "CI_passes": CI_passes,
-                "base_branch" : base_branch
+                "base_branch": base_branch,
+                "state": state,
             }
             pr_data.append(d)
     output["pr_statusses"] = pr_data
