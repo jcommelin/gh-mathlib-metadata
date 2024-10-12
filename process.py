@@ -25,6 +25,11 @@ def main():
     for pr_number in pr_names:
         with open(f"data/{pr_number}/pr_info.json", "r") as fi:
             data = json.load(fi)
+            # Handle data with errors gracefully: warn, but do not fail the script.
+            if "errors" in data:
+                import sys
+                print(f"warning: the data for PR {pr_number} is erronerous, ignoring", file=sys.stderr)
+                continue
             inner = data["data"]["repository"]["pullRequest"]
             number = inner["number"]
             base_branch = inner["baseRefName"]
