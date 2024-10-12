@@ -38,7 +38,7 @@ prs=$(echo "$response" | jq -r --arg PAST_TIME "$PAST_TIME" --arg CURRENT_TIME "
   .number
 ')
 
-if [ -z $prs ]; then
+if [ -z "$prs" ]; then
   echo "No PRs were updated in the last $TIMEDELTA minutes"
   exit 37
 fi
