@@ -11,7 +11,7 @@
         },
         "autoMergeRequest": null,
         "baseRefName": "master",
-        "body": "I believe it is time that we finally introduce this notation. This makes serious finset calculations significantly nicer (see eg #5297) and is standard notation.\n\n`|s|` would be an alternative, but absolute value elaboration is very complicated like that, so I would rather not, and `#{x | p x}` looks nicer than `|{x | p x}|` (although in return `|s ∩ t|` looks nicer than `#(s ∩ t)`).\n\n\n---\n<!-- The text above the `---` will become the commit message when your\nPR is merged. Please leave a blank newline before the `---`, otherwise\nGitHub will format the text above it as a title.\n\nFor details on the \"pull request lifecycle\" in mathlib, please see:\nhttps://leanprover-community.github.io/contribute/index.html\n\nIn particular, note that most reviewers will only notice your PR\nif it passes the continuous integration checks.\nPlease ask for help on https://leanprover.zulipchat.com if needed.\n\nTo indicate co-authors, include lines at the bottom of the commit message\n(that is, before the `---`) using the following format:\n\nCo-authored-by: Author Name <author@email.com>\n\nIf you are moving or deleting declarations, please include these lines at the bottom of the commit message\n(that is, before the `---`) using the following format:\n\nMoves:\n- Vector.* -> Mathlib.Vector.*\n- ...\n\nDeletions:\n- Nat.bit1_add_bit1\n- ...\n\nAny other comments you want to keep out of the PR commit should go\nbelow the `---`, and placed outside this HTML comment, or else they\nwill be invisible to reviewers.\n\nIf this PR depends on other PRs, please list them below this comment,\nusing the following format:\n- [ ] depends on: #abc [optional extra text]\n- [ ] depends on: #xyz [optional extra text]\n\n-->\n\n[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)\n",
+        "body": "I believe it is time that we finally introduce this notation. This makes serious finset calculations significantly nicer (see eg #5297) and is standard notation.\r\n\r\n`|s|` would be an alternative, but absolute value elaboration is very complicated like that, so I would rather not, and `#{x | p x}` looks nicer than `|{x | p x}|` (although in return `|s ∩ t|` looks nicer than `#(s ∩ t)`).\r\n\r\nI am scoping the notation to the `Finset` namespace to avoid clashes with `Cardinal.mk`, which also uses that notation.\r\n\r\n---\r\n<!-- The text above the `---` will become the commit message when your\r\nPR is merged. Please leave a blank newline before the `---`, otherwise\r\nGitHub will format the text above it as a title.\r\n\r\nFor details on the \"pull request lifecycle\" in mathlib, please see:\r\nhttps://leanprover-community.github.io/contribute/index.html\r\n\r\nIn particular, note that most reviewers will only notice your PR\r\nif it passes the continuous integration checks.\r\nPlease ask for help on https://leanprover.zulipchat.com if needed.\r\n\r\nTo indicate co-authors, include lines at the bottom of the commit message\r\n(that is, before the `---`) using the following format:\r\n\r\nCo-authored-by: Author Name <author@email.com>\r\n\r\nIf you are moving or deleting declarations, please include these lines at the bottom of the commit message\r\n(that is, before the `---`) using the following format:\r\n\r\nMoves:\r\n- Vector.* -> Mathlib.Vector.*\r\n- ...\r\n\r\nDeletions:\r\n- Nat.bit1_add_bit1\r\n- ...\r\n\r\nAny other comments you want to keep out of the PR commit should go\r\nbelow the `---`, and placed outside this HTML comment, or else they\r\nwill be invisible to reviewers.\r\n\r\nIf this PR depends on other PRs, please list them below this comment,\r\nusing the following format:\r\n- [ ] depends on: #abc [optional extra text]\r\n- [ ] depends on: #xyz [optional extra text]\r\n\r\n-->\r\n\r\n[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)\r\n",
         "changedFiles": 1,
         "closed": false,
         "closedAt": null,
@@ -23,6 +23,22 @@
               "createdAt": "2024-10-11T12:05:38Z",
               "author": {
                 "login": "github-actions"
+              }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6Pi6Tx",
+              "body": "Note that the notation `#s` already exists for `Cardinal.mk`. So, assuming there's no significant risk of overlap, having this to match is definitely a good thing.",
+              "createdAt": "2024-10-12T01:40:36Z",
+              "author": {
+                "login": "vihdzp"
+              }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PjYm1",
+              "body": "As you see, CI passes! So there is no clash so far.",
+              "createdAt": "2024-10-12T06:29:38Z",
+              "author": {
+                "login": "YaelDillies"
               }
             }
           ]
@@ -570,14 +586,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHUJvYTg",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295127273/job/31417161806"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHUJvWCw",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -586,11 +594,27 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHUJvYTg",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295127273/job/31417161806"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHUJvaxA",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295127274/job/31417162436"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHUL_QoQ",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295127273/job/31419519137"
                       },
                       {
                         "__typename": "CheckRun",
@@ -670,7 +694,7 @@
         "milestone": null,
         "number": 17646,
         "potentialMergeCommit": {
-          "oid": "3b472824c05e3fcdfbb095982621aefc371daeaa"
+          "oid": "281a34384c82cabcae58bab2b929aac0002439da"
         },
         "projectCards": {
           "nodes": []
@@ -682,6 +706,9 @@
               "nodes": [
                 {
                   "login": "FordUniver"
+                },
+                {
+                  "login": "vihdzp"
                 }
               ]
             }
@@ -797,6 +824,10 @@
               "login": "YaelDillies"
             },
             {
+              "id": "MDQ6VXNlcjY1NDY1Njcw",
+              "login": "vihdzp"
+            },
+            {
               "id": "MDQ6VXNlcjI5OTU5MjI2",
               "login": "b-mehta"
             }
@@ -872,14 +903,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHUJvYTg",
-                "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295127273/job/31417161806"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHUJvWCw",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -888,11 +911,27 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHUJvYTg",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295127273/job/31417161806"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHUJvaxA",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295127274/job/31417162436"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHUL_QoQ",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295127273/job/31419519137"
               },
               {
                 "__typename": "CheckRun",
@@ -914,7 +953,7 @@
           }
         },
         "title": "feat: `#s` as notation for `Finset.card s`",
-        "updatedAt": "2024-10-11T15:32:29Z",
+        "updatedAt": "2024-10-12T06:30:16Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17646",
         "timelineItems": {
           "nodes": [
@@ -965,6 +1004,24 @@
             },
             {
               "__typename": "PullRequestCommit"
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6Pi6Tx",
+              "createdAt": "2024-10-12T01:40:36Z",
+              "body": "Note that the notation `#s` already exists for `Cardinal.mk`. So, assuming there's no significant risk of overlap, having this to match is definitely a good thing.",
+              "author": {
+                "login": "vihdzp"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PjYm1",
+              "createdAt": "2024-10-12T06:29:38Z",
+              "body": "As you see, CI passes! So there is no clash so far.",
+              "author": {
+                "login": "YaelDillies"
+              }
             }
           ]
         }

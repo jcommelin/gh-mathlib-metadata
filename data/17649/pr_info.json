@@ -32,6 +32,22 @@
               "author": {
                 "login": "grunweg"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PiKPv",
+              "body": "Just checking: Lean files in `scripts` aren't checked by CI, right?",
+              "createdAt": "2024-10-11T20:43:01Z",
+              "author": {
+                "login": "bryangingechen"
+              }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PiLR8",
+              "body": "It depends: syntax linters run on every file importing them, but otherwise CI shouldn't touch them.\r\nThis script is not used or touched by CI until a workflow uses it (as in, e.g., the next PR).",
+              "createdAt": "2024-10-11T20:47:01Z",
+              "author": {
+                "login": "grunweg"
+              }
             }
           ]
         },
@@ -116,14 +132,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHUJb7Tg",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295029953/job/31416843086"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHUJb8uQ",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -132,11 +140,27 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHUJb7Tg",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295029953/job/31416843086"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHUJb_wA",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295029949/job/31416844224"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHUJ24Sg",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295029953/job/31417284682"
                       },
                       {
                         "__typename": "CheckRun",
@@ -215,7 +239,7 @@
         "milestone": null,
         "number": 17649,
         "potentialMergeCommit": {
-          "oid": "e6dce73c4e13b2911f39b5e01bff39f6d38fa175"
+          "oid": "5011930a4ee7e17f8a69d35178397072b6181cac"
         },
         "projectCards": {
           "nodes": []
@@ -288,6 +312,10 @@
             {
               "id": "MDQ6VXNlcjEwMTA1MDE2",
               "login": "grunweg"
+            },
+            {
+              "id": "MDQ6VXNlcjUyMDk5NTI=",
+              "login": "bryangingechen"
             }
           ]
         },
@@ -361,14 +389,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHUJb7Tg",
-                "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295029953/job/31416843086"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHUJb8uQ",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -377,11 +397,27 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHUJb7Tg",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295029953/job/31416843086"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHUJb_wA",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295029949/job/31416844224"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHUJ24Sg",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295029953/job/31417284682"
               },
               {
                 "__typename": "CheckRun",
@@ -403,7 +439,7 @@
           }
         },
         "title": "feat: add a script to check for PR title and labelling",
-        "updatedAt": "2024-10-11T15:25:52Z",
+        "updatedAt": "2024-10-11T20:47:02Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17649",
         "timelineItems": {
           "nodes": [
@@ -467,6 +503,34 @@
             },
             {
               "__typename": "SubscribedEvent"
+            },
+            {
+              "__typename": "CrossReferencedEvent",
+              "id": "CRE_kwDOFcwZ1c5cmNKk",
+              "createdAt": "2024-10-11T15:32:28Z",
+              "source": {
+                "id": "PR_kwDOFcwZ1c559Giq",
+                "title": "feat(CI): check for badly formatted titles or missing/contradictory labels",
+                "url": "https://github.com/leanprover-community/mathlib4/pull/16303"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PiKPv",
+              "createdAt": "2024-10-11T20:43:01Z",
+              "body": "Just checking: Lean files in `scripts` aren't checked by CI, right?",
+              "author": {
+                "login": "bryangingechen"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PiLR8",
+              "createdAt": "2024-10-11T20:47:01Z",
+              "body": "It depends: syntax linters run on every file importing them, but otherwise CI shouldn't touch them.\r\nThis script is not used or touched by CI until a workflow uses it (as in, e.g., the next PR).",
+              "author": {
+                "login": "grunweg"
+              }
             }
           ]
         }
