@@ -24,6 +24,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PlgCF",
+              "body": "I had already started something similar, but in a slightly more general setup: Instead of only considering the discrete forward difference `f (x + 1) - f x`, I also consider the general weighted sum `∑ s, w s • f (x + s)`.\r\n\r\nYou can find my code [here](https://github.com/YaelDillies/LeanCamCombi/blob/master/LeanCamCombi/DiscreteDeriv.lean). It is written for the special case of polynomials but applies mutatis mutandis to general functions. I had written it for a course that @madvorak was going to teach, but he didn't end up using it.\r\n\r\nIt would be great if you could incorporate some of the ideas from there.",
+              "createdAt": "2024-10-13T13:04:24Z",
+              "author": {
+                "login": "YaelDillies"
+              }
             }
           ]
         },
@@ -116,14 +124,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHU2drrw",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11314271201/job/31464057775"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHU2drxw",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -132,11 +132,27 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHU2drrw",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11314271201/job/31464057775"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHU2dsKw",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11314271199/job/31464057899"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHU2lzig",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11314271201/job/31464190858"
                       },
                       {
                         "__typename": "CheckRun",
@@ -291,6 +307,10 @@
             {
               "id": "MDQ6VXNlcjM0Mzk2ODg=",
               "login": "loefflerd"
+            },
+            {
+              "id": "MDQ6VXNlcjE0MDkwNTkz",
+              "login": "YaelDillies"
             }
           ]
         },
@@ -372,14 +392,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHU2drrw",
-                "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11314271201/job/31464057775"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHU2drxw",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -388,11 +400,27 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHU2drrw",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11314271201/job/31464057775"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHU2dsKw",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11314271199/job/31464057899"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHU2lzig",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11314271201/job/31464190858"
               },
               {
                 "__typename": "CheckRun",
@@ -414,7 +442,7 @@
           }
         },
         "title": "feat(Algebra/Group): forward difference operator",
-        "updatedAt": "2024-10-13T12:19:28Z",
+        "updatedAt": "2024-10-13T13:04:25Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17699",
         "timelineItems": {
           "nodes": [
@@ -447,6 +475,21 @@
                 "id": "LA_kwDOFcwZ1c8AAAABViJjTQ",
                 "name": "t-algebra"
               }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PlgCF",
+              "createdAt": "2024-10-13T13:04:24Z",
+              "body": "I had already started something similar, but in a slightly more general setup: Instead of only considering the discrete forward difference `f (x + 1) - f x`, I also consider the general weighted sum `∑ s, w s • f (x + s)`.\r\n\r\nYou can find my code [here](https://github.com/YaelDillies/LeanCamCombi/blob/master/LeanCamCombi/DiscreteDeriv.lean). It is written for the special case of polynomials but applies mutatis mutandis to general functions. I had written it for a course that @madvorak was going to teach, but he didn't end up using it.\r\n\r\nIt would be great if you could incorporate some of the ideas from there.",
+              "author": {
+                "login": "YaelDillies"
+              }
+            },
+            {
+              "__typename": "MentionedEvent"
+            },
+            {
+              "__typename": "SubscribedEvent"
             }
           ]
         }
