@@ -131,6 +131,30 @@
                     "nodes": [
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHU07X3Q",
+                        "name": "Add ready-to-merge label",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11313545632/job/31462447069"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHU07WCw",
+                        "name": "Ping maintainers on Zulip",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11313545637/job/31462446603"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHU07WDQ",
+                        "name": "Fix style issues from lint",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11313545620/job/31462446605"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHUnJeQQ",
                         "name": "Add topic label",
                         "conclusion": "SUCCESS",
@@ -176,6 +200,14 @@
                         "conclusion": "SUCCESS",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11306892482/job/31447998100"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHU07W2g",
+                        "name": "Add delegated label",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11313545632/job/31462446810"
                       },
                       {
                         "__typename": "CheckRun",
@@ -435,7 +467,17 @@
           ]
         },
         "latestReviews": {
-          "nodes": []
+          "nodes": [
+            {
+              "id": "PRR_kwDOFcwZ1c6M9TFc",
+              "body": "This seems like a worthwhile trade-off. Thank you for doing this. The changes you're making look good to me! There are a few remaining `variable (I)` in the `Geometry/Manifold` directory: would you like to change/audit those as well?",
+              "state": "APPROVED",
+              "author": {
+                "login": "grunweg"
+              },
+              "submittedAt": "2024-10-13T10:20:06Z"
+            }
+          ]
         },
         "maintainerCanModify": false,
         "mergeCommit": null,
@@ -446,7 +488,7 @@
         "milestone": null,
         "number": 17687,
         "potentialMergeCommit": {
-          "oid": "5b2e4380914c02b5cafaede45063c6e9656df93d"
+          "oid": "ec978a2ea2997e1848cdf9d089f6c02cd5843591"
         },
         "projectCards": {
           "nodes": []
@@ -501,15 +543,76 @@
             }
           }
         ],
-        "reviewDecision": null,
+        "reviewDecision": "APPROVED",
         "reviewRequests": {
           "nodes": []
         },
         "reviews": {
-          "nodes": []
+          "nodes": [
+            {
+              "id": "PRR_kwDOFcwZ1c6M9TFc",
+              "body": "This seems like a worthwhile trade-off. Thank you for doing this. The changes you're making look good to me! There are a few remaining `variable (I)` in the `Geometry/Manifold` directory: would you like to change/audit those as well?",
+              "state": "APPROVED",
+              "author": {
+                "login": "grunweg"
+              },
+              "submittedAt": "2024-10-13T10:20:06Z"
+            }
+          ]
         },
         "reviewThreads": {
-          "nodes": []
+          "nodes": [
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5rLnpZ",
+                    "body": "This is an exception to the rule you're proposing in the PR description. Do you have a particular reason for it? Can you say more about why? (Or did you simply not want to make *that* change as well?)",
+                    "createdAt": "2024-10-13T09:48:00Z",
+                    "author": {
+                      "login": "grunweg"
+                    }
+                  },
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5rLqSG",
+                    "body": "Or is there something particular about *this* section?",
+                    "createdAt": "2024-10-13T10:06:41Z",
+                    "author": {
+                      "login": "grunweg"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5rLqfh",
+                    "body": "The current variable management in this file technically *works* - but I would find it clearer to flip the default: make `I` and `I'` implicit in the variable block, and explicit in each definition. What do you think?",
+                    "createdAt": "2024-10-13T10:08:08Z",
+                    "author": {
+                      "login": "grunweg"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5rLqtW",
+                    "body": "```suggestion\r\n  have := hs.inter' <| hf.1 (extChartAt_source_mem_nhds (I := I') (f x))",
+                    "createdAt": "2024-10-13T10:09:30Z",
+                    "author": {
+                      "login": "grunweg"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
         },
         "closingIssuesReferences": {
           "nodes": []
@@ -530,6 +633,30 @@
         "statusCheckRollup": {
           "contexts": {
             "nodes": [
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHU07X3Q",
+                "name": "Add ready-to-merge label",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11313545632/job/31462447069"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHU07WCw",
+                "name": "Ping maintainers on Zulip",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11313545637/job/31462446603"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHU07WDQ",
+                "name": "Fix style issues from lint",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11313545620/job/31462446605"
+              },
               {
                 "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHUnJeQQ",
@@ -577,6 +704,14 @@
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11306892482/job/31447998100"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHU07W2g",
+                "name": "Add delegated label",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11313545632/job/31462446810"
               },
               {
                 "__typename": "CheckRun",
@@ -654,7 +789,7 @@
           }
         },
         "title": "chore: make the model with corners implicit in differential geometry statements",
-        "updatedAt": "2024-10-13T09:59:37Z",
+        "updatedAt": "2024-10-13T10:20:06Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17687",
         "timelineItems": {
           "nodes": [
@@ -688,6 +823,15 @@
               "createdAt": "2024-10-13T09:59:37Z",
               "assignee": {
                 "id": "MDQ6VXNlcjEwMTA1MDE2",
+                "login": "grunweg"
+              }
+            },
+            {
+              "__typename": "PullRequestReview",
+              "id": "PRR_kwDOFcwZ1c6M9TFc",
+              "createdAt": "2024-10-13T09:48:00Z",
+              "body": "This seems like a worthwhile trade-off. Thank you for doing this. The changes you're making look good to me! There are a few remaining `variable (I)` in the `Geometry/Manifold` directory: would you like to change/audit those as well?",
+              "author": {
                 "login": "grunweg"
               }
             }
