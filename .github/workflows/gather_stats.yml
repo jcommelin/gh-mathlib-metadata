@@ -27,7 +27,6 @@ jobs:
         ./gather_stats.sh 12 2>&1 | tee gather_stats.log  # Log output to gather_stats.log
 
     - name: Commit changes
-      if: steps.gather_stats.outcome == 'success'
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
