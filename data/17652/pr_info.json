@@ -24,6 +24,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PmCK4",
+              "body": "Thanks! I don't remember who wrote that code in PFR, and it might be me (or might not, I really don't know). The code is very simple and uncontroversial, so I don't want to bother checking. Also checking is not easy since stuff in PFR tends to be moved from its original file to Mathlib/ForMathlib folders and then git blame is useless. If I happen to be the original author I hope it's ok if I merge anyway.\r\nbors r+",
+              "createdAt": "2024-10-13T20:21:20Z",
+              "author": {
+                "login": "RemyDegenne"
+              }
             }
           ]
         },
@@ -116,14 +124,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHUKQgsA",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295303051/job/31417704624"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHUKQhzA",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -132,11 +132,35 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHUKQgsA",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295303051/job/31417704624"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHUKQkQg",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295303050/job/31417705538"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHULAyaA",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295303051/job/31418495592"
+                      },
+                      {
+                        "__typename": "StatusContext",
+                        "id": "SC_kwDOFcwZ1c8AAAAHb_QTcA",
+                        "context": "bors",
+                        "state": "PENDING",
+                        "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6385",
+                        "description": "Running"
                       },
                       {
                         "__typename": "CheckRun",
@@ -189,6 +213,10 @@
         "labels": {
           "nodes": [
             {
+              "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
+              "name": "ready-to-merge"
+            },
+            {
               "id": "LA_kwDOFcwZ1c8AAAABViJqVA",
               "name": "t-measure-probability"
             }
@@ -199,13 +227,15 @@
         },
         "maintainerCanModify": false,
         "mergeCommit": null,
-        "mergeStateStatus": "UNKNOWN",
-        "mergeable": "UNKNOWN",
+        "mergeStateStatus": "BLOCKED",
+        "mergeable": "MERGEABLE",
         "mergedAt": null,
         "mergedBy": null,
         "milestone": null,
         "number": 17652,
-        "potentialMergeCommit": null,
+        "potentialMergeCommit": {
+          "oid": "ba5c645c729e5924a49169fe8cc80c0774e48308"
+        },
         "projectCards": {
           "nodes": []
         },
@@ -277,6 +307,10 @@
             {
               "id": "MDQ6VXNlcjE0MDkwNTkz",
               "login": "YaelDillies"
+            },
+            {
+              "id": "MDQ6VXNlcjQwOTQ3MzI=",
+              "login": "RemyDegenne"
             }
           ]
         },
@@ -358,14 +392,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHUKQgsA",
-                "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295303051/job/31417704624"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHUKQhzA",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -374,11 +400,35 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHUKQgsA",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295303051/job/31417704624"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHUKQkQg",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295303050/job/31417705538"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHULAyaA",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11295303051/job/31418495592"
+              },
+              {
+                "__typename": "StatusContext",
+                "id": "SC_kwDOFcwZ1c8AAAAHb_QTcA",
+                "context": "bors",
+                "state": "PENDING",
+                "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6385",
+                "description": "Running"
               },
               {
                 "__typename": "CheckRun",
@@ -400,7 +450,7 @@
           }
         },
         "title": "feat: a countable discrete measurable space is standard Borel",
-        "updatedAt": "2024-10-11T15:44:56Z",
+        "updatedAt": "2024-10-13T20:21:31Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17652",
         "timelineItems": {
           "nodes": [
@@ -424,6 +474,27 @@
                 "id": "LA_kwDOFcwZ1c8AAAABViJqVA",
                 "name": "t-measure-probability"
               }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PmCK4",
+              "createdAt": "2024-10-13T20:21:20Z",
+              "body": "Thanks! I don't remember who wrote that code in PFR, and it might be me (or might not, I really don't know). The code is very simple and uncontroversial, so I don't want to bother checking. Also checking is not easy since stuff in PFR tends to be moved from its original file to Mathlib/ForMathlib folders and then git blame is useless. If I happen to be the original author I hope it's ok if I merge anyway.\r\nbors r+",
+              "author": {
+                "login": "RemyDegenne"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6Z4U-lzwAAAANnc2fZ",
+              "createdAt": "2024-10-13T20:21:31Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
+                "name": "ready-to-merge"
+              }
+            },
+            {
+              "__typename": "ReferencedEvent"
             }
           ]
         }
