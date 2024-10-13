@@ -79,8 +79,8 @@ for pr in $(cat "missing-prs.txt"); do
   # Save the current timestamp
   echo "$CURRENT_TIME" > "$dir/timestamp.txt"
   i=$((i+1))
-  if [ $i -eq 3 ]; then
-    echo "Backfilled three PRs successfully, exiting"
+  if [ $i -eq 2 ]; then
+    echo "Backfilled two PRs successfully, exiting"
     break;
   fi
 done
