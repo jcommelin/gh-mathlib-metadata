@@ -24,6 +24,30 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6Plelo",
+              "body": "I think this is definitely a good idea, and it is at high risk of rapid bitrotting; so I support merging it pronto.\r\n\r\nmaintainer merge",
+              "createdAt": "2024-10-13T12:46:24Z",
+              "author": {
+                "login": "loefflerd"
+              }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6Plenm",
+              "body": "🚀 Pull request has been placed on the maintainer queue by loefflerd.",
+              "createdAt": "2024-10-13T12:46:45Z",
+              "author": {
+                "login": "github-actions"
+              }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6Pm_Xd",
+              "body": "bors merge",
+              "createdAt": "2024-10-13T23:46:51Z",
+              "author": {
+                "login": "kim-em"
+              }
             }
           ]
         },
@@ -853,6 +877,14 @@
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11303567480/job/31441151339"
                       },
                       {
+                        "__typename": "StatusContext",
+                        "id": "SC_kwDOFcwZ1c8AAAAHb__gcg",
+                        "context": "bors",
+                        "state": "PENDING",
+                        "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6390",
+                        "description": "Running"
+                      },
+                      {
                         "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHUgVD5g",
                         "name": "New Contributor Check",
@@ -976,7 +1008,16 @@
         "isCrossRepository": false,
         "isDraft": false,
         "labels": {
-          "nodes": []
+          "nodes": [
+            {
+              "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
+              "name": "ready-to-merge"
+            },
+            {
+              "id": "LA_kwDOFcwZ1c8AAAABh1mAHA",
+              "name": "maintainer-merge"
+            }
+          ]
         },
         "latestReviews": {
           "nodes": [
@@ -1000,7 +1041,7 @@
         "milestone": null,
         "number": 17650,
         "potentialMergeCommit": {
-          "oid": "93b1c53b12fc97eb62de1af1950d8e1e95a65807"
+          "oid": "b3863552e0784b690773041400a343890f925f68"
         },
         "projectCards": {
           "nodes": []
@@ -1117,6 +1158,14 @@
               "login": "YaelDillies"
             },
             {
+              "id": "MDQ6VXNlcjM0Mzk2ODg=",
+              "login": "loefflerd"
+            },
+            {
+              "id": "MDQ6VXNlcjQ3Nzk1Ng==",
+              "login": "kim-em"
+            },
+            {
               "id": "MDQ6VXNlcjEwMTA1MDE2",
               "login": "grunweg"
             }
@@ -1223,6 +1272,14 @@
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11303567480/job/31441151339"
               },
               {
+                "__typename": "StatusContext",
+                "id": "SC_kwDOFcwZ1c8AAAAHb__gcg",
+                "context": "bors",
+                "state": "PENDING",
+                "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6390",
+                "description": "Running"
+              },
+              {
                 "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHUgVD5g",
                 "name": "New Contributor Check",
@@ -1242,7 +1299,7 @@
           }
         },
         "title": "chore: rename `Complex.ofReal'` to `Complex.ofReal`",
-        "updatedAt": "2024-10-12T06:46:14Z",
+        "updatedAt": "2024-10-13T23:47:02Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17650",
         "timelineItems": {
           "nodes": [
@@ -1304,6 +1361,54 @@
             },
             {
               "__typename": "PullRequestCommit"
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6Plelo",
+              "createdAt": "2024-10-13T12:46:24Z",
+              "body": "I think this is definitely a good idea, and it is at high risk of rapid bitrotting; so I support merging it pronto.\r\n\r\nmaintainer merge",
+              "author": {
+                "login": "loefflerd"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6Plenm",
+              "createdAt": "2024-10-13T12:46:45Z",
+              "body": "🚀 Pull request has been placed on the maintainer queue by loefflerd.",
+              "author": {
+                "login": "github-actions"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6Z3wSozwAAAANnZOSq",
+              "createdAt": "2024-10-13T12:46:46Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABh1mAHA",
+                "name": "maintainer-merge"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6Pm_Xd",
+              "createdAt": "2024-10-13T23:46:51Z",
+              "body": "bors merge",
+              "author": {
+                "login": "kim-em"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6Z3wSozwAAAANnfZrx",
+              "createdAt": "2024-10-13T23:47:02Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
+                "name": "ready-to-merge"
+              }
+            },
+            {
+              "__typename": "ReferencedEvent"
             }
           ]
         }
