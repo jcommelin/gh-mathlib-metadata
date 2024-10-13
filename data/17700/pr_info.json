@@ -11,7 +11,7 @@
         },
         "autoMergeRequest": null,
         "baseRefName": "master",
-        "body": "\r\nContributed-by: Alex Keizer <alex@keizer.dev>",
+        "body": "This PR adds a `CommRing` instance for `BitVec w`.  The theorems `ofFin_neg`, `ofFin_ofNat`, `toFin_inj`, `ofInt_negSucc` can potentially also be upstreamed to the lean4 repository: https://github.com/leanprover/lean4/pull/5680.\r\n\r\nContributed-by: Alex Keizer <alex@keizer.dev>",
         "changedFiles": 1,
         "closed": false,
         "closedAt": null,
@@ -118,8 +118,8 @@
                         "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHU377mg",
                         "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
+                        "conclusion": "CANCELLED",
+                        "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11314980435/job/31465601946"
                       },
                       {
@@ -129,6 +129,14 @@
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11314980436/job/31465602069"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHU4GHzA",
+                        "name": "Post-CI job",
+                        "conclusion": "CANCELLED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11314980435/job/31465768908"
                       },
                       {
                         "__typename": "CheckRun",
@@ -240,8 +248,8 @@
                         "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHU4AeXA",
                         "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
+                        "conclusion": "FAILURE",
+                        "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11315011383/job/31465676380"
                       },
                       {
@@ -259,6 +267,14 @@
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11315011381/job/31465676595"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHU4J-Gw",
+                        "name": "Post-CI job",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11315011383/job/31465831963"
                       },
                       {
                         "__typename": "CheckRun",
@@ -389,7 +405,20 @@
         ],
         "reviewDecision": null,
         "reviewRequests": {
-          "nodes": []
+          "nodes": [
+            {
+              "requestedReviewer": {
+                "id": "MDQ6VXNlcjg2ODU4OA==",
+                "login": "digama0"
+              }
+            },
+            {
+              "requestedReviewer": {
+                "id": "MDQ6VXNlcjMzMjcwMTY0",
+                "login": "hargoniX"
+              }
+            }
+          ]
         },
         "reviews": {
           "nodes": []
@@ -480,8 +509,8 @@
                 "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHU4AeXA",
                 "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
+                "conclusion": "FAILURE",
+                "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11315011383/job/31465676380"
               },
               {
@@ -499,6 +528,14 @@
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11315011381/job/31465676595"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHU4J-Gw",
+                "name": "Post-CI job",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11315011383/job/31465831963"
               },
               {
                 "__typename": "CheckRun",
@@ -520,7 +557,7 @@
           }
         },
         "title": "feat: add CommRing (BitVec w)",
-        "updatedAt": "2024-10-13T14:04:59Z",
+        "updatedAt": "2024-10-13T14:08:06Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17700",
         "timelineItems": {
           "nodes": [
@@ -561,6 +598,24 @@
             },
             {
               "__typename": "PullRequestCommit"
+            },
+            {
+              "__typename": "ReviewRequestedEvent",
+              "id": "RRE_lADOFcwZ1c6aBKKFzwAAAANnZ6V3",
+              "createdAt": "2024-10-13T14:08:06Z",
+              "requestedReviewer": {
+                "id": "MDQ6VXNlcjg2ODU4OA==",
+                "login": "digama0"
+              }
+            },
+            {
+              "__typename": "ReviewRequestedEvent",
+              "id": "RRE_lADOFcwZ1c6aBKKFzwAAAANnZ6V6",
+              "createdAt": "2024-10-13T14:08:06Z",
+              "requestedReviewer": {
+                "id": "MDQ6VXNlcjMzMjcwMTY0",
+                "login": "hargoniX"
+              }
             }
           ]
         }
