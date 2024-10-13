@@ -32,6 +32,14 @@
               "author": {
                 "login": "YaelDillies"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6Plh83",
+              "body": "> I had already started something similar, but in a slightly more general setup [...] It is written for the special case of polynomials but applies mutatis mutandis to general functions [...] It would be great if you could incorporate some of the ideas from there.\r\n\r\nWhich particular ideas would you suggest that Giulio and I should incorporate? \r\n\r\nI actually think your treatment could, conversely, benefit from incorporating some ideas from ours (if you intend to pursue it further at any point in future). Note that \"discConv_discConv\", the key lemma which is `sorry`ed in your treatment, would be automatic in our approach: it is subsumed by the fact that any abelian group `G` is canonically a module over its own endomorphism algebra `Module.End ℤ (G → G)`, and we can compose this with the natural map from `ℤ[X]` to `Module.End ℤ (G → G)` sending `X` to the shift-by-1 operator, to obtain a module action of polynomials on `G → G` with `X` acting as the shift. Then Newton-Gregory is just the binomial expansion of `((X - 1) + 1) ^ n`.",
+              "createdAt": "2024-10-13T13:27:24Z",
+              "author": {
+                "login": "loefflerd"
+              }
             }
           ]
         },
@@ -442,7 +450,7 @@
           }
         },
         "title": "feat(Algebra/Group): forward difference operator",
-        "updatedAt": "2024-10-13T13:04:25Z",
+        "updatedAt": "2024-10-13T13:27:25Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17699",
         "timelineItems": {
           "nodes": [
@@ -490,6 +498,15 @@
             },
             {
               "__typename": "SubscribedEvent"
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6Plh83",
+              "createdAt": "2024-10-13T13:27:24Z",
+              "body": "> I had already started something similar, but in a slightly more general setup [...] It is written for the special case of polynomials but applies mutatis mutandis to general functions [...] It would be great if you could incorporate some of the ideas from there.\r\n\r\nWhich particular ideas would you suggest that Giulio and I should incorporate? \r\n\r\nI actually think your treatment could, conversely, benefit from incorporating some ideas from ours (if you intend to pursue it further at any point in future). Note that \"discConv_discConv\", the key lemma which is `sorry`ed in your treatment, would be automatic in our approach: it is subsumed by the fact that any abelian group `G` is canonically a module over its own endomorphism algebra `Module.End ℤ (G → G)`, and we can compose this with the natural map from `ℤ[X]` to `Module.End ℤ (G → G)` sending `X` to the shift-by-1 operator, to obtain a module action of polynomials on `G → G` with `X` acting as the shift. Then Newton-Gregory is just the binomial expansion of `((X - 1) + 1) ^ n`.",
+              "author": {
+                "login": "loefflerd"
+              }
             }
           ]
         }
