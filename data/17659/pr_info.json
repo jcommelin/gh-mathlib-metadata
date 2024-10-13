@@ -40,6 +40,22 @@
               "author": {
                 "login": "mo271"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6Pl2Cj",
+              "body": "It's a general fact that given any nonzero integer `t`, if the solution `x ^ 2 - 2 * y ^ 2 = t` has one solution, it has infinitely many (and similarly for `x ^ 2 - d y^2` for any positive squarefree `d`). This follows from the theory of Pell equations. So the \"infinitely many ways\" assertion is not surprising here. \r\n\r\nI think there's no harm in adding a lemma for the specific identity you're using here, `fermatNumber (n + 2) = (fermatNumber (n + 1)) ^ 2 - 2 * (fermatNumber n - 1) ^ 2`. But it needs a better name; and  I completely agree with @vihdzp that the use of Nat subtraction should be avoided. I would suggest you write it as an identity for `(fermatNumber (n + 2) : \\Z)` instead, so the subtraction on the RHS is interpreted as integer rather than Nat subtraction. ",
+              "createdAt": "2024-10-13T17:38:08Z",
+              "author": {
+                "login": "loefflerd"
+              }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6Pmm23",
+              "body": "I think that writing this for the integers is also the sort of thing that can result in a theorem statement that ends up not being very useful. I would like there to be an actual purpose to proving this.",
+              "createdAt": "2024-10-13T22:54:45Z",
+              "author": {
+                "login": "vihdzp"
+              }
             }
           ]
         },
@@ -230,7 +246,7 @@
         "milestone": null,
         "number": 17659,
         "potentialMergeCommit": {
-          "oid": "9f5b526c8502162deb9654f008a47ffde4cabe70"
+          "oid": "adb6ce9393f55f7344d44ef030d002802ae1850f"
         },
         "projectCards": {
           "nodes": []
@@ -307,6 +323,10 @@
             {
               "id": "MDQ6VXNlcjY1NDY1Njcw",
               "login": "vihdzp"
+            },
+            {
+              "id": "MDQ6VXNlcjM0Mzk2ODg=",
+              "login": "loefflerd"
             }
           ]
         },
@@ -438,7 +458,7 @@
           }
         },
         "title": "feat(NumberTheory/FermatNumber): fermatNumber_succ_succ",
-        "updatedAt": "2024-10-12T10:58:18Z",
+        "updatedAt": "2024-10-13T22:54:46Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17659",
         "timelineItems": {
           "nodes": [
@@ -479,6 +499,30 @@
               "body": "> Can I ask what this lemma is needed for? It's a bit specific and the use of natural subtraction makes me a bit iffy.\r\n\r\nI needed this when I was showing that for all `n > 1`, the Fermat Number `F_n` can be written in infinitely many ways as `n^2 - 2m^2` for positive natural `m` and `n`. For this one needs a starting case and then can construct bigger and bigger examples. (Now of course one can ask what this would be needed for...)\r\nI though this two term non-linear recursion is so basic that it might be useful in other contexts. \r\nBut I'm happy to close this pr if you think it is useless.\r\nI think I partly share the suspicion of natural subtraction, at least I can't think of other simple recursive formulas relating simple sequences of natural numbers, which cannot be rewritten in a way to avoid the subtraction.",
               "author": {
                 "login": "mo271"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6Pl2Cj",
+              "createdAt": "2024-10-13T17:38:08Z",
+              "body": "It's a general fact that given any nonzero integer `t`, if the solution `x ^ 2 - 2 * y ^ 2 = t` has one solution, it has infinitely many (and similarly for `x ^ 2 - d y^2` for any positive squarefree `d`). This follows from the theory of Pell equations. So the \"infinitely many ways\" assertion is not surprising here. \r\n\r\nI think there's no harm in adding a lemma for the specific identity you're using here, `fermatNumber (n + 2) = (fermatNumber (n + 1)) ^ 2 - 2 * (fermatNumber n - 1) ^ 2`. But it needs a better name; and  I completely agree with @vihdzp that the use of Nat subtraction should be avoided. I would suggest you write it as an identity for `(fermatNumber (n + 2) : \\Z)` instead, so the subtraction on the RHS is interpreted as integer rather than Nat subtraction. ",
+              "author": {
+                "login": "loefflerd"
+              }
+            },
+            {
+              "__typename": "MentionedEvent"
+            },
+            {
+              "__typename": "SubscribedEvent"
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6Pmm23",
+              "createdAt": "2024-10-13T22:54:45Z",
+              "body": "I think that writing this for the integers is also the sort of thing that can result in a theorem statement that ends up not being very useful. I would like there to be an actual purpose to proving this.",
+              "author": {
+                "login": "vihdzp"
               }
             }
           ]
