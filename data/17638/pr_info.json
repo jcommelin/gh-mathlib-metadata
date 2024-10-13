@@ -104,6 +104,14 @@
               "author": {
                 "login": "leanprover-bot"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PmIMM",
+              "body": "The previous PR was performance-neutral - so the benchmark should mostly represent the effect of this PR. Overall, there is a slowdown of 200*10⁹ instruction (about 0.1-0.2% of all of mathlib).",
+              "createdAt": "2024-10-13T21:24:16Z",
+              "author": {
+                "login": "grunweg"
+              }
             }
           ]
         },
@@ -453,13 +461,15 @@
         },
         "maintainerCanModify": false,
         "mergeCommit": null,
-        "mergeStateStatus": "UNKNOWN",
-        "mergeable": "UNKNOWN",
+        "mergeStateStatus": "BLOCKED",
+        "mergeable": "MERGEABLE",
         "mergedAt": null,
         "mergedBy": null,
         "milestone": null,
         "number": 17638,
-        "potentialMergeCommit": null,
+        "potentialMergeCommit": {
+          "oid": "36a242c47314087f0ec1dacf7b7e9ba85972a544"
+        },
         "projectCards": {
           "nodes": []
         },
@@ -859,7 +869,7 @@
           }
         },
         "title": "feat(Tactic): `erw` tries `rw` first and warns if that succeeds",
-        "updatedAt": "2024-10-13T17:58:46Z",
+        "updatedAt": "2024-10-13T21:24:17Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17638",
         "timelineItems": {
           "nodes": [
@@ -1115,6 +1125,15 @@
               "body": "Here are the [benchmark results](http://speed.lean-fro.org/mathlib4/run-detail/bed60633-45e1-4fb6-b747-0f99ae91f3fa) for commit edc1e5c163772d17fb6067027afbc9f938648e2f.\nThere were [significant changes](http://speed.lean-fro.org/mathlib4/compare/349ad6b5-2d9d-4ff2-9038-d410616dec20/to/bed60633-45e1-4fb6-b747-0f99ae91f3fa) against commit 626e646a45085713dacac5c222cfe6d768e8dd67:\n```diff\n  Benchmark                                                  Metric         Change\n  ================================================================================\n- ~Mathlib.Algebra.Module.LocalizedModule                    instructions     8.2%\n- ~Mathlib.CategoryTheory.Adjunction.Lifting.Right           instructions    46.6%\n- ~Mathlib.Geometry.RingedSpace.PresheafedSpace.Gluing       instructions    15.4%\n- ~Mathlib.RepresentationTheory.GroupCohomology.Resolution   instructions     8.1%\n```",
               "author": {
                 "login": "leanprover-bot"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PmIMM",
+              "createdAt": "2024-10-13T21:24:16Z",
+              "body": "The previous PR was performance-neutral - so the benchmark should mostly represent the effect of this PR. Overall, there is a slowdown of 200*10⁹ instruction (about 0.1-0.2% of all of mathlib).",
+              "author": {
+                "login": "grunweg"
               }
             }
           ]
