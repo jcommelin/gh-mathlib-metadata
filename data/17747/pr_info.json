@@ -44,6 +44,30 @@
                     "nodes": [
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHVxiioA",
+                        "name": "Add ready-to-merge label",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11336305049/job/31526003360"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHVxiijw",
+                        "name": "Ping maintainers on Zulip",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11336305023/job/31526003343"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHVxiifQ",
+                        "name": "Fix style issues from lint",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11336305022/job/31526003325"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHVuCqQg",
                         "name": "Add topic label",
                         "conclusion": "SUCCESS",
@@ -89,6 +113,14 @@
                         "conclusion": "SUCCESS",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11335010856/job/31522335666"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHVxijRw",
+                        "name": "Add delegated label",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11336305049/job/31526003527"
                       },
                       {
                         "__typename": "CheckRun",
@@ -213,7 +245,17 @@
           ]
         },
         "latestReviews": {
-          "nodes": []
+          "nodes": [
+            {
+              "id": "PRR_kwDOFcwZ1c6NIZYF",
+              "body": "",
+              "state": "COMMENTED",
+              "author": {
+                "login": "alreadydone"
+              },
+              "submittedAt": "2024-10-14T23:08:23Z"
+            }
+          ]
         },
         "maintainerCanModify": false,
         "mergeCommit": null,
@@ -224,7 +266,7 @@
         "milestone": null,
         "number": 17747,
         "potentialMergeCommit": {
-          "oid": "96ff67a04d80e6758eb48c22592be356ea92ea71"
+          "oid": "1e830458dbe720b1da93cda20a2bc152b603a97d"
         },
         "projectCards": {
           "nodes": []
@@ -281,20 +323,38 @@
         ],
         "reviewDecision": null,
         "reviewRequests": {
+          "nodes": []
+        },
+        "reviews": {
           "nodes": [
             {
-              "requestedReviewer": {
-                "id": "MDQ6VXNlcjMwNjQxNDU=",
+              "id": "PRR_kwDOFcwZ1c6NIZYF",
+              "body": "",
+              "state": "COMMENTED",
+              "author": {
                 "login": "alreadydone"
-              }
+              },
+              "submittedAt": "2024-10-14T23:08:23Z"
             }
           ]
         },
-        "reviews": {
-          "nodes": []
-        },
         "reviewThreads": {
-          "nodes": []
+          "nodes": [
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5rTR5j",
+                    "body": "Maybe we should create another file for these results, just like [the case of projective modules](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Category/ModuleCat/Projective.html). These results are basically by definition and shouldn't require so many irrelevant imports.\r\n\r\nNote that there is an asymmetry between the projective and injective APIs, which is that `Module.Projective` is equivalent to the universe polymorphic lifting property (stronger than `CategoryTheory.Projective`), while `Module.Injective` is only the lifting property in the universe of the module (equivalent to `CategoryTheory.Injective`). For this reason, [IsProjective.iff_projective](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Category/ModuleCat/Projective.html#IsProjective.iff_projective) requires `P : Type (max u v)`, and [Module.Injective.extension_property](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Module/Injective.html#Module.Injective.extension_property) has a `Small` assumption. Arguably, the real analogue of [Module.projective_lifting_property](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Module/Projective.html#Module.projective_lifting_property) should be [Module.Baer.extension_property](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Module/Injective.html#Module.Baer.extension_property), where `Module.Baer` is equivalent to the universe polymorphic extension property. For this reason, instead of providing instances of `Module.Injective`, we should probably make `Module.Baer` a class and provide instances of it.\r\n\r\ncc @jjaassoonn ",
+                    "createdAt": "2024-10-14T23:08:23Z",
+                    "author": {
+                      "login": "alreadydone"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
         },
         "closingIssuesReferences": {
           "nodes": []
@@ -304,6 +364,10 @@
             {
               "id": "MDQ6VXNlcjQyNTI2MA==",
               "login": "eric-wieser"
+            },
+            {
+              "id": "MDQ6VXNlcjMwNjQxNDU=",
+              "login": "alreadydone"
             }
           ]
         },
@@ -311,6 +375,30 @@
         "statusCheckRollup": {
           "contexts": {
             "nodes": [
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHVxiioA",
+                "name": "Add ready-to-merge label",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11336305049/job/31526003360"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHVxiijw",
+                "name": "Ping maintainers on Zulip",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11336305023/job/31526003343"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHVxiifQ",
+                "name": "Fix style issues from lint",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11336305022/job/31526003325"
+              },
               {
                 "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHVuCqQg",
@@ -358,6 +446,14 @@
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11335010856/job/31522335666"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHVxijRw",
+                "name": "Add delegated label",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11336305049/job/31526003527"
               },
               {
                 "__typename": "CheckRun",
@@ -435,7 +531,7 @@
           }
         },
         "title": "chore: do not depend on CategoryTheory in Module.Injective",
-        "updatedAt": "2024-10-14T21:06:43Z",
+        "updatedAt": "2024-10-14T23:08:23Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17747",
         "timelineItems": {
           "nodes": [
@@ -477,6 +573,15 @@
               "label": {
                 "id": "LA_kwDOFcwZ1c8AAAABViJjTQ",
                 "name": "t-algebra"
+              }
+            },
+            {
+              "__typename": "PullRequestReview",
+              "id": "PRR_kwDOFcwZ1c6NIZYF",
+              "createdAt": "2024-10-14T23:08:23Z",
+              "body": "",
+              "author": {
+                "login": "alreadydone"
               }
             }
           ]
