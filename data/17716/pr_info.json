@@ -13,8 +13,8 @@
         "baseRefName": "master",
         "body": "",
         "changedFiles": 1,
-        "closed": false,
-        "closedAt": null,
+        "closed": true,
+        "closedAt": "2024-10-14T13:20:16Z",
         "comments": {
           "nodes": [
             {
@@ -23,6 +23,14 @@
               "createdAt": "2024-10-14T02:23:13Z",
               "author": {
                 "login": "github-actions"
+              }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PuNl_",
+              "body": "Pull request successfully merged into master.\n\nBuild succeeded:\n  * [Lint style](https://github.com/leanprover-community/mathlib4/actions/runs/11327362905/job/31498267160)\n  * [Build](https://github.com/leanprover-community/mathlib4/actions/runs/11327362905/job/31498267503)",
+              "createdAt": "2024-10-14T13:20:15Z",
+              "author": {
+                "login": "mathlib-bors"
               }
             }
           ]
@@ -179,14 +187,6 @@
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11319921788/job/31478104169"
                       },
                       {
-                        "__typename": "StatusContext",
-                        "id": "SC_kwDOFcwZ1c8AAAAHcILlfg",
-                        "context": "bors",
-                        "state": "PENDING",
-                        "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6404",
-                        "description": "Waiting in queue"
-                      },
-                      {
                         "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHVCg_JA",
                         "name": "New Contributor Check",
@@ -201,6 +201,14 @@
                         "conclusion": "SUCCESS",
                         "status": "COMPLETED",
                         "detailsUrl": "https://dashboard.mergify.com/event-logs?pullRequestNumber=17716&login=leanprover-community&repository=mathlib4"
+                      },
+                      {
+                        "__typename": "StatusContext",
+                        "id": "SC_kwDOFcwZ1c8AAAAHcJv7Kg",
+                        "context": "bors",
+                        "state": "SUCCESS",
+                        "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6404",
+                        "description": "Build succeeded"
                       }
                     ]
                   }
@@ -257,15 +265,13 @@
         },
         "maintainerCanModify": false,
         "mergeCommit": null,
-        "mergeStateStatus": "BLOCKED",
-        "mergeable": "MERGEABLE",
+        "mergeStateStatus": "UNKNOWN",
+        "mergeable": "UNKNOWN",
         "mergedAt": null,
         "mergedBy": null,
         "milestone": null,
         "number": 17716,
-        "potentialMergeCommit": {
-          "oid": "375c81656d32641293c57c27988ecdf4643e1547"
-        },
+        "potentialMergeCommit": null,
         "projectCards": {
           "nodes": []
         },
@@ -358,7 +364,7 @@
             }
           ]
         },
-        "state": "OPEN",
+        "state": "CLOSED",
         "statusCheckRollup": {
           "contexts": {
             "nodes": [
@@ -499,14 +505,6 @@
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11319921788/job/31478104169"
               },
               {
-                "__typename": "StatusContext",
-                "id": "SC_kwDOFcwZ1c8AAAAHcILlfg",
-                "context": "bors",
-                "state": "PENDING",
-                "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6404",
-                "description": "Waiting in queue"
-              },
-              {
                 "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHVCg_JA",
                 "name": "New Contributor Check",
@@ -521,12 +519,20 @@
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
                 "detailsUrl": "https://dashboard.mergify.com/event-logs?pullRequestNumber=17716&login=leanprover-community&repository=mathlib4"
+              },
+              {
+                "__typename": "StatusContext",
+                "id": "SC_kwDOFcwZ1c8AAAAHcJv7Kg",
+                "context": "bors",
+                "state": "SUCCESS",
+                "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6404",
+                "description": "Build succeeded"
               }
             ]
           }
         },
-        "title": "chore: no need to suppress Aesop warning",
-        "updatedAt": "2024-10-14T12:05:45Z",
+        "title": "[Merged by Bors] - chore: no need to suppress Aesop warning",
+        "updatedAt": "2024-10-14T13:20:21Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17716",
         "timelineItems": {
           "nodes": [
@@ -580,6 +586,31 @@
                 "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
                 "name": "ready-to-merge"
               }
+            },
+            {
+              "__typename": "ReferencedEvent"
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PuNl_",
+              "createdAt": "2024-10-14T13:20:15Z",
+              "body": "Pull request successfully merged into master.\n\nBuild succeeded:\n  * [Lint style](https://github.com/leanprover-community/mathlib4/actions/runs/11327362905/job/31498267160)\n  * [Build](https://github.com/leanprover-community/mathlib4/actions/runs/11327362905/job/31498267503)",
+              "author": {
+                "login": "mathlib-bors"
+              }
+            },
+            {
+              "__typename": "RenamedTitleEvent"
+            },
+            {
+              "__typename": "ClosedEvent",
+              "id": "CE_lADOFcwZ1c6aDTrazwAAAANoYVkx",
+              "createdAt": "2024-10-14T13:20:16Z"
+            },
+            {
+              "__typename": "HeadRefDeletedEvent",
+              "id": "HRDE_lADOFcwZ1c6aDTrazwAAAANoYV2E",
+              "createdAt": "2024-10-14T13:20:21Z"
             }
           ]
         }
