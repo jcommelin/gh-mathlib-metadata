@@ -24,6 +24,22 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6Pta8E",
+              "body": ":v: Ruben-VandeVelde can now approve this pull request. To approve and merge a pull request, simply reply with `bors r+`. More detailed instructions are available [here](https://bors.tech/documentation/getting-started/#reviewing-pull-requests).",
+              "createdAt": "2024-10-14T12:10:53Z",
+              "author": {
+                "login": "mathlib-bors"
+              }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6Pv1wb",
+              "body": "> Note that this generalizes the existing instance [`AlgebraicClosure.instIsAlgClosure`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/IsAlgClosed/AlgebraicClosure.html#AlgebraicClosure.instIsAlgClosure). I would prefer to keep that instance too, at least because it would be found much more directly, but perhaps we can simplify its definition.\r\n\r\nThis doesn't seem correct; the new instance requires both type arguments to `IsAlgClosure` to be the same.\r\n\r\nbors merge",
+              "createdAt": "2024-10-14T16:06:17Z",
+              "author": {
+                "login": "Ruben-VandeVelde"
+              }
             }
           ]
         },
@@ -42,6 +58,30 @@
                 "statusCheckRollup": {
                   "contexts": {
                     "nodes": [
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHVWwE8w",
+                        "name": "Add ready-to-merge label",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11327248357/job/31497913587"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHVWwE3A",
+                        "name": "Ping maintainers on Zulip",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11327248345/job/31497913564"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHVWwEwQ",
+                        "name": "Fix style issues from lint",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11327248351/job/31497913537"
+                      },
                       {
                         "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHVMMp0Q",
@@ -100,6 +140,14 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHVWwGpA",
+                        "name": "Add delegated label",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11327248357/job/31497914020"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHVMKm8w",
                         "name": "Lint style",
                         "conclusion": "SUCCESS",
@@ -116,14 +164,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHVMKn5g",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "QUEUED",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11323667270/job/31486814182"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHVMKmvg",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -132,11 +172,35 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHVMKn5g",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11323667270/job/31486814182"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHVMKpEA",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11323667260/job/31486814480"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHVM-mEA",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11323667270/job/31487665680"
+                      },
+                      {
+                        "__typename": "StatusContext",
+                        "id": "SC_kwDOFcwZ1c8AAAAHcNqaag",
+                        "context": "bors",
+                        "state": "PENDING",
+                        "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6409",
+                        "description": "Running"
                       },
                       {
                         "__typename": "CheckRun",
@@ -189,6 +253,10 @@
         "labels": {
           "nodes": [
             {
+              "id": "LA_kwDOFcwZ1c8AAAABAt13Ow",
+              "name": "delegated"
+            },
+            {
               "id": "LA_kwDOFcwZ1c8AAAABJc1VKA",
               "name": "easy"
             },
@@ -199,7 +267,17 @@
           ]
         },
         "latestReviews": {
-          "nodes": []
+          "nodes": [
+            {
+              "id": "PRR_kwDOFcwZ1c6NDN-m",
+              "body": "Note that this generalizes the existing instance [`AlgebraicClosure.instIsAlgClosure`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/IsAlgClosed/AlgebraicClosure.html#AlgebraicClosure.instIsAlgClosure). I would prefer to keep that instance too, at least because it would be found much more directly, but perhaps we can simplify its definition.\r\n\r\nI couldn't find any other instances related to the new one, so it should be safe to add this.\r\n\r\nbors d+",
+              "state": "APPROVED",
+              "author": {
+                "login": "Vierkantor"
+              },
+              "submittedAt": "2024-10-14T12:10:51Z"
+            }
+          ]
         },
         "maintainerCanModify": false,
         "mergeCommit": null,
@@ -210,7 +288,7 @@
         "milestone": null,
         "number": 17720,
         "potentialMergeCommit": {
-          "oid": "2a669bac558f90c4e19b417ba0565853fa6a0b8f"
+          "oid": "46a5d5d1f424c5bafde345278c0881f031abff94"
         },
         "projectCards": {
           "nodes": []
@@ -265,12 +343,22 @@
             }
           }
         ],
-        "reviewDecision": null,
+        "reviewDecision": "APPROVED",
         "reviewRequests": {
           "nodes": []
         },
         "reviews": {
-          "nodes": []
+          "nodes": [
+            {
+              "id": "PRR_kwDOFcwZ1c6NDN-m",
+              "body": "Note that this generalizes the existing instance [`AlgebraicClosure.instIsAlgClosure`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/IsAlgClosed/AlgebraicClosure.html#AlgebraicClosure.instIsAlgClosure). I would prefer to keep that instance too, at least because it would be found much more directly, but perhaps we can simplify its definition.\r\n\r\nI couldn't find any other instances related to the new one, so it should be safe to add this.\r\n\r\nbors d+",
+              "state": "APPROVED",
+              "author": {
+                "login": "Vierkantor"
+              },
+              "submittedAt": "2024-10-14T12:10:51Z"
+            }
+          ]
         },
         "reviewThreads": {
           "nodes": []
@@ -283,6 +371,14 @@
             {
               "id": "MDQ6VXNlcjY1NTE0MTMx",
               "login": "Ruben-VandeVelde"
+            },
+            {
+              "id": "MDQ6VXNlcjIxMTY1NzA=",
+              "login": "Vierkantor"
+            },
+            {
+              "id": "U_kgDOB75MNQ",
+              "login": "leanprover-community-mathlib4-bot"
             }
           ]
         },
@@ -290,6 +386,30 @@
         "statusCheckRollup": {
           "contexts": {
             "nodes": [
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHVWwE8w",
+                "name": "Add ready-to-merge label",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11327248357/job/31497913587"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHVWwE3A",
+                "name": "Ping maintainers on Zulip",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11327248345/job/31497913564"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHVWwEwQ",
+                "name": "Fix style issues from lint",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11327248351/job/31497913537"
+              },
               {
                 "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHVMMp0Q",
@@ -348,6 +468,14 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHVWwGpA",
+                "name": "Add delegated label",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11327248357/job/31497914020"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHVMKm8w",
                 "name": "Lint style",
                 "conclusion": "SUCCESS",
@@ -364,14 +492,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHVMKn5g",
-                "name": "Build",
-                "conclusion": null,
-                "status": "QUEUED",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11323667270/job/31486814182"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHVMKmvg",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -380,11 +500,35 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHVMKn5g",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11323667270/job/31486814182"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHVMKpEA",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11323667260/job/31486814480"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHVM-mEA",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11323667270/job/31487665680"
+              },
+              {
+                "__typename": "StatusContext",
+                "id": "SC_kwDOFcwZ1c8AAAAHcNqaag",
+                "context": "bors",
+                "state": "PENDING",
+                "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6409",
+                "description": "Running"
               },
               {
                 "__typename": "CheckRun",
@@ -406,7 +550,7 @@
           }
         },
         "title": "feat: an algebraically closed field is its own algebraic closure",
-        "updatedAt": "2024-10-14T08:22:58Z",
+        "updatedAt": "2024-10-14T16:06:19Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17720",
         "timelineItems": {
           "nodes": [
@@ -439,6 +583,45 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "__typename": "PullRequestReview",
+              "id": "PRR_kwDOFcwZ1c6NDN-m",
+              "createdAt": "2024-10-14T12:10:51Z",
+              "body": "Note that this generalizes the existing instance [`AlgebraicClosure.instIsAlgClosure`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/IsAlgClosed/AlgebraicClosure.html#AlgebraicClosure.instIsAlgClosure). I would prefer to keep that instance too, at least because it would be found much more directly, but perhaps we can simplify its definition.\r\n\r\nI couldn't find any other instances related to the new one, so it should be safe to add this.\r\n\r\nbors d+",
+              "author": {
+                "login": "Vierkantor"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6Pta8E",
+              "createdAt": "2024-10-14T12:10:53Z",
+              "body": ":v: Ruben-VandeVelde can now approve this pull request. To approve and merge a pull request, simply reply with `bors r+`. More detailed instructions are available [here](https://bors.tech/documentation/getting-started/#reviewing-pull-requests).",
+              "author": {
+                "login": "mathlib-bors"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6aFw3lzwAAAANoTMJp",
+              "createdAt": "2024-10-14T12:11:01Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABAt13Ow",
+                "name": "delegated"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6Pv1wb",
+              "createdAt": "2024-10-14T16:06:17Z",
+              "body": "> Note that this generalizes the existing instance [`AlgebraicClosure.instIsAlgClosure`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/IsAlgClosed/AlgebraicClosure.html#AlgebraicClosure.instIsAlgClosure). I would prefer to keep that instance too, at least because it would be found much more directly, but perhaps we can simplify its definition.\r\n\r\nThis doesn't seem correct; the new instance requires both type arguments to `IsAlgClosure` to be the same.\r\n\r\nbors merge",
+              "author": {
+                "login": "Ruben-VandeVelde"
+              }
+            },
+            {
+              "__typename": "ReferencedEvent"
             }
           ]
         }
