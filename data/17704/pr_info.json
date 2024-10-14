@@ -24,6 +24,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PpNGY",
+              "body": "🚀 Pull request has been placed on the maintainer queue by YaelDillies.",
+              "createdAt": "2024-10-14T04:54:21Z",
+              "author": {
+                "login": "github-actions"
+              }
             }
           ]
         },
@@ -44,6 +52,22 @@
                     "nodes": [
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHVFnceA",
+                        "name": "Add ready-to-merge label",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11321215374/job/31479946360"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHVFncRg",
+                        "name": "Fix style issues from lint",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11321215371/job/31479946310"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHU7tUAA",
                         "name": "Add topic label",
                         "conclusion": "SUCCESS",
@@ -57,6 +81,14 @@
                         "conclusion": "SUCCESS",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11316834877/job/31469556733"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHVFnccA",
+                        "name": "Ping maintainers on Zulip",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11321215373/job/31479946352"
                       },
                       {
                         "__typename": "CheckRun",
@@ -92,6 +124,14 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHVFnc8w",
+                        "name": "Add delegated label",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11321215374/job/31479946483"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHU7tI0w",
                         "name": "Lint style (fork)",
                         "conclusion": "SKIPPED",
@@ -116,14 +156,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHU7tIwA",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11316833691/job/31469553856"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHU7tJyg",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -132,11 +164,27 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHU7tIwA",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11316833691/job/31469553856"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHU7tKIg",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11316833692/job/31469554210"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHU8bA8w",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11316833691/job/31470305523"
                       },
                       {
                         "__typename": "CheckRun",
@@ -201,11 +249,29 @@
             {
               "id": "LA_kwDOFcwZ1c8AAAABJc1VKA",
               "name": "easy"
+            },
+            {
+              "id": "LA_kwDOFcwZ1c8AAAABh1mAHA",
+              "name": "maintainer-merge"
+            },
+            {
+              "id": "LA_kwDOFcwZ1c8AAAABtNO8rw",
+              "name": "t-data"
             }
           ]
         },
         "latestReviews": {
-          "nodes": []
+          "nodes": [
+            {
+              "id": "PRR_kwDOFcwZ1c6M-4PU",
+              "body": "Straightforward, although I will cc @hrmacbeth to provide another example where it would be really fine to generate the two one-argument `gcongr` lemmas from the two arguments one. Maybe a good criterion for whether `gcongr` should do this automatically is if the lemma has no side condition.\r\n\r\nmaintainer merge",
+              "state": "APPROVED",
+              "author": {
+                "login": "YaelDillies"
+              },
+              "submittedAt": "2024-10-14T04:54:05Z"
+            }
+          ]
         },
         "maintainerCanModify": false,
         "mergeCommit": null,
@@ -216,7 +282,7 @@
         "milestone": null,
         "number": 17704,
         "potentialMergeCommit": {
-          "oid": "cf0c3c7f728c42c32af6fcf33ff3912adb52b9fd"
+          "oid": "f992b52714661aaacf68843f83f32cc3f0a8747a"
         },
         "projectCards": {
           "nodes": []
@@ -271,12 +337,22 @@
             }
           }
         ],
-        "reviewDecision": null,
+        "reviewDecision": "APPROVED",
         "reviewRequests": {
           "nodes": []
         },
         "reviews": {
-          "nodes": []
+          "nodes": [
+            {
+              "id": "PRR_kwDOFcwZ1c6M-4PU",
+              "body": "Straightforward, although I will cc @hrmacbeth to provide another example where it would be really fine to generate the two one-argument `gcongr` lemmas from the two arguments one. Maybe a good criterion for whether `gcongr` should do this automatically is if the lemma has no side condition.\r\n\r\nmaintainer merge",
+              "state": "APPROVED",
+              "author": {
+                "login": "YaelDillies"
+              },
+              "submittedAt": "2024-10-14T04:54:05Z"
+            }
+          ]
         },
         "reviewThreads": {
           "nodes": []
@@ -289,6 +365,10 @@
             {
               "id": "MDQ6VXNlcjE4ODgxMw==",
               "login": "urkud"
+            },
+            {
+              "id": "MDQ6VXNlcjE0MDkwNTkz",
+              "login": "YaelDillies"
             }
           ]
         },
@@ -296,6 +376,22 @@
         "statusCheckRollup": {
           "contexts": {
             "nodes": [
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHVFnceA",
+                "name": "Add ready-to-merge label",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11321215374/job/31479946360"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHVFncRg",
+                "name": "Fix style issues from lint",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11321215371/job/31479946310"
+              },
               {
                 "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHU7tUAA",
@@ -311,6 +407,14 @@
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11316834877/job/31469556733"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHVFnccA",
+                "name": "Ping maintainers on Zulip",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11321215373/job/31479946352"
               },
               {
                 "__typename": "CheckRun",
@@ -346,6 +450,14 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHVFnc8w",
+                "name": "Add delegated label",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11321215374/job/31479946483"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHU7tI0w",
                 "name": "Lint style (fork)",
                 "conclusion": "SKIPPED",
@@ -370,14 +482,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHU7tIwA",
-                "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11316833691/job/31469553856"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHU7tJyg",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -386,11 +490,27 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHU7tIwA",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11316833691/job/31469553856"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHU7tKIg",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11316833692/job/31469554210"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHU8bA8w",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11316833691/job/31470305523"
               },
               {
                 "__typename": "CheckRun",
@@ -412,7 +532,7 @@
           }
         },
         "title": "chore(*): add `@[gcongr]` to some n-ary monotonicity lemmas",
-        "updatedAt": "2024-10-13T18:52:04Z",
+        "updatedAt": "2024-10-14T04:54:23Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17704",
         "timelineItems": {
           "nodes": [
@@ -435,6 +555,42 @@
               "label": {
                 "id": "LA_kwDOFcwZ1c8AAAABJc1VKA",
                 "name": "easy"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6aB3NKzwAAAANnheyr",
+              "createdAt": "2024-10-14T00:07:56Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABtNO8rw",
+                "name": "t-data"
+              }
+            },
+            {
+              "__typename": "PullRequestReview",
+              "id": "PRR_kwDOFcwZ1c6M-4PU",
+              "createdAt": "2024-10-14T04:54:05Z",
+              "body": "Straightforward, although I will cc @hrmacbeth to provide another example where it would be really fine to generate the two one-argument `gcongr` lemmas from the two arguments one. Maybe a good criterion for whether `gcongr` should do this automatically is if the lemma has no side condition.\r\n\r\nmaintainer merge",
+              "author": {
+                "login": "YaelDillies"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PpNGY",
+              "createdAt": "2024-10-14T04:54:21Z",
+              "body": "🚀 Pull request has been placed on the maintainer queue by YaelDillies.",
+              "author": {
+                "login": "github-actions"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6aB3NKzwAAAANnr159",
+              "createdAt": "2024-10-14T04:54:22Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABh1mAHA",
+                "name": "maintainer-merge"
               }
             }
           ]
