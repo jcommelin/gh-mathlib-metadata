@@ -24,6 +24,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PvkIt",
+              "body": "This PR/issue depends on:\n* leanprover-community/mathlib4#17734\nBy **[Dependent Issues](https://github.com/z0al/dependent-issues)** (🤖). Happy coding!\n<!-- By Dependent Issues (Action) - DO NOT REMOVE -->",
+              "createdAt": "2024-10-14T15:33:34Z",
+              "author": {
+                "login": "mathlib4-dependent-issues-bot"
+              }
             }
           ]
         },
@@ -254,14 +262,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHVgyn2w",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11330494491/job/31508441051"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHVgyoig",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -270,11 +270,27 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHVgyn2w",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11330494491/job/31508441051"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHVgyrrA",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11330494514/job/31508442028"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHVhkpGQ",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11330494491/job/31509260569"
                       },
                       {
                         "__typename": "CheckRun",
@@ -352,6 +368,10 @@
         "labels": {
           "nodes": [
             {
+              "id": "MDU6TGFiZWwzMjg4OTQyMDg2",
+              "name": "blocked-by-other-PR"
+            },
+            {
               "id": "LA_kwDOFcwZ1c8AAAABViJTYQ",
               "name": "t-category-theory"
             }
@@ -369,7 +389,7 @@
         "milestone": null,
         "number": 17736,
         "potentialMergeCommit": {
-          "oid": "eb17988bac490a364af5279d3e0f866645a08517"
+          "oid": "9e0aa0d79e1abda46626f2a51a3b72f8ab45e447"
         },
         "projectCards": {
           "nodes": []
@@ -442,6 +462,10 @@
             {
               "id": "U_kgDOCB8vYg",
               "login": "chrisflav"
+            },
+            {
+              "id": "U_kgDOCsITAQ",
+              "login": "mathlib4-dependent-issues-bot"
             }
           ]
         },
@@ -523,14 +547,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHVgyn2w",
-                "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11330494491/job/31508441051"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHVgyoig",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -539,11 +555,27 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHVgyn2w",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11330494491/job/31508441051"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHVgyrrA",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11330494514/job/31508442028"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHVhkpGQ",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11330494491/job/31509260569"
               },
               {
                 "__typename": "CheckRun",
@@ -565,7 +597,7 @@
           }
         },
         "title": "feat(CategoryTheory/Sites): pretopology induced by a morphism property",
-        "updatedAt": "2024-10-14T15:23:44Z",
+        "updatedAt": "2024-10-14T15:33:35Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17736",
         "timelineItems": {
           "nodes": [
@@ -601,6 +633,24 @@
                 "id": "I_kwDOFcwZ1c6W3tQx",
                 "title": "Theory of smooth morphisms of schemes",
                 "url": "https://github.com/leanprover-community/mathlib4/issues/16890"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6aKO3uzwAAAANokSYr",
+              "createdAt": "2024-10-14T15:33:33Z",
+              "label": {
+                "id": "MDU6TGFiZWwzMjg4OTQyMDg2",
+                "name": "blocked-by-other-PR"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PvkIt",
+              "createdAt": "2024-10-14T15:33:34Z",
+              "body": "This PR/issue depends on:\n* leanprover-community/mathlib4#17734\nBy **[Dependent Issues](https://github.com/z0al/dependent-issues)** (🤖). Happy coding!\n<!-- By Dependent Issues (Action) - DO NOT REMOVE -->",
+              "author": {
+                "login": "mathlib4-dependent-issues-bot"
               }
             }
           ]
