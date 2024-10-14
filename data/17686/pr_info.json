@@ -182,6 +182,30 @@
                     "nodes": [
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHVpkLqA",
+                        "name": "Add ready-to-merge label",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11333452081/job/31517641640"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHVpkAag",
+                        "name": "Ping maintainers on Zulip",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11333452079/job/31517638762"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHVpj6_g",
+                        "name": "Fix style issues from lint",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11333452075/job/31517637374"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHUl7QiA",
                         "name": "label-and-report-new-contributor",
                         "conclusion": "SUCCESS",
@@ -219,6 +243,14 @@
                         "conclusion": "SUCCESS",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11306282159/job/31446716569"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHVpkDog",
+                        "name": "Add delegated label",
+                        "conclusion": "SKIPPED",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11333452081/job/31517639586"
                       },
                       {
                         "__typename": "CheckRun",
@@ -338,7 +370,17 @@
           ]
         },
         "latestReviews": {
-          "nodes": []
+          "nodes": [
+            {
+              "id": "PRR_kwDOFcwZ1c6NGzj_",
+              "body": "I'm very skeptical that any of this is particularly useful. Lean's type theory doesn't constructively satisfy the principle of unique choice, and as such, it's impossible to turn `Set (α × β)` into a function `α → β` constructively.\r\n\r\nIn general, if you have `s : Set (α × β)` and can give a precise correspondence between the elements of `α` and the elements of `β`, then you can just use said correspondence to build a function. If you don't have such a correspondence, but you still need to create a function, it's probably better to just employ choice explicitly. In this case, the predicate `isFun` in this PR might potentially be too strong of an assumption, depending on what precisely you're doing - you might simply need `∀ x : α, ∃ y : β, (x, y) ∈ s`.\r\n\r\nDo you have a particular need for these functions in mind? If so, I've left a bunch of comments anyways.",
+              "state": "CHANGES_REQUESTED",
+              "author": {
+                "login": "vihdzp"
+              },
+              "submittedAt": "2024-10-14T18:58:50Z"
+            }
+          ]
         },
         "maintainerCanModify": false,
         "mergeCommit": null,
@@ -404,15 +446,236 @@
             }
           }
         ],
-        "reviewDecision": null,
+        "reviewDecision": "CHANGES_REQUESTED",
         "reviewRequests": {
           "nodes": []
         },
         "reviews": {
-          "nodes": []
+          "nodes": [
+            {
+              "id": "PRR_kwDOFcwZ1c6NGzj_",
+              "body": "I'm very skeptical that any of this is particularly useful. Lean's type theory doesn't constructively satisfy the principle of unique choice, and as such, it's impossible to turn `Set (α × β)` into a function `α → β` constructively.\r\n\r\nIn general, if you have `s : Set (α × β)` and can give a precise correspondence between the elements of `α` and the elements of `β`, then you can just use said correspondence to build a function. If you don't have such a correspondence, but you still need to create a function, it's probably better to just employ choice explicitly. In this case, the predicate `isFun` in this PR might potentially be too strong of an assumption, depending on what precisely you're doing - you might simply need `∀ x : α, ∃ y : β, (x, y) ∈ s`.\r\n\r\nDo you have a particular need for these functions in mind? If so, I've left a bunch of comments anyways.",
+              "state": "CHANGES_REQUESTED",
+              "author": {
+                "login": "vihdzp"
+              },
+              "submittedAt": "2024-10-14T18:58:50Z"
+            }
+          ]
         },
         "reviewThreads": {
-          "nodes": []
+          "nodes": [
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5rSNut",
+                    "body": "I'd add to this docstring that these notions mimic the standard definition of a function in ZFC.",
+                    "createdAt": "2024-10-14T18:34:23Z",
+                    "author": {
+                      "login": "vihdzp"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5rSNw1",
+                    "body": "```suggestion\r\n\r\n- `Set.asPartialFun` converts `Set (α × α)` to `α → Option α`.\r\n- `Set.asFun` converts `Set (α × α)` to `α → α` if possible.\r\n```",
+                    "createdAt": "2024-10-14T18:34:34Z",
+                    "author": {
+                      "login": "vihdzp"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5rSOvl",
+                    "body": "This isn't a very good docstring, as it essentially just clarifies the name `isPartialFun` without explaining what it *means*. I'd write something like\r\n```suggestion\r\n/-- A set `s : Set (α × α)` represents a partial function when for every `x : α` there's at most\r\none `y : α` with `(x, y) ∈ s`. -/\r\n```",
+                    "createdAt": "2024-10-14T18:38:25Z",
+                    "author": {
+                      "login": "vihdzp"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5rSO6U",
+                    "body": "You can write this as\r\n```suggestion\r\n  ∀ x : α, {y : α | (x, y) ∈ X}.Subsingleton\r\n```\r\nI believe you can even get rid of the type annotations if you want.",
+                    "createdAt": "2024-10-14T18:39:06Z",
+                    "author": {
+                      "login": "vihdzp"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5rSPC4",
+                    "body": "Capital letters are usually reserved for types; you should use something like `x` or `s` instead. This applies throughout the file.\r\n\r\nAlso, this should be named `IsPartialFun`.",
+                    "createdAt": "2024-10-14T18:39:39Z",
+                    "author": {
+                      "login": "vihdzp"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5rSP-I",
+                    "body": "Again, this docstring doesn't clarify much. You can write something like\r\n```suggestion\r\n/-- Turns `s : Set (α × α)` into a partial function. Each `x : α` is mapped to an arbitrary `y : α`\r\nwith `(x, y) ∈ s`, or to `none` if none exists. -/\r\n```",
+                    "createdAt": "2024-10-14T18:43:33Z",
+                    "author": {
+                      "login": "vihdzp"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5rSQCa",
+                    "body": "```suggestion\r\ntheorem asPartialFun_eq {X : Set (α × α)} (hX : isPartialFun X) {a b : α} (hab : (a, b) ∈ X) :\r\n```",
+                    "createdAt": "2024-10-14T18:43:46Z",
+                    "author": {
+                      "login": "vihdzp"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5rSQKU",
+                    "body": "No need for such a long section name\r\n```suggestion\r\nsection partial\r\n```",
+                    "createdAt": "2024-10-14T18:44:18Z",
+                    "author": {
+                      "login": "vihdzp"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5rSQNw",
+                    "body": "```suggestion\r\nsection total\r\n```",
+                    "createdAt": "2024-10-14T18:44:28Z",
+                    "author": {
+                      "login": "vihdzp"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5rSQX9",
+                    "body": "```suggestion\r\n/-- A set `s : Set (α × α)` represents a total function when for every `x : α` there's exactly one\r\n`y : α` with `(x, y) ∈ s`. -/\r\n```",
+                    "createdAt": "2024-10-14T18:45:11Z",
+                    "author": {
+                      "login": "vihdzp"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5rSQjo",
+                    "body": "You can employ dot notation here\r\n```suggestion\r\ntheorem isFun.isPartialFun {X : Set (α × α)} (hX : isFun X) : isPartialFun X := by\r\n```",
+                    "createdAt": "2024-10-14T18:45:49Z",
+                    "author": {
+                      "login": "vihdzp"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5rSQ60",
+                    "body": "Should be named `IsFun`.",
+                    "createdAt": "2024-10-14T18:47:36Z",
+                    "author": {
+                      "login": "vihdzp"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5rSRKi",
+                    "body": "```suggestion\r\ntheorem asFun_eq {X : Set (α × α)} (hX : isFun X) {a b : α} (hab : (a, b) ∈ X) :\r\n```",
+                    "createdAt": "2024-10-14T18:48:38Z",
+                    "author": {
+                      "login": "vihdzp"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5rSRXI",
+                    "body": "```suggestion\r\n/-- Turns `s : Set (α × α)` into a total function. Each `x : α` is mapped to the unique `y : α` with\r\n`(x, y) ∈ s`, or to `none` if none exists. -/\r\n```",
+                    "createdAt": "2024-10-14T18:49:29Z",
+                    "author": {
+                      "login": "vihdzp"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "comments": {
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOFcwZ1c5rSSFz",
+                    "body": "Why not convert `Set (α × β)` into `α → Option β` / `α → β` instead? ",
+                    "createdAt": "2024-10-14T18:53:09Z",
+                    "author": {
+                      "login": "vihdzp"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
         },
         "closingIssuesReferences": {
           "nodes": []
@@ -422,6 +685,10 @@
             {
               "id": "MDQ6VXNlcjY2NDMxMTY=",
               "login": "madvorak"
+            },
+            {
+              "id": "MDQ6VXNlcjY1NDY1Njcw",
+              "login": "vihdzp"
             }
           ]
         },
@@ -429,6 +696,30 @@
         "statusCheckRollup": {
           "contexts": {
             "nodes": [
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHVpkLqA",
+                "name": "Add ready-to-merge label",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11333452081/job/31517641640"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHVpkAag",
+                "name": "Ping maintainers on Zulip",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11333452079/job/31517638762"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHVpj6_g",
+                "name": "Fix style issues from lint",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11333452075/job/31517637374"
+              },
               {
                 "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHUl7QiA",
@@ -468,6 +759,14 @@
                 "conclusion": "SUCCESS",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11306282159/job/31446716569"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHVpkDog",
+                "name": "Add delegated label",
+                "conclusion": "SKIPPED",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11333452081/job/31517639586"
               },
               {
                 "__typename": "CheckRun",
@@ -545,7 +844,7 @@
           }
         },
         "title": "feat: Set to Function",
-        "updatedAt": "2024-10-14T18:47:18Z",
+        "updatedAt": "2024-10-14T18:59:10Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17686",
         "timelineItems": {
           "nodes": [
@@ -572,6 +871,15 @@
             },
             {
               "__typename": "PullRequestCommit"
+            },
+            {
+              "__typename": "PullRequestReview",
+              "id": "PRR_kwDOFcwZ1c6NGzj_",
+              "createdAt": "2024-10-14T18:34:23Z",
+              "body": "I'm very skeptical that any of this is particularly useful. Lean's type theory doesn't constructively satisfy the principle of unique choice, and as such, it's impossible to turn `Set (α × β)` into a function `α → β` constructively.\r\n\r\nIn general, if you have `s : Set (α × β)` and can give a precise correspondence between the elements of `α` and the elements of `β`, then you can just use said correspondence to build a function. If you don't have such a correspondence, but you still need to create a function, it's probably better to just employ choice explicitly. In this case, the predicate `isFun` in this PR might potentially be too strong of an assumption, depending on what precisely you're doing - you might simply need `∀ x : α, ∃ y : β, (x, y) ∈ s`.\r\n\r\nDo you have a particular need for these functions in mind? If so, I've left a bunch of comments anyways.",
+              "author": {
+                "login": "vihdzp"
+              }
             }
           ]
         }
