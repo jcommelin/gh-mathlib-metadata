@@ -24,6 +24,14 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6PyCa7",
+              "body": "bors merge\r\n\r\nThanks!",
+              "createdAt": "2024-10-14T20:40:38Z",
+              "author": {
+                "login": "eric-wieser"
+              }
             }
           ]
         },
@@ -341,14 +349,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHViXFBQ",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11331016864/job/31510086917"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHViXHjQ",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -357,11 +357,35 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHViXFBQ",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11331016864/job/31510086917"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHViXIww",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11331016874/job/31510087875"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHVjscvA",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11331016864/job/31511485628"
+                      },
+                      {
+                        "__typename": "StatusContext",
+                        "id": "SC_kwDOFcwZ1c8AAAAHcSOawg",
+                        "context": "bors",
+                        "state": "PENDING",
+                        "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6411",
+                        "description": "Waiting in queue"
                       },
                       {
                         "__typename": "CheckRun",
@@ -419,6 +443,10 @@
         "labels": {
           "nodes": [
             {
+              "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
+              "name": "ready-to-merge"
+            },
+            {
               "id": "LA_kwDOFcwZ1c8AAAABJc1VKA",
               "name": "easy"
             },
@@ -444,7 +472,7 @@
         "milestone": null,
         "number": 17737,
         "potentialMergeCommit": {
-          "oid": "7388b2e39f8ad02f9bcc3471dad9bfcb6bae2dac"
+          "oid": "29a428d161384dc3351fa3d775effdbcc23ca636"
         },
         "projectCards": {
           "nodes": []
@@ -517,6 +545,10 @@
             {
               "id": "MDQ6VXNlcjE2MzgzNTI2",
               "login": "callesonne"
+            },
+            {
+              "id": "MDQ6VXNlcjQyNTI2MA==",
+              "login": "eric-wieser"
             }
           ]
         },
@@ -590,14 +622,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHViXFBQ",
-                "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11331016864/job/31510086917"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHViXHjQ",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -606,11 +630,35 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHViXFBQ",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11331016864/job/31510086917"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHViXIww",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11331016874/job/31510087875"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHVjscvA",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11331016864/job/31511485628"
+              },
+              {
+                "__typename": "StatusContext",
+                "id": "SC_kwDOFcwZ1c8AAAAHcSOawg",
+                "context": "bors",
+                "state": "PENDING",
+                "targetUrl": "https://mathlib-bors-ca18eefec4cb.herokuapp.com/batches/6411",
+                "description": "Waiting in queue"
               },
               {
                 "__typename": "CheckRun",
@@ -632,7 +680,7 @@
           }
         },
         "title": "feat(Tactic/Algebraize): fix mistake in algebraize tactic",
-        "updatedAt": "2024-10-14T15:58:57Z",
+        "updatedAt": "2024-10-14T20:40:47Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17737",
         "timelineItems": {
           "nodes": [
@@ -700,6 +748,24 @@
               "label": {
                 "id": "MDU6TGFiZWwzMjcxMjQ0NzU5",
                 "name": "WIP"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6PyCa7",
+              "createdAt": "2024-10-14T20:40:38Z",
+              "body": "bors merge\r\n\r\nThanks!",
+              "author": {
+                "login": "eric-wieser"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6aKgv6zwAAAANo98in",
+              "createdAt": "2024-10-14T20:40:47Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
+                "name": "ready-to-merge"
               }
             }
           ]
