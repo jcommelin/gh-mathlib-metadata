@@ -202,6 +202,10 @@
         "labels": {
           "nodes": [
             {
+              "id": "LA_kwDOFcwZ1c8AAAABIFoUmw",
+              "name": "merge-conflict"
+            },
+            {
               "id": "LA_kwDOFcwZ1c8AAAABvE0uGg",
               "name": "t-set-theory"
             }
@@ -212,15 +216,13 @@
         },
         "maintainerCanModify": false,
         "mergeCommit": null,
-        "mergeStateStatus": "BLOCKED",
-        "mergeable": "MERGEABLE",
+        "mergeStateStatus": "DIRTY",
+        "mergeable": "CONFLICTING",
         "mergedAt": null,
         "mergedBy": null,
         "milestone": null,
         "number": 17671,
-        "potentialMergeCommit": {
-          "oid": "a8f72a274d2e809c62c2e0d871fdd56b45d8f7a2"
-        },
+        "potentialMergeCommit": null,
         "projectCards": {
           "nodes": []
         },
@@ -292,6 +294,10 @@
             {
               "id": "MDQ6VXNlcjY1NDY1Njcw",
               "login": "vihdzp"
+            },
+            {
+              "id": "U_kgDOBcsTTQ",
+              "login": "leanprover-community-bot-assistant"
             }
           ]
         },
@@ -423,7 +429,7 @@
           }
         },
         "title": "feat(SetTheory/Cardinal/Aleph): add notation for `aleph` and `beth`",
-        "updatedAt": "2024-10-12T00:20:09Z",
+        "updatedAt": "2024-10-14T10:42:32Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17671",
         "timelineItems": {
           "nodes": [
@@ -446,6 +452,15 @@
               "body": "### PR summary [8850869ede](https://github.com/leanprover-community/mathlib4/pull/17671/commits/8850869edec6dfece2ada35d7cde80d8bc9e0028)\n\n#### Import changes for modified files\n\nNo significant changes to the import graph\n\n\n<details><summary>Import changes for all files</summary>\n\n|Files|Import difference|\n|-|-|\n\n</details>\n\n---\n\n#### Declarations diff\n\n`+ instance (o : Ordinal) : NoMaxOrder (ℵ_ o).ord.toType`\n`- instance (o : Ordinal) : NoMaxOrder (aleph o).ord.toType`\n<details>\n  <summary>You can run this locally as follows</summary>\n\n\n```bash\n## summary with just the declaration names:\n./scripts/declarations_diff.sh <optional_commit>\n\n## more verbose report:\n./scripts/declarations_diff.sh long <optional_commit>\n```\n</details>\n\nThe doc-module for `script/declarations_diff.sh` contains some details about this script.",
               "author": {
                 "login": "github-actions"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6Z68MpzwAAAANoJFcV",
+              "createdAt": "2024-10-14T10:42:32Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABIFoUmw",
+                "name": "merge-conflict"
               }
             }
           ]

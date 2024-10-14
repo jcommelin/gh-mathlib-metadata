@@ -2441,6 +2441,10 @@
               "name": "blocked-by-other-PR"
             },
             {
+              "id": "LA_kwDOFcwZ1c8AAAABIFoUmw",
+              "name": "merge-conflict"
+            },
+            {
               "id": "LA_kwDOFcwZ1c8AAAABvE0uGg",
               "name": "t-set-theory"
             }
@@ -2451,15 +2455,13 @@
         },
         "maintainerCanModify": false,
         "mergeCommit": null,
-        "mergeStateStatus": "BLOCKED",
-        "mergeable": "MERGEABLE",
+        "mergeStateStatus": "DIRTY",
+        "mergeable": "CONFLICTING",
         "mergedAt": null,
         "mergedBy": null,
         "milestone": null,
         "number": 17674,
-        "potentialMergeCommit": {
-          "oid": "2df3e0efc4e6e7cbc6b9df1c4e0129ac6ec54644"
-        },
+        "potentialMergeCommit": null,
         "projectCards": {
           "nodes": []
         },
@@ -2535,6 +2537,10 @@
             {
               "id": "U_kgDOCsITAQ",
               "login": "mathlib4-dependent-issues-bot"
+            },
+            {
+              "id": "U_kgDOBcsTTQ",
+              "login": "leanprover-community-bot-assistant"
             }
           ]
         },
@@ -2658,7 +2664,7 @@
           }
         },
         "title": "feat(SetTheory/Cardinal/Aleph): simpler definition of `aleph`",
-        "updatedAt": "2024-10-12T02:11:07Z",
+        "updatedAt": "2024-10-14T10:42:33Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17674",
         "timelineItems": {
           "nodes": [
@@ -2767,8 +2773,17 @@
               "createdAt": "2024-10-12T02:21:14Z",
               "source": {
                 "id": "PR_kwDOFcwZ1c5-Y9TL",
-                "title": "chore(SetTheory/Ordinal/Arithmetic): `sub_isNormal` → `isNormal_sub`, etc.",
+                "title": "[Merged by Bors] - chore(SetTheory/Ordinal/Arithmetic): `sub_isNormal` → `isNormal_sub`, etc.",
                 "url": "https://github.com/leanprover-community/mathlib4/pull/17673"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6Z7EDvzwAAAANoJFea",
+              "createdAt": "2024-10-14T10:42:33Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABIFoUmw",
+                "name": "merge-conflict"
               }
             }
           ]
