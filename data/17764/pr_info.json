@@ -24,6 +24,22 @@
               "author": {
                 "login": "github-actions"
               }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6P2JbK",
+              "body": "bors merge",
+              "createdAt": "2024-10-15T09:13:25Z",
+              "author": {
+                "login": "kim-em"
+              }
+            },
+            {
+              "id": "IC_kwDOFcwZ1c6P2JdP",
+              "body": ":-1: Rejected by label",
+              "createdAt": "2024-10-15T09:13:29Z",
+              "author": {
+                "login": "mathlib-bors"
+              }
             }
           ]
         },
@@ -116,14 +132,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHWCt0tw",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11342803248/job/31544014007"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHWCtzeQ",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -132,11 +140,27 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHWCt0tw",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11342803248/job/31544014007"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHWCt11A",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11342803224/job/31544014292"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHWE3N-g",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11342803248/job/31546265082"
                       },
                       {
                         "__typename": "CheckRun",
@@ -199,8 +223,8 @@
         "labels": {
           "nodes": [
             {
-              "id": "LA_kwDOFcwZ1c8AAAABKteTVQ",
-              "name": "awaiting-CI"
+              "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
+              "name": "ready-to-merge"
             },
             {
               "id": "LA_kwDOFcwZ1c8AAAABtNO8rw",
@@ -220,7 +244,7 @@
         "milestone": null,
         "number": 17764,
         "potentialMergeCommit": {
-          "oid": "33da2eff1c85d7b4adfb71c5d6af7bfa7d58138a"
+          "oid": "a2696ad02c770acc86685e10a5c10f676852bdbf"
         },
         "projectCards": {
           "nodes": []
@@ -293,6 +317,10 @@
             {
               "id": "MDQ6VXNlcjIxMTY1NzA=",
               "login": "Vierkantor"
+            },
+            {
+              "id": "MDQ6VXNlcjQ3Nzk1Ng==",
+              "login": "kim-em"
             }
           ]
         },
@@ -374,14 +402,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHWCt0tw",
-                "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11342803248/job/31544014007"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHWCtzeQ",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -390,11 +410,27 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHWCt0tw",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11342803248/job/31544014007"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHWCt11A",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11342803224/job/31544014292"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHWE3N-g",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11342803248/job/31546265082"
               },
               {
                 "__typename": "CheckRun",
@@ -416,7 +452,7 @@
           }
         },
         "title": "chore: split off `RBMap` dependency from `Mathlib.Data.Tree`",
-        "updatedAt": "2024-10-15T09:05:31Z",
+        "updatedAt": "2024-10-15T09:46:18Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17764",
         "timelineItems": {
           "nodes": [
@@ -448,6 +484,42 @@
               "body": "### PR summary [9c67502357](https://github.com/leanprover-community/mathlib4/pull/17764/commits/9c67502357c7baa386013daa599c1e9703b234fd)\n\n<details><summary>\n\n#### Import changes for modified files\n\n</summary>\n\nDependency changes\n\n| File | Base Count | Head Count | Change |\n| --- | --- | --- | --- |\n| Mathlib.Data.Tree.Basic | 21 | 20 | -1 (-4.76%) |\n\n\n<details><summary>Import changes for all files</summary>\n\n|Files|Import difference|\n|-|-|\n| `Mathlib.Data.Tree.Basic`|-1|\n| `Mathlib.Data.Tree.RBMap`|22|\n\n</details>\n\n</details>\n\n---\n\n#### Declarations diff\n\nNo declarations were harmed in the making of this PR! 🐙\n<details>\n  <summary>You can run this locally as follows</summary>\n\n\n```bash\n## summary with just the declaration names:\n./scripts/declarations_diff.sh <optional_commit>\n\n## more verbose report:\n./scripts/declarations_diff.sh long <optional_commit>\n```\n</details>\n\nThe doc-module for `script/declarations_diff.sh` contains some details about this script.",
               "author": {
                 "login": "github-actions"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6P2JbK",
+              "createdAt": "2024-10-15T09:13:25Z",
+              "body": "bors merge",
+              "author": {
+                "login": "kim-em"
+              }
+            },
+            {
+              "__typename": "IssueComment",
+              "id": "IC_kwDOFcwZ1c6P2JdP",
+              "createdAt": "2024-10-15T09:13:29Z",
+              "body": ":-1: Rejected by label",
+              "author": {
+                "login": "mathlib-bors"
+              }
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6aQ4u7zwAAAANpb6U6",
+              "createdAt": "2024-10-15T09:13:37Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABHuWjJg",
+                "name": "ready-to-merge"
+              }
+            },
+            {
+              "__typename": "UnlabeledEvent",
+              "id": "UNLE_lADOFcwZ1c6aQ4u7zwAAAANpd2qd",
+              "createdAt": "2024-10-15T09:46:18Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABKteTVQ",
+                "name": "awaiting-CI"
               }
             }
           ]
