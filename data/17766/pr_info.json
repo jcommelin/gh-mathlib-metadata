@@ -224,14 +224,6 @@
                       },
                       {
                         "__typename": "CheckRun",
-                        "id": "CR_kwDOFcwZ1c8AAAAHWH9_Ew",
-                        "name": "Build",
-                        "conclusion": null,
-                        "status": "IN_PROGRESS",
-                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11344552381/job/31549521683"
-                      },
-                      {
-                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHWH9_8w",
                         "name": "Build (fork)",
                         "conclusion": "SKIPPED",
@@ -240,11 +232,27 @@
                       },
                       {
                         "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHWH9_Ew",
+                        "name": "Build",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11344552381/job/31549521683"
+                      },
+                      {
+                        "__typename": "CheckRun",
                         "id": "CR_kwDOFcwZ1c8AAAAHWH-B_w",
                         "name": "Post-CI job (fork)",
                         "conclusion": "SKIPPED",
                         "status": "COMPLETED",
                         "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11344552394/job/31549522431"
+                      },
+                      {
+                        "__typename": "CheckRun",
+                        "id": "CR_kwDOFcwZ1c8AAAAHWIVz7Q",
+                        "name": "Post-CI job",
+                        "conclusion": "SUCCESS",
+                        "status": "COMPLETED",
+                        "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11344552381/job/31549912045"
                       },
                       {
                         "__typename": "CheckRun",
@@ -335,7 +343,12 @@
         "isCrossRepository": false,
         "isDraft": false,
         "labels": {
-          "nodes": []
+          "nodes": [
+            {
+              "id": "LA_kwDOFcwZ1c8AAAABViJTYQ",
+              "name": "t-category-theory"
+            }
+          ]
         },
         "latestReviews": {
           "nodes": []
@@ -503,14 +516,6 @@
               },
               {
                 "__typename": "CheckRun",
-                "id": "CR_kwDOFcwZ1c8AAAAHWH9_Ew",
-                "name": "Build",
-                "conclusion": null,
-                "status": "IN_PROGRESS",
-                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11344552381/job/31549521683"
-              },
-              {
-                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHWH9_8w",
                 "name": "Build (fork)",
                 "conclusion": "SKIPPED",
@@ -519,11 +524,27 @@
               },
               {
                 "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHWH9_Ew",
+                "name": "Build",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11344552381/job/31549521683"
+              },
+              {
+                "__typename": "CheckRun",
                 "id": "CR_kwDOFcwZ1c8AAAAHWH-B_w",
                 "name": "Post-CI job (fork)",
                 "conclusion": "SKIPPED",
                 "status": "COMPLETED",
                 "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11344552394/job/31549522431"
+              },
+              {
+                "__typename": "CheckRun",
+                "id": "CR_kwDOFcwZ1c8AAAAHWIVz7Q",
+                "name": "Post-CI job",
+                "conclusion": "SUCCESS",
+                "status": "COMPLETED",
+                "detailsUrl": "https://github.com/leanprover-community/mathlib4/actions/runs/11344552381/job/31549912045"
               },
               {
                 "__typename": "CheckRun",
@@ -545,7 +566,7 @@
           }
         },
         "title": "refactor: change `CartesianClosed` to rely on `ChosenFiniteProducts`",
-        "updatedAt": "2024-10-15T10:53:21Z",
+        "updatedAt": "2024-10-15T11:09:47Z",
         "url": "https://github.com/leanprover-community/mathlib4/pull/17766",
         "timelineItems": {
           "nodes": [
@@ -575,6 +596,15 @@
             },
             {
               "__typename": "RenamedTitleEvent"
+            },
+            {
+              "__typename": "LabeledEvent",
+              "id": "LE_lADOFcwZ1c6aR7NYzwAAAANpibug",
+              "createdAt": "2024-10-15T11:09:47Z",
+              "label": {
+                "id": "LA_kwDOFcwZ1c8AAAABViJTYQ",
+                "name": "t-category-theory"
+              }
             }
           ]
         }
